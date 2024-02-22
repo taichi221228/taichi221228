@@ -1,4 +1,4 @@
-import { RequestHandler, routeLoader$ } from "@builder.io/qwik-city";
+import { type RequestHandler, routeLoader$ } from "@builder.io/qwik-city";
 import { component$, Slot, useStyles$ } from "@builder.io/qwik";
 
 import Header from "../components/ui/header/header";
