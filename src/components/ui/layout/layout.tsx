@@ -1,7 +1,7 @@
 import { component$, Slot, useStyles$ } from "@builder.io/qwik";
 
-import Header from "../../starter/header/header";
-import Footer from "../../starter/footer/footer";
+import Header from "../header/header";
+import Footer from "../footer/footer";
 
 import styles from "../../../routes/styles.css?inline";
 
