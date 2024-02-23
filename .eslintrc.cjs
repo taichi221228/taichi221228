@@ -9,6 +9,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:qwik/recommended",
+    "./.eslintrc.import.cjs",
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
