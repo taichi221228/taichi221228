@@ -25,13 +25,13 @@ module.exports = {
             position: "before",
           },
           {
-            group: "sibling",
-            pattern: "./**",
+            group: "parent",
+            pattern: "~/**",
             position: "before",
           },
           {
-            group: "parent",
-            pattern: "~/**",
+            group: "sibling",
+            pattern: "./**",
             position: "before",
           },
         ],
