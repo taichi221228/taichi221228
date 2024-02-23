@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { type DocumentHead } from "@builder.io/qwik-city";
 
-import Counter from "../components/ui/counter/counter";
-import Hero from "../components/ui/hero/hero";
-import Infobox from "../components/ui/infobox/infobox";
-import Starter from "../components/ui/next-steps/next-steps";
+import Counter from "~/components/ui/counter/counter";
+import Hero from "~/components/ui/hero/hero";
+import Infobox from "~/components/ui/infobox/infobox";
+import Starter from "~/components/ui/next-steps/next-steps";
 
 export default component$(() => {
   return (
