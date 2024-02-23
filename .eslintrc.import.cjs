@@ -11,8 +11,8 @@ module.exports = {
         groups: [
           "builtin",
           "external",
-          "parent",
-          "sibling",
+          "internal",
+          ["sibling", "parent"],
           "index",
           "object",
           "type",
@@ -21,25 +21,32 @@ module.exports = {
         pathGroups: [
           {
             group: "builtin",
-            pattern: "@builder.io/{qwik,qwik-city}*{,/**}",
-            position: "before",
+            pattern: "@builder.io/qwik?(-city)**",
           },
           {
-            group: "parent",
+            group: "external",
+            pattern: "@qwik?(-city)**",
+          },
+          {
+            group: "internal",
             pattern: "~/**",
-            position: "before",
           },
           {
             group: "sibling",
             pattern: "./**",
-            position: "before",
+          },
+          {
+            group: "parent",
+            pattern: "../**",
           },
         ],
-        pathGroupsExcludedImportTypes: ["builtin"],
+        pathGroupsExcludedImportTypes: [],
       },
     ],
   },
   settings: {
-    "import/resolver": "typescript",
+    "import/resolver": {
+      typescript: true,
+    },
   },
 };
