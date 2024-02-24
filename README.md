@@ -32,10 +32,23 @@ Inside your project, you'll see the following directory structure:
 
 ## Tech Stack
 
+### Core
+
 - [Qwik](https://qwik.builder.io/)
 - [QwikCity](https://qwik.builder.io/qwikcity/overview/)
+
+### Styling
+
 - [CSS Modules](https://qwik.dev/docs/components/styles/#css-modules)
+- [UnoCSS (Reset styling)](https://unocss.dev/)
+- [Remix Icon](https://remixicon.com/)
+
+### Build Tools
+
 - [Vite](https://vitejs.dev/)
+
+### Quality
+
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
