@@ -39,14 +39,14 @@ html {
 
     & main {
       min-height: calc(100svh - var(--height-header) - var(--height-footer));
+    }
 
-      & a {
-        transition: var(--transition);
-      }
+    & a {
+      transition: var(--transition);
+    }
 
-      & i {
-        font-size: 20px;
-      }
+    & i {
+      font-size: 20px;
     }
   }
 }
