@@ -3,6 +3,7 @@ import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { macroPlugin } from "@builder.io/vite-plugin-macro";
+import { vanillaExtractPlugin } from "styled-vanilla-extract/vite";
 
 export default defineConfig((): UserConfig => {
   return {
@@ -11,6 +12,7 @@ export default defineConfig((): UserConfig => {
       qwikCity(),
       qwikVite(),
       tsconfigPaths(),
+      vanillaExtractPlugin(),
     ],
     server: {
       headers: {
