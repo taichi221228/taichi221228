@@ -1,4 +1,4 @@
-# Qwik City App ⚡️
+# taichi221228 ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
 - [Discord](https://qwik.builder.io/chat)
