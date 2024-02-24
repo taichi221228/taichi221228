@@ -42,6 +42,7 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
+    "@fontsource/fira-code": "^5.0.16",
     "@unocss/reset": "^0.58.5",
     "remixicon": "^4.1.0"
   }
