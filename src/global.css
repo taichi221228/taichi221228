@@ -32,4 +32,8 @@ html {
   & a {
     transition: var(--transition);
   }
+
+  & i {
+    font-size: 20px;
+  }
 }
