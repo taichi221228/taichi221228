@@ -1,16 +1,11 @@
-import { component$, Slot, useStyles$ } from "@builder.io/qwik";
-
-import fontStyles from "@fontsource/fira-code?inline";
-import resetStyles from "@unocss/reset/tailwind.css?inline";
-import iconStyles from "remixicon/fonts/remixicon.css?inline";
+import { component$, Slot } from "@builder.io/qwik";
 
 import { Footer } from "~/components/ui/footer/footer";
 import { Header } from "~/components/ui/header/header";
+import { useGlobalStyles } from "~/hooks/global-styles/global-styles";
 
 export default component$(() => {
-  useStyles$(resetStyles);
-  useStyles$(fontStyles);
-  useStyles$(iconStyles);
+  useGlobalStyles();
 
   return (
     <>
