@@ -28,4 +28,8 @@ html {
   font-size: var(--font-size-body);
   color: var(--color-secondary-4);
   background-color: var(--color-primary-2);
+
+  & a {
+    transition: var(--transition);
+  }
 }
