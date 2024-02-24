@@ -1,6 +1,10 @@
+:root {
+  --height-footer: 56px;
+}
+
 .footer {
   display: flex;
-  height: 56px;
+  height: var(--height-footer);
   font-size: var(--font-size-label);
   color: var(--color-secondary-1);
   border-block-start: var(--border);
