@@ -24,7 +24,8 @@
   --transition: all 0.25s ease-in-out;
 }
 
-body {
+html {
+  font-size: var(--font-size-body);
   color: var(--color-secondary-4);
   background-color: var(--color-primary-2);
 }
