@@ -33,6 +33,14 @@
         flex-grow: 1;
       }
 
+      &.locked {
+        & a {
+          color: var(--color-secondary-4);
+          box-shadow: inset 0 -3px 0 var(--color-accent-1);
+          pointer-events: none;
+        }
+      }
+
       &:last-child {
         margin-inline-start: auto;
         border-inline-start: var(--border);
