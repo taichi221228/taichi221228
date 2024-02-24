@@ -1,9 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import { useLocation } from "@builder.io/qwik-city";
 
+import { TITLE } from "~/constants/info";
+
 import styles from "./header.module.css";
 
-const title = "taichi-fukuda";
 const items = ["hello", "about-me", "projects", "blog", "contact-me"];
 
 export const Header = component$(() => {
@@ -13,7 +14,7 @@ export const Header = component$(() => {
 
   return (
     <header class={styles.header}>
-      <h1 class={styles.title}>{isRoot ? title : <a href="/">{title}</a>}</h1>
+      <h1 class={styles.title}>{isRoot ? TITLE : <a href="/">{TITLE}</a>}</h1>
       <nav class={styles.navigation}>
         <ul>
           {items.map((item) => {
