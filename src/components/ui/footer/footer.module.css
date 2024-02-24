@@ -1,2 +1,45 @@
 .footer {
+  display: flex;
+  height: 56px;
+  font-size: var(--font-size-label);
+  color: var(--color-secondary-1);
+  border-block-start: var(--border);
+
+  & > :not(:last-child) {
+    border-inline-end: var(--border);
+  }
+
+  & > :last-child {
+    margin-inline-start: auto;
+    border-inline-start: var(--border);
+  }
+
+  & p,
+  & a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  & p {
+    padding-inline-start: 22px;
+    padding-inline-end: 18px;
+  }
+
+  & a {
+    &.twitter,
+    &.facebook {
+      width: 52px;
+    }
+    &.github {
+      gap: 7px;
+      padding: 0 23px;
+    }
+
+    &:focus-visible,
+    &:hover {
+      color: var(--color-secondary-4);
+    }
+  }
 }
