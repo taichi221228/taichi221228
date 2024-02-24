@@ -1,10 +1,8 @@
-import {
-  component$,
-  FunctionComponent,
-  useVisibleTask$,
-  useStore,
-} from "@builder.io/qwik";
-import { DocumentHead, useLocation } from "@builder.io/qwik-city";
+import { type FunctionComponent } from "@builder.io/qwik";
+import { component$, useVisibleTask$, useStore } from "@builder.io/qwik";
+import { type DocumentHead } from "@builder.io/qwik-city";
+import { useLocation } from "@builder.io/qwik-city";
+
 import { Host, odd, pride, Range, Square } from "./flower.css";
 
 type StoredInputProps<
