@@ -21,10 +21,12 @@ export const Header = component$(() => {
             const isCurrent = comparePath(pathname);
 
             return (
-              <li key={item} class={isCurrent ? styles.locked : ""}>
-                <a href={pathname} tabIndex={isCurrent ? -1 : 0}>
-                  _{item}
-                </a>
+              <li key={item}>
+                {isCurrent ? (
+                  <span>_{item}</span>
+                ) : (
+                  <a href={pathname}>_{item}</a>
+                )}
               </li>
             );
           })}
