@@ -34,7 +34,7 @@ Inside your project, you'll see the following directory structure:
 
 - [Qwik](https://qwik.builder.io/)
 - [QwikCity](https://qwik.builder.io/qwikcity/overview/)
-- [Vanilla Extract](https://vanilla-extract.style/)
+- [CSS Modules](https://qwik.dev/docs/components/styles/#css-modules)
 - [Vite](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
