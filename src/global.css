@@ -5,27 +5,23 @@
   --color-secondary-1: #607b96;
   --color-secondary-2: #3c9d93;
   --color-secondary-3: #4d5bce;
-  --color-secondary-4: #ffffff;
+  --color-secondary-4: #fff;
   --color-accent-1: #fea55f;
   --color-accent-2: #43d9ad;
   --color-accent-3: #e99287;
   --color-accent-4: #c98bdf;
   --color-line: #1e2d3d;
-
   --font-family-default: monospace, "Helvetica Neue", arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
   --font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium",
     "Fira Code Regular", "Fira Code Light";
-
   --font-size-headline: 62px;
   --font-size-subheadline: 32px;
   --font-size-body: 18px;
   --font-size-label: 16px;
   --font-size-code: 14px;
   --font-size-annotation: 12px;
-
   --border: 1px solid var(--color-line);
-
   --transition: all 0.25s ease-in-out;
 }
 

@@ -27,8 +27,7 @@
   }
 
   & p {
-    padding-inline-start: 22px;
-    padding-inline-end: 18px;
+    padding-inline: 22px 18px;
   }
 
   & a {
@@ -36,6 +35,7 @@
     &.facebook {
       width: 52px;
     }
+
     &.github {
       gap: 7px;
       padding: 0 23px;
