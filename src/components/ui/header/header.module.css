@@ -51,7 +51,8 @@
         align-items: center;
         justify-content: center;
         height: 100%;
-        padding: 0 var(--gutter-x);
+        padding-right: var(--gutter-x);
+        padding-left: var(--gutter-x);
 
         @container (width < 709px) {
           --gutter-x: 0;
