@@ -29,7 +29,19 @@ module.exports = {
           },
           {
             group: "internal",
-            pattern: "~/**",
+            pattern: "~/constants",
+          },
+          {
+            group: "internal",
+            pattern: "~/routes",
+          },
+          {
+            group: "internal",
+            pattern: "~/components",
+          },
+          {
+            group: "internal",
+            pattern: "~/hooks",
           },
           {
             group: "sibling",
