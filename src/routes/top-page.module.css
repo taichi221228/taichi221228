@@ -1,2 +1,25 @@
 section {
+  --gutter-x: 60px;
+
+  padding: 0 var(--gutter-x);
+
+  & .wrapper {
+    container-type: inline-size;
+    display: flex;
+    align-items: center;
+    max-width: 1160px;
+    min-height: calc(100svh - var(--height-header) - var(--height-footer));
+    margin: 0 auto;
+
+    & .container {
+      --gutter-y: 40px;
+
+      display: grid;
+      grid-template-columns: auto 510px;
+      gap: 80px 110px;
+      width: 100%;
+      padding-top: var(--gutter-y);
+      padding-bottom: var(--gutter-y);
+    }
+  }
 }
