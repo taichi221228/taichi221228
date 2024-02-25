@@ -34,6 +34,7 @@ Inside your project, you'll see the following directory structure:
 
 ### Core
 
+- [Bun](https://bun.sh/)
 - [Qwik](https://qwik.builder.io/)
 - [QwikCity](https://qwik.builder.io/qwikcity/overview/)
 
