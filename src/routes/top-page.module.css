@@ -86,6 +86,34 @@ section {
             }
           }
         }
+
+        & .declaration {
+          container-type: inline-size;
+
+          & br {
+            @container (width > 493.09px) {
+              display: none;
+            }
+          }
+
+          & a {
+            @container (width <= 326.59px) {
+              word-break: break-all;
+            }
+          }
+
+          & .kind {
+            color: var(--color-secondary-3);
+          }
+
+          & .identifier {
+            color: var(--color-accent-2);
+          }
+
+          & .literal {
+            color: var(--color-accent-3);
+          }
+        }
       }
     }
   }

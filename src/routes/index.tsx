@@ -29,6 +29,21 @@ export default component$(() => {
               you can also see it on my Github page
               <span class={styles.block}>&nbsp;*/</span>
             </p>
+            <p class={styles.declaration}>
+              <span class={styles.kind}>const</span>
+              &nbsp;
+              <span class={styles.identifier}>githubLink</span>
+              &nbsp;=&nbsp;
+              <br />
+              <span class={styles.literal}>
+                &quot;
+                <a href={SNS.github.url} target="_blank">
+                  {SNS.github.url}
+                </a>
+                &quot;
+              </span>
+              ;
+            </p>
           </div>
         </div>
       </div>
