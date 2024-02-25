@@ -20,6 +20,29 @@ section {
       width: 100%;
       padding-top: var(--gutter-y);
       padding-bottom: var(--gutter-y);
+
+      & .title {
+        align-self: end;
+
+        h1 {
+          font-size: var(--font-size-headline);
+        }
+
+        h2 {
+          font-size: var(--font-size-body);
+        }
+
+        h3 {
+          font-size: var(--font-size-subheadline);
+          color: var(--color-secondary-3);
+        }
+      }
+
+      & .game {
+      }
+
+      & .description {
+      }
     }
   }
 }
