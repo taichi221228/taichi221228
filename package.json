@@ -26,8 +26,6 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "^1.4.5",
-    "@builder.io/qwik-city": "^1.4.5",
     "@types/eslint": "^8.56.2",
     "@types/node": "^20.11.6",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
@@ -46,6 +44,8 @@
     "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
+    "@builder.io/qwik": "^1.4.5",
+    "@builder.io/qwik-city": "^1.4.5",
     "@fontsource/fira-code": "^5.0.16",
     "@unocss/reset": "^0.58.5",
     "remixicon": "^4.1.0"
