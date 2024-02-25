@@ -1,4 +1,5 @@
 export const TITLE = "taichi-fukuda";
+export const NAME = "Taichi Fukuda";
 export const USERNAME = "taichi221228";
 
 type Sns = Record<
