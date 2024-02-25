@@ -42,6 +42,50 @@ section {
       }
 
       & .description {
+        p {
+          margin-left: 1em;
+          font-size: var(--font-size-label);
+          text-indent: -1em;
+
+          & + p {
+            margin-top: 10px;
+          }
+        }
+
+        a {
+          text-decoration: underline;
+        }
+
+        & .comment {
+          container-type: inline-size;
+          color: var(--color-secondary-1);
+
+          &:nth-of-type(1) {
+            & .line {
+              @container (width < 320px) {
+                display: none;
+              }
+            }
+            & .block {
+              @container (width >= 320px) {
+                display: none;
+              }
+            }
+          }
+
+          &:nth-of-type(2) {
+            & .line {
+              @container (width < 397px) {
+                display: none;
+              }
+            }
+            & .block {
+              @container (width >= 397px) {
+                display: none;
+              }
+            }
+          }
+        }
       }
     }
   }
