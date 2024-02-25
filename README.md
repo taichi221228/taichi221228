@@ -52,6 +52,7 @@ Inside your project, you'll see the following directory structure:
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
+- [Stylelint](https://stylelint.io/)
 - [Prettier](https://prettier.io/)
 
 ## Development
