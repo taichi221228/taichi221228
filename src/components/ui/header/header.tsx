@@ -18,15 +18,16 @@ export const Header = component$(() => {
       <nav class={styles.navigation}>
         <ul>
           {items.map((item) => {
+            const text = `_${item}`;
             const pathname = `/${item === "hello" ? "" : item}`;
             const isCurrent = comparePath(pathname);
 
             return (
               <li key={item}>
                 {isCurrent ? (
-                  <span>_{item}</span>
+                  <span>{text}</span>
                 ) : (
-                  <a href={pathname}>_{item}</a>
+                  <a href={pathname}>{text}</a>
                 )}
               </li>
             );
