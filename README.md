@@ -44,7 +44,7 @@ Inside your project, you'll see the following directory structure:
 - [UnoCSS (Reset styling)](https://unocss.dev/)
 - [Remix Icon](https://remixicon.com/)
 
-### Build Tools
+### Tooling
 
 - [Vite](https://vitejs.dev/)
 
