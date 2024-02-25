@@ -47,6 +47,8 @@ Inside your project, you'll see the following directory structure:
 ### Tooling
 
 - [Vite](https://vitejs.dev/)
+- [esbuild](https://esbuild.github.io/)
+- [Rollup](https://rollupjs.org/)
 
 ### Quality
 
