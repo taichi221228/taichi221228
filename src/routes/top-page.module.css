@@ -39,6 +39,7 @@ section {
       }
 
       & .game {
+        aspect-ratio: 510 / 475;
         background-color: cornflowerblue;
         grid-column: 2 / 3;
         grid-row: 1 / 3;
