@@ -1,4 +1,7 @@
 .container {
   aspect-ratio: 510 / 475;
   background-color: var(--color-secondary-1);
+
+  & .polygon {
+  }
 }
