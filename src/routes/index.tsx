@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 
+import { Game } from "~/components/ui/game/game";
 import { NAME, SNS, TITLE } from "~/constants/info";
 
 import styles from "./top-page.module.css";
@@ -15,7 +16,9 @@ export default component$(() => {
             <h1>{NAME}</h1>
             <h3>&gt; Front-end developer</h3>
           </div>
-          <div class={styles.game}></div>
+          <div class={styles.game}>
+            <Game />
+          </div>
           <div class={styles.description}>
             <p class={styles.comment}>
               <span class={styles.line}>//&nbsp;</span>
