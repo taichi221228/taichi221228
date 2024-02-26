@@ -46,7 +46,7 @@ Inside your project, you'll see the following directory structure:
 
 ### Styling
 
-- [CSS Modules](https://qwik.dev/docs/components/styles/#css-modules)
+- [CSS Modules](https://github.com/css-modules/css-modules/)
 - [UnoCSS (Reset styling)](https://unocss.dev/)
 - [Remix Icon](https://remixicon.com/)
 
