@@ -4,36 +4,16 @@ import { useLocation } from "@builder.io/qwik-city";
 import { TITLE } from "~/constants/info";
 
 import styles from "./header.module.css";
-
-const items = ["hello", "about-me", "projects", "blog", "contact-me"];
+import { Navigation } from "./navigation";
 
 export const Header = component$(() => {
   const location = useLocation();
-  const comparePath = (pathname: string) => pathname === location.url.pathname;
-  const isRoot = comparePath("/");
+  const isRoot = "/" === location.url.pathname;
 
   return (
     <header class={styles.header}>
       <h1 class={styles.title}>{isRoot ? TITLE : <a href="/">{TITLE}</a>}</h1>
-      <nav class={styles.navigation}>
-        <ul>
-          {items.map((item) => {
-            const text = `_${item}`;
-            const pathname = `/${item === "hello" ? "" : item}`;
-            const isCurrent = comparePath(pathname);
-
-            return (
-              <li key={item}>
-                {isCurrent ? (
-                  <span>{text}</span>
-                ) : (
-                  <a href={pathname}>{text}</a>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-      </nav>
+      <Navigation location={location} />
     </header>
   );
 });
