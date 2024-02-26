@@ -32,6 +32,7 @@ html {
 
   & body {
     font-family: var(--font-family-primary), var(--font-family-default);
+    border: var(--border);
 
     & main {
       min-height: calc(100svh - var(--height-header) - var(--height-footer));
