@@ -1,7 +1,13 @@
 .container {
+  position: relative;
   aspect-ratio: 510 / 475;
   background-color: var(--color-secondary-1);
 
   & .polygon {
+    position: absolute;
+    top: calc(50% + 15px);
+    left: calc(50% + 86px);
+    pointer-events: none;
+    translate: -50% -50%;
   }
 }
