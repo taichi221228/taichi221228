@@ -36,6 +36,14 @@ Inside your project, you'll see the following directory structure:
 - [Qwik](https://qwik.builder.io/)
 - [QwikCity](https://qwik.builder.io/qwikcity/overview/)
 
+### Middleware
+
+- [Hono](https://hono.dev/) :construction:
+
+### Deployment
+
+- [Cloudflare](https://www.cloudflare.com/) :construction:
+
 ### Styling
 
 - [CSS Modules](https://qwik.dev/docs/components/styles/#css-modules)
@@ -51,9 +59,20 @@ Inside your project, you'll see the following directory structure:
 ### Quality
 
 - [TypeScript](https://www.typescriptlang.org/)
+- [scaffdog](https://scaff.dog/) :construction:
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
 - [Prettier](https://prettier.io/)
+
+### Testing
+
+- [Vitest](https://vitejs.dev/) :construction:
+- [Storybook](https://storybook.js.org/) :construction:
+- [Playwright](https://playwright.dev/) :construction:
+
+### Design
+
+- [Figma](https://wwwa.figma.com/)
 
 ## Development
 
