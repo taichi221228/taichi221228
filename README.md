@@ -89,7 +89,7 @@ npm start # or `bun start`
 The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
 
 ```shell
-bun preview # or `bun preview`
+npm run preview # or `bun preview`
 ```
 
 ## Production
@@ -97,7 +97,7 @@ bun preview # or `bun preview`
 The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
 
 ```shell
-bun build # or `bun build`
+npm run build # or `bun build`
 ```
 
 ## Acknowledgements
