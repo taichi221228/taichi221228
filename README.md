@@ -99,3 +99,7 @@ The production build will generate client and server modules by running both cli
 ```shell
 bun build # or `bun build`
 ```
+
+## Acknowledgements
+
+Special thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
