@@ -8,7 +8,7 @@ Welcome! This repository serves as the home for my portfolio site, taichi221228,
 
 ## Note :construction:
 
-Note: This repository is still a work in progress. Some sections may be incomplete as I continue to develop and update the content. Thank you for your understanding!
+This repository is still a work in progress. Some sections may be incomplete as I continue to develop and update the content. Thank you for your understanding!
 
 ## Structure
 
