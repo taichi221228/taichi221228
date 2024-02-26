@@ -1,4 +1,5 @@
 :root {
+  --height-main: calc(100svh - var(--height-header) - var(--height-footer));
   --font-family-default: monospace, "Helvetica Neue", arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
   --font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium",
@@ -35,7 +36,7 @@ html {
     border: var(--border);
 
     & main {
-      min-height: calc(100svh - var(--height-header) - var(--height-footer));
+      min-height: var(--height-main);
     }
 
     & a {
