@@ -43,6 +43,7 @@ Inside your project, you'll see the following directory structure:
 ### Middleware
 
 - [Hono](https://hono.dev/) :construction:
+- [HonoX](https://github.com/honojs/honox/) :construction:
 
 ### Styling
 
