@@ -6,6 +6,10 @@ Welcome! This repository serves as the home for my portfolio site, taichi221228,
 
 ---
 
+## Note :construction:
+
+Note: This repository is still a work in progress. Some sections may be incomplete as I continue to develop and update the content. Thank you for your understanding!
+
 ## Structure
 
 This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
