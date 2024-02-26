@@ -8,7 +8,7 @@ section {
     display: flex;
     align-items: center;
     max-width: 1160px;
-    min-height: calc(100svh - var(--height-header) - var(--height-footer));
+    min-height: var(--height-main);
     margin: 0 auto;
 
     & .container {
