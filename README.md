@@ -1,4 +1,4 @@
-# taichi221228 ⚡️
+# taichi221228 :zap:
 
 ![Capture of top page](https://github.com/taichi221228/taichi221228/assets/58300794/8e1fd874-3223-4bee-9adb-c122446a3a01)
 
