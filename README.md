@@ -6,7 +6,7 @@ Welcome! This repository serves as the home for my portfolio site, taichi221228,
 
 ---
 
-## Project Structure
+## Structure
 
 This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
 
@@ -28,7 +28,7 @@ Inside your project, you'll see the following directory structure:
 
 - `public`: Any static assets, like images, can be placed in the public directory. Please see the [Vite public directory](https://vitejs.dev/guide/assets.html#the-public-directory) for more info.
 
-## Tech Stack
+## Stack
 
 ### Core
 
