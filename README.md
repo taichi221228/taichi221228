@@ -40,10 +40,6 @@ Inside your project, you'll see the following directory structure:
 
 - [Hono](https://hono.dev/) :construction:
 
-### Deployment
-
-- [Cloudflare](https://www.cloudflare.com/) :construction:
-
 ### Styling
 
 - [CSS Modules](https://qwik.dev/docs/components/styles/#css-modules)
@@ -69,6 +65,10 @@ Inside your project, you'll see the following directory structure:
 - [Vitest](https://vitejs.dev/) :construction:
 - [Storybook](https://storybook.js.org/) :construction:
 - [Playwright](https://playwright.dev/) :construction:
+
+### Deployment
+
+- [Cloudflare](https://www.cloudflare.com/) :construction:
 
 ### Design
 
