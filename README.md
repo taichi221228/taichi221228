@@ -55,11 +55,11 @@ Inside your project, you'll see the following directory structure:
 - [Vite](https://vitejs.dev/)
 - [esbuild](https://esbuild.github.io/)
 - [Rollup](https://rollupjs.org/)
+- [scaffdog](https://scaff.dog/) :construction:
 
 ### Quality
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [scaffdog](https://scaff.dog/) :construction:
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
 - [Prettier](https://prettier.io/)
