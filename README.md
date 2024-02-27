@@ -80,6 +80,7 @@ Inside your project, you'll see the following directory structure:
 - [textlint](https://textlint.github.io/) :construction:
 - [Prettier](https://prettier.io/)
 - [Biome](https://biomejs.dev/) :construction:
+- [Husky](https://typicode.github.io/husky/)
 
 ### Testing
 
@@ -90,7 +91,6 @@ Inside your project, you'll see the following directory structure:
 ### Hosting
 
 - [Cloudflare](https://www.cloudflare.com/) :thinking:
-
 
 ### Design
 
