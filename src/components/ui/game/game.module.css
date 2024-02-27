@@ -27,7 +27,24 @@
 
   & .sub {
     width: 181px;
-    background-color: magenta;
+
+    & .help {
+      padding: 13px;
+      background: rgb(var(--color-primary-2-rgb) / 19%);
+      border-radius: var(--border-radius);
+
+      /* stylelint-disable-next-line block-no-empty */
+      & .keys {
+      }
+    }
+
+    /* stylelint-disable-next-line block-no-empty */
+    & .score {
+    }
+
+    & p {
+      font-size: var(--font-size-code);
+    }
   }
 
   & .polygon {

@@ -13,7 +13,14 @@ export const Game = component$(() => {
         </Button>
       </div>
 
-      <div class={styles.sub}></div>
+      <div class={styles.sub}>
+        <div class={styles.help}>
+          <p>use keyboard</p>
+          <p>arrows to play</p>
+          <div class={styles.keys}></div>
+        </div>
+        <div class={styles.score}></div>
+      </div>
 
       <div class={styles.polygon}>
         <Polygon />
