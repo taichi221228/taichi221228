@@ -47,7 +47,7 @@ Inside your project, you'll see the following directory structure:
 ### Middleware
 
 - [Hono](https://hono.dev/) :construction:
-- [HonoX](https://github.com/honojs/honox/) :construction:
+- [HonoX](https://github.com/honojs/honox/) :thinking:
 
 ### Content
 
@@ -84,7 +84,7 @@ Inside your project, you'll see the following directory structure:
 
 ### Deployment
 
-- [Cloudflare](https://www.cloudflare.com/) :construction:
+- [Cloudflare](https://www.cloudflare.com/) :thinking:
 
 ### Analytics
 
