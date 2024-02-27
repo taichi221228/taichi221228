@@ -60,6 +60,10 @@ Inside your project, you'll see the following directory structure:
 - [Remix Icon](https://remixicon.com/)
 - [Fontsource](https://fontsource.org/)
 
+### Performance
+
+- [Partytown](https://partytown.builder.io/) :construction:
+
 ### Tooling
 
 - [Vite](https://vitejs.dev/)
@@ -87,10 +91,6 @@ Inside your project, you'll see the following directory structure:
 
 - [Cloudflare](https://www.cloudflare.com/) :thinking:
 
-### Analytics
-
-- [Google Analytics](https://analytics.google.com/) :construction:
-- [Partytown](https://partytown.builder.io/) :construction:
 
 ### Design
 
