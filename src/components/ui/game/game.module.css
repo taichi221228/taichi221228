@@ -10,6 +10,7 @@
 
   & .main {
     position: relative;
+    z-index: 1;
     width: 238px;
     background: rgb(var(--color-primary-2-rgb) / 84%);
     border-radius: var(--border-radius);
