@@ -45,6 +45,10 @@ Inside your project, you'll see the following directory structure:
 - [Hono](https://hono.dev/) :construction:
 - [HonoX](https://github.com/honojs/honox/) :construction:
 
+### Content
+
+- [Markdown](https://www.markdownguide.org/) :construction:
+
 ### Styling
 
 - [CSS Modules](https://github.com/css-modules/css-modules/)
@@ -58,12 +62,14 @@ Inside your project, you'll see the following directory structure:
 - [esbuild](https://esbuild.github.io/)
 - [Rollup](https://rollupjs.org/)
 - [scaffdog](https://scaff.dog/) :construction:
+- [Zenn CLI](https://zenn.dev/zenn/articles/zenn-cli-guide) :construction:
 
 ### Quality
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
+- [textlint](https://textlint.github.io/) :construction:
 - [Prettier](https://prettier.io/)
 
 ### Testing
