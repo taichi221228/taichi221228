@@ -83,7 +83,7 @@ Inside your project, you'll see the following directory structure:
 - [Storybook](https://storybook.js.org/) :construction:
 - [Playwright](https://playwright.dev/) :construction:
 
-### Deployment
+### Hosting
 
 - [Cloudflare](https://www.cloudflare.com/) :thinking:
 
