@@ -40,6 +40,10 @@ Inside your project, you'll see the following directory structure:
 - [Qwik](https://qwik.builder.io/)
 - [QwikCity](https://qwik.builder.io/qwikcity/overview/)
 
+### UI
+
+- [React](https://reactjs.org/) :construction:
+
 ### Middleware
 
 - [Hono](https://hono.dev/) :construction:
