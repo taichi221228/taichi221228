@@ -2,6 +2,14 @@ import { component$ } from "@builder.io/qwik";
 
 import styles from "./key.module.css";
 
-export const Key = component$(() => {
-  return <div class={styles.key}></div>;
+type Props = {
+  direction: "up" | "down" | "left" | "right";
+};
+
+export const Key = component$<Props>(({ direction }) => {
+  return (
+    <div class={styles.key}>
+      <span class={styles[direction]} />
+    </div>
+  );
 });
