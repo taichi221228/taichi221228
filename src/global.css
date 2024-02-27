@@ -58,7 +58,8 @@ html {
       min-height: var(--height-main);
     }
 
-    & a {
+    & a,
+    & button {
       transition: var(--transition);
     }
 
