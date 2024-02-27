@@ -8,10 +8,6 @@ import { Button } from "../button/button";
 export const Game = component$(() => {
   return (
     <div class={styles.container}>
-      <div class={styles.polygon}>
-        <Polygon />
-      </div>
-
       <div class={styles.main}>
         <Button onClick$={() => {}} variant="accent">
           start-game
@@ -32,6 +28,10 @@ export const Game = component$(() => {
           </div>
         </div>
         <div class={styles.score}></div>
+      </div>
+
+      <div class={styles.polygon}>
+        <Polygon />
       </div>
     </div>
   );
