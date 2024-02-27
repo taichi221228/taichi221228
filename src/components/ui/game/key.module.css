@@ -7,6 +7,9 @@
   border-radius: var(--border-radius);
 
   & span {
+    --height-triangle: 6px;
+    --width-triangle: 8.5px;
+
     position: absolute;
     inset: 0;
     width: 0;
@@ -14,7 +17,7 @@
     margin: auto;
     border-color: transparent transparent var(--color-secondary-4);
     border-style: solid;
-    border-width: 0 4.25px 6px;
+    border-width: 0 calc(var(--width-triangle) / 2) var(--height-triangle);
 
     &.up {
       rotate: 0deg;
