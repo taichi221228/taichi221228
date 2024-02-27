@@ -94,7 +94,7 @@ Inside your project, you'll see the following directory structure:
 
 ### Design
 
-- [Figma](https://wwwa.figma.com/)
+- [Figma](https://www.figma.com/)
 
 ## Development
 
