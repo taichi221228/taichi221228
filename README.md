@@ -50,6 +50,7 @@ Inside your project, you'll see the following directory structure:
 - [CSS Modules](https://github.com/css-modules/css-modules/)
 - [UnoCSS (for resetting styles)](https://unocss.dev/)
 - [Remix Icon](https://remixicon.com/)
+- [Fontsource](https://fontsource.org/)
 
 ### Tooling
 
