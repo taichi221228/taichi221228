@@ -85,7 +85,7 @@ Inside your project, you'll see the following directory structure:
 Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
-npm start # or `bun start`
+bun start # or `npm start`
 ```
 
 > Note: during dev mode, Vite may request a significant number of `.js` files. This does not represent a Qwik production build.
@@ -95,7 +95,7 @@ npm start # or `bun start`
 The preview command will create a production build of the client modules, a production build of `src/entry.preview.tsx`, and run a local server. The preview server is only for convenience to preview a production build locally and should not be used as a production server.
 
 ```shell
-npm run preview # or `bun preview`
+bun preview # or `npm run preview`
 ```
 
 ## Production
@@ -103,7 +103,7 @@ npm run preview # or `bun preview`
 The production build will generate client and server modules by running both client and server build commands. The build command will use Typescript to run a type check on the source code.
 
 ```shell
-npm run build # or `bun build`
+bun build # or `npm run build`
 ```
 
 ## Acknowledgements
