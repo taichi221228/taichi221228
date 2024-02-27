@@ -13,6 +13,7 @@
   --color-base-1: #01080e;
   --color-base-2: #011627;
   --color-base-3: #011221;
+  --color-primary-1: #1e2d3d;
   --color-secondary-1: #607b96;
   --color-secondary-2: #3c9d93;
   --color-secondary-3: #4d5bce;
@@ -21,8 +22,7 @@
   --color-accent-2: #43d9ad;
   --color-accent-3: #e99287;
   --color-accent-4: #c98bdf;
-  --color-line: #1e2d3d;
-  --border: 1px solid var(--color-line);
+  --border: 1px solid var(--color-primary-1);
   --border-radius: 8px;
   --transition: all 0.25s ease-in-out;
 }
