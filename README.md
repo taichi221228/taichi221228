@@ -86,6 +86,11 @@ Inside your project, you'll see the following directory structure:
 
 - [Cloudflare](https://www.cloudflare.com/) :construction:
 
+### Analytics
+
+- [Google Analytics](https://analytics.google.com/) :construction:
+- [Partytown](https://partytown.io/) :construction:
+
 ### Design
 
 - [Figma](https://wwwa.figma.com/)
