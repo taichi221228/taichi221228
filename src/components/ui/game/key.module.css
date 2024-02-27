@@ -8,7 +8,7 @@
 
   & span {
     --height-triangle: 6px;
-    --width-triangle: 8.5px;
+    --width-triangle: 9px;
 
     position: absolute;
     inset: 0;
