@@ -89,7 +89,7 @@ Inside your project, you'll see the following directory structure:
 ### Analytics
 
 - [Google Analytics](https://analytics.google.com/) :construction:
-- [Partytown](https://partytown.io/) :construction:
+- [Partytown](https://partytown.builder.io/) :construction:
 
 ### Design
 
