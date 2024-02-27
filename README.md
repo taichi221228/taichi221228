@@ -75,6 +75,7 @@ Inside your project, you'll see the following directory structure:
 - [Stylelint](https://stylelint.io/)
 - [textlint](https://textlint.github.io/) :construction:
 - [Prettier](https://prettier.io/)
+- [Biome](https://biomejs.dev/) :construction:
 
 ### Testing
 
