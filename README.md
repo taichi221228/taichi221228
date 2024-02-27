@@ -12,7 +12,7 @@ This repository is still a work in progress. Some sections may be incomplete as 
 
 ## Structure
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+This project is using Qwik with [QwikCity](https://qwik.dev/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
 
 Inside your project, you'll see the following directory structure:
 
@@ -26,7 +26,7 @@ Inside your project, you'll see the following directory structure:
         └── ...
 ```
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
+- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/docs/routing/) for more info.
 
 - `src/components`: Recommended directory for components.
 
@@ -37,12 +37,12 @@ Inside your project, you'll see the following directory structure:
 ### Core
 
 - [Bun](https://bun.sh/)
-- [Qwik](https://qwik.builder.io/)
-- [QwikCity](https://qwik.builder.io/qwikcity/overview/)
+- [Qwik](https://qwik.dev/)
+- [QwikCity](https://qwik.dev/)
 
 ### UI
 
-- [React](https://reactjs.org/) :construction:
+- [React](https://react.dev/) :construction:
 
 ### Middleware
 
@@ -124,4 +124,4 @@ bun build # or `npm run build`
 
 ## Acknowledgements
 
-Special thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
+Special thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147/portfolio-for-developers-concept-v-2). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
