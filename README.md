@@ -77,7 +77,7 @@ Inside your project, you'll see the following directory structure:
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
-- [textlint](https://textlint.github.io/) :construction:
+- [textlint](https://textlint.github.io/)
 - [Prettier](https://prettier.io/)
 - [Biome](https://biomejs.dev/) :construction:
 - [Husky](https://typicode.github.io/husky/)
