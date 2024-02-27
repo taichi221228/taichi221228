@@ -90,7 +90,7 @@ Inside your project, you'll see the following directory structure:
 
 ### Hosting
 
-- [Cloudflare](https://www.cloudflare.com/) :thinking:
+- [Cloudflare](https://www.cloudflare.com/) :construction:
 
 ### Design
 
