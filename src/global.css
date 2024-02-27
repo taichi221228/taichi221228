@@ -10,9 +10,9 @@
   --font-size-label: 16px;
   --font-size-code: 14px;
   --font-size-annotation: 12px;
-  --color-primary-1: #01080e;
-  --color-primary-2: #011627;
-  --color-primary-3: #011221;
+  --color-base-1: #01080e;
+  --color-base-2: #011627;
+  --color-base-3: #011221;
   --color-secondary-1: #607b96;
   --color-secondary-2: #3c9d93;
   --color-secondary-3: #4d5bce;
@@ -30,7 +30,7 @@
 html {
   font-size: var(--font-size-body);
   color: var(--color-secondary-4);
-  background-color: var(--color-primary-2);
+  background-color: var(--color-base-2);
 
   & body {
     font-family: var(--font-family-primary), var(--font-family-default);
