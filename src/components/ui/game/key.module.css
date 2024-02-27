@@ -2,7 +2,7 @@
   position: relative;
   width: 49px;
   height: 28px;
-  background: var(--color-primary-1);
+  background: var(--color-base-1);
   border: var(--border);
   border-radius: var(--border-radius);
 
