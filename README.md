@@ -78,6 +78,7 @@ Inside your project, you’ll see the following directory structure:
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
 - [textlint](https://textlint.github.io/)
+- [markdownlint](https://github.com/DavidAnson/markdownlint/) :construction:
 - [Prettier](https://prettier.io/)
 - [Biome](https://biomejs.dev/) :construction:
 - [Husky](https://typicode.github.io/husky/)
