@@ -1,8 +1,8 @@
-# taichi221228 :zap:
+# Taichi221228 :zap:
 
-![Capture of top page](https://github.com/taichi221228/taichi221228/assets/58300794/8e1fd874-3223-4bee-9adb-c122446a3a01)
+![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/add/add-textlint/assets/main-visual.jpeg)
 
-Welcome! This repository serves as the home for my portfolio site, taichi221228, a living document of my journey and growth in the tech world. Here, I showcase my technical articles, projects, and the evolving story of my professional development. Dive into my world of coding, learning, and creative solutions!
+Welcome! This repository serves as the home for my portfolio site, taichi221228, a living document of my journey and growth in the tech world. Here, I showcase my technical articles, projects, and the evolving story of my professional development. Explore my world of coding, learning, and creative solutions!
 
 ---
 
@@ -12,9 +12,9 @@ This repository is still a work in progress. Some sections may be incomplete as 
 
 ## Structure
 
-This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+This project is using Qwik with [QwikCity](https://qwik.dev/). QwikCity is an extra set of tools on top of Qwik that enhances the ease of building a full site, including directory-based routing, layouts, and more.
 
-Inside your project, you'll see the following directory structure:
+Inside your project, you’ll see the following directory structure:
 
 ```
 ├── public/
@@ -26,7 +26,7 @@ Inside your project, you'll see the following directory structure:
         └── ...
 ```
 
-- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.builder.io/qwikcity/routing/overview/) for more info.
+- `src/routes`: Provides the directory-based routing, which can include a hierarchy of `layout.tsx` layout files, and an `index.tsx` file as the page. Additionally, `index.ts` files are endpoints. Please see the [routing docs](https://qwik.dev/docs/routing/) for more info.
 
 - `src/components`: Recommended directory for components.
 
@@ -37,12 +37,12 @@ Inside your project, you'll see the following directory structure:
 ### Core
 
 - [Bun](https://bun.sh/)
-- [Qwik](https://qwik.builder.io/)
-- [QwikCity](https://qwik.builder.io/qwikcity/overview/)
+- [Qwik](https://qwik.dev/)
+- [QwikCity](https://qwik.dev/)
 
 ### UI
 
-- [React](https://reactjs.org/) :construction:
+- [React](https://react.dev/) :construction:
 
 ### Middleware
 
@@ -77,7 +77,7 @@ Inside your project, you'll see the following directory structure:
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
-- [textlint](https://textlint.github.io/) :construction:
+- [textlint](https://textlint.github.io/)
 - [Prettier](https://prettier.io/)
 - [Biome](https://biomejs.dev/) :construction:
 - [Husky](https://typicode.github.io/husky/)
@@ -98,7 +98,7 @@ Inside your project, you'll see the following directory structure:
 
 ## Development
 
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
+Development mode uses [Vite’s development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
 bun start # or `npm start`
@@ -124,4 +124,4 @@ bun build # or `npm run build`
 
 ## Acknowledgements
 
-Special thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
+Extraordinary thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147/portfolio-for-developers-concept-v-2). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
