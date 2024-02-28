@@ -2,7 +2,7 @@
 
 ![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/add/add-textlint/assets/main-visual.jpeg)
 
-Welcome! This repository serves as the home for my portfolio site, taichi221228, a living document of my journey and growth in the tech world. Here, I showcase my technical articles, projects, and the evolving story of my professional development. Dive into my world of coding, learning, and creative solutions!
+Welcome! This repository serves as the home for my portfolio site, taichi221228, a living document of my journey and growth in the tech world. Here, I showcase my technical articles, projects, and the evolving story of my professional development. Explore my world of coding, learning, and creative solutions!
 
 ---
 
@@ -12,7 +12,7 @@ This repository is still a work in progress. Some sections may be incomplete as 
 
 ## Structure
 
-This project is using Qwik with [QwikCity](https://qwik.dev/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
+This project is using Qwik with [QwikCity](https://qwik.dev/). QwikCity is an extra set of tools on top of Qwik that enhances the ease of building a full site, including directory-based routing, layouts, and more.
 
 Inside your project, you’ll see the following directory structure:
 
@@ -124,4 +124,4 @@ bun build # or `npm run build`
 
 ## Acknowledgements
 
-Special thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147/portfolio-for-developers-concept-v-2). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
+Extraordinary thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147/portfolio-for-developers-concept-v-2). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
