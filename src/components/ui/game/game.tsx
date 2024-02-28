@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Food } from "~/components/ui/game/food";
-
+import { Food } from "./food";
 import styles from "./game.module.css";
 import { Key } from "./key";
 import { Polygon } from "./polygon";
