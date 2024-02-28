@@ -1,9 +1,10 @@
 .food {
   --size: 20px;
   --alpha: 10%;
+  --opacity: 1;
 
   position: relative;
-  opacity: 1;
+  opacity: var(--opacity);
 
   &,
   &::before,
@@ -12,6 +13,10 @@
     height: var(--size);
     background-color: rgb(var(--color-accent-2-rgb) / var(--alpha));
     border-radius: var(--border-radius-round);
+  }
+
+  &.eaten {
+    --opacity: 0.3;
   }
 
   &::before,

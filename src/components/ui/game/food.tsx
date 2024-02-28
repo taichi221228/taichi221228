@@ -2,6 +2,10 @@ import { component$ } from "@builder.io/qwik";
 
 import styles from "./food.module.css";
 
-export const Food = component$(() => {
-  return <div class={styles.food} />;
+type Props = {
+  isEaten?: true;
+};
+
+export const Food = component$<Props>(({ isEaten }) => {
+  return <div class={[styles.food, isEaten && styles.eaten]} />;
 });
