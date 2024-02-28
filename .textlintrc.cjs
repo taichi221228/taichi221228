@@ -11,6 +11,9 @@ module.exports = {
     "textlint-rule-apostrophe": true,
     "textlint-rule-diacritics": true,
     "textlint-rule-en-capitalization": true,
+    "preset-japanese": {
+      "sentence-length": false,
+    },
     "preset-jtf-style": true,
   },
 };
