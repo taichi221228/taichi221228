@@ -1,3 +1,34 @@
-/* stylelint-disable-next-line block-no-empty */
 .food {
+  --size: 20px;
+  --alpha: 10%;
+
+  position: relative;
+  opacity: 1;
+
+  &,
+  &::before,
+  &::after {
+    width: var(--size);
+    height: var(--size);
+    background-color: rgb(var(--color-accent-2-rgb) / var(--alpha));
+    border-radius: 9999px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    content: "";
+  }
+
+  &::before {
+    --size: 15px;
+    --alpha: 20%;
+  }
+
+  &::after {
+    --size: 8px;
+    --alpha: 100%;
+  }
 }

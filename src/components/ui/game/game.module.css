@@ -45,6 +45,13 @@
       padding-right: 13px;
       padding-left: 13px;
       margin-top: 20px;
+
+      & ul {
+        display: grid;
+        grid-template-columns: repeat(5, min-content);
+        gap: 7px 8px;
+        margin-top: 15px;
+      }
     }
 
     & p {
