@@ -1,0 +1,39 @@
+.food {
+  --size: 20px;
+  --alpha: 10%;
+  --opacity: 1;
+
+  position: relative;
+  opacity: var(--opacity);
+
+  &,
+  &::before,
+  &::after {
+    width: var(--size);
+    height: var(--size);
+    background-color: rgb(var(--color-accent-2-rgb) / var(--alpha));
+    border-radius: var(--border-radius-round);
+  }
+
+  &.eaten {
+    --opacity: 0.3;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    content: "";
+  }
+
+  &::before {
+    --size: 15px;
+    --alpha: 20%;
+  }
+
+  &::after {
+    --size: 8px;
+    --alpha: 100%;
+  }
+}
