@@ -26,10 +26,16 @@
 
   & .sub {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
     width: 181px;
 
-    & .help {
+    > * {
       padding: 13px;
+    }
+
+    & .help {
       background: rgb(var(--color-base-2-rgb) / 19%);
       border-radius: var(--border-radius);
 
@@ -42,10 +48,6 @@
     }
 
     & .score {
-      padding-right: 13px;
-      padding-left: 13px;
-      margin-top: 20px;
-
       & ul {
         display: grid;
         grid-template-columns: repeat(5, min-content);
