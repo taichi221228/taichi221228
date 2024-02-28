@@ -1,6 +1,6 @@
 # Taichi221228 :zap:
 
-![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/add/add-textlint/assets/main-visual.jpeg)
+![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/master/assets/main-visual.jpeg)
 
 Welcome! This repository serves as the home for my portfolio site, taichi221228, a living document of my journey and growth in the tech world. Here, I showcase my technical articles, projects, and the evolving story of my professional development. Explore my world of coding, learning, and creative solutions!
 
