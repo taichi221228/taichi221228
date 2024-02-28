@@ -20,14 +20,22 @@ export const Game = component$(() => {
         <div class={styles.help}>
           <p>use keyboard</p>
           <p>arrows to play</p>
-          <div class={styles.keys}>
-            <div />
-            <Key direction="up" />
-            <div />
-            <Key direction="left" />
-            <Key direction="down" />
-            <Key direction="right" />
-          </div>
+          <ul>
+            <li />
+            <li>
+              <Key direction="up" />
+            </li>
+            <li />
+            <li>
+              <Key direction="left" />
+            </li>
+            <li>
+              <Key direction="down" />
+            </li>
+            <li>
+              <Key direction="right" />
+            </li>
+          </ul>
         </div>
         <div class={styles.score}>
           <p>food left</p>

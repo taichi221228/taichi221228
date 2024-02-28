@@ -39,7 +39,7 @@
       background: rgb(var(--color-base-2-rgb) / 19%);
       border-radius: var(--border-radius);
 
-      & .keys {
+      & ul {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
