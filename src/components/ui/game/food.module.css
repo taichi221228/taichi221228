@@ -11,7 +11,7 @@
     width: var(--size);
     height: var(--size);
     background-color: rgb(var(--color-accent-2-rgb) / var(--alpha));
-    border-radius: 9999px;
+    border-radius: var(--border-radius-round);
   }
 
   &::before,
