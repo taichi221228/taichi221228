@@ -14,6 +14,7 @@ module.exports = {
     "preset-japanese": {
       "sentence-length": false,
     },
+    "preset-ja-spacing": true,
     "preset-jtf-style": true,
   },
 };
