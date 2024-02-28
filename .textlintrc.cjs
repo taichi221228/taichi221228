@@ -4,5 +4,8 @@ module.exports = {
   rules: {
     "textlint-rule-alive-link": true,
     "@textlint-rule/no-unmatched-pair": true,
+    "textlint-rule-no-zero-width-spaces": true,
+    "textlint-rule-doubled-spaces": true,
+    "@textlint-rule/textlint-rule-no-duplicate-abbr": true,
   },
 };
