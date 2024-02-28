@@ -7,5 +7,8 @@ module.exports = {
     "textlint-rule-no-zero-width-spaces": true,
     "textlint-rule-doubled-spaces": true,
     "@textlint-rule/textlint-rule-no-duplicate-abbr": true,
+    "textlint-rule-apostrophe": true,
+    "textlint-rule-diacritics": true,
+    "textlint-rule-en-capitalization": true,
   },
 };
