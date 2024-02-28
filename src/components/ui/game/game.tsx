@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
+import { Food } from "~/components/ui/game/food";
+
 import styles from "./game.module.css";
 import { Key } from "./key";
 import { Polygon } from "./polygon";
@@ -29,6 +31,13 @@ export const Game = component$(() => {
         </div>
         <div class={styles.score}>
           <p>food left</p>
+          <ul>
+            {Array.from({ length: 10 }).map((_, i) => (
+              <li key={i}>
+                <Food />
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
