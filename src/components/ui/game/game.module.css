@@ -41,8 +41,10 @@
       }
     }
 
-    /* stylelint-disable-next-line block-no-empty */
     & .score {
+      padding-right: 13px;
+      padding-left: 13px;
+      margin-top: 20px;
     }
 
     & p {

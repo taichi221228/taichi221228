@@ -27,7 +27,9 @@ export const Game = component$(() => {
             <Key direction="right" />
           </div>
         </div>
-        <div class={styles.score}></div>
+        <div class={styles.score}>
+          <p>food left</p>
+        </div>
       </div>
 
       <div class={styles.polygon}>
