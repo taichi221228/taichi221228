@@ -4,12 +4,14 @@ import { Food } from "./food";
 import styles from "./game.module.css";
 import { Key } from "./key";
 import { Polygon } from "./polygon";
+import { SnakePlaceholder } from "./snake-placeholder";
 import { Button } from "../button/button";
 
 export const Game = component$(() => {
   return (
     <div class={styles.container}>
       <div class={styles.main}>
+        <SnakePlaceholder />
         <Button onClick$={() => {}} variant="accent">
           start-game
         </Button>
