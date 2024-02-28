@@ -1,4 +1,4 @@
-# taichi221228 :zap:
+# Taichi221228 :zap:
 
 ![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/add/add-textlint/assets/main-visual.jpeg)
 
@@ -14,7 +14,7 @@ This repository is still a work in progress. Some sections may be incomplete as 
 
 This project is using Qwik with [QwikCity](https://qwik.dev/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
 
-Inside your project, you'll see the following directory structure:
+Inside your project, you’ll see the following directory structure:
 
 ```
 ├── public/
@@ -98,7 +98,7 @@ Inside your project, you'll see the following directory structure:
 
 ## Development
 
-Development mode uses [Vite's development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
+Development mode uses [Vite’s development server](https://vitejs.dev/). The `dev` command will server-side render (SSR) the output during development.
 
 ```shell
 bun start # or `npm start`
