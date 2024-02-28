@@ -42,7 +42,7 @@ export const Game = component$(() => {
           <ul>
             {Array.from({ length: 10 }).map((_, i) => (
               <li key={i}>
-                <Food />
+                <Food isEaten={i >= 7} />
               </li>
             ))}
           </ul>
