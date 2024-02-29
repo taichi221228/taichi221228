@@ -6,7 +6,7 @@
   border: var(--border);
   border-radius: var(--border-radius);
 
-  & span {
+  span {
     --height-triangle: 6px;
     --width-triangle: 9px;
 

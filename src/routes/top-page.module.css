@@ -3,7 +3,7 @@ section {
 
   padding: 0 var(--gutter-x);
 
-  & .wrapper {
+  .wrapper {
     container-type: inline-size;
     display: flex;
     align-items: center;
@@ -11,7 +11,7 @@ section {
     min-height: var(--height-main);
     margin: 0 auto;
 
-    & .container {
+    .container {
       --gap: 80px 110px;
       --gutter-y: 40px;
 
@@ -33,7 +33,7 @@ section {
         grid-template-columns: auto;
       }
 
-      & .title {
+      .title {
         align-self: end;
 
         @container (width < 1103px) {
@@ -54,7 +54,7 @@ section {
         }
       }
 
-      & .game {
+      .game {
         grid-row: 1 / 3;
         grid-column: 2 / 3;
 
@@ -72,7 +72,7 @@ section {
         }
       }
 
-      & .description {
+      .description {
         @container (width < 1103px) {
           grid-row: 2 / 3;
           grid-column: 1 / 2;
@@ -89,7 +89,7 @@ section {
           font-size: var(--font-size-label);
           text-indent: -1em;
 
-          & + p {
+          + p {
             margin-top: 10px;
           }
         }
@@ -98,18 +98,18 @@ section {
           text-decoration: underline;
         }
 
-        & .comment {
+        .comment {
           container-type: inline-size;
           color: var(--color-secondary-1);
 
           &:nth-of-type(1) {
-            & .line {
+            .line {
               @container (width < 320px) {
                 display: none;
               }
             }
 
-            & .block {
+            .block {
               @container (width >= 320px) {
                 display: none;
               }
@@ -117,13 +117,13 @@ section {
           }
 
           &:nth-of-type(2) {
-            & .line {
+            .line {
               @container (width < 397px) {
                 display: none;
               }
             }
 
-            & .block {
+            .block {
               @container (width >= 397px) {
                 display: none;
               }
@@ -131,30 +131,30 @@ section {
           }
         }
 
-        & .declaration {
+        .declaration {
           container-type: inline-size;
 
-          & br {
+          br {
             @container (width > 493.09px) {
               display: none;
             }
           }
 
-          & a {
+          a {
             @container (width <= 326.59px) {
               word-break: break-all;
             }
           }
 
-          & .kind {
+          .kind {
             color: var(--color-secondary-3);
           }
 
-          & .identifier {
+          .identifier {
             color: var(--color-accent-2);
           }
 
-          & .literal {
+          .literal {
             color: var(--color-accent-3);
           }
         }
