@@ -1,7 +1,5 @@
 section {
-  --gutter-x: 60px;
-
-  padding: 0 var(--gutter-x);
+  padding: 0 60px;
 
   .wrapper {
     container-type: inline-size;
