@@ -41,6 +41,7 @@
     "prettier": "^3.2.4",
     "stylelint": "^16.2.1",
     "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4",
     "textlint": "^14.0.3",
     "textlint-rule-alex": "^5.0.0",
     "textlint-rule-alive-link": "^0.1.2",
