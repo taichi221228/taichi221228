@@ -87,7 +87,7 @@ Inside your project, you’ll see the following directory structure:
 
 ### Testing
 
-- [Vitest](https://vitejs.dev/) :construction:
+- [Vitest](https://vitest.dev/) :construction:
 - [Storybook](https://storybook.js.org/) :construction:
 - [Playwright](https://playwright.dev/) :construction:
 
