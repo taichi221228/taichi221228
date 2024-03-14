@@ -1,12 +1,14 @@
-g {
-  filter: blur(69px);
-  opacity: 0.5;
+.polygon {
+  g {
+    filter: blur(69px);
+    opacity: 0.5;
 
-  &.polygon1 {
-    fill: var(--color-secondary-3);
-  }
+    &.polygon1 {
+      fill: var(--color-secondary-3);
+    }
 
-  &.polygon2 {
-    fill: var(--color-accent-2);
+    &.polygon2 {
+      fill: var(--color-accent-2);
+    }
   }
 }
