@@ -3,7 +3,7 @@ import { component$ } from "@builder.io/qwik";
 import { Food } from "./food";
 import styles from "./game.module.css";
 import { Key } from "./key";
-import { Polygon } from "./polygon";
+import { Polygons } from "./polygons";
 import { SnakePlaceholder } from "./snake-placeholder";
 import { Button } from "../button/button";
 
@@ -51,7 +51,7 @@ export const Game = component$(() => {
       </div>
 
       <div class={styles.polygon}>
-        <Polygon />
+        <Polygons />
       </div>
     </div>
   );
