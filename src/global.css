@@ -1,5 +1,7 @@
 :root {
-  --height-main: calc(100svh - var(--height-header) - var(--height-footer));
+  --height-main: calc(
+    100svh - 40px - var(--height-header) - var(--height-footer)
+  );
   --font-family-default: monospace, "Helvetica Neue", arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
   --font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium",
@@ -53,6 +55,8 @@ html {
   background-color: var(--color-base-1);
 
   body {
+    height: calc(100svh - 40px);
+    overflow: hidden;
     font-family: var(--font-family-primary), var(--font-family-default);
     background-color: var(--color-base-2);
     border: var(--border);
