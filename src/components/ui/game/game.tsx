@@ -9,7 +9,7 @@ import { Button } from "../button/button";
 
 export const Game = component$(() => {
   return (
-    <div class={styles.container}>
+    <div class={styles.game}>
       <div class={styles.main}>
         <SnakePlaceholder />
         <Button onClick$={() => {}} variant="accent">
