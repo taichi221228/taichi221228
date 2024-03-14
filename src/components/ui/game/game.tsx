@@ -50,7 +50,7 @@ export const Game = component$(() => {
         </div>
       </div>
 
-      <div class={styles.polygon}>
+      <div class={styles.polygons}>
         <Polygons />
       </div>
     </div>
