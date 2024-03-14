@@ -1,4 +1,4 @@
-.container {
+.game {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@
     }
   }
 
-  .polygon {
+  .polygons {
     position: absolute;
     top: calc(50% + 15px);
     left: calc(50% + 86px);

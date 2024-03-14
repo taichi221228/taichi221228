@@ -8,16 +8,16 @@
   font-size: var(--font-size-label);
   color: var(--color-secondary-1);
   border-bottom: var(--border);
-}
 
-.title {
-  --gutter-x: 22px;
+  .title {
+    --gutter-x: 22px;
 
-  display: flex;
-  flex-basis: 311px;
-  flex-shrink: 2;
-  align-items: center;
-  padding-right: var(--gutter-x);
-  padding-left: var(--gutter-x);
-  border-inline-end: var(--border);
+    display: flex;
+    flex-basis: 311px;
+    flex-shrink: 2;
+    align-items: center;
+    padding-right: var(--gutter-x);
+    padding-left: var(--gutter-x);
+    border-inline-end: var(--border);
+  }
 }

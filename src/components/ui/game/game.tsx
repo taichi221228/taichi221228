@@ -3,13 +3,13 @@ import { component$ } from "@builder.io/qwik";
 import { Food } from "./food";
 import styles from "./game.module.css";
 import { Key } from "./key";
-import { Polygon } from "./polygon";
+import { Polygons } from "./polygons";
 import { SnakePlaceholder } from "./snake-placeholder";
 import { Button } from "../button/button";
 
 export const Game = component$(() => {
   return (
-    <div class={styles.container}>
+    <div class={styles.game}>
       <div class={styles.main}>
         <SnakePlaceholder />
         <Button onClick$={() => {}} variant="accent">
@@ -50,8 +50,8 @@ export const Game = component$(() => {
         </div>
       </div>
 
-      <div class={styles.polygon}>
-        <Polygon />
+      <div class={styles.polygons}>
+        <Polygons />
       </div>
     </div>
   );
