@@ -1,3 +1,4 @@
-/* stylelint-disable-next-line block-no-empty */
 .wrapper {
+  height: var(--height-main);
+  overflow: scroll;
 }
