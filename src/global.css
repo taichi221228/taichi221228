@@ -47,13 +47,16 @@
 }
 
 html {
+  padding: 20px;
   font-size: var(--font-size-body);
   color: var(--color-secondary-4);
-  background-color: var(--color-base-2);
+  background-color: var(--color-base-1);
 
   body {
     font-family: var(--font-family-primary), var(--font-family-default);
+    background-color: var(--color-base-2);
     border: var(--border);
+    border-radius: var(--border-radius);
 
     main {
       min-height: var(--height-main);
