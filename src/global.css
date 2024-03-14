@@ -1,7 +1,9 @@
 :root {
   --height-main: calc(
-    100svh - 40px - var(--height-header) - var(--height-footer)
+    100svh -
+      (var(--gutter-outside) * 2 + var(--height-header) + var(--height-footer))
   );
+  --gutter-outside: 20px;
   --font-family-default: monospace, "Helvetica Neue", arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
   --font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium",
@@ -49,13 +51,13 @@
 }
 
 html {
-  padding: 20px;
+  padding: var(--gutter-outside);
   font-size: var(--font-size-body);
   color: var(--color-secondary-4);
   background-color: var(--color-base-1);
 
   body {
-    height: calc(100svh - 40px);
+    height: calc(100svh - var(--gutter-outside) * 2);
     overflow: hidden;
     font-family: var(--font-family-primary), var(--font-family-default);
     background-color: var(--color-base-2);
