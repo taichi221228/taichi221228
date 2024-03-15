@@ -46,8 +46,7 @@ Inside your project, you’ll see the following directory structure:
 
 ### Middleware
 
-- [Hono](https://hono.dev/) :thinking:
-- [HonoX](https://github.com/honojs/honox/) :thinking:
+- [Hono](https://hono.dev/) / [HonoX](https://github.com/honojs/honox/) or [ElysiaJS](https://elysiajs.com/) :thinking:
 
 ### Content
 
