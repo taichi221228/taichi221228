@@ -7,6 +7,7 @@
 **/*.jsx
 **/*.tsx
 **/*.json
+**/*.jsonc
 **/*.*rc
 **/*.log
 **/.DS_Store
