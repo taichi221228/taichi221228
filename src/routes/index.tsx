@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { Game } from "~/components/ui/game/game";
-import { NAME, SNS, TITLE } from "~/constants/info";
+import { NAME, SITENAME, SNS } from "~/constants/info";
 
 import styles from "./index.module.css";
 
@@ -52,7 +52,7 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: TITLE,
+	title: SITENAME,
 	meta: [
 		{
 			name: "description",

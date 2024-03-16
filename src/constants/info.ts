@@ -1,5 +1,5 @@
-export const TITLE = "taichi-fukuda";
 export const NAME = "Taichi Fukuda";
+export const SITENAME = "taichi-fukuda";
 export const USERNAME = "taichi221228";
 
 type Sns = Record<
