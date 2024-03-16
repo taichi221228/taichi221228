@@ -1,80 +1,80 @@
 :root {
-  --height-main: calc(
-    100svh -
-      (var(--gutter-outside) * 2 + var(--height-header) + var(--height-footer))
-  );
-  --gutter-outside: 20px;
-  --font-family-default: monospace, "Helvetica Neue", arial,
-    "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
-  --font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium",
-    "Fira Code Regular", "Fira Code Light";
-  --font-size-headline: 62px;
-  --font-size-subheadline: 32px;
-  --font-size-body: 18px;
-  --font-size-label: 16px;
-  --font-size-code: 14px;
-  --font-size-annotation: 12px;
-  --color-base-1: #01080e;
-  --color-base-2: #011627;
-  --color-base-3: #011221;
-  --color-primary-1: #1e2d3d;
-  --color-primary-2: #1c2b3a;
-  --color-primary-2-lighter: #263b50;
-  --color-secondary-1: #607b96;
-  --color-secondary-2: #3c9d93;
-  --color-secondary-3: #4d5bce;
-  --color-secondary-4: #fff;
-  --color-accent-1: #fea55f;
-  --color-accent-1-lighter: #ffac6b;
-  --color-accent-2: #43d9ad;
-  --color-accent-3: #e99287;
-  --color-accent-4: #c98bdf;
-  --color-base-1-rgb: 1 8 14;
-  --color-base-2-rgb: 1 22 39;
-  --color-base-3-rgb: 1 18 33;
-  --color-primary-1-rgb: 30 45 61;
-  --color-primary-2-rgb: 28 43 58;
-  --color-primary-2-lighter-rgb: 38 59 80;
-  --color-secondary-1-rgb: 96 123 150;
-  --color-secondary-2-rgb: 60 157 147;
-  --color-secondary-3-rgb: 77 91 206;
-  --color-secondary-4-rgb: 255 255 255;
-  --color-accent-1-rgb: 254 165 95;
-  --color-accent-1-lighter-rgb: 255 172 107;
-  --color-accent-2-rgb: 67 217 173;
-  --color-accent-3-rgb: 233 146 135;
-  --color-accent-4-rgb: 201 139 223;
-  --border: 1px solid var(--color-primary-1);
-  --border-radius: 8px;
-  --border-radius-round: 9999px;
-  --transition: all 0.25s ease-in-out;
+	--height-main: calc(
+		100svh -
+			(var(--gutter-outside) * 2 + var(--height-header) + var(--height-footer))
+	);
+	--gutter-outside: 20px;
+	--font-family-default: monospace, "Helvetica Neue", arial,
+		"Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
+	--font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium",
+		"Fira Code Regular", "Fira Code Light";
+	--font-size-headline: 62px;
+	--font-size-subheadline: 32px;
+	--font-size-body: 18px;
+	--font-size-label: 16px;
+	--font-size-code: 14px;
+	--font-size-annotation: 12px;
+	--color-base-1: #01080e;
+	--color-base-2: #011627;
+	--color-base-3: #011221;
+	--color-primary-1: #1e2d3d;
+	--color-primary-2: #1c2b3a;
+	--color-primary-2-lighter: #263b50;
+	--color-secondary-1: #607b96;
+	--color-secondary-2: #3c9d93;
+	--color-secondary-3: #4d5bce;
+	--color-secondary-4: #fff;
+	--color-accent-1: #fea55f;
+	--color-accent-1-lighter: #ffac6b;
+	--color-accent-2: #43d9ad;
+	--color-accent-3: #e99287;
+	--color-accent-4: #c98bdf;
+	--color-base-1-rgb: 1 8 14;
+	--color-base-2-rgb: 1 22 39;
+	--color-base-3-rgb: 1 18 33;
+	--color-primary-1-rgb: 30 45 61;
+	--color-primary-2-rgb: 28 43 58;
+	--color-primary-2-lighter-rgb: 38 59 80;
+	--color-secondary-1-rgb: 96 123 150;
+	--color-secondary-2-rgb: 60 157 147;
+	--color-secondary-3-rgb: 77 91 206;
+	--color-secondary-4-rgb: 255 255 255;
+	--color-accent-1-rgb: 254 165 95;
+	--color-accent-1-lighter-rgb: 255 172 107;
+	--color-accent-2-rgb: 67 217 173;
+	--color-accent-3-rgb: 233 146 135;
+	--color-accent-4-rgb: 201 139 223;
+	--border: 1px solid var(--color-primary-1);
+	--border-radius: 8px;
+	--border-radius-round: 9999px;
+	--transition: all 0.25s ease-in-out;
 }
 
 html {
-  padding: var(--gutter-outside);
-  font-size: var(--font-size-body);
-  color: var(--color-secondary-4);
-  background-color: var(--color-base-1);
+	padding: var(--gutter-outside);
+	font-size: var(--font-size-body);
+	color: var(--color-secondary-4);
+	background-color: var(--color-base-1);
 
-  body {
-    height: calc(100svh - var(--gutter-outside) * 2);
-    overflow: hidden;
-    font-family: var(--font-family-primary), var(--font-family-default);
-    background-color: var(--color-base-2);
-    border: var(--border);
-    border-radius: var(--border-radius);
+	body {
+		height: calc(100svh - var(--gutter-outside) * 2);
+		overflow: hidden;
+		font-family: var(--font-family-primary), var(--font-family-default);
+		background-color: var(--color-base-2);
+		border: var(--border);
+		border-radius: var(--border-radius);
 
-    main {
-      min-height: var(--height-main);
-    }
+		main {
+			min-height: var(--height-main);
+		}
 
-    a,
-    button {
-      transition: var(--transition);
-    }
+		a,
+		button {
+			transition: var(--transition);
+		}
 
-    i {
-      font-size: 20px;
-    }
-  }
+		i {
+			font-size: 20px;
+		}
+	}
 }
