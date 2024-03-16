@@ -1,3 +1,13 @@
+**/*.js
+**/*.cjs
+**/*.mjs
+**/*.ts
+**/*.cts
+**/*.mts
+**/*.jsx
+**/*.tsx
+**/*.json
+**/*.*rc
 **/*.log
 **/.DS_Store
 *.
