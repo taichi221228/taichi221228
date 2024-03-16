@@ -8,12 +8,12 @@ import styles from "./index.module.css";
 
 export default component$(() => {
 	return (
-		<div>
+		<div class={styles.container}>
 			<aside>
-				<nav>
+				<nav class={styles.activitybar}>
 					<ul>{/* Activitybar */}</ul>
 				</nav>
-				<div>
+				<div class={styles.sidebar}>
 					{/* Sidebar */}
 					<nav>
 						{/* Panel (main) */}
@@ -27,17 +27,15 @@ export default component$(() => {
 					</nav>
 				</div>
 			</aside>
-			<div>
-				<section>
-					{/* Pane (main) */}
-					<ul>{/* Tabs */}</ul>
-					<div>{/* Editor */}</div>
-				</section>
-				<div>
-					{/* Pane (main) */}
-					<ul>{/* Tabs */}</ul>
-					<div>{/* Editor */}</div>
-				</div>
+			<section class={styles.pane}>
+				{/* Pane (main) */}
+				<ul>{/* Tabs */}</ul>
+				<div>{/* Editor */}</div>
+			</section>
+			<div class={styles.pane}>
+				{/* Pane (main) */}
+				<ul>{/* Tabs */}</ul>
+				<div>{/* Editor */}</div>
 			</div>
 		</div>
 	);

@@ -1,0 +1,33 @@
+.container {
+	display: flex;
+	height: var(--height-main); /* TEMP: */
+
+	aside {
+		--width-activitybar: 67px;
+
+		box-sizing: content-box;
+		display: flex;
+		flex-basis: 310px;
+		border-inline-end: var(--border);
+
+		.activitybar {
+			flex-basis: var(--width-activitybar);
+			background-color: red; /* TEMP: */
+			border-inline-end: var(--border);
+		}
+
+		.sidebar {
+			flex-basis: calc(100% - var(--width-activitybar));
+			background-color: blue; /* TEMP: */
+		}
+	}
+
+	.pane {
+		flex-grow: 1;
+		background-color: yellow; /* TEMP: */
+
+		+ & {
+			border-inline-start: var(--border);
+		}
+	}
+}
