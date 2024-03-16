@@ -5,7 +5,14 @@ import styles from "./snake-placeholder.module.css";
 export const SnakePlaceholder = component$(() => {
 	return (
 		<div class={styles.container}>
-			<svg width="67" height="197" viewBox="0 0 67 197" fill="none">
+			<svg
+				width="67"
+				height="197"
+				viewBox="0 0 67 197"
+				fill="none"
+				role="img"
+				aria-label='A placeholder for the "Snake Game" component.'
+			>
 				<path
 					d="M10.8271 39.0794V114.079H62.8271V192.691"
 					stroke="url(#paint0_linear_0_1)"

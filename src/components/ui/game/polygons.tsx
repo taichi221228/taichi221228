@@ -16,6 +16,8 @@ export const Polygons = component$(() => {
 			width={width}
 			height={height}
 			viewBox={`${blurMargin * -1} ${blurMargin * -1} ${width} ${height}`}
+			role="img"
+			aria-label="A polygon background."
 			class={styles.polygons}
 		>
 			<g class={styles.polygon1}>
