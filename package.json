@@ -18,7 +18,7 @@
 		"format": "prettier --write . & bunx @biomejs/biome format --write .",
 		"format.check": "prettier --check . & bunx @biomejs/biome format .",
 		"lint": "eslint \"src/**/*.ts*\" & bunx @biomejs/biome lint . & stylelint \"src/**/*.css\" & textlint \"{README.md,src/**/*.md}\"",
-		"lint.fix": "eslint \"src/**/*.ts*\" --fix & bunx @biomejs/biome lint --apply . & stylelint \"src/**/*.css\" --fix & textlint \"{README.md,src/**/*.md}\" --fix",
+		"lint.fix": "eslint --fix \"src/**/*.ts*\" & bunx @biomejs/biome lint --apply . & stylelint --fix \"src/**/*.css\" & textlint --fix \"{README.md,src/**/*.md}\"",
 		"preview": "qwik build preview && vite preview --open",
 		"start": "vite --open --mode ssr",
 		"qwik": "qwik",
