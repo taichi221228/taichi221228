@@ -1,50 +1,50 @@
 :root {
-  --height-footer: 56px;
+	--height-footer: 56px;
 }
 
 .footer {
-  display: flex;
-  height: var(--height-footer);
-  font-size: var(--font-size-label);
-  color: var(--color-secondary-1);
-  border-block-start: var(--border);
+	display: flex;
+	height: var(--height-footer);
+	font-size: var(--font-size-label);
+	color: var(--color-secondary-1);
+	border-block-start: var(--border);
 
-  > :not(:last-child) {
-    border-inline-end: var(--border);
-  }
+	> :not(:last-child) {
+		border-inline-end: var(--border);
+	}
 
-  > :last-child {
-    margin-inline-start: auto;
-    border-inline-start: var(--border);
-  }
+	> :last-child {
+		margin-inline-start: auto;
+		border-inline-start: var(--border);
+	}
 
-  p,
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
+	p,
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
 
-  p {
-    padding-inline: 22px 18px;
-  }
+	p {
+		padding-inline: 22px 18px;
+	}
 
-  a {
-    &.twitter,
-    &.facebook {
-      width: 52px;
-    }
+	a {
+		&.twitter,
+		&.facebook {
+			width: 52px;
+		}
 
-    &.github {
-      gap: 7px;
-      padding-right: 23px;
-      padding-left: 23px;
-    }
+		&.github {
+			gap: 7px;
+			padding-right: 23px;
+			padding-left: 23px;
+		}
 
-    &:focus-visible,
-    &:hover {
-      color: var(--color-secondary-4);
-    }
-  }
+		&:focus-visible,
+		&:hover {
+			color: var(--color-secondary-4);
+		}
+	}
 }

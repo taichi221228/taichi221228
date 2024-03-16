@@ -1,4 +1,4 @@
 .wrapper {
-  height: var(--height-main);
-  overflow: scroll;
+	height: var(--height-main);
+	overflow: scroll;
 }

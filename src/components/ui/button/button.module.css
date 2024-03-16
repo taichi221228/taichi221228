@@ -1,31 +1,31 @@
 .button {
-  padding: 10px 14px;
-  font-size: var(--font-size-code);
-  border-radius: var(--border-radius);
+	padding: 10px 14px;
+	font-size: var(--font-size-code);
+	border-radius: var(--border-radius);
 
-  &.primary {
-    background-color: var(--color-primary-2);
+	&.primary {
+		background-color: var(--color-primary-2);
 
-    &:hover {
-      background-color: var(--color-primary-2-lighter);
-    }
-  }
+		&:hover {
+			background-color: var(--color-primary-2-lighter);
+		}
+	}
 
-  &.accent {
-    color: var(--color-primary-1);
-    background-color: var(--color-accent-1);
+	&.accent {
+		color: var(--color-primary-1);
+		background-color: var(--color-accent-1);
 
-    &:hover {
-      background-color: var(--color-accent-1-lighter);
-    }
-  }
+		&:hover {
+			background-color: var(--color-accent-1-lighter);
+		}
+	}
 
-  &.ghost {
-    border: 1px solid var(--color-secondary-4);
-    border-radius: var(--border-radius);
+	&.ghost {
+		border: 1px solid var(--color-secondary-4);
+		border-radius: var(--border-radius);
 
-    &:hover {
-      border-color: rgb(var(--color-secondary-4-rgb) / 50%);
-    }
-  }
+		&:hover {
+			border-color: rgb(var(--color-secondary-4-rgb) / 50%);
+		}
+	}
 }
