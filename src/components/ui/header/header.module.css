@@ -1,4 +1,5 @@
 :root {
+	--inline-size-sitetitle: 311px;
 	--block-size-header: 56px;
 }
 
@@ -11,7 +12,7 @@
 
 	.title {
 		display: flex;
-		flex-basis: 311px;
+		flex-basis: var(--inline-size-sitetitle);
 		flex-shrink: 2;
 		align-items: center;
 		border-inline-end: var(--border);

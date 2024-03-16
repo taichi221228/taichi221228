@@ -5,9 +5,8 @@
 	aside {
 		--width-activitybar: 67px;
 
-		box-sizing: content-box;
 		display: flex;
-		flex-basis: 310px;
+		flex-basis: var(--width-sitetitle);
 		border-inline-end: var(--border);
 
 		.activitybar {
