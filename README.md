@@ -58,7 +58,7 @@ Inside your project, you’ll see the following directory structure:
 - [UnoCSS (for resetting styles)](https://unocss.dev/)
 - [Remix Icon](https://remixicon.com/)
 - [Fontsource](https://fontsource.org/)
-- [Shikiji](https://shikiji.netlify.app/) :construction:
+- [Shiki](https://shiki.style/) :construction:
 
 ### Performance
 
