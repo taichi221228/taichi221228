@@ -1,3 +1,3 @@
 export default {
-  extends: ["stylelint-config-standard", "./.stylelintrc.order.cjs"],
+	extends: ["stylelint-config-standard", "./.stylelintrc.order.cjs"],
 };
