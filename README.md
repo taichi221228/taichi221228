@@ -82,7 +82,7 @@ Inside your project, you’ll see the following directory structure:
 - [commitlint](https://github.com/conventional-changelog/commitlint/) :construction:
 - [EditorConfig](https://editorconfig.org/)
 - [Prettier](https://prettier.io/)
-- [Biome](https://biomejs.dev/) :construction:
+- [Biome](https://biomejs.dev/)
 - [Husky](https://typicode.github.io/husky/)
 
 ### Testing
