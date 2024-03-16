@@ -7,17 +7,17 @@ import { useGlobalStyles } from "~/hooks/global-styles/global-styles";
 import styles from "./layout.module.css";
 
 export default component$(() => {
-  useGlobalStyles();
+	useGlobalStyles();
 
-  return (
-    <>
-      <Header />
-      <div class={styles.wrapper}>
-        <main>
-          <Slot />
-        </main>
-      </div>
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<div class={styles.wrapper}>
+				<main>
+					<Slot />
+				</main>
+			</div>
+			<Footer />
+		</>
+	);
 });
