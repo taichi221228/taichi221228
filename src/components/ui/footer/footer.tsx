@@ -10,9 +10,15 @@ export const Footer = component$(() => {
 			<p>find me in:</p>
 			{Object.entries(SNS).map(([name, profile]) => {
 				return (
-					<a key={name} href={profile.url} target="_blank" class={styles[name]}>
+					<a
+						key={name}
+						href={profile.url}
+						target="_blank"
+						rel="noreferrer"
+						class={styles[name]}
+					>
 						{name === "github" && `@${profile.username}`}
-						<i class={`ri-${name}-fill`}></i>
+						<i class={`ri-${name}-fill`} />
 					</a>
 				);
 			})}
