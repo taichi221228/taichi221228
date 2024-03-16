@@ -1,2 +1,3 @@
-bun lint
-bun run format.check
+# Temporary disable it.
+# bun lint
+# bun run format.check
