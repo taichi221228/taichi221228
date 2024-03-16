@@ -7,7 +7,40 @@ import { createPageTitle } from "~/utilities/create-page-title";
 import styles from "./index.module.css";
 
 export default component$(() => {
-	return <h1>About Me</h1>;
+	return (
+		<div>
+			<aside>
+				<nav>
+					<ul>{/* Activitybar */}</ul>
+				</nav>
+				<div>
+					{/* Sidebar */}
+					<nav>
+						{/* Panel (main) */}
+						<div>{/* header */}</div>
+						<ul>{/* explorer */}</ul>
+					</nav>
+					<nav>
+						{/* Panel (sub) */}
+						<div>{/* header */}</div>
+						<ul>{/* contacts */}</ul>
+					</nav>
+				</div>
+			</aside>
+			<div>
+				<section>
+					{/* Pane (main) */}
+					<ul>{/* Tabs */}</ul>
+					<div>{/* Editor */}</div>
+				</section>
+				<div>
+					{/* Pane (main) */}
+					<ul>{/* Tabs */}</ul>
+					<div>{/* Editor */}</div>
+				</div>
+			</div>
+		</div>
+	);
 });
 
 export const head: DocumentHead = {
