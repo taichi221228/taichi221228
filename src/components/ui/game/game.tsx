@@ -7,6 +7,8 @@ import { Polygons } from "./polygons";
 import { SnakePlaceholder } from "./snake-placeholder";
 import { Button } from "../button/button";
 
+const foods = Array.from({ length: 10 }).map((_, id) => ({ id }));
+
 export const Game = component$(() => {
 	return (
 		<div class={styles.game}>
@@ -41,9 +43,9 @@ export const Game = component$(() => {
 				<div class={styles.score}>
 					<p>food left</p>
 					<ul>
-						{Array.from({ length: 10 }).map((_, i) => (
-							<li key={i}>
-								<Food isEaten={i >= 7} />
+						{foods.map(({ id }) => (
+							<li key={id}>
+								<Food isEaten={id >= 7} />
 							</li>
 						))}
 					</ul>
