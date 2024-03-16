@@ -55,7 +55,7 @@ Inside your project, you’ll see the following directory structure:
 ### Styling
 
 - [CSS Modules](https://github.com/css-modules/css-modules/)
-- [UnoCSS (for resetting styles)](https://unocss.dev/)
+- [UnoCSS](https://unocss.dev/)
 - [Remix Icon](https://remixicon.com/)
 - [Fontsource](https://fontsource.org/)
 - [Shiki](https://shiki.style/) :construction:
