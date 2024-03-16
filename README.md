@@ -80,6 +80,7 @@ Inside your project, you’ll see the following directory structure:
 - [textlint](https://textlint.github.io/)
 - [markdownlint](https://github.com/DavidAnson/markdownlint/) :construction:
 - [commitlint](https://github.com/conventional-changelog/commitlint/) :construction:
+- [EditorConfig](https://editorconfig.org/)
 - [Prettier](https://prettier.io/)
 - [Biome](https://biomejs.dev/) :construction:
 - [Husky](https://typicode.github.io/husky/)
