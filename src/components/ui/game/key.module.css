@@ -1,18 +1,18 @@
 .key {
 	position: relative;
-	width: 49px;
+	inline-size: 49px;
 	height: 28px;
 	background: var(--color-base-1);
 	border: var(--border);
 	border-radius: var(--border-radius);
 
 	span {
-		--width: 9px;
+		--inline-size: 9px;
 
 		position: absolute;
 		inset: 0;
-		width: var(--width);
-		height: calc(var(--width) / 2 * sqrt(3));
+		inline-size: var(--inline-size);
+		height: calc(var(--inline-size) / 2 * sqrt(3));
 		margin: auto;
 		clip-path: polygon(50% 0, 100% 100%, 0 100%);
 		background-color: var(--color-secondary-4);

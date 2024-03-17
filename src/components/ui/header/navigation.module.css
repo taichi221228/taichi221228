@@ -9,7 +9,7 @@
 		li {
 			border-inline-end: var(--border);
 
-			@container (width < 709px) {
+			@container (inline-size < 709px) {
 				flex-grow: 1;
 			}
 
@@ -29,7 +29,7 @@
 				height: 100%;
 				padding-inline: var(--padding-inline);
 
-				@container (width < 709px) {
+				@container (inline-size < 709px) {
 					--padding-inline: 0;
 				}
 			}

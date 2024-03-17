@@ -33,7 +33,7 @@
 	a {
 		&.twitter,
 		&.facebook {
-			width: 52px;
+			inline-size: 52px;
 		}
 
 		&.github {
