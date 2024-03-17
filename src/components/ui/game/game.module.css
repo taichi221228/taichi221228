@@ -65,8 +65,8 @@
 
 	.polygons {
 		position: absolute;
-		top: calc(50% + 15px);
-		left: calc(50% + 86px);
+		inset-block-start: calc(50% + 15px);
+		inset-inline-start: calc(50% + 86px);
 		z-index: -1;
 		pointer-events: none;
 		translate: -50% -50%;
