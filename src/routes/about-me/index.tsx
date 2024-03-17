@@ -27,15 +27,18 @@ export default component$(() => {
 					</nav>
 				</div>
 			</aside>
-			<section class={styles.pane}>
-				{/* Pane (main) */}
-				<ul>{/* Tabs */}</ul>
-				<div>{/* Editor */}</div>
-			</section>
-			<div class={styles.pane}>
-				{/* Pane (main) */}
-				<ul>{/* Tabs */}</ul>
-				<div>{/* Editor */}</div>
+			<div class={styles.editor}>
+				{/*	Editor */}
+				<section class={styles.pane}>
+					{/* Pane (main) */}
+					<ul>{/* Tabs */}</ul>
+					<div>{/* Contents */}</div>
+				</section>
+				<div class={styles.pane}>
+					{/* Pane (main) */}
+					<ul>{/* Tabs */}</ul>
+					<div>{/* Contents */}</div>
+				</div>
 			</div>
 		</div>
 	);

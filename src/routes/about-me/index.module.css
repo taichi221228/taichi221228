@@ -22,12 +22,25 @@
 		}
 	}
 
-	.pane {
+	.editor {
+		display: flex;
 		flex-grow: 1;
-		background-color: yellow; /* TEMP: */
+		flex-wrap: wrap;
+		gap: 1px;
+		block-size: var(--block-size-main); /* TEMP: */
+		overflow: scroll;
+		background-color: purple; /* TEMP: */
 
-		+ & {
-			border-inline-start: var(--border);
+		.pane {
+			container-type: inline-size;
+			flex-basis: 400px;
+			flex-grow: 1;
+			block-size: var(--block-size-main); /* TEMP: */
+			background-color: yellow; /* TEMP: */
+
+			&:last-child {
+				background-color: green; /* TEMP: */
+			}
 		}
 	}
 }
