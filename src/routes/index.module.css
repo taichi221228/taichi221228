@@ -69,15 +69,21 @@ section {
 			}
 
 			.description {
+				--grid-column: unset;
+
+				grid-column: var(--grid-column);
+				margin-block-start: var(--margin-block-start);
+
 				@container (inline-size < 1103px) {
+					--grid-column: 1 / 2;
+					--margin-block-start: 40px;
+
 					grid-row: 2 / 3;
-					grid-column: 1 / 2;
-					margin-block-start: 40px;
 				}
 
 				@container (inline-size <= 777px) {
-					grid-column: auto;
-					margin-block-start: 80px;
+					--grid-column: auto;
+					--margin-block-start: 80px;
 				}
 
 				p {
