@@ -6,7 +6,7 @@ section {
 		display: flex;
 		align-items: center;
 		max-inline-size: 1160px;
-		min-height: var(--height-main);
+		min-block-size: var(--block-size-main);
 		margin-inline: auto;
 
 		.container {

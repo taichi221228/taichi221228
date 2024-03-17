@@ -1,7 +1,7 @@
 .key {
 	position: relative;
 	inline-size: 49px;
-	height: 28px;
+	block-size: 28px;
 	background: var(--color-base-1);
 	border: var(--border);
 	border-radius: var(--border-radius);
@@ -12,7 +12,7 @@
 		position: absolute;
 		inset: 0;
 		inline-size: var(--inline-size);
-		height: calc(var(--inline-size) / 2 * sqrt(3));
+		block-size: calc(var(--inline-size) / 2 * sqrt(3));
 		margin: auto;
 		clip-path: polygon(50% 0, 100% 100%, 0 100%);
 		background-color: var(--color-secondary-4);

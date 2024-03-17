@@ -1,10 +1,10 @@
 :root {
-	--height-footer: 56px;
+	--block-size-footer: 56px;
 }
 
 .footer {
 	display: flex;
-	height: var(--height-footer);
+	block-size: var(--block-size-footer);
 	font-size: var(--font-size-label);
 	color: var(--color-secondary-1);
 	border-block-start: var(--border);
@@ -23,7 +23,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 100%;
+		block-size: 100%;
 	}
 
 	p {

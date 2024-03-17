@@ -1,10 +1,10 @@
 :root {
-	--height-header: 56px;
+	--block-size-header: 56px;
 }
 
 .header {
 	display: flex;
-	height: var(--height-header);
+	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
 	color: var(--color-secondary-1);
 	border-block-end: var(--border);
