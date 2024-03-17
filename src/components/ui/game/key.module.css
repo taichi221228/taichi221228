@@ -7,10 +7,12 @@
 	border-radius: var(--border-radius);
 
 	span {
+		--width: 9px;
+
 		position: absolute;
 		inset: 0;
-		width: 9px;
-		height: 6px;
+		width: var(--width);
+		height: calc(var(--width) / 2 * sqrt(3));
 		margin: auto;
 		clip-path: polygon(50% 0, 100% 100%, 0 100%);
 		background-color: var(--color-secondary-4);
