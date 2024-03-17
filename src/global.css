@@ -68,7 +68,8 @@ html {
 		border-radius: var(--border-radius);
 
 		main {
-			min-block-size: var(--block-size-main);
+			block-size: var(--block-size-main);
+			overflow: scroll;
 		}
 
 		a,
