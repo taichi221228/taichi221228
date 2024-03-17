@@ -1,23 +1,23 @@
 .container {
 	display: flex;
-	height: var(--height-main); /* TEMP: */
+	block-size: var(--block-size-main); /* TEMP: */
 
 	aside {
-		--width-activitybar: 67px;
-		--width-sidebar: var(--width-sitetitle);
+		--inline-size-activitybar: 67px;
+		--inline-size-sidebar: var(--inline-size-sitetitle);
 
 		display: flex;
-		flex-basis: var(--width-sidebar);
+		flex-basis: var(--inline-size-sidebar);
 		border-inline-end: var(--border);
 
 		.activitybar {
-			flex-basis: var(--width-activitybar);
+			flex-basis: var(--inline-size-activitybar);
 			background-color: red; /* TEMP: */
 			border-inline-end: var(--border);
 		}
 
 		.sidebar {
-			flex-basis: calc(100% - var(--width-activitybar));
+			flex-basis: calc(100% - var(--inline-size-activitybar));
 			background-color: blue; /* TEMP: */
 		}
 	}
