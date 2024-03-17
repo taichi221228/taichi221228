@@ -3,11 +3,11 @@
 	block-size: var(--block-size-main); /* TEMP: */
 
 	aside {
+		--inline-size-aside: var(--inline-size-sitetitle);
 		--inline-size-activitybar: 67px;
-		--inline-size-sidebar: var(--inline-size-sitetitle);
 
 		display: flex;
-		flex-basis: var(--inline-size-sidebar);
+		inline-size: var(--inline-size-aside);
 		border-inline-end: var(--border);
 
 		.activitybar {
