@@ -3,7 +3,8 @@
 	display: flex;
 	justify-content: space-between;
 	aspect-ratio: 510 / 475;
-	padding: 35px 30px;
+	padding-block: 35px;
+	padding-inline: 30px;
 	background: rgb(255 255 255 / 7.5%);
 	border: 1px solid var(--color-base-1);
 	border-radius: var(--border-radius);
@@ -43,7 +44,7 @@
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				gap: 5px;
-				margin-top: 13px;
+				margin-block-start: 13px;
 			}
 		}
 
@@ -52,7 +53,7 @@
 				display: grid;
 				grid-template-columns: repeat(5, min-content);
 				gap: 7px 8px;
-				margin-top: 15px;
+				margin-block-start: 15px;
 			}
 		}
 

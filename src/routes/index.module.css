@@ -1,5 +1,5 @@
 section {
-	padding: 0 60px;
+	padding-inline: 60px;
 
 	.wrapper {
 		container-type: inline-size;
@@ -7,8 +7,7 @@ section {
 		align-items: center;
 		max-width: 1160px;
 		min-height: var(--height-main);
-		margin-right: auto;
-		margin-left: auto;
+		margin-inline: auto;
 
 		.container {
 			--gap: 80px 110px;
@@ -18,8 +17,7 @@ section {
 			grid-template-columns: auto 510px;
 			gap: var(--gap);
 			width: 100%;
-			padding-top: var(--gutter-y);
-			padding-bottom: var(--gutter-y);
+			padding-block: var(--gutter-y);
 
 			@container (width < 1103px) {
 				--gap: 60px;
@@ -66,8 +64,8 @@ section {
 					grid-column: auto;
 					width: 100%;
 					max-width: 570px;
+					margin-block-start: 60px;
 					margin-inline-start: auto;
-					margin-top: 60px;
 				}
 			}
 
@@ -75,21 +73,21 @@ section {
 				@container (width < 1103px) {
 					grid-row: 2 / 3;
 					grid-column: 1 / 2;
-					margin-top: 40px;
+					margin-block-start: 40px;
 				}
 
 				@container (width <= 777px) {
 					grid-column: auto;
-					margin-top: 80px;
+					margin-block-start: 80px;
 				}
 
 				p {
-					margin-left: 1em;
+					margin-inline-start: 1em;
 					font-size: var(--font-size-label);
 					text-indent: -1em;
 
 					+ p {
-						margin-top: 10px;
+						margin-block-start: 10px;
 					}
 				}
 
