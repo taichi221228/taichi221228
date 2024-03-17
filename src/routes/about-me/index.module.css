@@ -4,9 +4,10 @@
 
 	aside {
 		--width-activitybar: 67px;
+		--width-sidebar: var(--width-sitetitle);
 
 		display: flex;
-		flex-basis: var(--width-sitetitle);
+		flex-basis: var(--width-sidebar);
 		border-inline-end: var(--border);
 
 		.activitybar {
