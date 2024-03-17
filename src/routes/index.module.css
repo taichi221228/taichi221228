@@ -9,11 +9,12 @@
 	margin-inline: auto;
 
 	.container {
+		--grid-template-columns: auto 510px;
 		--gap: 80px 110px;
 		--padding-block: 40px;
 
 		display: grid;
-		grid-template-columns: auto 510px;
+		grid-template-columns: var(--grid-template-columns);
 		gap: var(--gap);
 		inline-size: 100%;
 		padding-block: var(--padding-block);
@@ -24,9 +25,8 @@
 		}
 
 		@container (inline-size <= 777px) {
+			--grid-template-columns: auto;
 			--gap: 0;
-
-			grid-template-columns: auto;
 		}
 
 		.title {
@@ -51,15 +51,19 @@
 		}
 
 		.game {
-			grid-row: 1 / 3;
-			grid-column: 2 / 3;
+			--grid-row: 1 / 3;
+			--grid-column: 2 / 3;
+
+			grid-row: var(--grid-row);
+			grid-column: var(--grid-column);
 
 			@container (inline-size < 1103px) {
-				grid-row: auto;
+				--grid-row: auto;
 			}
 
 			@container (inline-size <= 777px) {
-				grid-column: auto;
+				--grid-column: auto;
+
 				inline-size: 100%;
 				max-inline-size: 570px;
 				margin-block-start: 60px;
@@ -69,6 +73,7 @@
 
 		.description {
 			--grid-column: unset;
+			--margin-block-start: unset;
 
 			grid-column: var(--grid-column);
 			margin-block-start: var(--margin-block-start);
