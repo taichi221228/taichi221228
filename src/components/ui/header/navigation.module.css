@@ -4,12 +4,12 @@
 	ul {
 		container-type: inline-size;
 		display: flex;
-		height: 100%;
+		block-size: 100%;
 
 		li {
 			border-inline-end: var(--border);
 
-			@container (width < 709px) {
+			@container (inline-size < 709px) {
 				flex-grow: 1;
 			}
 
@@ -26,10 +26,10 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				height: 100%;
+				block-size: 100%;
 				padding-inline: var(--padding-inline);
 
-				@container (width < 709px) {
+				@container (inline-size < 709px) {
 					--padding-inline: 0;
 				}
 			}

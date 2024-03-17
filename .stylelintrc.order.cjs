@@ -96,9 +96,15 @@ module.exports = {
 				// Box model.
 				properties: [
 					"float",
+					"inline-size",
+					"min-inline-size",
+					"max-inline-size",
 					"width",
 					"min-width",
 					"max-width",
+					"block-size",
+					"min-block-size",
+					"max-block-size",
 					"height",
 					"min-height",
 					"max-height",

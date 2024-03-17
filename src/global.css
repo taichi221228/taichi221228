@@ -1,7 +1,10 @@
 :root {
-	--height-main: calc(
+	--block-size-main: calc(
 		100svh -
-			(var(--padding-outside) * 2 + var(--height-header) + var(--height-footer))
+			(
+				var(--padding-outside) * 2 + var(--block-size-header) +
+					var(--block-size-footer)
+			)
 	);
 	--padding-outside: 20px;
 	--font-family-default: monospace, "Helvetica Neue", arial,
@@ -57,7 +60,7 @@ html {
 	background-color: var(--color-base-1);
 
 	body {
-		height: calc(100svh - var(--padding-outside) * 2);
+		block-size: calc(100svh - var(--padding-outside) * 2);
 		overflow: hidden;
 		font-family: var(--font-family-primary), var(--font-family-default);
 		background-color: var(--color-base-2);
@@ -65,7 +68,7 @@ html {
 		border-radius: var(--border-radius);
 
 		main {
-			min-height: var(--height-main);
+			min-block-size: var(--block-size-main);
 		}
 
 		a,

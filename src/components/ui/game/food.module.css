@@ -9,8 +9,8 @@
 	&,
 	&::before,
 	&::after {
-		width: var(--size);
-		height: var(--size);
+		inline-size: var(--size);
+		block-size: var(--size);
 		background-color: rgb(var(--color-accent-2-rgb) / var(--alpha));
 		border-radius: var(--border-radius-round);
 	}
