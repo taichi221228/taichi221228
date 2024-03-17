@@ -21,16 +21,16 @@
 
 			a,
 			span {
-				--gutter-x: 32px;
+				--padding-inline: 32px;
 
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				height: 100%;
-				padding-inline: var(--gutter-x);
+				padding-inline: var(--padding-inline);
 
 				@container (width < 709px) {
-					--gutter-x: 0;
+					--padding-inline: 0;
 				}
 			}
 

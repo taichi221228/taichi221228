@@ -11,17 +11,17 @@ section {
 
 		.container {
 			--gap: 80px 110px;
-			--gutter-y: 40px;
+			--padding-block: 40px;
 
 			display: grid;
 			grid-template-columns: auto 510px;
 			gap: var(--gap);
 			width: 100%;
-			padding-block: var(--gutter-y);
+			padding-block: var(--padding-block);
 
 			@container (width < 1103px) {
 				--gap: 60px;
-				--gutter-y: 80px;
+				--padding-block: 80px;
 			}
 
 			@container (width <= 777px) {
