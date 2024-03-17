@@ -38,8 +38,7 @@
 
 		&.github {
 			gap: 7px;
-			padding-right: 23px;
-			padding-left: 23px;
+			padding-inline: 23px;
 		}
 
 		&:focus-visible,

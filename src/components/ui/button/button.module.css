@@ -1,5 +1,6 @@
 .button {
-	padding: 10px 14px;
+	padding-block: 10px;
+	padding-inline: 14px;
 	font-size: var(--font-size-code);
 	border-radius: var(--border-radius);
 
