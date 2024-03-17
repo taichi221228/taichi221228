@@ -7,17 +7,15 @@
 	border-radius: var(--border-radius);
 
 	span {
-		--height-triangle: 6px;
-		--width-triangle: 9px;
+		--width: 9px;
 
 		position: absolute;
 		inset: 0;
-		width: 0;
-		height: 0;
+		width: var(--width);
+		height: calc(var(--width) / 2 * sqrt(3));
 		margin: auto;
-		border-color: transparent transparent var(--color-secondary-4);
-		border-style: solid;
-		border-width: 0 calc(var(--width-triangle) / 2) var(--height-triangle);
+		clip-path: polygon(50% 0, 100% 100%, 0 100%);
+		background-color: var(--color-secondary-4);
 
 		&.up {
 			rotate: 0deg;
