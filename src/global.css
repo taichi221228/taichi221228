@@ -76,9 +76,5 @@ html {
 		button {
 			transition: var(--transition);
 		}
-
-		i {
-			font-size: 20px;
-		}
 	}
 }
