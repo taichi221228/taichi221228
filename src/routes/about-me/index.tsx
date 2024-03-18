@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { NAME } from "~/constants/info";
@@ -7,25 +7,60 @@ import { createPageTitle } from "~/utilities/create-page-title";
 import styles from "./index.module.css";
 
 export default component$(() => {
+	const c = useSignal<0 | 1 | 2>(0);
+
 	return (
 		<div class={styles.container}>
 			<aside>
 				<nav class={styles.activitybar}>
 					<ul>
 						<li>
-							<button type="button">
-								<i class="ri-terminal-box-fill" />
-							</button>
+							{c.value === 0 ? (
+								<span>
+									<i class="ri-terminal-box-fill" />
+								</span>
+							) : (
+								<button
+									type="button"
+									onClick$={() => {
+										c.value = 0;
+									}}
+								>
+									<i class="ri-terminal-box-fill" />
+								</button>
+							)}
 						</li>
 						<li>
-							<button type="button">
-								<i class="ri-user-4-fill" />
-							</button>
+							{c.value === 1 ? (
+								<span>
+									<i class="ri-user-4-fill" />
+								</span>
+							) : (
+								<button
+									type="button"
+									onClick$={() => {
+										c.value = 1;
+									}}
+								>
+									<i class="ri-user-4-fill" />
+								</button>
+							)}
 						</li>
 						<li>
-							<button type="button">
-								<i class="ri-gamepad-fill" />
-							</button>
+							{c.value === 2 ? (
+								<span>
+									<i class="ri-gamepad-fill" />
+								</span>
+							) : (
+								<button
+									type="button"
+									onClick$={() => {
+										c.value = 2;
+									}}
+								>
+									<i class="ri-gamepad-fill" />
+								</button>
+							)}
 						</li>
 					</ul>
 				</nav>

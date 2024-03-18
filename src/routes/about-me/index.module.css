@@ -19,15 +19,23 @@
 					padding-block: 17px;
 					text-align: center;
 
-					button {
+					button,
+					span {
 						font-size: 24px;
 						line-height: 1;
+					}
+
+					button {
 						color: var(--color-secondary-1);
 
 						&:focus-visible,
 						&:hover {
 							color: var(--color-secondary-4);
 						}
+					}
+
+					span {
+						color: var(--color-secondary-4);
 					}
 				}
 			}
