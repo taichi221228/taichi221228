@@ -11,7 +11,23 @@ export default component$(() => {
 		<div class={styles.container}>
 			<aside>
 				<nav class={styles.activitybar}>
-					<ul>{/* Activitybar */}</ul>
+					<ul>
+						<li>
+							<button type="button">
+								<i class="ri-terminal-box-fill" />
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="ri-user-4-fill" />
+							</button>
+						</li>
+						<li>
+							<button type="button">
+								<i class="ri-gamepad-fill" />
+							</button>
+						</li>
+					</ul>
 				</nav>
 				<div class={styles.sidebar}>
 					{/* Sidebar */}
