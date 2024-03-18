@@ -8,7 +8,12 @@ export const Footer = component$(() => {
 	return (
 		<footer class={styles.footer}>
 			<p>find me in:</p>
-			{Object.entries(SNS).map(([name, profile]) => {
+			{(
+				Object.entries(SNS) as [
+					keyof typeof SNS,
+					(typeof SNS)[keyof typeof SNS],
+				][]
+			).map(([name, profile]) => {
 				return (
 					<a
 						key={name}
