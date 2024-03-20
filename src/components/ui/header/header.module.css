@@ -7,7 +7,6 @@
 	display: flex;
 	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
-	color: var(--color-secondary-1);
 	border-block-end: var(--border);
 
 	.title {
@@ -27,6 +26,7 @@
 			align-items: center;
 			inline-size: 100%;
 			block-size: 100%;
+			color: var(--color-secondary-1);
 
 			&:is(:focus-visible, :hover) {
 				color: var(--color-secondary-4);
