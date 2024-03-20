@@ -34,7 +34,7 @@
 		}
 
 		.sidebar {
-			flex-basis: calc(100% - var(--inline-size-activitybar));
+			flex-grow: 1;
 		}
 	}
 
