@@ -15,52 +15,40 @@ export default component$(() => {
 				<nav class={styles.activitybar}>
 					<ul>
 						<li>
-							{c.value === 0 ? (
-								<span>
-									<i class="ri-terminal-box-fill" />
-								</span>
-							) : (
-								<button
-									type="button"
-									onClick$={() => {
-										c.value = 0;
-									}}
-								>
-									<i class="ri-terminal-box-fill" />
-								</button>
-							)}
+							<button
+								type="button"
+								disabled={c.value === 0}
+								onClick$={() => {
+									c.value = 0;
+								}}
+								class={[c.value === 0 && styles.activated]}
+							>
+								<i class="ri-terminal-box-fill" />
+							</button>
 						</li>
 						<li>
-							{c.value === 1 ? (
-								<span>
-									<i class="ri-user-4-fill" />
-								</span>
-							) : (
-								<button
-									type="button"
-									onClick$={() => {
-										c.value = 1;
-									}}
-								>
-									<i class="ri-user-4-fill" />
-								</button>
-							)}
+							<button
+								type="button"
+								disabled={c.value === 1}
+								onClick$={() => {
+									c.value = 1;
+								}}
+								class={[c.value === 1 && styles.activated]}
+							>
+								<i class="ri-user-4-fill" />
+							</button>
 						</li>
 						<li>
-							{c.value === 2 ? (
-								<span>
-									<i class="ri-gamepad-fill" />
-								</span>
-							) : (
-								<button
-									type="button"
-									onClick$={() => {
-										c.value = 2;
-									}}
-								>
-									<i class="ri-gamepad-fill" />
-								</button>
-							)}
+							<button
+								type="button"
+								disabled={c.value === 2}
+								onClick$={() => {
+									c.value = 2;
+								}}
+								class={[c.value === 2 && styles.activated]}
+							>
+								<i class="ri-gamepad-fill" />
+							</button>
 						</li>
 					</ul>
 				</nav>
