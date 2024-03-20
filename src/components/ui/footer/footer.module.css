@@ -6,7 +6,6 @@
 	display: flex;
 	block-size: var(--block-size-footer);
 	font-size: var(--font-size-label);
-	color: var(--color-secondary-1);
 	border-block-start: var(--border);
 
 	> :not(:last-child) {
@@ -28,9 +27,12 @@
 
 	p {
 		padding-inline: 22px 18px;
+		color: var(--color-secondary-1);
 	}
 
 	a {
+		color: var(--color-secondary-1-lighter);
+
 		&.twitter,
 		&.facebook {
 			inline-size: 52px;
@@ -42,7 +44,7 @@
 		}
 
 		&:is(:focus-visible, :hover) {
-			color: var(--color-secondary-4);
+			color: var(--color-secondary-1);
 		}
 
 		i {
