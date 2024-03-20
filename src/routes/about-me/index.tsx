@@ -7,7 +7,7 @@ import { createPageTitle } from "~/utilities/create-page-title";
 import styles from "./index.module.css";
 
 export default component$(() => {
-	const c = useSignal<0 | 1 | 2>(0);
+	const current = useSignal<0 | 1 | 2>(0);
 
 	return (
 		<div class={styles.container}>
@@ -17,11 +17,11 @@ export default component$(() => {
 						<li>
 							<button
 								type="button"
-								disabled={c.value === 0}
+								disabled={current.value === 0}
 								onClick$={() => {
-									c.value = 0;
+									current.value = 0;
 								}}
-								class={[c.value === 0 && styles.activated]}
+								class={[current.value === 0 && styles.activated]}
 							>
 								<i class="ri-terminal-box-fill" />
 							</button>
@@ -29,11 +29,11 @@ export default component$(() => {
 						<li>
 							<button
 								type="button"
-								disabled={c.value === 1}
+								disabled={current.value === 1}
 								onClick$={() => {
-									c.value = 1;
+									current.value = 1;
 								}}
-								class={[c.value === 1 && styles.activated]}
+								class={[current.value === 1 && styles.activated]}
 							>
 								<i class="ri-user-4-fill" />
 							</button>
@@ -41,11 +41,11 @@ export default component$(() => {
 						<li>
 							<button
 								type="button"
-								disabled={c.value === 2}
+								disabled={current.value === 2}
 								onClick$={() => {
-									c.value = 2;
+									current.value = 2;
 								}}
-								class={[c.value === 2 && styles.activated]}
+								class={[current.value === 2 && styles.activated]}
 							>
 								<i class="ri-gamepad-fill" />
 							</button>
