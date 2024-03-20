@@ -56,12 +56,16 @@ export default component$(() => {
 					{/* Sidebar */}
 					<nav>
 						{/* Panel (main) */}
-						<div>{/* header */}</div>
+						<button class={styles.header} type="button">
+							personal-info{/* TEMP: hardcode */}
+						</button>
 						<ul>{/* explorer */}</ul>
 					</nav>
 					<nav>
 						{/* Panel (sub) */}
-						<div>{/* header */}</div>
+						<button class={styles.header} type="button">
+							contacts
+						</button>
 						<ul>{/* contacts */}</ul>
 					</nav>
 				</div>
