@@ -25,8 +25,7 @@
 						color: var(--color-secondary-1-lighter);
 
 						&.activated,
-						&:focus-visible,
-						&:hover {
+						&:is(:focus-visible, :hover) {
 							color: var(--color-secondary-1);
 						}
 					}

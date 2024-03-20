@@ -28,8 +28,7 @@
 			inline-size: 100%;
 			block-size: 100%;
 
-			&:focus-visible,
-			&:hover {
+			&:is(:focus-visible, :hover) {
 				color: var(--color-secondary-4);
 			}
 		}

@@ -41,8 +41,7 @@
 			padding-inline: 23px;
 		}
 
-		&:focus-visible,
-		&:hover {
+		&:is(:focus-visible, :hover) {
 			color: var(--color-secondary-4);
 		}
 
