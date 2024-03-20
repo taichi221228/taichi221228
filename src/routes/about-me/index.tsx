@@ -1,6 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import { Triangle } from "~/components/ui/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
@@ -57,6 +58,7 @@ export default component$(() => {
 					<nav>
 						{/* Panel (main) */}
 						<button class={styles.header} type="button">
+							<Triangle direction="down" />
 							personal-info{/* TEMP: hardcode */}
 						</button>
 						<ul>{/* explorer */}</ul>
@@ -64,6 +66,7 @@ export default component$(() => {
 					<nav>
 						{/* Panel (sub) */}
 						<button class={styles.header} type="button">
+							<Triangle direction="down" />
 							contacts
 						</button>
 						<ul>{/* contacts */}</ul>
