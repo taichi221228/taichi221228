@@ -5,7 +5,6 @@
 .footer {
 	display: flex;
 	block-size: var(--block-size-footer);
-	font-size: var(--font-size-label);
 	border-block-start: var(--border);
 
 	> :not(:last-child) {
@@ -23,6 +22,7 @@
 		align-items: center;
 		justify-content: center;
 		block-size: 100%;
+		font-size: var(--font-size-label);
 	}
 
 	p {
