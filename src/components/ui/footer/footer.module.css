@@ -31,20 +31,24 @@
 	}
 
 	a {
-		color: var(--color-secondary-1-lighter);
-
 		&.twitter,
 		&.facebook {
 			inline-size: 52px;
+			color: var(--color-secondary-1-lighter);
+
+			&:is(:focus-visible, :hover) {
+				color: var(--color-secondary-1);
+			}
 		}
 
 		&.github {
 			gap: 7px;
 			padding-inline: 23px;
-		}
-
-		&:is(:focus-visible, :hover) {
 			color: var(--color-secondary-1);
+
+			&:is(:focus-visible, :hover) {
+				color: var(--color-secondary-4);
+			}
 		}
 
 		i {
