@@ -15,7 +15,7 @@ export const Navigation = component$<Props>(({ location }) => {
 			<ul>
 				{items.map((item) => {
 					const text = `_${item}`;
-					const pathname = `/${item === "hello" ? "" : item}`;
+					const pathname = item === "hello" ? "/" : `/${item}/`;
 					const isCurrent = pathname === location.url.pathname;
 
 					return (

@@ -24,6 +24,7 @@
 	--color-primary-2: #1c2b3a;
 	--color-primary-2-lighter: #263b50;
 	--color-secondary-1: #607b96;
+	--color-secondary-1-lighter: #607b9666;
 	--color-secondary-2: #3c9d93;
 	--color-secondary-3: #4d5bce;
 	--color-secondary-4: #fff;
@@ -39,6 +40,7 @@
 	--color-primary-2-rgb: 28 43 58;
 	--color-primary-2-lighter-rgb: 38 59 80;
 	--color-secondary-1-rgb: 96 123 150;
+	--color-secondary-1-lighter-rgb: 96 123 150 / 0.4;
 	--color-secondary-2-rgb: 60 157 147;
 	--color-secondary-3-rgb: 77 91 206;
 	--color-secondary-4-rgb: 255 255 255;
@@ -68,16 +70,13 @@ html {
 		border-radius: var(--border-radius);
 
 		main {
-			min-block-size: var(--block-size-main);
+			block-size: var(--block-size-main);
+			overflow: scroll;
 		}
 
 		a,
 		button {
 			transition: var(--transition);
-		}
-
-		i {
-			font-size: 20px;
 		}
 	}
 }

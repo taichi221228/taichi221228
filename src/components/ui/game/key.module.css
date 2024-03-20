@@ -1,36 +1,11 @@
 .key {
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	inline-size: 49px;
 	block-size: 28px;
 	background: var(--color-base-1);
 	border: var(--border);
 	border-radius: var(--border-radius);
-
-	span {
-		--inline-size: 9px;
-
-		position: absolute;
-		inset: 0;
-		inline-size: var(--inline-size);
-		block-size: calc(var(--inline-size) / 2 * sqrt(3));
-		margin: auto;
-		clip-path: polygon(50% 0, 100% 100%, 0 100%);
-		background-color: var(--color-secondary-4);
-
-		&.up {
-			rotate: 0deg;
-		}
-
-		&.down {
-			rotate: 180deg;
-		}
-
-		&.left {
-			rotate: 270deg;
-		}
-
-		&.right {
-			rotate: 90deg;
-		}
-	}
 }
