@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import type { RouteLocation } from "@builder.io/qwik-city";
+import { Link, type RouteLocation } from "@builder.io/qwik-city";
 
 import styles from "./navigation.module.css";
 
@@ -20,7 +20,13 @@ export const Navigation = component$<Props>(({ location }) => {
 
 					return (
 						<li key={item}>
-							{isCurrent ? <span>{text}</span> : <a href={pathname}>{text}</a>}
+							<Link
+								href={pathname}
+								class={[styles.link, isCurrent && styles.activated]}
+								tabIndex={isCurrent ? -1 : 0}
+							>
+								{text}
+							</Link>
 						</li>
 					);
 				})}
