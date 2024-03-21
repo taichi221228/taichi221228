@@ -27,10 +27,6 @@
 			&:is(:focus-visible, :hover) {
 				color: var(--color-secondary-4);
 			}
-
-			&.disabled {
-				pointer-events: none;
-			}
 		}
 	}
 }
