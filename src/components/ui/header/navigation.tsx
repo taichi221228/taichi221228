@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
-import { Link, type RouteLocation } from "@builder.io/qwik-city";
+import type { RouteLocation } from "@builder.io/qwik-city";
+
+import { Link } from "~/components/functional/link/link";
 
 import styles from "./navigation.module.css";
 
@@ -22,9 +24,8 @@ export const Navigation = component$<Props>(({ location }) => {
 						<li key={item}>
 							<Link
 								href={pathname}
+								isDisabled={isCurrent}
 								class={[styles.link, isCurrent && styles.activated]}
-								aria-current={isCurrent && "page"}
-								tabIndex={isCurrent ? -1 : 0}
 							>
 								{text}
 							</Link>

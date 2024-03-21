@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { useLocation } from "@builder.io/qwik-city";
 
+import { Link } from "~/components/functional/link/link";
 import { SITENAME } from "~/constants/info";
 
 import styles from "./header.module.css";
@@ -13,7 +14,9 @@ export const Header = component$(() => {
 	return (
 		<header class={styles.header}>
 			<h1 class={styles.title}>
-				{isRoot ? SITENAME : <a href="/">{SITENAME}</a>}
+				<Link href="/" isDisabled={isRoot} class={styles.link}>
+					{SITENAME}
+				</Link>
 			</h1>
 			<Navigation location={location} />
 		</header>

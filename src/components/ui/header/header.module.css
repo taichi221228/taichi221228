@@ -14,19 +14,15 @@
 		flex-basis: var(--inline-size-sitetitle);
 		flex-shrink: 2;
 		align-items: center;
+		color: var(--color-secondary-1);
 		border-inline-end: var(--border);
 
-		&:not(:has(a)),
-		a {
-			padding-inline: 22px;
-		}
-
-		a {
+		.link {
 			display: flex;
 			align-items: center;
 			inline-size: 100%;
 			block-size: 100%;
-			color: var(--color-secondary-1);
+			padding-inline: 22px;
 
 			&:is(:focus-visible, :hover) {
 				color: var(--color-secondary-4);
