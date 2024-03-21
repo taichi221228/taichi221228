@@ -36,11 +36,13 @@ export default component$(() => {
 						<span class={styles.kind}>const</span>{" "}
 						<span class={styles.identifier}>githubLink</span> = <br />
 						<span class={styles.literal}>
-							{'"'}
+							<span class={styles.double}>{'"'}</span>
+							<span class={styles.back}>{"`"}</span>
 							<a href={SNS.github.url} target="_blank" rel="noreferrer">
 								{SNS.github.url}
 							</a>
-							{'"'}
+							<span class={styles.double}>{'"'}</span>
+							<span class={styles.back}>{"`"}</span>
 						</span>
 						;
 					</p>

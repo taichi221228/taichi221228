@@ -162,6 +162,18 @@
 
 				.literal {
 					color: var(--color-accent-3);
+
+					.double {
+						@container (inline-size <= 326px) {
+							display: none;
+						}
+					}
+
+					.back {
+						@container (inline-size > 326px) {
+							display: none;
+						}
+					}
 				}
 			}
 		}
