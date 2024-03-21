@@ -23,6 +23,7 @@ export const Navigation = component$<Props>(({ location }) => {
 							<Link
 								href={pathname}
 								class={[styles.link, isCurrent && styles.activated]}
+								aria-current={isCurrent && "page"}
 								tabIndex={isCurrent ? -1 : 0}
 							>
 								{text}
