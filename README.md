@@ -90,6 +90,7 @@ Inside your project, you’ll see the following directory structure:
 - [Vitest](https://vitest.dev/) :construction:
 - [Storybook](https://storybook.js.org/) :construction:
 - [Playwright](https://playwright.dev/) :construction:
+- [BrowserStack](https://www.browserstack.com/) :construction:
 
 ### Hosting
 
