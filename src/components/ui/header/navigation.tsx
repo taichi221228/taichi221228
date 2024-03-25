@@ -21,7 +21,7 @@ export const Navigation = component$<Props>(({ location }) => {
 					return (
 						<li key={item}>
 							<Link
-								class={[styles.link, isCurrent && styles.activated]}
+								class={isCurrent && styles.activated}
 								aria-current={isCurrent && "page"}
 								href={pathname}
 							>

@@ -19,7 +19,7 @@
 				border-inline-end: none;
 			}
 
-			.link {
+			a {
 				--padding-inline: 32px;
 
 				display: flex;
