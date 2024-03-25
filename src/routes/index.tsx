@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { Game } from "~/components/ui/game/game";
-import { NAME, SITENAME, SNS } from "~/constants/info";
+import { NAME, SNS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
@@ -38,7 +38,7 @@ export default component$(() => {
 						<span class={styles.literal}>
 							<span class={styles.double}>{'"'}</span>
 							<span class={styles.back}>{"`"}</span>
-							<a href={SNS.github.url} target="_blank" rel="noreferrer">
+							<a rel="noreferrer" href={SNS.github.url} target="_blank">
 								{SNS.github.url}
 							</a>
 							<span class={styles.double}>{'"'}</span>
