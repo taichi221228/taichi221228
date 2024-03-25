@@ -38,7 +38,7 @@ export default component$(() => {
 						<span class={styles.literal}>
 							<span class={styles.double}>{'"'}</span>
 							<span class={styles.back}>{"`"}</span>
-							<a href={SNS.github.url} target="_blank" rel="noreferrer">
+							<a rel="noreferrer" href={SNS.github.url} target="_blank">
 								{SNS.github.url}
 							</a>
 							<span class={styles.double}>{'"'}</span>

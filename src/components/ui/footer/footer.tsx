@@ -17,10 +17,10 @@ export const Footer = component$(() => {
 				return (
 					<a
 						key={name}
+						class={styles[name]}
+						rel="noreferrer"
 						href={profile.url}
 						target="_blank"
-						rel="noreferrer"
-						class={styles[name]}
 					>
 						{name === "github" && `@${profile.username}`}
 						<i class={`ri-${name}-fill`} />

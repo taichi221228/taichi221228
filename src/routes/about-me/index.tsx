@@ -17,36 +17,36 @@ export default component$(() => {
 					<ul>
 						<li>
 							<button
-								type="button"
-								disabled={current.value === 0}
+								class={[current.value === 0 && styles.activated]}
 								onClick$={() => {
 									current.value = 0;
 								}}
-								class={[current.value === 0 && styles.activated]}
+								type="button"
+								disabled={current.value === 0}
 							>
 								<i class="ri-terminal-box-fill" />
 							</button>
 						</li>
 						<li>
 							<button
-								type="button"
-								disabled={current.value === 1}
+								class={[current.value === 1 && styles.activated]}
 								onClick$={() => {
 									current.value = 1;
 								}}
-								class={[current.value === 1 && styles.activated]}
+								type="button"
+								disabled={current.value === 1}
 							>
 								<i class="ri-user-4-fill" />
 							</button>
 						</li>
 						<li>
 							<button
-								type="button"
-								disabled={current.value === 2}
+								class={[current.value === 2 && styles.activated]}
 								onClick$={() => {
 									current.value = 2;
 								}}
-								class={[current.value === 2 && styles.activated]}
+								type="button"
+								disabled={current.value === 2}
 							>
 								<i class="ri-gamepad-fill" />
 							</button>
