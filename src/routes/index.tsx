@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { Game } from "~/components/ui/game/game";
-import { NAME, SITENAME, SNS } from "~/constants/info";
+import { NAME, SNS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
