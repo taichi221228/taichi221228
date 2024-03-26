@@ -36,6 +36,9 @@
 				&:is(:focus-visible, :hover),
 				&.activated {
 					color: var(--color-secondary-4);
+				}
+
+				&.activated {
 					box-shadow: inset 0 -3px 0 var(--color-accent-1);
 				}
 			}
