@@ -43,7 +43,7 @@ export default component$(() => {
 						{/* Panel (main) */}
 						<button class={styles.header} type="button">
 							<Triangle direction="down" />
-							personal-info{/* TEMP: hardcode */}
+							{current.value}
 						</button>
 						<ul>{/* explorer */}</ul>
 					</nav>
