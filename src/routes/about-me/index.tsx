@@ -8,49 +8,33 @@ import { createPageTitle } from "~/utilities/create-page-title";
 import styles from "./index.module.css";
 
 export default component$(() => {
-	const current = useSignal<0 | 1 | 2>(0);
+	const activities = [
+		{ name: "professional-info", icon: <i class="ri-terminal-box-fill" /> },
+		{ name: "personal-info", icon: <i class="ri-user-4-fill" /> },
+		{ name: "hobbies", icon: <i class="ri-gamepad-fill" /> },
+	] as const;
+	const current =
+		useSignal<(typeof activities)[number]["name"]>("personal-info");
 
 	return (
 		<div class={styles.container}>
 			<aside>
 				<nav class={styles.activitybar}>
 					<ul>
-						<li>
-							<button
-								class={[current.value === 0 && styles.activated]}
-								onClick$={() => {
-									current.value = 0;
-								}}
-								type="button"
-								disabled={current.value === 0}
-							>
-								<i class="ri-terminal-box-fill" />
-							</button>
-						</li>
-						<li>
-							<button
-								class={[current.value === 1 && styles.activated]}
-								onClick$={() => {
-									current.value = 1;
-								}}
-								type="button"
-								disabled={current.value === 1}
-							>
-								<i class="ri-user-4-fill" />
-							</button>
-						</li>
-						<li>
-							<button
-								class={[current.value === 2 && styles.activated]}
-								onClick$={() => {
-									current.value = 2;
-								}}
-								type="button"
-								disabled={current.value === 2}
-							>
-								<i class="ri-gamepad-fill" />
-							</button>
-						</li>
+						{activities.map(({ name, icon }) => (
+							<li key={name}>
+								<button
+									class={[current.value === name && styles.activated]}
+									onClick$={() => {
+										current.value = name;
+									}}
+									type="button"
+									disabled={current.value === name}
+								>
+									{icon}
+								</button>
+							</li>
+						))}
 					</ul>
 				</nav>
 				<div class={styles.sidebar}>
