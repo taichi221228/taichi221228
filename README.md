@@ -51,6 +51,9 @@ Inside your project, you’ll see the following directory structure:
 ### Content
 
 - [Markdown](https://www.markdownguide.org/) :construction:
+- [Zenn (CLI)](https://zenn.dev/zenn/articles/zenn-cli-guide) :construction:
+- [Qiita (CLI)](https://github.com/increments/qiita-cli) :construction:
+- [Dev.to (CLI)](https://github.com/sinedied/devto-cli) :construction:
 
 ### Styling
 
@@ -70,7 +73,6 @@ Inside your project, you’ll see the following directory structure:
 - [esbuild](https://esbuild.github.io/)
 - [Rollup](https://rollupjs.org/)
 - [scaffdog](https://scaff.dog/) :construction:
-- [Zenn CLI](https://zenn.dev/zenn/articles/zenn-cli-guide) :construction:
 
 ### Quality
 
