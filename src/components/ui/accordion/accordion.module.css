@@ -14,7 +14,6 @@
 	.content {
 		max-block-size: 0;
 		overflow: hidden;
-		background-color: blue; /* TEMP: */
 		transition: var(--transition);
 
 		&.opened {
