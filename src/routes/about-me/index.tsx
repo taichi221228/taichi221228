@@ -1,6 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import { Accordion } from "~/components/ui/accordion/accordion";
 import { Triangle } from "~/components/ui/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
@@ -41,11 +42,13 @@ export default component$(() => {
 					{/* Sidebar */}
 					<nav>
 						{/* Panel (main) */}
-						<button class={styles.header} type="button">
-							<Triangle direction="down" />
-							{current.value}
-						</button>
-						<ul>{/* explorer */}</ul>
+						{/*<button class={styles.header} type="button">*/}
+						{/*	<Triangle direction="down" />*/}
+						{/*	{current.value}*/}
+						{/*</button>*/}
+						<Accordion label={current.value}>
+							<ul>{/* explorer */}</ul>
+						</Accordion>
 					</nav>
 					<nav>
 						{/* Panel (sub) */}
