@@ -3,6 +3,7 @@
 	block-size: 6px;
 	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 	background-color: var(--color-secondary-4);
+	transition: var(--transition);
 
 	&.up {
 		rotate: 0deg;
