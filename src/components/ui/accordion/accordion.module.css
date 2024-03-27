@@ -2,8 +2,13 @@
 	font-size: var(--font-size-label);
 
 	.header {
+		display: flex;
+		gap: 11px;
+		align-items: center;
 		inline-size: 100%;
-		background-color: red; /* TEMP: */
+		block-size: 40px;
+		padding-inline: 14px;
+		border-block-end: var(--border);
 	}
 
 	.content {
