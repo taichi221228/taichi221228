@@ -1,8 +1,14 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, Slot, useSignal } from "@builder.io/qwik";
+
+import { Triangle } from "~/components/ui/triangle/triangle";
 
 import styles from "./accordion.module.css";
 
-export const Accordion = component$(() => {
+type Props = {
+	label: string;
+};
+
+export const Accordion = component$<Props>(({ label }) => {
 	const isOpen = useSignal(false);
 
 	return (
@@ -14,9 +20,12 @@ export const Accordion = component$(() => {
 				}}
 				type="button"
 			>
-				{isOpen.value ? "Close" : "Open"}
+				<Triangle direction={isOpen.value ? "up" : "down"} />
+				{label}
 			</button>
-			<div class={[styles.content, isOpen.value && styles.opened]}>Content</div>
+			<div class={[styles.content, isOpen.value && styles.opened]}>
+				<Slot />
+			</div>
 		</div>
 	);
 });
