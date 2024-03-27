@@ -52,7 +52,13 @@ export default component$(() => {
 						{/*	{current.value}*/}
 						{/*</button>*/}
 						<Accordion label={current.value}>
-							<ul>{/* explorer */}</ul>
+							<ul>
+								<li>bio</li>
+								<li>interests</li>
+								<li>education</li>
+								<li>high-school</li>
+								<li>university</li>
+							</ul>
 						</Accordion>
 					</nav>
 					<nav>
