@@ -51,7 +51,7 @@ export default component$(() => {
 						{/*	<Triangle direction="down" />*/}
 						{/*	{current.value}*/}
 						{/*</button>*/}
-						<Accordion label={current.value}>
+						<Accordion as="nav" label={current.value}>
 							<ul>
 								<li>bio</li>
 								<li>interests</li>
