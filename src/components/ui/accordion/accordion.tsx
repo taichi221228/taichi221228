@@ -1,18 +1,19 @@
 import { component$, Slot, useSignal } from "@builder.io/qwik";
 
+import { Poly, type PolyProps } from "~/components/functional/poly/poly";
 import { Triangle } from "~/components/ui/triangle/triangle";
 
 import styles from "./accordion.module.css";
 
 type Props = {
 	label: string;
-};
+} & PolyProps<"div" | "nav">;
 
-export const Accordion = component$<Props>(({ label }) => {
+export const Accordion = component$<Props>(({ as, label }) => {
 	const isOpen = useSignal(false);
 
 	return (
-		<div class={styles.accordion}>
+		<Poly class={styles.accordion} as={as}>
 			<button
 				class={styles.header}
 				onClick$={() => {
@@ -26,6 +27,6 @@ export const Accordion = component$<Props>(({ label }) => {
 			<div class={[styles.content, isOpen.value && styles.opened]}>
 				<Slot />
 			</div>
-		</div>
+		</Poly>
 	);
 });
