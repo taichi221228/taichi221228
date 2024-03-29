@@ -3,11 +3,7 @@
 	"organizeImports": {
 		"enabled": false
 	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		},
+	"files": {
 		"ignore": [
 			"./dist",
 			"./lib",
@@ -37,7 +33,14 @@
 			"*.sln",
 			"*.sw?",
 			".yarn/*",
-			"!.yarn/releases"
+			"!.yarn/releases",
+			"./src/styled-system"
 		]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
 	}
 }
