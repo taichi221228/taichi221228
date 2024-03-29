@@ -19,6 +19,7 @@
 		"format.check": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier --check .\" \"bunx @biomejs/biome format .\"",
 		"lint": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#FFF,#259EAC\" \"eslint \\\"src/**/*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}\\\"\" \"bunx @biomejs/biome lint .\" \"stylelint \\\"src/**/*.css\\\"\" \"textlint \\\"{README.md,src/**/*.md}\\\"\"",
 		"lint.fix": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#FFF,#259EAC\" \"eslint --fix \\\"src/**/*.{js,cjs,mjs,ts,cts,mts,jsx,tsx}\\\"\" \"bunx @biomejs/biome lint --apply .\" \"stylelint --fix \\\"src/**/*.css\\\"\" \"textlint --fix \\\"{README.md,src/**/*.md}\\\"\"",
+		"prebuild.pandacss": "panda codegen --silent",
 		"prepare": "husky",
 		"preview": "qwik build preview && vite preview --open",
 		"start": "vite --open --mode ssr",
