@@ -21,6 +21,12 @@
 			"~/*": ["./src/*"]
 		}
 	},
-	"files": ["./.eslintrc.cjs"],
+	"files": [
+		"./.eslintrc.cjs",
+		"./.eslintrc.import.cjs",
+		"./.stylelintrc.js",
+		"./.stylelintrc.order.cjs",
+		"./.textlintrc.cjs"
+	],
 	"include": ["src", "./*.d.ts", "./*.config.ts"]
 }
