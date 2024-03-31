@@ -32,5 +32,6 @@
 		"./postcss.config.js",
 		"./vite.config.ts"
 	],
-	"include": ["src", "./*.d.ts"]
+	"include": ["src", "./*.d.ts"],
+	"exclude": ["src/styled-system"]
 }
