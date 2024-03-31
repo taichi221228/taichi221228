@@ -26,7 +26,10 @@
 		"./.eslintrc.import.cjs",
 		"./.stylelintrc.js",
 		"./.stylelintrc.order.cjs",
-		"./.textlintrc.cjs"
+		"./.textlintrc.cjs",
+		"./panda.config.ts",
+		"./postcss.config.js",
+		"./vite.config.ts"
 	],
-	"include": ["src", "./*.d.ts", "./*.config.ts"]
+	"include": ["src", "./*.d.ts"]
 }
