@@ -25,7 +25,7 @@
 		"./.eslintrc.cjs",
 		"./.eslintrc.import.cjs",
 		"./.stylelintrc.js",
-		"./.stylelintrc.order.cjs",
+		"./.stylelintrc.order.js",
 		"./.textlintrc.cjs",
 		"./panda.config.ts",
 		"./postcss.config.js",
