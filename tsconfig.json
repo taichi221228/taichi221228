@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+		"checkJs": true,
 		"allowJs": true,
 		"target": "ES2017",
 		"module": "ES2022",
