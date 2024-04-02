@@ -13,7 +13,7 @@ export const Footer = component$(() => {
 					keyof typeof SNS,
 					(typeof SNS)[keyof typeof SNS],
 				][]
-			).map(([name, profile]) => {
+			).map(([name, { Logo, ...profile }]) => {
 				return (
 					<a
 						key={name}
@@ -23,7 +23,7 @@ export const Footer = component$(() => {
 						target="_blank"
 					>
 						{name === "github" && `@${profile.username}`}
-						<i class={`ri-${name}-fill`} />
+						<Logo />
 					</a>
 				);
 			})}
