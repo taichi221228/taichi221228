@@ -9,26 +9,26 @@ export const USERNAME = "taichi221228";
 type Sns = Record<
 	string,
 	{
+		Logo: Component;
 		username: string;
 		url: string;
-		Logo: Component;
 	}
 >;
 
 export const SNS = {
-	twitter: {
-		username: USERNAME,
-		url: `https://x.com/${USERNAME}`,
-		Logo: TwitterIcon,
-	},
 	facebook: {
+		Logo: FacebookIcon,
 		username: USERNAME,
 		url: `https://www.facebook.com/${USERNAME}`,
-		Logo: FacebookIcon,
 	},
 	github: {
+		Logo: GitHubIcon,
 		username: USERNAME,
 		url: `https://github.com/${USERNAME}`,
-		Logo: GitHubIcon,
+	},
+	twitter: {
+		Logo: TwitterIcon,
+		username: USERNAME,
+		url: `https://x.com/${USERNAME}`,
 	},
 } as const satisfies Sns;
