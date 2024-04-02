@@ -6,7 +6,7 @@ export const NAME = "Taichi Fukuda";
 export const SITENAME = "taichi-fukuda";
 export const USERNAME = "taichi221228";
 
-type Sns = Record<
+type Sns_ = Record<
 	string,
 	{
 		Logo: Component;
@@ -14,6 +14,8 @@ type Sns = Record<
 		url: string;
 	}
 >;
+
+export type Sns = typeof SNS;
 
 export const SNS = {
 	facebook: {
@@ -31,4 +33,4 @@ export const SNS = {
 		username: USERNAME,
 		url: `https://x.com/${USERNAME}`,
 	},
-} as const satisfies Sns;
+} as const satisfies Sns_;
