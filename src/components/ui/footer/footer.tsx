@@ -8,22 +8,24 @@ export const Footer = component$(() => {
 	return (
 		<footer class={styles.footer}>
 			<p>find me in:</p>
-			{(Object.entries(SNS) as [keyof Sns, Sns[keyof Sns]][]).map(
-				([name, { Logo, ...profile }]) => {
-					return (
-						<a
-							key={name}
-							class={styles[name]}
-							rel="noreferrer"
-							href={profile.url}
-							target="_blank"
-						>
-							{name === "github" && `@${profile.username}`}
-							<Logo />
-						</a>
-					);
-				},
-			)}
+			{(
+				(["facebook", "twitter", "github"] satisfies (keyof Sns)[]).map(
+					(name) => [name, SNS[name]],
+				) satisfies [keyof Sns, Sns[keyof Sns]][]
+			).map(([name, { Logo, ...profile }]) => {
+				return (
+					<a
+						key={name}
+						class={styles[name]}
+						rel="noreferrer"
+						href={profile.url}
+						target="_blank"
+					>
+						{name === "github" && `@${profile.username}`}
+						<Logo />
+					</a>
+				);
+			})}
 		</footer>
 	);
 });
