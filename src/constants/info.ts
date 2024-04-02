@@ -6,9 +6,10 @@ export const NAME = "Taichi Fukuda";
 export const SITENAME = "taichi-fukuda";
 export const USERNAME = "taichi221228";
 
-export type Sns = typeof SNS;
+export type Snss = typeof SNSS;
+export type Sns = Snss[keyof Snss];
 
-export const SNS = {
+export const SNSS = {
 	facebook: {
 		Logo: FacebookIcon,
 		username: USERNAME,

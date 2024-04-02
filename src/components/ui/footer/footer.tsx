@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import { type Sns, SNS } from "~/constants/info";
+import { type Snss, SNSS, type Sns } from "~/constants/info";
 
 import styles from "./footer.module.css";
 
@@ -9,10 +9,10 @@ export const Footer = component$(() => {
 		<footer class={styles.footer}>
 			<p>find me in:</p>
 			{(
-				(["facebook", "x", "github"] satisfies (keyof Sns)[]).map((name) => [
+				(["facebook", "x", "github"] satisfies (keyof Snss)[]).map((name) => [
 					name,
-					SNS[name],
-				]) satisfies [keyof Sns, Sns[keyof Sns]][]
+					SNSS[name],
+				]) satisfies [keyof Snss, Sns][]
 			).map(([name, { Logo, ...profile }]) => {
 				return (
 					<a
