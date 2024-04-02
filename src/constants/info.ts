@@ -1,6 +1,6 @@
 import type { Component } from "@builder.io/qwik";
 
-import { FacebookIcon, GitHubIcon, TwitterIcon } from "~/components/ui/icons";
+import { FacebookIcon, GitHubIcon, XIcon } from "~/components/ui/icons";
 
 export const NAME = "Taichi Fukuda";
 export const SITENAME = "taichi-fukuda";
@@ -28,8 +28,8 @@ export const SNS = {
 		username: USERNAME,
 		url: `https://github.com/${USERNAME}`,
 	},
-	twitter: {
-		Logo: TwitterIcon,
+	x: {
+		Logo: XIcon,
 		username: USERNAME,
 		url: `https://x.com/${USERNAME}`,
 	},

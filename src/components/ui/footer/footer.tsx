@@ -9,9 +9,10 @@ export const Footer = component$(() => {
 		<footer class={styles.footer}>
 			<p>find me in:</p>
 			{(
-				(["facebook", "twitter", "github"] satisfies (keyof Sns)[]).map(
-					(name) => [name, SNS[name]],
-				) satisfies [keyof Sns, Sns[keyof Sns]][]
+				(["facebook", "x", "github"] satisfies (keyof Sns)[]).map((name) => [
+					name,
+					SNS[name],
+				]) satisfies [keyof Sns, Sns[keyof Sns]][]
 			).map(([name, { Logo, ...profile }]) => {
 				return (
 					<a
