@@ -1,6 +1,7 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/ui/icons";
 import { Triangle } from "~/components/ui/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
@@ -24,7 +25,7 @@ export default component$(() => {
 								type="button"
 								disabled={current.value === 0}
 							>
-								<i class="ri-terminal-box-fill" />
+								<TerminalIcon />
 							</button>
 						</li>
 						<li>
@@ -36,7 +37,7 @@ export default component$(() => {
 								type="button"
 								disabled={current.value === 1}
 							>
-								<i class="ri-user-4-fill" />
+								<UserIcon />
 							</button>
 						</li>
 						<li>
@@ -48,7 +49,7 @@ export default component$(() => {
 								type="button"
 								disabled={current.value === 2}
 							>
-								<i class="ri-gamepad-fill" />
+								<GamepadIcon />
 							</button>
 						</li>
 					</ul>
