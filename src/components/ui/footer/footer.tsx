@@ -23,7 +23,7 @@ export const Footer = component$(() => {
 						target="_blank"
 					>
 						{name === "github" && `@${profile.username}`}
-						<Logo />
+						<Logo class={styles.icon} />
 					</a>
 				);
 			})}
