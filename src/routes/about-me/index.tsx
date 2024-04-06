@@ -25,7 +25,7 @@ export default component$(() => {
 								type="button"
 								disabled={current.value === 0}
 							>
-								<TerminalIcon />
+								<TerminalIcon class={styles.icon} />
 							</button>
 						</li>
 						<li>
@@ -37,7 +37,7 @@ export default component$(() => {
 								type="button"
 								disabled={current.value === 1}
 							>
-								<UserIcon />
+								<UserIcon class={styles.icon} />
 							</button>
 						</li>
 						<li>
@@ -49,7 +49,7 @@ export default component$(() => {
 								type="button"
 								disabled={current.value === 2}
 							>
-								<GamepadIcon />
+								<GamepadIcon class={styles.icon} />
 							</button>
 						</li>
 					</ul>
