@@ -18,7 +18,7 @@ import { manifest } from "@qwik-client-manifest"; // eslint-disable-line import/
 
 import Root from "./root";
 
-export default function (opts: RenderToStreamOptions) {
+export default (opts: RenderToStreamOptions) => {
 	return renderToStream(<Root />, {
 		manifest,
 		...opts,
@@ -28,4 +28,4 @@ export default function (opts: RenderToStreamOptions) {
 			...opts.containerAttributes,
 		},
 	});
-}
+};

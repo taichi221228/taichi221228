@@ -1,6 +1,6 @@
 import type { Component } from "@builder.io/qwik";
 
-import { FacebookIcon, GitHubIcon, XIcon } from "~/components/ui/icons";
+import { FacebookIcon, GitHubIcon, XIcon } from "~/components/interface/icons";
 
 export const NAME = "Taichi Fukuda";
 export const SITENAME = "taichi-fukuda";

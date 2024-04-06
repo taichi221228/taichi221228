@@ -1,8 +1,12 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/ui/icons";
-import { Triangle } from "~/components/ui/triangle/triangle";
+import {
+	GamepadIcon,
+	TerminalIcon,
+	UserIcon,
+} from "~/components/interface/icons";
+import { Triangle } from "~/components/interface/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
