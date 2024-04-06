@@ -16,22 +16,30 @@ export const RouterHead = component$(() => {
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-			{head.meta.map((m) => (
-				<meta key={m.key} {...m} />
+			{head.meta.map(({ key, ...props }) => (
+				<meta key={key} {...props} />
 			))}
 
-			{head.links.map((l) => (
-				<link key={l.key} {...l} />
+			{head.links.map(({ key, ...props }) => (
+				<link key={key} {...props} />
 			))}
 
-			{head.styles.map((s) => (
-				// biome-ignore lint/security/noDangerouslySetInnerHtml:
-				<style key={s.key} {...s.props} dangerouslySetInnerHTML={s.style} />
+			{head.styles.map(({ key, props, style }) => (
+				<style
+					key={key}
+					{...props}
+					// biome-ignore lint/security/noDangerouslySetInnerHtml:
+					dangerouslySetInnerHTML={style}
+				/>
 			))}
 
-			{head.scripts.map((s) => (
-				// biome-ignore lint/security/noDangerouslySetInnerHtml:
-				<script key={s.key} {...s.props} dangerouslySetInnerHTML={s.script} />
+			{head.scripts.map(({ key, props, script }) => (
+				<script
+					key={key}
+					{...props}
+					// biome-ignore lint/security/noDangerouslySetInnerHtml:
+					dangerouslySetInnerHTML={script}
+				/>
 			))}
 		</>
 	);
