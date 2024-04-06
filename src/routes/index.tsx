@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { Game } from "~/components/ui/game/game";
+import { Game } from "~/components/interface/game/game";
 import { NAME, SNSS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 

@@ -1,7 +1,7 @@
 import { component$, Slot } from "@builder.io/qwik";
 
-import { Footer } from "~/components/ui/footer/footer";
-import { Header } from "~/components/ui/header/header";
+import { Footer } from "~/components/interface/footer/footer";
+import { Header } from "~/components/interface/header/header";
 import { useGlobalStyles } from "~/hooks/global-styles/global-styles";
 
 export default component$(() => {
