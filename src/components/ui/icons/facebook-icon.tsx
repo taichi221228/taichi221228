@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-export const FacebookIcon = component$(() => {
-	return <i class="ri-facebook-fill" />;
+import type { Props } from "./index";
+
+export const FacebookIcon = component$<Props>(({ class: c }) => {
+	return <i class={[c, "ri-facebook-fill"]} />;
 });

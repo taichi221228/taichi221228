@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-export const GamepadIcon = component$(() => {
-	return <i class="ri-gamepad-fill" />;
+import type { Props } from "./index";
+
+export const GamepadIcon = component$<Props>(({ class: c }) => {
+	return <i class={[c, "ri-gamepad-fill"]} />;
 });
