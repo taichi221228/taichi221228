@@ -20,7 +20,6 @@
 					text-align: center;
 
 					button {
-						font-size: 24px;
 						line-height: 1;
 						color: var(--color-secondary-1-lighter);
 
@@ -28,6 +27,10 @@
 						&:is(:focus-visible, :hover) {
 							color: var(--color-secondary-1);
 						}
+					}
+
+					.icon {
+						font-size: 24px;
 					}
 				}
 			}

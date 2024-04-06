@@ -31,7 +31,7 @@
 	}
 
 	a {
-		&.twitter,
+		&.x,
 		&.facebook {
 			inline-size: 52px;
 			color: var(--color-secondary-1-lighter);
@@ -51,7 +51,7 @@
 			}
 		}
 
-		i {
+		.icon {
 			font-size: 20px;
 		}
 	}
