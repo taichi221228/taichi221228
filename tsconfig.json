@@ -30,6 +30,5 @@
 		"./.textlintrc.cjs",
 		"./vite.config.ts"
 	],
-	"include": ["src", "./*.d.ts"],
-	"exclude": ["src/styled-system"]
+	"include": ["src", "./*.d.ts"]
 }
