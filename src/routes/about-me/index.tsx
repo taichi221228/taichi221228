@@ -4,10 +4,12 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { Accordion } from "~/components/interface/accordion/accordion";
 import {
 	GamepadIcon,
+	MailIcon,
+	PhoneIcon,
 	TerminalIcon,
 	UserIcon,
 } from "~/components/interface/icons";
-import { NAME } from "~/constants/info";
+import { EMAIL, NAME, PHONE, USERNAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
@@ -54,9 +56,21 @@ export default component$(() => {
 							<li>university</li>
 						</ul>
 					</Accordion>
-					<Accordion as="nav" label="contacts">
-						{/* Panel (sub) */}
-						<ul>{/* contacts */}</ul>
+					<Accordion as="nav" label="contacts" shouldOpen={true}>
+						<ul>
+							<li>
+								<a href={`mailto:${EMAIL}`}>
+									<MailIcon />
+									{USERNAME}
+								</a>
+							</li>
+							<li>
+								<a href={`tel:${PHONE}`}>
+									<PhoneIcon />
+									{PHONE}
+								</a>
+							</li>
+						</ul>
 					</Accordion>
 				</div>
 			</aside>

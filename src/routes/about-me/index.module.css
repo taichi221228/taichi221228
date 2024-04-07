@@ -37,7 +37,34 @@
 		}
 
 		.sidebar {
-			flex-grow: 1;
+			inline-size: calc(100% - var(--inline-size-activitybar));
+
+			ul {
+				li {
+					color: var(--color-secondary-1);
+
+					+ li {
+						margin-block-start: 4px;
+					}
+
+					/* stylelint-disable-next-line no-descending-specificity */
+					a,
+					button {
+						--padding-inline: 6px;
+
+						display: flex;
+						gap: 8px;
+						padding-inline: var(--padding-inline);
+						margin-inline: calc(-1 * var(--padding-inline));
+						border-radius: 4px;
+
+						&:is(:focus-visible, :hover) {
+							color: var(--color-secondary-4);
+							background-color: var(--color-primary-1);
+						}
+					}
+				}
+			}
 		}
 	}
 
