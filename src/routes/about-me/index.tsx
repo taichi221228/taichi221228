@@ -45,10 +45,6 @@ export default component$(() => {
 				<div class={styles.sidebar}>
 					{/* Sidebar */}
 					{/* Panel (main) */}
-					{/*<button class={styles.header} type="button">*/}
-					{/*	<Triangle direction="down" />*/}
-					{/*	{current.value}*/}
-					{/*</button>*/}
 					<Accordion as="nav" label={current.value}>
 						<ul>
 							<li>bio</li>
