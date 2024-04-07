@@ -3,6 +3,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { Accordion } from "~/components/interface/accordion/accordion";
 import {
+	FolderIcon,
 	GamepadIcon,
 	MailIcon,
 	PhoneIcon,
@@ -45,15 +46,28 @@ export default component$(() => {
 					</ul>
 				</nav>
 				<div class={styles.sidebar}>
-					{/* Sidebar */}
-					{/* Panel (main) */}
-					<Accordion as="nav" label={current.value}>
+					<Accordion as="nav" label={current.value} shouldOpen={true}>
 						<ul>
-							<li>bio</li>
-							<li>interests</li>
-							<li>education</li>
-							<li>high-school</li>
-							<li>university</li>
+							{(
+								[
+									["bio", 1],
+									["interests", 2],
+									["education", 3],
+								] as const satisfies [string, number][]
+							).map(([name, variant], i) => {
+								return (
+									<li key={name}>
+										<button
+											class={i === 0 && styles.activated}
+											type="button"
+											disabled={i === 0}
+										>
+											<FolderIcon variant={variant} />
+											{name}
+										</button>
+									</li>
+								);
+							})}
 						</ul>
 					</Accordion>
 					<Accordion as="nav" label="contacts" shouldOpen={true}>

@@ -55,12 +55,17 @@
 
 						display: flex;
 						gap: 8px;
+						inline-size: 100%;
 						padding-inline: var(--padding-inline);
 						margin-inline: calc(-1 * var(--padding-inline));
 						border-radius: 4px;
 
+						&.activated,
 						&:is(:focus-visible, :hover) {
 							color: var(--color-secondary-4);
+						}
+
+						&:not([disabled]):is(:focus-visible, :hover) {
 							background-color: var(--color-primary-1);
 						}
 					}
