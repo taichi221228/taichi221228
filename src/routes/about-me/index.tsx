@@ -1,13 +1,13 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import { Accordion } from "~/components/interface/accordion/accordion";
 import {
 	GamepadIcon,
 	TerminalIcon,
 	UserIcon,
 } from "~/components/interface/icons";
-import { Accordion } from "~/components/ui/accordion/accordion";
-import { Triangle } from "~/components/ui/triangle/triangle";
+import { Triangle } from "~/components/interface/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
