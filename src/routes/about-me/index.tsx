@@ -36,7 +36,7 @@ export default component$(() => {
 									type="button"
 									disabled={current.value === name}
 								>
-									<Icon />
+									<Icon class={styles.icon} />
 								</button>
 							</li>
 						))}
