@@ -12,6 +12,7 @@
 
 		.activitybar {
 			flex-basis: var(--inline-size-activitybar);
+			flex-shrink: 0;
 			border-inline-end: var(--border);
 
 			ul {
