@@ -7,7 +7,6 @@ import {
 	TerminalIcon,
 	UserIcon,
 } from "~/components/interface/icons";
-import { Triangle } from "~/components/interface/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
@@ -59,14 +58,10 @@ export default component$(() => {
 							<li>university</li>
 						</ul>
 					</Accordion>
-					<nav>
+					<Accordion as="nav" label="contacts">
 						{/* Panel (sub) */}
-						<button class={styles.header} type="button">
-							<Triangle direction="down" />
-							contacts
-						</button>
 						<ul>{/* contacts */}</ul>
-					</nav>
+					</Accordion>
 				</div>
 			</aside>
 			<div class={styles.editor}>
