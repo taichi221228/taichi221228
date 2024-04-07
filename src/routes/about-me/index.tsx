@@ -45,22 +45,20 @@ export default component$(() => {
 				</nav>
 				<div class={styles.sidebar}>
 					{/* Sidebar */}
-					<nav>
-						{/* Panel (main) */}
-						{/*<button class={styles.header} type="button">*/}
-						{/*	<Triangle direction="down" />*/}
-						{/*	{current.value}*/}
-						{/*</button>*/}
-						<Accordion as="nav" label={current.value}>
-							<ul>
-								<li>bio</li>
-								<li>interests</li>
-								<li>education</li>
-								<li>high-school</li>
-								<li>university</li>
-							</ul>
-						</Accordion>
-					</nav>
+					{/* Panel (main) */}
+					{/*<button class={styles.header} type="button">*/}
+					{/*	<Triangle direction="down" />*/}
+					{/*	{current.value}*/}
+					{/*</button>*/}
+					<Accordion as="nav" label={current.value}>
+						<ul>
+							<li>bio</li>
+							<li>interests</li>
+							<li>education</li>
+							<li>high-school</li>
+							<li>university</li>
+						</ul>
+					</Accordion>
 					<nav>
 						{/* Panel (sub) */}
 						<button class={styles.header} type="button">
