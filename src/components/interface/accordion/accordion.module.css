@@ -1,4 +1,6 @@
 .accordion {
+	--padding: 14px;
+
 	font-size: var(--font-size-label);
 
 	.header {
@@ -7,7 +9,7 @@
 		align-items: center;
 		inline-size: 100%;
 		block-size: 40px;
-		padding-inline: 14px;
+		padding-inline: var(--padding);
 		border-block-end: var(--border);
 	}
 
@@ -21,7 +23,7 @@
 		}
 
 		.container {
-			padding: 14px;
+			padding: var(--padding);
 		}
 	}
 }
