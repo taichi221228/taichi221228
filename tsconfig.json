@@ -28,10 +28,7 @@
 		"./.stylelintrc.js",
 		"./.stylelintrc.order.js",
 		"./.textlintrc.cjs",
-		"./panda.config.ts",
-		"./postcss.config.js",
 		"./vite.config.ts"
 	],
-	"include": ["src", "./*.d.ts"],
-	"exclude": ["src/styled-system"]
+	"include": ["src", "./*.d.ts"]
 }

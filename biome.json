@@ -33,8 +33,7 @@
 			"*.sln",
 			"*.sw?",
 			".yarn/*",
-			"!.yarn/releases",
-			"./src/styled-system"
+			"!.yarn/releases"
 		]
 	},
 	"linter": {
