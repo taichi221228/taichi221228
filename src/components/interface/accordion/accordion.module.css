@@ -19,5 +19,9 @@
 		&.opened {
 			max-block-size: 500px;
 		}
+
+		.container {
+			padding: 18px 14px;
+		}
 	}
 }
