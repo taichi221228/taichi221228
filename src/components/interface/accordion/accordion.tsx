@@ -23,7 +23,7 @@ export const Accordion = component$<Props>(
 					}}
 					type="button"
 				>
-					<Triangle direction={isOpen.value ? "up" : "down"} />
+					<Triangle direction={isOpen.value ? "down" : "up"} />
 					{label}
 				</button>
 				<div class={[styles.content, isOpen.value && styles.opened]}>
