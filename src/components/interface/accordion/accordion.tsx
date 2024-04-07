@@ -25,7 +25,9 @@ export const Accordion = component$<Props>(({ as, label }) => {
 				{label}
 			</button>
 			<div class={[styles.content, isOpen.value && styles.opened]}>
-				<Slot />
+				<div class={styles.container}>
+					<Slot />
+				</div>
 			</div>
 		</Poly>
 	);
