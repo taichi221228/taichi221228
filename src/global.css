@@ -58,7 +58,9 @@
 	--color-accent-4-rgb: 201 139 223;
 	--border: var(--border-width) solid var(--color-primary-1);
 	--border-width: 1px;
-	--border-radius: 8px;
+	--border-radius-sm: 4px;
+	--border-radius-md: 8px;
+	--border-radius: 8px; /* TODO: For migration. Will be removed. */
 	--border-radius-round: 9999px;
 	--transition: all 0.25s ease-in-out;
 }
