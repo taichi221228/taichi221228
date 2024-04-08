@@ -57,7 +57,7 @@
 						gap: 8px;
 						inline-size: 100%;
 						padding-inline: var(--padding-inline);
-						margin-inline: calc(-1 * var(--padding-inline));
+						margin-inline: calc(var(--padding-inline) * -1);
 						border-radius: var(--border-radius-sm);
 
 						&.activated,
