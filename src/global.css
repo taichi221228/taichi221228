@@ -64,6 +64,13 @@
 	--transition: all 0.25s ease-in-out;
 }
 
+* {
+	:is(&:focus, &:focus-visible) {
+		outline-color: var(--color-accent-4);
+		outline-offset: calc(var(--border-width) * -1 * 2);
+	}
+}
+
 html {
 	padding: var(--padding-outside);
 	font-size: var(--font-size-body);
