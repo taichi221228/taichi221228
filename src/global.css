@@ -51,6 +51,7 @@
 	--color-accent-4-rgb: 201 139 223;
 	--border: var(--border-width) solid var(--color-primary-1);
 	--border-width: 1px;
+	--border-width-lg: 3px;
 	--border-radius-sm: 4px;
 	--border-radius-md: 8px;
 	--border-radius-round: 9999px;
@@ -59,8 +60,8 @@
 
 * {
 	:is(&:focus, &:focus-visible) {
-		outline: 3px solid var(--color-accent-4);
-		outline-offset: -3px;
+		outline: var(--border-width-lg) solid var(--color-accent-4);
+		outline-offset: calc(var(--border-width-lg) * -1);
 	}
 }
 
