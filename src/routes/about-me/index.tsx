@@ -17,9 +17,21 @@ import styles from "./index.module.css";
 
 export default component$(() => {
 	const activities = [
-		{ name: "professional-info", Icon: TerminalIcon },
-		{ name: "personal-info", Icon: UserIcon },
-		{ name: "hobbies", Icon: GamepadIcon },
+		{
+			name: "professional-info",
+			Icon: TerminalIcon,
+			contents: ["experience", "skills"],
+		},
+		{
+			name: "personal-info",
+			Icon: UserIcon,
+			contents: ["bio", "interests", "education"],
+		},
+		{
+			name: "hobbies",
+			Icon: GamepadIcon,
+			contents: ["music", "books", "games"],
+		},
 	] as const;
 	const current =
 		useSignal<(typeof activities)[number]["name"]>("personal-info");
@@ -50,21 +62,20 @@ export default component$(() => {
 						<span q:slot="head">{current.value}</span>
 						<ul q:slot="body">
 							{(
-								[
-									["bio", 1],
-									["interests", 2],
-									["education", 3],
-								] as const satisfies [string, number][]
-							).map(([name, variant], i) => {
+								activities.find(({ name }) => name === current.value)
+									?.contents ?? []
+							).map((content, i) => {
 								return (
-									<li key={name}>
+									<li key={content}>
 										<button
 											class={i === 0 && styles.activated}
 											type="button"
 											disabled={i === 0}
 										>
-											<FolderIcon variant={variant} />
-											{name}
+											<FolderIcon
+												variant={i % 3 === 0 ? 3 : i % 2 === 0 ? 2 : 1}
+											/>
+											{content}
 										</button>
 									</li>
 								);
