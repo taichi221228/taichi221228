@@ -45,6 +45,7 @@
 			gap: 7px;
 			padding-inline: 23px;
 			color: var(--color-secondary-1);
+			border-bottom-right-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
 				color: var(--color-secondary-4);
