@@ -9,7 +9,7 @@
 		}
 	}
 
-	.header {
+	.head {
 		display: flex;
 		gap: 11px;
 		align-items: center;
@@ -19,7 +19,7 @@
 		border-block-end: var(--border);
 	}
 
-	.content {
+	.body {
 		max-block-size: 0;
 		overflow: hidden;
 		transition: var(--transition);

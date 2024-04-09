@@ -15,18 +15,18 @@ export const Accordion = component$<Props>(({ as, shouldOpen = false }) => {
 	return (
 		<Poly class={styles.accordion} as={as}>
 			<button
-				class={styles.header}
+				class={styles.head}
 				onClick$={() => {
 					isOpen.value = !isOpen.value;
 				}}
 				type="button"
 			>
 				<Triangle direction={isOpen.value ? "down" : "up"} />
-				<Slot name="header" />
+				<Slot name="head" />
 			</button>
-			<div class={[styles.content, isOpen.value && styles.opened]}>
+			<div class={[styles.body, isOpen.value && styles.opened]}>
 				<div class={styles.container}>
-					<Slot name="content" />
+					<Slot name="body" />
 				</div>
 			</div>
 		</Poly>
