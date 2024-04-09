@@ -3,12 +3,6 @@
 
 	font-size: var(--font-size-label);
 
-	&:not(:last-child) {
-		.container {
-			border-block-end: var(--border);
-		}
-	}
-
 	.head {
 		display: flex;
 		gap: 11px;
@@ -30,6 +24,14 @@
 
 		.container {
 			padding: var(--padding);
+		}
+	}
+
+	&:not(:last-child) {
+		.body {
+			.container {
+				border-block-end: var(--border);
+			}
 		}
 	}
 }
