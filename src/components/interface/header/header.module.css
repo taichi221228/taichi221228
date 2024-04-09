@@ -23,6 +23,7 @@
 			inline-size: 100%;
 			block-size: 100%;
 			padding-inline: 22px;
+			border-top-left-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
 				color: var(--color-secondary-4);
