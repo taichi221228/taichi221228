@@ -46,8 +46,9 @@ export default component$(() => {
 					</ul>
 				</nav>
 				<div class={styles.sidebar}>
-					<Accordion as="nav" label={current.value} shouldOpen={true}>
-						<ul>
+					<Accordion as="nav" shouldOpen={true}>
+						<span q:slot="header">{current.value}</span>
+						<ul q:slot="content">
 							{(
 								[
 									["bio", 1],
@@ -70,8 +71,9 @@ export default component$(() => {
 							})}
 						</ul>
 					</Accordion>
-					<Accordion as="nav" label="contacts" shouldOpen={true}>
-						<ul>
+					<Accordion as="nav" shouldOpen={true}>
+						<span q:slot="header">contacts</span>
+						<ul q:slot="content">
 							<li>
 								<a href={`mailto:${EMAIL}`}>
 									<MailIcon />
