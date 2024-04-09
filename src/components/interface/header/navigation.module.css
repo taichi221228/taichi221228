@@ -7,16 +7,17 @@
 		block-size: 100%;
 
 		li {
-			border-inline-end: var(--border);
-
 			@container (inline-size < 709px) {
 				flex-grow: 1;
+			}
+
+			&:not(:last-child) {
+				border-inline-end: var(--border);
 			}
 
 			&:last-child {
 				margin-inline-start: auto;
 				border-inline-start: var(--border);
-				border-inline-end: none;
 			}
 
 			a {
