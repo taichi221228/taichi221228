@@ -49,8 +49,8 @@
 	--color-accent-2-rgb: 67 217 173;
 	--color-accent-3-rgb: 233 146 135;
 	--color-accent-4-rgb: 201 139 223;
-	--border: var(--border-width) solid var(--color-primary-1);
-	--border-width: 1px;
+	--border: var(--border-width-md) solid var(--color-primary-1);
+	--border-width-md: 1px;
 	--border-width-lg: 3px;
 	--border-radius-sm: 4px;
 	--border-radius-md: 8px;
