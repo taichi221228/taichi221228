@@ -1,10 +1,12 @@
-import { component$, type Signal } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
 import { activities } from "../index";
 
 type Props = {
-	current: Signal<(typeof activities)[number]["name"]>;
+	current: {
+		activity: (typeof activities)[number]["name"];
+	};
 };
 
 export const Activitybar = component$<Props>(({ current }) => {
@@ -14,12 +16,12 @@ export const Activitybar = component$<Props>(({ current }) => {
 				{activities.map(({ name, Icon }) => (
 					<li key={name}>
 						<button
-							class={[current.value === name && styles.activated]}
+							class={[current.activity === name && styles.activated]}
 							onClick$={() => {
-								current.value = name;
+								current.activity = name;
 							}}
 							type="button"
-							disabled={current.value === name}
+							disabled={current.activity === name}
 						>
 							<Icon class={styles.icon} />
 						</button>
