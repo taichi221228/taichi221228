@@ -14,12 +14,12 @@ export const Activitybar = component$<Props>(({ current }) => {
 				{activities.map(({ name, Icon }) => (
 					<li key={name}>
 						<button
-							class={[current.activity === name && styles.activated]}
+							class={[name === current.activity && styles.activated]}
 							onClick$={() => {
 								current.activity = name;
 							}}
 							type="button"
-							disabled={current.activity === name}
+							disabled={name === current.activity}
 						>
 							<Icon class={styles.icon} />
 						</button>
