@@ -25,9 +25,12 @@ export const Sidebar = component$<Props>(({ current }) => {
 								return (
 									<li key={content}>
 										<button
-											class={i === 0 && styles.activated}
+											class={content === current.side && styles.activated}
+											onClick$={() => {
+												current.side = content;
+											}}
 											type="button"
-											disabled={i === 0}
+											disabled={content === current.side}
 										>
 											<FolderIcon
 												variant={

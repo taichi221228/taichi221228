@@ -33,11 +33,13 @@ export const activities = [
 
 export type Current = {
 	activity: (typeof activities)[number]["name"];
+	side: (typeof activities)[number]["contents"][number];
 };
 
 export default component$(() => {
 	const current = useStore<Current>({
 		activity: "personal-info",
+		side: "bio",
 	});
 
 	return (
