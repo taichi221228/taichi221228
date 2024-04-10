@@ -15,24 +15,25 @@ import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
 
+const activities = [
+	{
+		name: "professional-info",
+		Icon: TerminalIcon,
+		contents: ["experience", "skills"],
+	},
+	{
+		name: "personal-info",
+		Icon: UserIcon,
+		contents: ["bio", "interests", "education"],
+	},
+	{
+		name: "hobbies",
+		Icon: GamepadIcon,
+		contents: ["music", "books", "games"],
+	},
+] as const;
+
 export default component$(() => {
-	const activities = [
-		{
-			name: "professional-info",
-			Icon: TerminalIcon,
-			contents: ["experience", "skills"],
-		},
-		{
-			name: "personal-info",
-			Icon: UserIcon,
-			contents: ["bio", "interests", "education"],
-		},
-		{
-			name: "hobbies",
-			Icon: GamepadIcon,
-			contents: ["music", "books", "games"],
-		},
-	] as const;
 	const current =
 		useSignal<(typeof activities)[number]["name"]>("personal-info");
 
