@@ -31,10 +31,12 @@ export const activities = [
 	},
 ] as const satisfies { name: string; Icon: Component; contents: string[] }[];
 
+export type Current = {
+	activity: (typeof activities)[number]["name"];
+};
+
 export default component$(() => {
-	const current = useStore<{
-		activity: (typeof activities)[number]["name"];
-	}>({
+	const current = useStore<Current>({
 		activity: "personal-info",
 	});
 

@@ -5,12 +5,10 @@ import { FolderIcon, MailIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
 import styles from "./sidebar.module.css";
-import { activities } from "../index";
+import { activities, type Current } from "../index";
 
 type Props = {
-	current: {
-		activity: (typeof activities)[number]["name"];
-	};
+	current: Current;
 };
 
 export const Sidebar = component$<Props>(({ current }) => {
