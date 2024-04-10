@@ -1,12 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import { activities } from "../index";
+import { activities, type Current } from "../index";
 
 type Props = {
-	current: {
-		activity: (typeof activities)[number]["name"];
-	};
+	current: Current;
 };
 
 export const Activitybar = component$<Props>(({ current }) => {
