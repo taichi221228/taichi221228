@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useTask$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
 import { activities, type Current } from "../index";
@@ -8,6 +8,15 @@ type Props = {
 };
 
 export const Activitybar = component$<Props>(({ current }) => {
+	useTask$(({ track }) => {
+		track(() => current.activity);
+
+		// biome-ignore lint/style/noNonNullAssertion:
+		current.side = activities.find(
+			({ name }) => name === current.activity,
+		)!.contents[0];
+	});
+
 	return (
 		<nav class={styles.activitybar}>
 			<ul>
