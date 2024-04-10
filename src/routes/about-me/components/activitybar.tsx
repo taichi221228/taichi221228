@@ -1,8 +1,7 @@
 import { component$, type Signal } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-
-import type { activities } from "~/routes/about-me";
+import type { activities } from "../index";
 
 type Props = {
 	activities: typeof activities;
