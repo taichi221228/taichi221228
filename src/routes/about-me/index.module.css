@@ -37,6 +37,7 @@
 			}
 		}
 
+		/* TODO: For migration. Remove later. */
 		.sidebar {
 			inline-size: calc(100% - var(--inline-size-activitybar));
 

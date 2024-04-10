@@ -15,7 +15,7 @@ import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
 
-const activities = [
+export const activities = [
 	{
 		name: "professional-info",
 		Icon: TerminalIcon,
@@ -58,6 +58,7 @@ export default component$(() => {
 						))}
 					</ul>
 				</nav>
+				{/* TODO: For migration. Remove later. */}
 				<div class={styles.sidebar}>
 					<Accordion as="nav" shouldOpen={true}>
 						<span q:slot="head">{current.value}</span>

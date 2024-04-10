@@ -1,0 +1,34 @@
+.sidebar {
+	inline-size: calc(100% - var(--inline-size-activitybar));
+
+	ul {
+		li {
+			color: var(--color-secondary-1);
+
+			+ li {
+				margin-block-start: 4px;
+			}
+
+			a,
+			button {
+				--padding-inline: 6px;
+
+				display: flex;
+				gap: 8px;
+				inline-size: 100%;
+				padding-inline: var(--padding-inline);
+				margin-inline: calc(var(--padding-inline) * -1);
+				border-radius: var(--border-radius-sm);
+
+				&.activated,
+				&:is(:focus-visible, :hover) {
+					color: var(--color-secondary-4);
+				}
+
+				&:not([disabled]):is(:focus-visible, :hover) {
+					background-color: var(--color-primary-1);
+				}
+			}
+		}
+	}
+}
