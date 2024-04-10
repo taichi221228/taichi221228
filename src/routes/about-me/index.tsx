@@ -7,6 +7,7 @@ import {
 	UserIcon,
 } from "~/components/interface/icons";
 import { NAME } from "~/constants/info";
+import { Activitybar } from "~/routes/about-me/components/activitybar";
 import { Sidebar } from "~/routes/about-me/components/sidebar";
 import { createPageTitle } from "~/utilities/create-page-title";
 
@@ -37,25 +38,7 @@ export default component$(() => {
 	return (
 		<div class={styles.container}>
 			<aside>
-				{/* TODO: For migration. Remove later. */}
-				<nav class={styles.activitybar}>
-					<ul>
-						{activities.map(({ name, Icon }) => (
-							<li key={name}>
-								<button
-									class={[current.value === name && styles.activated]}
-									onClick$={() => {
-										current.value = name;
-									}}
-									type="button"
-									disabled={current.value === name}
-								>
-									<Icon class={styles.icon} />
-								</button>
-							</li>
-						))}
-					</ul>
-				</nav>
+				<Activitybar activities={activities} current={current} />
 				<Sidebar activities={activities} current={current} />
 			</aside>
 			<div class={styles.editor}>
