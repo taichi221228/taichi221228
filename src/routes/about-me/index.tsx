@@ -31,7 +31,7 @@ const activities = [
 		Icon: GamepadIcon,
 		contents: ["music", "books", "games"],
 	},
-] as const;
+] as const satisfies { name: string; Icon: Component; contents: string[] }[];
 
 export default component$(() => {
 	const current =
