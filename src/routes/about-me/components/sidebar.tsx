@@ -17,27 +17,29 @@ export const Sidebar = component$<Props>(({ current }) => {
 			<Accordion as="nav" shouldOpen={true}>
 				<span q:slot="head">{current.activity}</span>
 				<ul q:slot="body">
-					{(
-						activities.find(({ name }) => name === current.activity)
-							?.contents ?? []
-					).map((content, i) => {
-						return (
-							<li key={content}>
-								<button
-									class={i === 0 && styles.activated}
-									type="button"
-									disabled={i === 0}
-								>
-									<FolderIcon
-										variant={
-											i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
-										}
-									/>
-									{content}
-								</button>
-							</li>
-						);
-					})}
+					{
+						// biome-ignore lint/style/noNonNullAssertion:
+						activities
+							.find(({ name }) => name === current.activity)!
+							.contents.map((content, i) => {
+								return (
+									<li key={content}>
+										<button
+											class={i === 0 && styles.activated}
+											type="button"
+											disabled={i === 0}
+										>
+											<FolderIcon
+												variant={
+													i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
+												}
+											/>
+											{content}
+										</button>
+									</li>
+								);
+							})
+					}
 				</ul>
 			</Accordion>
 			<Accordion as="nav" shouldOpen={true}>
