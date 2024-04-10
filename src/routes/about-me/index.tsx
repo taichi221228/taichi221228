@@ -37,6 +37,7 @@ export default component$(() => {
 	return (
 		<div class={styles.container}>
 			<aside>
+				{/* TODO: For migration. Remove later. */}
 				<nav class={styles.activitybar}>
 					<ul>
 						{activities.map(({ name, Icon }) => (

@@ -10,6 +10,7 @@
 		inline-size: var(--inline-size-aside);
 		border-inline-end: var(--border);
 
+		/* TODO: For migration. Remove later. */
 		.activitybar {
 			flex-basis: var(--inline-size-activitybar);
 			flex-shrink: 0;
