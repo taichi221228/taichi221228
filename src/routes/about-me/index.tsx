@@ -1,4 +1,4 @@
-import { type Component, component$, useSignal } from "@builder.io/qwik";
+import { type Component, component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import {
@@ -32,8 +32,11 @@ export const activities = [
 ] as const satisfies { name: string; Icon: Component; contents: string[] }[];
 
 export default component$(() => {
-	const current =
-		useSignal<(typeof activities)[number]["name"]>("personal-info");
+	const current = useStore<{
+		activity: (typeof activities)[number]["name"];
+	}>({
+		activity: "personal-info",
+	});
 
 	return (
 		<div class={styles.container}>

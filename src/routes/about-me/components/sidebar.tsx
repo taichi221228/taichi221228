@@ -1,4 +1,4 @@
-import { component$, type Signal } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
 import { Accordion } from "~/components/interface/accordion/accordion";
 import { FolderIcon, MailIcon, PhoneIcon } from "~/components/interface/icons";
@@ -8,18 +8,20 @@ import styles from "./sidebar.module.css";
 import { activities } from "../index";
 
 type Props = {
-	current: Signal<(typeof activities)[number]["name"]>;
+	current: {
+		activity: (typeof activities)[number]["name"];
+	};
 };
 
 export const Sidebar = component$<Props>(({ current }) => {
 	return (
 		<div class={styles.sidebar}>
 			<Accordion as="nav" shouldOpen={true}>
-				<span q:slot="head">{current.value}</span>
+				<span q:slot="head">{current.activity}</span>
 				<ul q:slot="body">
 					{(
-						activities.find(({ name }) => name === current.value)?.contents ??
-						[]
+						activities.find(({ name }) => name === current.activity)
+							?.contents ?? []
 					).map((content, i) => {
 						return (
 							<li key={content}>
