@@ -73,7 +73,9 @@ export default component$(() => {
 											disabled={i === 0}
 										>
 											<FolderIcon
-												variant={i % 3 === 0 ? 3 : i % 2 === 0 ? 2 : 1}
+												variant={
+													i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
+												}
 											/>
 											{content}
 										</button>
