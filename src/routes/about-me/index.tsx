@@ -7,10 +7,10 @@ import {
 	UserIcon,
 } from "~/components/interface/icons";
 import { NAME } from "~/constants/info";
-import { Activitybar } from "~/routes/about-me/components/activitybar";
-import { Sidebar } from "~/routes/about-me/components/sidebar";
 import { createPageTitle } from "~/utilities/create-page-title";
 
+import { Activitybar } from "./components/activitybar";
+import { Sidebar } from "./components/sidebar";
 import styles from "./index.module.css";
 
 export const activities = [
