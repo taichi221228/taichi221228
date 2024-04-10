@@ -1,16 +1,13 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { type Component, component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { Accordion } from "~/components/interface/accordion/accordion";
 import {
-	FolderIcon,
 	GamepadIcon,
-	MailIcon,
-	PhoneIcon,
 	TerminalIcon,
 	UserIcon,
 } from "~/components/interface/icons";
-import { EMAIL, NAME, PHONE, USERNAME } from "~/constants/info";
+import { NAME } from "~/constants/info";
+import { Sidebar } from "~/routes/about-me/components/sidebar";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
@@ -58,52 +55,7 @@ export default component$(() => {
 						))}
 					</ul>
 				</nav>
-				{/* TODO: For migration. Remove later. */}
-				<div class={styles.sidebar}>
-					<Accordion as="nav" shouldOpen={true}>
-						<span q:slot="head">{current.value}</span>
-						<ul q:slot="body">
-							{(
-								activities.find(({ name }) => name === current.value)
-									?.contents ?? []
-							).map((content, i) => {
-								return (
-									<li key={content}>
-										<button
-											class={i === 0 && styles.activated}
-											type="button"
-											disabled={i === 0}
-										>
-											<FolderIcon
-												variant={
-													i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
-												}
-											/>
-											{content}
-										</button>
-									</li>
-								);
-							})}
-						</ul>
-					</Accordion>
-					<Accordion as="nav" shouldOpen={true}>
-						<span q:slot="head">contacts</span>
-						<ul q:slot="body">
-							<li>
-								<a href={`mailto:${EMAIL}`}>
-									<MailIcon />
-									{USERNAME}
-								</a>
-							</li>
-							<li>
-								<a href={`tel:${PHONE}`}>
-									<PhoneIcon />
-									{PHONE}
-								</a>
-							</li>
-						</ul>
-					</Accordion>
-				</div>
+				<Sidebar activities={activities} current={current} />
 			</aside>
 			<div class={styles.editor}>
 				{/*	Editor */}
