@@ -38,8 +38,8 @@ export default component$(() => {
 	return (
 		<div class={styles.container}>
 			<aside>
-				<Activitybar activities={activities} current={current} />
-				<Sidebar activities={activities} current={current} />
+				<Activitybar current={current} />
+				<Sidebar current={current} />
 			</aside>
 			<div class={styles.editor}>
 				{/*	Editor */}

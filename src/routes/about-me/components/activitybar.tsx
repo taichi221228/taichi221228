@@ -1,14 +1,13 @@
 import { component$, type Signal } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import type { activities } from "../index";
+import { activities } from "../index";
 
 type Props = {
-	activities: typeof activities;
 	current: Signal<(typeof activities)[number]["name"]>;
 };
 
-export const Activitybar = component$<Props>(({ activities, current }) => {
+export const Activitybar = component$<Props>(({ current }) => {
 	return (
 		<nav class={styles.activitybar}>
 			<ul>

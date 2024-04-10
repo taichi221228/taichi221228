@@ -5,14 +5,13 @@ import { FolderIcon, MailIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
 import styles from "./sidebar.module.css";
-import type { activities } from "../index";
+import { activities } from "../index";
 
 type Props = {
-	activities: typeof activities;
 	current: Signal<(typeof activities)[number]["name"]>;
 };
 
-export const Sidebar = component$<Props>(({ activities, current }) => {
+export const Sidebar = component$<Props>(({ current }) => {
 	return (
 		<div class={styles.sidebar}>
 			<Accordion as="nav" shouldOpen={true}>
