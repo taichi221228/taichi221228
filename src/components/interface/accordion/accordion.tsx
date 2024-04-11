@@ -24,7 +24,7 @@ export const Accordion = component$<Props>(({ as, shouldOpen = false }) => {
 				<Triangle direction={isOpen.value ? "down" : "up"} />
 				<Slot name="head" />
 			</button>
-			<div class={[styles.body, isOpen.value && styles.opened]}>
+			<div class={[isOpen.value && styles.opened, styles.body]}>
 				<div class={styles.container}>
 					<Slot name="body" />
 				</div>
