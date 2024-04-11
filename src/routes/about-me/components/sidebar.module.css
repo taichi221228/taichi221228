@@ -5,7 +5,7 @@
 		li {
 			color: var(--color-secondary-1);
 
-			+ li {
+			+ & {
 				margin-block-start: 4px;
 			}
 
