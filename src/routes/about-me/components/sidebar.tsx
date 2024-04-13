@@ -1,7 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 
 import { Accordion } from "~/components/interface/accordion/accordion";
-import { FolderIcon, MailIcon, PhoneIcon } from "~/components/interface/icons";
+import {
+	FolderIcon,
+	MailIcon,
+	MarkdownIcon,
+	PhoneIcon,
+} from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
 import styles from "./sidebar.module.css";
@@ -16,29 +21,38 @@ export const Sidebar = component$<Props>(({ current }) => {
 		<div class={styles.sidebar}>
 			<Accordion as="nav" shouldOpen={true}>
 				<span q:slot="head">{current.activity}</span>
-				<ul q:slot="body">
+				<ul q:slot="body" class={styles.directories}>
 					{
 						// biome-ignore lint/style/noNonNullAssertion:
 						activities
 							.find(({ name }) => name === current.activity)!
 							.contents.map((content, i) => {
 								return (
-									<li key={content}>
-										<button
-											class={content === current.side && styles.activated}
-											onClick$={() => {
-												current.side = content;
-											}}
-											type="button"
-											disabled={content === current.side}
-										>
+									<li key={content} class={styles.directory}>
+										<span>
 											<FolderIcon
 												variant={
 													i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
 												}
 											/>
 											{content}
-										</button>
+										</span>
+
+										<ul class={styles.files}>
+											<li class={styles.file}>
+												<button
+													class={content === current.side && styles.activated}
+													onClick$={() => {
+														current.side = content;
+													}}
+													type="button"
+													disabled={content === current.side}
+												>
+													<MarkdownIcon />
+													index.md
+												</button>
+											</li>
+										</ul>
 									</li>
 								);
 							})
