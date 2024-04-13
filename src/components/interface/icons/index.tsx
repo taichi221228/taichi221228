@@ -5,6 +5,7 @@ export * from "./folder-icon";
 export * from "./gamepad-icon";
 export * from "./github-icon";
 export * from "./mail-icon";
+export * from "./markdown-icon";
 export * from "./phone-icon";
 export * from "./terminal-icon";
 export * from "./user-icon";
