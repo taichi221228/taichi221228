@@ -2,10 +2,11 @@
 	inline-size: calc(100% - var(--inline-size-activitybar));
 
 	:where(a, button, span) {
+		--gap: 8px;
 		--padding-inline: 6px;
 
 		display: flex;
-		gap: 8px;
+		gap: var(--gap);
 		inline-size: 100%;
 		margin-inline: calc(var(--padding-inline) * -1);
 	}
@@ -40,7 +41,9 @@
 					a,
 					button,
 					span {
-						padding-inline-start: calc(var(--padding-inline) + 24px);
+						padding-inline-start: calc(
+							var(--padding-inline) + var(--gap) + var(--size-icon-sm)
+						);
 					}
 				}
 			}
