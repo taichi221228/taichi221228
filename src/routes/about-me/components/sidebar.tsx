@@ -21,14 +21,14 @@ export const Sidebar = component$<Props>(({ current }) => {
 		<div class={styles.sidebar}>
 			<Accordion as="nav" shouldOpen={true}>
 				<span q:slot="head">{current.activity}</span>
-				<ul q:slot="body" class={styles.directories}>
+				<ul q:slot="body">
 					{
 						// biome-ignore lint/style/noNonNullAssertion:
 						activities
 							.find(({ name }) => name === current.activity)!
 							.contents.map((content, i) => {
 								return (
-									<li key={content} class={styles.directory}>
+									<li key={content}>
 										<span>
 											<FolderIcon
 												variant={
@@ -38,8 +38,8 @@ export const Sidebar = component$<Props>(({ current }) => {
 											{content}
 										</span>
 
-										<ul class={styles.files}>
-											<li class={styles.file}>
+										<ul>
+											<li>
 												<button
 													class={content === current.side && styles.activated}
 													onClick$={() => {
