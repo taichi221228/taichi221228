@@ -29,14 +29,21 @@ export const Sidebar = component$<Props>(({ current }) => {
 							.contents.map((content, i) => {
 								return (
 									<li key={content}>
-										<span>
+										<button
+											class={content === current.side && styles.activated}
+											onClick$={() => {
+												current.side = content;
+											}}
+											type="button"
+											disabled={content === current.side}
+										>
 											<FolderIcon
 												variant={
 													i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
 												}
 											/>
 											{content}
-										</span>
+										</button>
 
 										<ul>
 											<li>

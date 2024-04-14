@@ -1,7 +1,7 @@
 .sidebar {
 	inline-size: calc(100% - var(--inline-size-activitybar));
 
-	:where(a, button, span) {
+	:where(a, button) {
 		--gap: 8px;
 		--padding-inline: 6px;
 
@@ -9,9 +9,6 @@
 		gap: var(--gap);
 		inline-size: 100%;
 		margin-inline: calc(var(--padding-inline) * -1);
-	}
-
-	:where(a, button) {
 		border-radius: var(--border-radius-sm);
 
 		&:not(.activated),
