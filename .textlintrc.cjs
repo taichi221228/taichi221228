@@ -2,7 +2,7 @@ module.exports = {
 	plugins: {},
 	filters: {},
 	rules: {
-		"textlint-rule-alive-link": true,
+		"textlint-rule-alive-link": false, // TODO: It's too slow, it's just a temporary solution.
 		"@textlint-rule/no-unmatched-pair": true,
 		"textlint-rule-no-zero-width-spaces": true,
 		"textlint-rule-doubled-spaces": true,
