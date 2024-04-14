@@ -26,9 +26,10 @@
 
 	ul {
 		li {
-			+ &,
-			ul {
-				margin-block-start: 4px;
+			--margin-block-start: 4px;
+
+			+ & {
+				margin-block-start: var(--margin-block-start);
 			}
 
 			> :is(a, button, span) {
@@ -36,6 +37,8 @@
 			}
 
 			ul {
+				margin-block-start: var(--margin-block-start);
+
 				li {
 					:is(a, button, span) {
 						padding-inline-start: calc(
