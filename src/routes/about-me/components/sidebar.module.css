@@ -11,13 +11,11 @@
 		margin-inline: calc(var(--padding-inline) * -1);
 		border-radius: var(--border-radius-sm);
 
-		&:not(.activated),
-		&:not(:is(:focus-visible, :hover)) {
+		&:not(:is(.activated, :focus-visible, :hover)) {
 			color: var(--color-secondary-1);
 		}
 
-		&.activated,
-		&:is(:focus-visible, :hover) {
+		&:is(.activated, :focus-visible, :hover) {
 			color: var(--color-secondary-4);
 		}
 
@@ -35,9 +33,7 @@
 
 			ul {
 				li {
-					a,
-					button,
-					span {
+					:is(a, button, span) {
 						padding-inline-start: calc(
 							var(--padding-inline) + var(--gap) + var(--size-icon-sm)
 						);
