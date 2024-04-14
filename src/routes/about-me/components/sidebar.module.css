@@ -31,6 +31,10 @@
 				margin-block-start: 4px;
 			}
 
+			> :is(a, button, span) {
+				padding-inline: var(--padding-inline);
+			}
+
 			ul {
 				li {
 					:is(a, button, span) {
@@ -38,12 +42,6 @@
 							var(--padding-inline) + var(--gap) + var(--size-icon-sm)
 						);
 					}
-				}
-			}
-
-			&:not(& ul li) {
-				> :is(a, button, span) {
-					padding-inline: var(--padding-inline);
 				}
 			}
 		}
