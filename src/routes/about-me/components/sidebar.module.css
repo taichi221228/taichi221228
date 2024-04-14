@@ -1,32 +1,32 @@
 .sidebar {
 	inline-size: calc(100% - var(--inline-size-activitybar));
 
-	:where(a, button) {
-		--gap: 8px;
-		--padding-inline: 6px;
-
-		display: flex;
-		gap: var(--gap);
-		inline-size: 100%;
-		margin-inline: calc(var(--padding-inline) * -1);
-		border-radius: var(--border-radius-sm);
-
-		&:not(:is(.activated, :focus-visible, :hover)) {
-			color: var(--color-secondary-1);
-		}
-
-		&:is(.activated, :focus-visible, :hover) {
-			color: var(--color-secondary-4);
-		}
-
-		&:not([disabled]):is(:focus-visible, :hover) {
-			background-color: var(--color-primary-1);
-		}
-	}
-
 	ul {
 		li {
 			--margin-block-start: 4px;
+
+			:where(a, button) {
+				--gap: 8px;
+				--padding-inline: 6px;
+
+				display: flex;
+				gap: var(--gap);
+				inline-size: 100%;
+				margin-inline: calc(var(--padding-inline) * -1);
+				border-radius: var(--border-radius-sm);
+
+				&:not(:is(.activated, :focus-visible, :hover)) {
+					color: var(--color-secondary-1);
+				}
+
+				&:is(.activated, :focus-visible, :hover) {
+					color: var(--color-secondary-4);
+				}
+
+				&:not([disabled]):is(:focus-visible, :hover) {
+					background-color: var(--color-primary-1);
+				}
+			}
 
 			+ & {
 				margin-block-start: var(--margin-block-start);
