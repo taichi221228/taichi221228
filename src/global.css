@@ -1,11 +1,7 @@
-/**
- * PandaCSS CSS layers
- * View the full documentation at https://panda-css.com/docs/concepts/cascade-layers#layer-css
- */
-
-@layer reset, base, tokens, recipes, utilities;
-
 :root {
+	--size-icon-sm: 16px;
+	--size-icon-md: 20px;
+	--size-icon-lg: 24px;
 	--block-size-main: calc(
 		100svh -
 			(
@@ -56,10 +52,20 @@
 	--color-accent-2-rgb: 67 217 173;
 	--color-accent-3-rgb: 233 146 135;
 	--color-accent-4-rgb: 201 139 223;
-	--border: 1px solid var(--color-primary-1);
-	--border-radius: 8px;
+	--border: var(--border-width-md) solid var(--color-primary-1);
+	--border-width-md: 1px;
+	--border-width-lg: 3px;
+	--border-radius-sm: 4px;
+	--border-radius-md: 8px;
 	--border-radius-round: 9999px;
 	--transition: all 0.25s ease-in-out;
+}
+
+* {
+	:is(&:focus-visible) {
+		outline: var(--border-width-lg) solid var(--color-accent-4);
+		outline-offset: calc(var(--border-width-lg) * -1);
+	}
 }
 
 html {
@@ -74,7 +80,7 @@ html {
 		font-family: var(--font-family-primary), var(--font-family-default);
 		background-color: var(--color-base-2);
 		border: var(--border);
-		border-radius: var(--border-radius);
+		border-radius: var(--border-radius-md);
 
 		main {
 			block-size: var(--block-size-main);

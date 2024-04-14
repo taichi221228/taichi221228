@@ -1,4 +1,4 @@
-import { type QRL, Slot, component$ } from "@builder.io/qwik";
+import { component$, type QRL, Slot } from "@builder.io/qwik";
 
 import styles from "./button.module.css";
 
@@ -10,7 +10,7 @@ type Props = {
 export const Button = component$<Props>(({ onClick$, variant }) => {
 	return (
 		<button
-			class={[styles.button, styles[variant ?? "primary"]]}
+			class={[styles[variant ?? "primary"], styles.button]}
 			onClick$={onClick$}
 			type="button"
 		>

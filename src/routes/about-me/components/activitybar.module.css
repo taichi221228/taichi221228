@@ -1,0 +1,26 @@
+.activitybar {
+	flex-basis: var(--inline-size-activitybar);
+	flex-shrink: 0;
+	border-inline-end: var(--border);
+
+	ul {
+		li {
+			padding-block: 17px;
+			text-align: center;
+
+			button {
+				line-height: 1;
+				color: var(--color-secondary-1-lighter);
+
+				&.activated,
+				&:is(:focus-visible, :hover) {
+					color: var(--color-secondary-1);
+				}
+			}
+
+			.icon {
+				font-size: var(--size-icon-lg);
+			}
+		}
+	}
+}

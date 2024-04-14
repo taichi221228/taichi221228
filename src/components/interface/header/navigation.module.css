@@ -7,16 +7,8 @@
 		block-size: 100%;
 
 		li {
-			border-inline-end: var(--border);
-
 			@container (inline-size < 709px) {
 				flex-grow: 1;
-			}
-
-			&:last-child {
-				margin-inline-start: auto;
-				border-inline-start: var(--border);
-				border-inline-end: none;
 			}
 
 			a {
@@ -39,7 +31,21 @@
 				}
 
 				&.activated {
-					box-shadow: inset 0 -3px 0 var(--color-accent-1);
+					box-shadow: inset 0 calc(var(--border-width-lg) * -1) 0
+						var(--color-accent-1);
+				}
+			}
+
+			&:not(:last-child) {
+				border-inline-end: var(--border);
+			}
+
+			&:last-child {
+				margin-inline-start: auto;
+				border-inline-start: var(--border);
+
+				a {
+					border-top-right-radius: var(--border-radius-md);
 				}
 			}
 		}

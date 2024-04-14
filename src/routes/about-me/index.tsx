@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { type Component, component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import {
@@ -6,77 +6,47 @@ import {
 	TerminalIcon,
 	UserIcon,
 } from "~/components/interface/icons";
-import { Triangle } from "~/components/interface/triangle/triangle";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
+import { Activitybar } from "./components/activitybar";
+import { Sidebar } from "./components/sidebar";
 import styles from "./index.module.css";
 
+export const activities = [
+	{
+		name: "professional-info",
+		Icon: TerminalIcon,
+		contents: ["experience", "skills"],
+	},
+	{
+		name: "personal-info",
+		Icon: UserIcon,
+		contents: ["bio", "interests", "education"],
+	},
+	{
+		name: "hobbies",
+		Icon: GamepadIcon,
+		contents: ["music", "books", "games"],
+	},
+] as const satisfies { name: string; Icon: Component; contents: string[] }[];
+
+export type Current = {
+	activity: (typeof activities)[number]["name"];
+	side: (typeof activities)[number]["contents"][number];
+};
+
 export default component$(() => {
-	const current = useSignal<0 | 1 | 2>(0);
+	const current = useStore<Current>({
+		activity: "personal-info",
+		side: "bio",
+	});
 
 	return (
 		<div class={styles.container}>
 			<aside>
-				<nav class={styles.activitybar}>
-					<ul>
-						<li>
-							<button
-								class={[current.value === 0 && styles.activated]}
-								onClick$={() => {
-									current.value = 0;
-								}}
-								type="button"
-								disabled={current.value === 0}
-							>
-								<TerminalIcon class={styles.icon} />
-							</button>
-						</li>
-						<li>
-							<button
-								class={[current.value === 1 && styles.activated]}
-								onClick$={() => {
-									current.value = 1;
-								}}
-								type="button"
-								disabled={current.value === 1}
-							>
-								<UserIcon class={styles.icon} />
-							</button>
-						</li>
-						<li>
-							<button
-								class={[current.value === 2 && styles.activated]}
-								onClick$={() => {
-									current.value = 2;
-								}}
-								type="button"
-								disabled={current.value === 2}
-							>
-								<GamepadIcon class={styles.icon} />
-							</button>
-						</li>
-					</ul>
-				</nav>
-				<div class={styles.sidebar}>
-					{/* Sidebar */}
-					<nav>
-						{/* Panel (main) */}
-						<button class={styles.header} type="button">
-							<Triangle direction="down" />
-							personal-info{/* TEMP: hardcode */}
-						</button>
-						<ul>{/* explorer */}</ul>
-					</nav>
-					<nav>
-						{/* Panel (sub) */}
-						<button class={styles.header} type="button">
-							<Triangle direction="down" />
-							contacts
-						</button>
-						<ul>{/* contacts */}</ul>
-					</nav>
-				</div>
+				<Activitybar current={current} />
+				<Sidebar current={current} />
 			</aside>
 			<div class={styles.editor}>
 				{/*	Editor */}

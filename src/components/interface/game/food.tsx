@@ -7,5 +7,5 @@ type Props = {
 };
 
 export const Food = component$<Props>(({ isEaten = false }) => {
-	return <div class={[styles.food, isEaten && styles.eaten]} />;
+	return <div class={[isEaten && styles.eaten, styles.food]} />;
 });

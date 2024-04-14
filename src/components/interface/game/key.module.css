@@ -7,5 +7,5 @@
 	block-size: 28px;
 	background: var(--color-base-1);
 	border: var(--border);
-	border-radius: var(--border-radius);
+	border-radius: var(--border-radius-md);
 }

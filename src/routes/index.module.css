@@ -95,7 +95,7 @@
 				font-size: var(--font-size-label);
 				text-indent: -1em;
 
-				+ p {
+				+ & {
 					margin-block-start: 10px;
 				}
 			}

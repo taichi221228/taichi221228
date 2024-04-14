@@ -1,0 +1,37 @@
+.accordion {
+	--padding: 14px;
+
+	font-size: var(--font-size-label);
+
+	.head {
+		display: flex;
+		gap: 11px;
+		align-items: center;
+		inline-size: 100%;
+		block-size: 40px;
+		padding-inline: var(--padding);
+		border-block-end: var(--border);
+	}
+
+	.body {
+		max-block-size: 0;
+		overflow: hidden;
+		transition: var(--transition);
+
+		&.opened {
+			max-block-size: 500px;
+		}
+
+		.container {
+			padding: var(--padding);
+		}
+	}
+
+	&:not(:last-child) {
+		.body {
+			.container {
+				border-block-end: var(--border);
+			}
+		}
+	}
+}

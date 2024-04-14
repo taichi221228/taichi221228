@@ -6,6 +6,9 @@ export const NAME = "Taichi Fukuda";
 export const SITENAME = "taichi-fukuda";
 export const USERNAME = "taichi221228";
 
+export const EMAIL = `${USERNAME}@gmail.com`;
+export const PHONE = "+818040197640";
+
 export type Snss = typeof SNSS;
 export type Sns = Snss[keyof Snss];
 

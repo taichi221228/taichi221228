@@ -9,49 +9,6 @@
 		display: flex;
 		inline-size: var(--inline-size-aside);
 		border-inline-end: var(--border);
-
-		.activitybar {
-			flex-basis: var(--inline-size-activitybar);
-			border-inline-end: var(--border);
-
-			ul {
-				li {
-					padding-block: 17px;
-					text-align: center;
-
-					button {
-						line-height: 1;
-						color: var(--color-secondary-1-lighter);
-
-						&.activated,
-						&:is(:focus-visible, :hover) {
-							color: var(--color-secondary-1);
-						}
-					}
-
-					.icon {
-						font-size: 24px;
-					}
-				}
-			}
-		}
-
-		.sidebar {
-			flex-grow: 1;
-
-			nav {
-				.header {
-					display: flex;
-					gap: 11px;
-					align-items: center;
-					inline-size: 100%;
-					block-size: 40px;
-					padding-inline: 14px;
-					font-size: var(--font-size-label);
-					border-block-end: var(--border);
-				}
-			}
-		}
 	}
 
 	.editor {
