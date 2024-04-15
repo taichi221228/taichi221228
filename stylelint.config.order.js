@@ -20,17 +20,7 @@ export default {
 			},
 			{
 				// Position.
-				properties: [
-					"position",
-					"inset",
-					"inset-block",
-					"inset-inline",
-					"top",
-					"right",
-					"bottom",
-					"left",
-					"z-index",
-				],
+				properties: ["position", "inset", "inset-block", "inset-inline", "top", "right", "bottom", "left", "z-index"],
 			},
 			{
 				// Display mode.
@@ -38,15 +28,7 @@ export default {
 			},
 			{
 				// Flexible boxes.
-				properties: [
-					"flex",
-					"flex-basis",
-					"flex-direction",
-					"flex-flow",
-					"flex-grow",
-					"flex-shrink",
-					"flex-wrap",
-				],
+				properties: ["flex", "flex-basis", "flex-direction", "flex-flow", "flex-grow", "flex-shrink", "flex-wrap"],
 			},
 			{
 				// Grid layout.
