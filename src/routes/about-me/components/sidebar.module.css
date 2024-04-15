@@ -41,9 +41,7 @@
 
 				li {
 					:is(a, button, span) {
-						padding-inline-start: calc(
-							var(--padding-inline) + var(--gap) + var(--size-icon-sm)
-						);
+						padding-inline-start: calc(var(--padding-inline) + var(--gap) + var(--size-icon-sm));
 					}
 				}
 			}
