@@ -6,10 +6,7 @@ export const Polygons = component$(() => {
 	const blurMargin = 500;
 	const [polygonWidth, polygonHeight] = [780, 681];
 
-	const [width, height] = [
-		polygonWidth + blurMargin * 2,
-		polygonHeight + blurMargin * 2,
-	];
+	const [width, height] = [polygonWidth + blurMargin * 2, polygonHeight + blurMargin * 2];
 
 	return (
 		<svg
