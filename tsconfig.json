@@ -25,8 +25,8 @@
 	"files": [
 		"./.eslintrc.cjs",
 		"./.eslintrc.import.cjs",
-		"./.stylelintrc.js",
-		"./.stylelintrc.order.js",
+		"./stylelint.config.js",
+		"./stylelint.config.order.js",
 		"./.textlintrc.cjs",
 		"./vite.config.ts"
 	],
