@@ -9,15 +9,7 @@ module.exports = {
 				alphabetize: {
 					order: "asc",
 				},
-				groups: [
-					"builtin",
-					"external",
-					"internal",
-					["sibling", "parent"],
-					"index",
-					"object",
-					"type",
-				],
+				groups: ["builtin", "external", "internal", ["sibling", "parent"], "index", "object", "type"],
 				"newlines-between": "always",
 				pathGroups: [
 					{

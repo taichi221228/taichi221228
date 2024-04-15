@@ -1,12 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import { Accordion } from "~/components/interface/accordion/accordion";
-import {
-	FolderIcon,
-	MailIcon,
-	MarkdownIcon,
-	PhoneIcon,
-} from "~/components/interface/icons";
+import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
 import styles from "./sidebar.module.css";
@@ -37,11 +32,7 @@ export const Sidebar = component$<Props>(({ current }) => {
 											type="button"
 											disabled={content === current.side}
 										>
-											<FolderIcon
-												variant={
-													i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2
-												}
-											/>
+											<FolderIcon variant={i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2} />
 											{content}
 										</button>
 

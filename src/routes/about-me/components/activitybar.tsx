@@ -12,9 +12,7 @@ export const Activitybar = component$<Props>(({ current }) => {
 		track(() => current.activity);
 
 		// biome-ignore lint/style/noNonNullAssertion:
-		current.side = activities.find(
-			({ name }) => name === current.activity,
-		)!.contents[0];
+		current.side = activities.find(({ name }) => name === current.activity)!.contents[0];
 	});
 
 	return (

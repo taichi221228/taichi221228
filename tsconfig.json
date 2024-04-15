@@ -27,6 +27,7 @@
 		"./.eslintrc.import.cjs",
 		"./stylelint.config.js",
 		"./stylelint.config.order.js",
+		"./prettier.config.js",
 		"./textlint.config.cjs",
 		"./vite.config.ts"
 	],

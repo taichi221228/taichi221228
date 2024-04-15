@@ -9,11 +9,7 @@ type Props = {
 
 export const Button = component$<Props>(({ onClick$, variant }) => {
 	return (
-		<button
-			class={[styles[variant ?? "primary"], styles.button]}
-			onClick$={onClick$}
-			type="button"
-		>
+		<button class={[styles[variant ?? "primary"], styles.button]} onClick$={onClick$} type="button">
 			<Slot />
 		</button>
 	);

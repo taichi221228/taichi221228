@@ -1,11 +1,7 @@
 import { type Component, component$, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import {
-	GamepadIcon,
-	TerminalIcon,
-	UserIcon,
-} from "~/components/interface/icons";
+import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 

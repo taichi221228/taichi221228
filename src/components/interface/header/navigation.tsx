@@ -20,11 +20,7 @@ export const Navigation = component$<Props>(({ location }) => {
 
 					return (
 						<li key={item}>
-							<Link
-								class={isCurrent && styles.activated}
-								aria-current={isCurrent && "page"}
-								href={pathname}
-							>
+							<Link class={isCurrent && styles.activated} aria-current={isCurrent && "page"} href={pathname}>
 								{text}
 							</Link>
 						</li>
