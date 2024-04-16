@@ -23,8 +23,8 @@
 		}
 	},
 	"files": [
-		"./.eslintrc.cjs",
-		"./.eslintrc.import.cjs",
+		"./eslint.config.cjs",
+		"./eslint.config.import.cjs",
 		"./stylelint.config.js",
 		"./stylelint.config.order.js",
 		"./prettier.config.js",
