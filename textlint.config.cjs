@@ -1,3 +1,4 @@
+/** @type {import("@textlint/config-loader/module/src").TextlintRcConfig} */
 module.exports = {
 	plugins: {},
 	filters: {},
