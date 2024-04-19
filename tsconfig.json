@@ -23,6 +23,7 @@
 		}
 	},
 	"files": [
+		"./commitlint.config.js",
 		"./eslint.config.cjs",
 		"./eslint.config.import.cjs",
 		"./stylelint.config.js",
