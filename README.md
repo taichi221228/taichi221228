@@ -59,7 +59,7 @@ Inside your project, you’ll see the following directory structure:
 - [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/) :construction:
 - [Remix Icon](https://remixicon.com/)
 - [Fontsource](https://fontsource.org/)
-- [Shiki](https://shiki.style/) :construction:
+- [Shiki](https://shiki.style/)
 
 ### Performance
 
