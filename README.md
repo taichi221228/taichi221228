@@ -56,6 +56,7 @@ Inside your project, you’ll see the following directory structure:
 ### Styling
 
 - [CSS Modules](https://github.com/css-modules/css-modules/)
+- [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/) :construction:
 - [Remix Icon](https://remixicon.com/)
 - [Fontsource](https://fontsource.org/)
 - [Shiki](https://shiki.style/) :construction:
