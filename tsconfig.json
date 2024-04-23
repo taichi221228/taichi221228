@@ -20,7 +20,8 @@
 		"types": ["node", "vite/client"],
 		"paths": {
 			"~/*": ["./src/*"]
-		}
+		},
+		"plugins": [{ "name": "eslint-plugin-import-access" }]
 	},
 	"files": [
 		"./commitlint.config.js",
