@@ -15,6 +15,7 @@ import { manifest } from "@qwik-client-manifest"; // eslint-disable-line import/
 
 import Root from "./root";
 
+/** @pakcage */
 export default (opts: RenderToStreamOptions) => {
 	return renderToStream(<Root />, {
 		manifest,

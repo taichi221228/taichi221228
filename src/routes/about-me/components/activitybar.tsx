@@ -7,6 +7,7 @@ type Props = {
 	current: Current;
 };
 
+/** @package */
 export const Activitybar = component$<Props>(({ current }) => {
 	useTask$(({ track }) => {
 		track(() => current.activity);

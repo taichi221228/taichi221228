@@ -11,6 +11,7 @@ type Props = {
 	current: Current;
 };
 
+/** @package */
 export const Sidebar = component$<Props>(({ current }) => {
 	return (
 		<div class={styles.sidebar}>

@@ -5,10 +5,10 @@ import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icon
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
-import { Activitybar } from "./components/activitybar";
-import { Sidebar } from "./components/sidebar";
+import { Activitybar, Sidebar } from "./components/";
 import styles from "./index.module.css";
 
+/** @package */
 export const activities = [
 	{
 		name: "professional-info",
@@ -27,11 +27,13 @@ export const activities = [
 	},
 ] as const satisfies { name: string; Icon: Component; contents: string[] }[];
 
+/** @package */
 export type Current = {
 	activity: (typeof activities)[number]["name"];
 	side: (typeof activities)[number]["contents"][number];
 };
 
+/** @private */
 export default component$(() => {
 	const current = useStore<Current>({
 		activity: "personal-info",
@@ -61,6 +63,7 @@ export default component$(() => {
 	);
 });
 
+/** @private */
 export const head: DocumentHead = {
 	title: createPageTitle("About Me"),
 	meta: [

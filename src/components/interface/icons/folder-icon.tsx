@@ -7,6 +7,7 @@ type Props = IconProps & {
 	variant?: 1 | 2 | 3;
 };
 
+/** @package */
 export const FolderIcon = component$<Props>(({ class: c, variant = 1 }) => {
 	return <i class={[c, styles[`is-${variant}`], "ri-folder-3-fill"]} />;
 });

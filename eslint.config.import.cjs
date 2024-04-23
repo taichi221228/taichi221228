@@ -1,7 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
 	extends: ["plugin:import/recommended"],
-	plugins: ["import"],
+	plugins: ["import", "import-access"],
 	rules: {
 		"import/order": [
 			"error",
@@ -46,6 +46,14 @@ module.exports = {
 					},
 				],
 				pathGroupsExcludedImportTypes: [],
+			},
+		],
+		"import-access/jsdoc": [
+			"error",
+			{
+				indexLoophole: true,
+				defaultImportability: "public",
+				treatSelfReferenceAs: "external",
 			},
 		],
 	},

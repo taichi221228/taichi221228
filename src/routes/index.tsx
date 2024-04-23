@@ -7,6 +7,7 @@ import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";
 
+/** @private */
 export default component$(() => {
 	return (
 		<section class={styles.wrapper}>
@@ -51,6 +52,7 @@ export default component$(() => {
 	);
 });
 
+/** @private */
 export const head: DocumentHead = {
 	title: createPageTitle(),
 	meta: [
