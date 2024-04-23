@@ -5,8 +5,7 @@ import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icon
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
-import { Activitybar } from "./components/activitybar";
-import { Sidebar } from "./components/sidebar";
+import { Activitybar, Sidebar } from "./components/";
 import styles from "./index.module.css";
 
 /** @package */
