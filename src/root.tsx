@@ -5,6 +5,7 @@ import { RouterHead } from "~/components/function/router-head/router-head";
 
 import "./global.css";
 
+/** @package */
 export default component$(() => {
 	/**
 	 * The root of a QwikCity site always start with the <QwikCityProvider> component,
