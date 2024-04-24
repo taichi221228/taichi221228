@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { Game } from "~/components/interface/game/game";
 import { NAME, SNSS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
+import { Game } from "./components/game";
 import styles from "./index.module.css";
 
 /** @private */

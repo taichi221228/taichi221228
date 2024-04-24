@@ -1,11 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 
+import { Button } from "~/components/interface/button/button";
+
 import { Food } from "./food";
 import styles from "./game.module.css";
 import { Key } from "./key";
 import { Polygons } from "./polygons";
 import { SnakePlaceholder } from "./snake-placeholder";
-import { Button } from "../button/button";
 
 const foods = Array.from({ length: 10 }).map((_, id) => ({ id }));
 
