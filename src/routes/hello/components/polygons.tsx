@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 import styles from "./polygons.module.css";
 
+/** @package */
 export const Polygons = component$(() => {
 	const blurMargin = 500;
 	const [polygonWidth, polygonHeight] = [780, 681];

@@ -10,6 +10,7 @@ import { SnakePlaceholder } from "./snake-placeholder";
 
 const foods = Array.from({ length: 10 }).map((_, id) => ({ id }));
 
+/** @package */
 export const Game = component$(() => {
 	return (
 		<div class={styles.game}>

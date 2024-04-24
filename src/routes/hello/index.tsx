@@ -4,7 +4,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { NAME, SNSS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
-import { Game } from "./components/game";
+import { Game } from "./components";
 import styles from "./index.module.css";
 
 /** @private */
