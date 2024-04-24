@@ -6,6 +6,7 @@ import styles from "./key.module.css";
 
 type Props = TriangleProps;
 
+/** @package */
 export const Key = component$<Props>(({ direction }) => {
 	return (
 		<div class={styles.key}>
