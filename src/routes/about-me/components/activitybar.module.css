@@ -12,8 +12,7 @@
 				line-height: 1;
 				color: var(--color-secondary-1-lighter);
 
-				&.activated,
-				&:is(:focus-visible, :hover) {
+				&:is(.activated, :focus-visible, :hover) {
 					color: var(--color-secondary-1);
 				}
 			}

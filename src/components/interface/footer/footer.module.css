@@ -31,8 +31,7 @@
 	}
 
 	a {
-		&.x,
-		&.facebook {
+		&:is(.x, .facebook) {
 			inline-size: 52px;
 			color: var(--color-secondary-1-lighter);
 
