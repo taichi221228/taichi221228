@@ -52,6 +52,7 @@ module.exports = {
 			"error",
 			{
 				indexLoophole: true,
+				filenameLoophole: true,
 				defaultImportability: "public",
 				treatSelfReferenceAs: "external",
 			},
