@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import type { Props } from "../icons";
+import type { Props } from "./index";
 
 /** @package */
 export const FacebookIcon = component$<Props>(({ class: c }) => {
