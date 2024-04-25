@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Accordion } from "~/components/interface/accordion/accordion";
+import { Accordion } from "~/components/interface/accordion";
 import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
