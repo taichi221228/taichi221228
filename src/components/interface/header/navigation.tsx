@@ -9,6 +9,7 @@ type Props = {
 	location: RouteLocation;
 };
 
+/** @package */
 export const Navigation = component$<Props>(({ location }) => {
 	return (
 		<nav class={styles.navigation}>

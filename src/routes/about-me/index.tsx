@@ -5,8 +5,9 @@ import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icon
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
-import { Activitybar, Sidebar } from "./components/";
+import { Activitybar } from "./activitybar";
 import styles from "./index.module.css";
+import { Sidebar } from "./sidebar";
 
 /** @package */
 export const activities = [

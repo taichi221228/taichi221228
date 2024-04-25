@@ -1,7 +1,7 @@
 import { component$, useTask$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import { activities, type Current } from "../index";
+import { activities, type Current } from "./index";
 
 type Props = {
 	current: Current;

@@ -1,7 +1,7 @@
 import { component$, Slot, useSignal } from "@builder.io/qwik";
 
-import { Poly, type PolyProps } from "~/components/function/poly/poly";
-import { Triangle } from "~/components/interface/triangle/triangle";
+import { Poly, type PolyProps } from "~/components/function/poly";
+import { Triangle } from "~/components/interface/triangle";
 
 import styles from "./accordion.module.css";
 
