@@ -4,8 +4,8 @@ import { Accordion } from "~/components/interface/accordion";
 import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
+import { activities, type Current } from "./index";
 import styles from "./sidebar.module.css";
-import { activities, type Current } from "../index";
 
 type Props = {
 	current: Current;
