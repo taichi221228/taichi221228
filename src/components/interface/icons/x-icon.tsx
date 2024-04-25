@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import type { Props } from "./index";
+import type { Props } from "../icons";
 
 /** @package */
 export const XIcon = component$<Props>(({ class: c }) => {
