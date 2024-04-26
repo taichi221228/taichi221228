@@ -6,6 +6,7 @@ import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import { Activitybar } from "./activitybar";
+import { Editor } from "./editor";
 import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
 
@@ -47,19 +48,7 @@ export default component$(() => {
 				<Activitybar current={current} />
 				<Sidebar current={current} />
 			</aside>
-			<div class={styles.editor}>
-				{/*	Editor */}
-				<section class={styles.pane}>
-					{/* Pane (main) */}
-					<ul>{/* Tabs */}</ul>
-					<div>{/* Contents */}</div>
-				</section>
-				<div class={styles.pane}>
-					{/* Pane (main) */}
-					<ul>{/* Tabs */}</ul>
-					<div>{/* Contents */}</div>
-				</div>
-			</div>
+			<Editor />
 		</div>
 	);
 });
