@@ -26,7 +26,6 @@ export const Sidebar = component$<Props>(({ current }) => {
 								return (
 									<li key={content}>
 										<button
-											class={content === current.side && styles.activated}
 											onClick$={() => {
 												current.side = content;
 											}}
@@ -40,7 +39,6 @@ export const Sidebar = component$<Props>(({ current }) => {
 										<ul>
 											<li>
 												<button
-													class={content === current.side && styles.activated}
 													onClick$={() => {
 														current.side = content;
 													}}
