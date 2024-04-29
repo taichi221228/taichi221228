@@ -1,6 +1,6 @@
 .tabs {
 	display: flex;
-	block-size: 40px;
+	block-size: var(--block-size-tab);
 	border-block-end: var(--border);
 
 	li {

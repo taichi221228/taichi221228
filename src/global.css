@@ -5,6 +5,7 @@
 	--inline-size-sitetitle: 311px;
 	--block-size-main: calc(100svh - (var(--padding-outside) * 2 + var(--block-size-header) + var(--block-size-footer)));
 	--block-size-header: 56px;
+	--block-size-tab: 40px;
 	--padding-outside: 20px;
 	--font-family-default: monospace, "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
 	--font-family-primary: "Fira Code Retina", "Fira Code", "Fira Code Medium", "Fira Code Regular", "Fira Code Light";
