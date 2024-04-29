@@ -22,7 +22,6 @@ export const Activitybar = component$<Props>(({ current }) => {
 				{activities.map(({ name, Icon }) => (
 					<li key={name}>
 						<button
-							class={[name === current.activity && styles.activated]}
 							onClick$={() => {
 								current.activity = name;
 							}}
