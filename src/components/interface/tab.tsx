@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
+import { CloseIcon } from "~/components/interface/icons";
+
 import styles from "./tab.module.css";
 
 type Props = {
@@ -12,7 +14,9 @@ export const Tab = component$<Props>(({ items }) => {
 			{items.map((item) => {
 				return (
 					<li key={item}>
-						<button type="button">{item}</button>
+						<button type="button">
+							{item} <CloseIcon class={styles.icon} />
+						</button>
 					</li>
 				);
 			})}

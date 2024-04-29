@@ -7,10 +7,18 @@
 		border-inline-end: var(--border);
 
 		button {
+			display: flex;
+			gap: 49px;
+			align-items: center;
 			block-size: 100%;
 			padding-inline: 14px;
 			font-size: var(--font-size-label);
 			color: var(--color-secondary-1);
+
+			.icon {
+				margin-inline-end: -2px;
+				font-size: var(--font-size-body);
+			}
 		}
 	}
 }
