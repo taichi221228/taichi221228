@@ -12,7 +12,7 @@
 		color: var(--color-secondary-1);
 		border-inline-end: var(--border);
 
-		a {
+		.link {
 			display: flex;
 			align-items: center;
 			inline-size: 100%;

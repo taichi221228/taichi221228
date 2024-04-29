@@ -13,7 +13,7 @@ export const Header = component$(() => {
 	return (
 		<header class={styles.header}>
 			<h1 class={styles.title}>
-				<Link aria-current={isRoot && "page"} href="/">
+				<Link class={styles.link} aria-current={isRoot && "page"} href="/">
 					{SITENAME}
 				</Link>
 			</h1>
