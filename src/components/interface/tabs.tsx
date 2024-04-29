@@ -10,7 +10,11 @@ export const Tabs = component$<Props>(({ items }) => {
 	return (
 		<ul class={styles.tabs}>
 			{items.map((item) => {
-				return <li key={item}>{item}</li>;
+				return (
+					<li key={item}>
+						<button type="button">{item}</button>
+					</li>
+				);
 			})}
 		</ul>
 	);
