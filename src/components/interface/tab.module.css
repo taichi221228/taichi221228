@@ -1,4 +1,4 @@
-.tabs {
+.tab {
 	display: flex;
 	block-size: var(--block-size-tab);
 	border-block-end: var(--border);

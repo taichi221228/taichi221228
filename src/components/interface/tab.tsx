@@ -1,14 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 
-import styles from "./tabs.module.css";
+import styles from "./tab.module.css";
 
 type Props = {
 	items: string[];
 };
 
-export const Tabs = component$<Props>(({ items }) => {
+export const Tab = component$<Props>(({ items }) => {
 	return (
-		<ul class={styles.tabs}>
+		<ul class={styles.tab}>
 			{items.map((item) => {
 				return (
 					<li key={item}>
