@@ -11,7 +11,7 @@
 				flex-grow: 1;
 			}
 
-			a {
+			.link {
 				--padding-inline: 32px;
 
 				display: flex;
@@ -42,7 +42,7 @@
 				margin-inline-start: auto;
 				border-inline-start: var(--border);
 
-				a {
+				.link {
 					border-top-right-radius: var(--border-radius-md);
 				}
 			}
