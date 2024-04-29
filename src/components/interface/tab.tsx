@@ -5,13 +5,13 @@ import { CloseIcon } from "~/components/interface/icons";
 import styles from "./tab.module.css";
 
 type Props = {
-	items: string[];
+	items?: string[];
 };
 
 export const Tab = component$<Props>(({ items }) => {
 	return (
 		<ul class={styles.tab}>
-			{items.map((item) => {
+			{items?.map((item) => {
 				return (
 					<li key={item}>
 						<button type="button">
