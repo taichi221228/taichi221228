@@ -5,17 +5,15 @@
 	gap: 1px;
 	block-size: var(--block-size-main); /* TEMP: */
 	overflow: scroll;
-	background-color: purple; /* TEMP: */
 
 	.pane {
 		container-type: inline-size;
 		flex-basis: 400px;
 		flex-grow: 1;
 		block-size: var(--block-size-main); /* TEMP: */
-		background-color: yellow; /* TEMP: */
 
-		&:last-child {
-			background-color: green; /* TEMP: */
+		&:not(:last-child) {
+			border-inline-end: var(--border);
 		}
 	}
 }
