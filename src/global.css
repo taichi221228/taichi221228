@@ -2,7 +2,7 @@
 	--size-icon-sm: 16px;
 	--size-icon-md: 20px;
 	--size-icon-lg: 24px;
-	--inline-size-sitetitle: 311px;
+	--inline-size-sitetitle: 310px;
 	--block-size-main: calc(100svh - (var(--padding-outside) * 2 + var(--block-size-header) + var(--block-size-footer)));
 	--block-size-header: 56px;
 	--block-size-tab: 40px;
