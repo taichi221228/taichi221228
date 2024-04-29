@@ -19,7 +19,7 @@ export const Sidebar = component$<Props>(({ current }) => {
 				<span q:slot="head">{current.activity}</span>
 				<ul q:slot="body">
 					{
-						// biome-ignore lint/style/noNonNullAssertion:
+						// biome-ignore lint/style/noNonNullAssertion: `current.activity` always takes the value of `activities[number].name`
 						activities
 							.find(({ name }) => name === current.activity)!
 							.contents.map((content, i) => {
