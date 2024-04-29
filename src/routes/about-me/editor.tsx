@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Tabs } from "~/components/interface/tabs";
+import { Tab } from "~/components/interface/tab";
 
 import styles from "./editor.module.css";
 import { activities } from "./index";
@@ -12,12 +12,12 @@ export const Editor = component$(() => {
 			{/*	Editor */}
 			<section class={styles.pane}>
 				{/* Pane (main) */}
-				<Tabs items={activities.map(({ name }) => name)} />
+				<Tab items={activities.map(({ name }) => name)} />
 				<div>{/* Contents */}</div>
 			</section>
 			<div class={styles.pane}>
 				{/* Pane (main) */}
-				<Tabs items={[]} />
+				<Tab items={[]} />
 				<div>{/* Contents */}</div>
 			</div>
 		</div>
