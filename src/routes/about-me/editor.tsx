@@ -17,7 +17,7 @@ export const Editor = component$(() => {
 			</section>
 			<div class={styles.pane}>
 				{/* Pane (main) */}
-				<Tab items={[]} />
+				<Tab />
 				<div>{/* Contents */}</div>
 			</div>
 		</div>

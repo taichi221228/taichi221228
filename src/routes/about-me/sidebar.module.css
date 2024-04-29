@@ -15,11 +15,11 @@
 				margin-inline: calc(var(--padding-inline) * -1);
 				border-radius: var(--border-radius-sm);
 
-				&:not(:is(.activated, :focus-visible, :hover)) {
+				&:not(:is([disabled], :focus-visible, :hover)) {
 					color: var(--color-secondary-1);
 				}
 
-				&:is(.activated, :focus-visible, :hover) {
+				&:is([disabled], :focus-visible, :hover) {
 					color: var(--color-secondary-4);
 				}
 
