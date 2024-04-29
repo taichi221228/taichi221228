@@ -48,7 +48,7 @@ export default component$(() => {
 				<Activitybar current={current} />
 				<Sidebar current={current} />
 			</aside>
-			<Editor />
+			<Editor current={current} />
 		</div>
 	);
 });
