@@ -1,8 +1,3 @@
-:root {
-	--inline-size-sitetitle: 311px;
-	--block-size-header: 56px;
-}
-
 .header {
 	display: flex;
 	block-size: var(--block-size-header);
