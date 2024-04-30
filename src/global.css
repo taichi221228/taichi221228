@@ -1,8 +1,8 @@
 :root {
-	--size-icon-xs: 16px;
-	--size-icon-sm: 18px;
-	--size-icon-md: 20px;
-	--size-icon-lg: 24px;
+	--size-icon-xs: 16px; /* TODO: I'll remove it. */
+	--size-icon-sm: 18px; /* TODO: I'll remove it. */
+	--size-icon-md: 20px; /* TODO: I'll remove it. */
+	--size-icon-lg: 24px; /* TODO: I'll remove it. */
 	--inline-size-sitetitle: 310px;
 	--block-size-main: calc(100svh - (var(--padding-outside) * 2 + var(--block-size-header) + var(--block-size-footer)));
 	--block-size-header: 56px;
@@ -16,6 +16,10 @@
 	--font-size-label: 16px;
 	--font-size-code: 14px;
 	--font-size-annotation: 12px;
+	--icon-size-xs: 16px;
+	--icon-size-sm: 18px;
+	--icon-size-md: 20px;
+	--icon-size-lg: 24px;
 	--color-base-1: #01080e;
 	--color-base-2: #011627;
 	--color-base-3: #011221;
