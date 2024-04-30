@@ -1,14 +1,12 @@
-import { component$, useTask$ } from "@builder.io/qwik";
+import { component$, useContext, useTask$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import { activities, type Current } from "./index";
-
-type Props = {
-	current: Current;
-};
+import { activities, CURRENT } from "./index";
 
 /** @package */
-export const Activitybar = component$<Props>(({ current }) => {
+export const Activitybar = component$(() => {
+	const current = useContext(CURRENT);
+
 	useTask$(({ track }) => {
 		track(() => current.activity);
 

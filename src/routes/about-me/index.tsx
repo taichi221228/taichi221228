@@ -29,8 +29,7 @@ export const activities = [
 	},
 ] as const satisfies { name: string; Icon: Component; contents: string[] }[];
 
-/** @package */
-export type Current = {
+type Current = {
 	activity: (typeof activities)[number]["name"];
 	side: (typeof activities)[number]["contents"][number];
 };
@@ -50,10 +49,10 @@ export default component$(() => {
 	return (
 		<div class={styles.container}>
 			<aside>
-				<Activitybar current={current} />
-				<Sidebar current={current} />
+				<Activitybar />
+				<Sidebar />
 			</aside>
-			<Editor current={current} />
+			<Editor />
 		</div>
 	);
 });

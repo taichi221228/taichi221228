@@ -1,18 +1,16 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useContext } from "@builder.io/qwik";
 
 import { Accordion } from "~/components/interface/accordion";
 import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
-import { activities, type Current } from "./index";
+import { activities, CURRENT } from "./index";
 import styles from "./sidebar.module.css";
 
-type Props = {
-	current: Current;
-};
-
 /** @package */
-export const Sidebar = component$<Props>(({ current }) => {
+export const Sidebar = component$(() => {
+	const current = useContext(CURRENT);
+
 	return (
 		<div class={styles.sidebar}>
 			<Accordion as="nav" shouldOpen={true}>
