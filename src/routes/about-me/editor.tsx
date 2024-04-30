@@ -1,4 +1,4 @@
-import { component$, useContext } from "@builder.io/qwik";
+import { $, component$, useContext } from "@builder.io/qwik";
 
 import { Tab } from "~/components/interface/tab";
 
@@ -14,7 +14,17 @@ export const Editor = component$(() => {
 			{/*	Editor */}
 			<section class={styles.pane}>
 				{/* Pane (main) */}
-				<Tab items={[current.side]} current={current.side} />
+				<Tab
+					items={[
+						{
+							name: current.side,
+							onClose$: $(() => {
+								current.side = null;
+							}),
+						},
+					]}
+					current={current.side}
+				/>
 				<div>{/* Contents */}</div>
 			</section>
 			<div class={styles.pane}>

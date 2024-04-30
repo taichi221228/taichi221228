@@ -31,7 +31,7 @@ export const activities = [
 
 type Current = {
 	activity: (typeof activities)[number]["name"];
-	side: (typeof activities)[number]["contents"][number];
+	side: (typeof activities)[number]["contents"][number] | null;
 };
 
 /** @package */
