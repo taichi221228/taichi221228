@@ -17,7 +17,7 @@
 
 			.icon {
 				margin-inline-end: -2px;
-				font-size: var(--font-size-body);
+				font-size: var(--icon-size-sm);
 			}
 		}
 	}

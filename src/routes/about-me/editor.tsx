@@ -1,16 +1,14 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useContext } from "@builder.io/qwik";
 
 import { Tab } from "~/components/interface/tab";
 
 import styles from "./editor.module.css";
-import type { Current } from "./index";
-
-type Props = {
-	current: Current;
-};
+import { CURRENT } from "./index";
 
 /** @package */
-export const Editor = component$<Props>(({ current }) => {
+export const Editor = component$(() => {
+	const current = useContext(CURRENT);
+
 	return (
 		<div class={styles.editor}>
 			{/*	Editor */}
