@@ -43,7 +43,7 @@
 					a,
 					button,
 					span {
-						padding-inline-start: calc(var(--padding-inline) + var(--gap) + var(--size-icon-xs));
+						padding-inline-start: calc(var(--padding-inline) + var(--gap) + var(--icon-size-xs));
 					}
 				}
 			}
