@@ -9,6 +9,7 @@ export { MailIcon } from "./mail-icon";
 export { MarkdownIcon } from "./markdown-icon";
 export { PhoneIcon } from "./phone-icon";
 export { TerminalIcon } from "./terminal-icon";
+export { TriangleIcon } from "./triangle-icon";
 export { UserIcon } from "./user-icon";
 export { XIcon } from "./x-icon";
 

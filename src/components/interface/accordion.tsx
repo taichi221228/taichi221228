@@ -1,7 +1,7 @@
 import { component$, Slot, useSignal } from "@builder.io/qwik";
 
 import { Poly, type PolyProps } from "~/components/function/poly";
-import { Triangle } from "~/components/interface/triangle";
+import { TriangleIcon } from "~/components/interface/icons";
 
 import styles from "./accordion.module.css";
 
@@ -21,7 +21,7 @@ export const Accordion = component$<Props>(({ as, shouldOpen = false }) => {
 				}}
 				type="button"
 			>
-				<Triangle direction={isOpen.value ? "down" : "up"} />
+				<TriangleIcon class={styles.icon} direction={isOpen.value ? "down" : "up"} />
 				<Slot name="head" />
 			</button>
 			<div class={[isOpen.value && styles.opened, styles.body]}>
