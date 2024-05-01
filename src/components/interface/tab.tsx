@@ -16,15 +16,15 @@ type Props =
 
 export const Tab = component$<Props>(({ item, onClick$ }) => {
 	return (
-		<ul class={styles.tab}>
+		<div class={styles.container}>
 			{item && (
-				<li>
+				<div class={styles.tab}>
 					{item}
 					<button class={styles.close} onClick$={onClick$} type="button">
 						<CloseIcon class={styles.icon} />
 					</button>
-				</li>
+				</div>
 			)}
-		</ul>
+		</div>
 	);
 });

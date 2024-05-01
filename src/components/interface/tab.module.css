@@ -1,9 +1,9 @@
-.tab {
+.container {
 	display: flex;
 	block-size: var(--block-size-tab);
 	border-block-end: var(--border);
 
-	li {
+	.tab {
 		display: flex;
 		gap: 49px;
 		align-items: center;
