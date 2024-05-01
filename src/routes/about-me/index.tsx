@@ -15,23 +15,27 @@ export const activities = [
 	{
 		name: "professional-info",
 		Icon: TerminalIcon,
-		contents: ["experience", "skills"],
 	},
 	{
 		name: "personal-info",
 		Icon: UserIcon,
-		contents: ["bio", "interests", "education"],
 	},
 	{
 		name: "hobbies",
 		Icon: GamepadIcon,
-		contents: ["music", "books", "games"],
 	},
-] as const satisfies { name: string; Icon: Component; contents: string[] }[];
+] as const satisfies { name: string; Icon: Component }[];
+
+/** @package */
+export const sides = {
+	"professional-info": ["experience", "skills"],
+	"personal-info": ["bio", "interests", "education"],
+	hobbies: ["music", "books", "games"],
+} as const satisfies Record<(typeof activities)[number]["name"], string[]>;
 
 type Current = {
 	activity: (typeof activities)[number]["name"];
-	side: (typeof activities)[number]["contents"][number] | null;
+	side: (typeof sides)[(typeof activities)[number]["name"]][number] | null;
 };
 
 /** @package */

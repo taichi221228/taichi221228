@@ -1,7 +1,7 @@
 import { component$, useContext, useTask$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import { activities, CURRENT } from "./index";
+import { activities, CURRENT, sides } from "./index";
 
 /** @package */
 export const Activitybar = component$(() => {
@@ -10,8 +10,7 @@ export const Activitybar = component$(() => {
 	useTask$(({ track }) => {
 		track(() => current.activity);
 
-		// biome-ignore lint/style/noNonNullAssertion: `current.activity` always takes the value of `activities[number].name`
-		current.side = activities.find(({ name }) => name === current.activity)!.contents[0];
+		current.side = sides[current.activity][0];
 	});
 
 	return (
