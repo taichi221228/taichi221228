@@ -15,15 +15,10 @@ export const Editor = component$(() => {
 			<section class={styles.pane}>
 				{/* Pane (main) */}
 				<Tab
-					items={[
-						{
-							name: current.side,
-							onClick$: $(() => {
-								current.side = null;
-							}),
-						},
-					]}
-					current={current.side}
+					item={current.side}
+					onClick$={$(() => {
+						current.side = null;
+					})}
 				/>
 				<div>{/* Contents */}</div>
 			</section>

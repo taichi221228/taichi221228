@@ -4,31 +4,25 @@ import { CloseIcon } from "~/components/interface/icons";
 
 import styles from "./tab.module.css";
 
-type Items = { name: string | null; onClick$?: QRL<() => void> }[];
-
-type Props<T extends Items> =
+type Props =
 	| {
-			items: T;
-			current: T[number]["name"];
+			item: string | null;
+			onClick$: QRL<() => void>;
 	  }
 	| {
-			items?: never;
-			current?: never;
+			item?: never;
+			onClick$?: never;
 	  };
 
-export const Tab = component$(<T extends Items>({ items, current }: Props<T>) => {
+export const Tab = component$<Props>(({ item, onClick$ }) => {
 	return (
 		<ul class={styles.tab}>
-			{items?.map(({ name, onClick$ }) => {
-				return (
-					<li key={name}>
-						{name}
-						<button class={styles.close} onClick$={onClick$} type="button">
-							<CloseIcon />
-						</button>
-					</li>
-				);
-			})}
+			<li>
+				{item}
+				<button class={styles.close} onClick$={onClick$} type="button">
+					<CloseIcon class={styles.icon} />
+				</button>
+			</li>
 		</ul>
 	);
 });
