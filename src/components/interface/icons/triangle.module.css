@@ -1,0 +1,15 @@
+.up {
+	rotate: 0deg;
+}
+
+.down {
+	rotate: 180deg;
+}
+
+.left {
+	rotate: 270deg;
+}
+
+.right {
+	rotate: 90deg;
+}
