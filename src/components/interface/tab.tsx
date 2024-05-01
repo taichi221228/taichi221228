@@ -26,7 +26,7 @@ export const Tab = component$(<T extends Items>({ items, current }: Props<T>) =>
 							{name}
 						</button>
 						<button class={styles.close} onClick$={onClose$} type="button">
-							<CloseIcon class={styles.icon} />
+							<CloseIcon />
 						</button>
 					</li>
 				);
