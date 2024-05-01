@@ -18,7 +18,7 @@ export const Editor = component$(() => {
 					items={[
 						{
 							name: current.side,
-							onClose$: $(() => {
+							onClick$: $(() => {
 								current.side = null;
 							}),
 						},
