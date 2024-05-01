@@ -8,4 +8,8 @@
 	background: var(--color-base-1);
 	border: var(--border);
 	border-radius: var(--border-radius-md);
+
+	.icon {
+		font-size: 9px;
+	}
 }
