@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	block-size: var(--block-size-tab);
+	border-block-end: var(--border);
+
+	.tab {
+		display: flex;
+		gap: 49px;
+		align-items: center;
+		padding-inline: 14px;
+		font-size: var(--font-size-label);
+		color: var(--color-secondary-1);
+		border-inline-end: var(--border);
+
+		button {
+			padding: 2px;
+			line-height: 1;
+			border-radius: var(--border-radius-round);
+
+			&:hover {
+				background-color: var(--color-secondary-1-lighter);
+			}
+
+			.icon {
+				font-size: var(--icon-size-sm);
+			}
+		}
+	}
+}

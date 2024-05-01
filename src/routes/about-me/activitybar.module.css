@@ -12,13 +12,13 @@
 				line-height: 1;
 				color: var(--color-secondary-1-lighter);
 
-				&:is(.activated, :focus-visible, :hover) {
+				&:is([disabled], :focus-visible, :hover) {
 					color: var(--color-secondary-1);
 				}
 			}
 
 			.icon {
-				font-size: var(--size-icon-lg);
+				font-size: var(--icon-size-lg);
 			}
 		}
 	}

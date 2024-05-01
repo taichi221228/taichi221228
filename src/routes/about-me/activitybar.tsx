@@ -1,19 +1,16 @@
-import { component$, useTask$ } from "@builder.io/qwik";
+import { component$, useContext, useTask$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import { activities, type Current } from "./index";
-
-type Props = {
-	current: Current;
-};
+import { activities, CURRENT, sides } from "./index";
 
 /** @package */
-export const Activitybar = component$<Props>(({ current }) => {
+export const Activitybar = component$(() => {
+	const current = useContext(CURRENT);
+
 	useTask$(({ track }) => {
 		track(() => current.activity);
 
-		// biome-ignore lint/style/noNonNullAssertion:
-		current.side = activities.find(({ name }) => name === current.activity)!.contents[0];
+		current.side = sides[current.activity][0];
 	});
 
 	return (
@@ -22,7 +19,6 @@ export const Activitybar = component$<Props>(({ current }) => {
 				{activities.map(({ name, Icon }) => (
 					<li key={name}>
 						<button
-							class={[name === current.activity && styles.activated]}
 							onClick$={() => {
 								current.activity = name;
 							}}

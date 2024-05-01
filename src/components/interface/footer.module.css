@@ -52,7 +52,7 @@
 		}
 
 		.icon {
-			font-size: var(--size-icon-md);
+			font-size: var(--icon-size-md);
 		}
 	}
 }

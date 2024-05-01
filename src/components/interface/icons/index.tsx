@@ -1,5 +1,6 @@
 import type { ClassList } from "@builder.io/qwik";
 
+export { CloseIcon } from "./close-icon";
 export { FacebookIcon } from "./facebook-icon";
 export { FolderIcon } from "./folder-icon";
 export { GamepadIcon } from "./gamepad-icon";
