@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import { Icon, type IconProps } from "./icon";
-import styles from "./triangle.module.css";
+import styles from "./triangle-icon.module.css";
 
 type Props = IconProps & {
 	direction?: "up" | "down" | "left" | "right";
