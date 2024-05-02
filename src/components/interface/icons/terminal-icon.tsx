@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 
-import type { Props } from "./index";
+import { Icon, type IconProps as Props } from "./icon";
 
 /** @package */
-export const TerminalIcon = component$<Props>(({ class: c }) => {
-	return <i class={[c, "ri-terminal-box-fill"]} />;
+export const TerminalIcon = component$<Props>(({ ...props }) => {
+	return <Icon type="ri-terminal-box-fill" {...props} />;
 });

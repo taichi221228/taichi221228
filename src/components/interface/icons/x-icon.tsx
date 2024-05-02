@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 
-import type { Props } from "./index";
+import { Icon, type IconProps as Props } from "./icon";
 
 /** @package */
-export const XIcon = component$<Props>(({ class: c }) => {
-	return <i class={[c, "ri-twitter-x-fill"]} />;
+export const XIcon = component$<Props>(({ ...props }) => {
+	return <Icon type="ri-twitter-x-fill" {...props} />;
 });
