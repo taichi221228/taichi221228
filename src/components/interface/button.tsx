@@ -7,7 +7,7 @@ type Props = {
 	variant?: "accent" | "ghost";
 };
 
-export const Button = component$<Props>(({ onClick$, variant }) => {
+export const Button = component$(({ onClick$, variant }: Props) => {
 	return (
 		<button class={[styles[variant ?? "primary"], styles.button]} onClick$={onClick$} type="button">
 			<Slot />

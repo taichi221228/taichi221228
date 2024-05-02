@@ -1,13 +1,13 @@
 import { component$ } from "@builder.io/qwik";
 
-import type { Props as IconProps } from "./index";
-import styles from "./triangle.module.css";
+import { Icon, type IconProps } from "./icon";
+import styles from "./triangle-icon.module.css";
 
-type Props = IconProps & {
+type Props = {
 	direction?: "up" | "down" | "left" | "right";
-};
+} & IconProps;
 
 /** @package */
-export const TriangleIcon = component$<Props>(({ class: c, direction = "up" }) => {
-	return <i class={[c, styles[direction], "ri-triangle-fill"]} />;
+export const TriangleIcon = component$(({ class: className, direction = "up", ...props }: Props) => {
+	return <Icon class={[className, styles[direction]]} type="ri-triangle-fill" {...props} />;
 });

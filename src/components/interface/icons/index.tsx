@@ -1,5 +1,3 @@
-import type { ClassList } from "@builder.io/qwik";
-
 export { CloseIcon } from "./close-icon";
 export { FacebookIcon } from "./facebook-icon";
 export { FolderIcon } from "./folder-icon";
@@ -12,7 +10,3 @@ export { TerminalIcon } from "./terminal-icon";
 export { TriangleIcon } from "./triangle-icon";
 export { UserIcon } from "./user-icon";
 export { XIcon } from "./x-icon";
-
-export type Props = {
-	class?: ClassList;
-};

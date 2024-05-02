@@ -1,6 +1,6 @@
 import { component$, type FunctionComponent, type PropsOf, Slot } from "@builder.io/qwik";
 
-type COMPONENT = string | FunctionComponent;
+type COMPONENT = FunctionComponent | string;
 
 export type PolyProps<C extends COMPONENT = COMPONENT> = { as?: C };
 

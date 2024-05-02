@@ -10,7 +10,7 @@ type Props = {
 };
 
 /** @package */
-export const Navigation = component$<Props>(({ location }) => {
+export const Navigation = component$(({ location }: Props) => {
 	return (
 		<nav class={styles.navigation}>
 			<ul>

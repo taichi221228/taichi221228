@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 
-import type { Props } from "./index";
+import { Icon, type IconProps as Props } from "./icon";
 
 /** @package */
-export const MarkdownIcon = component$<Props>(({ class: c }) => {
-	return <i class={[c, "ri-markdown-fill"]} />;
+export const MarkdownIcon = component$(({ ...props }: Props) => {
+	return <Icon type="ri-markdown-fill" {...props} />;
 });

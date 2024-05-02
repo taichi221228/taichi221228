@@ -9,7 +9,7 @@ type Props = {
 };
 
 /** @package */
-export const Key = component$<Props>(({ direction }) => {
+export const Key = component$(({ direction }: Props) => {
 	return (
 		<div class={styles.key}>
 			<TriangleIcon class={styles.icon} direction={direction} />
