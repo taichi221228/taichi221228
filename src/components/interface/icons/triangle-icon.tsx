@@ -8,6 +8,6 @@ type Props = {
 } & IconProps;
 
 /** @package */
-export const TriangleIcon = component$<Props>(({ class: className, direction = "up", ...props }) => {
+export const TriangleIcon = component$(({ class: className, direction = "up", ...props }: Props) => {
 	return <Icon class={[className, styles[direction]]} type="ri-triangle-fill" {...props} />;
 });

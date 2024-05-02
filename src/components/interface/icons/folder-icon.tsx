@@ -8,6 +8,6 @@ type Props = {
 } & IconProps;
 
 /** @package */
-export const FolderIcon = component$<Props>(({ variant, ...props }) => {
+export const FolderIcon = component$(({ variant, ...props }: Props) => {
 	return <Icon class={styles[`is-${variant}`]} type="ri-folder-3-fill" {...props} />;
 });
