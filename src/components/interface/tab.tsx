@@ -14,7 +14,7 @@ type Props =
 			onClick$?: never;
 	  };
 
-export const Tab = component$<Props>(({ item, onClick$ }) => {
+export const Tab = component$(({ item, onClick$ }: Props) => {
 	return (
 		<div class={styles.container}>
 			{item && (
