@@ -18,7 +18,9 @@ export const Editor = component$(() => {
 						current.side = null;
 					}),
 				}}
-			/>
+			>
+				<h1>Hello</h1>
+			</Pane>
 			<Pane />
 		</div>
 	);

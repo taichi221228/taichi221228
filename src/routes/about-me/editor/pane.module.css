@@ -6,4 +6,8 @@
 	&:not(:last-child) {
 		border-inline-end: var(--border);
 	}
+
+	.content {
+		padding: 18px 40px;
+	}
 }
