@@ -5,10 +5,10 @@
 	},
 	"files": {
 		"ignore": [
-			"./dist",
-			"./lib",
-			"./lib-types",
-			"./server",
+			"dist",
+			"lib",
+			"lib-types",
+			"server",
 			"node_modules",
 			"*.local",
 			".cache",
