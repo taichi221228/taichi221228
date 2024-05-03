@@ -28,14 +28,14 @@ export const activities = [
 
 /** @package */
 export const sides = {
-	"professional-info": ["experience", "skills"],
-	"personal-info": ["bio", "interests", "education"],
-	hobbies: ["music", "books", "games"],
-} as const satisfies Record<(typeof activities)[number]["name"], string[]>;
+	"professional-info": [{ name: "experience" }, { name: "skills" }],
+	"personal-info": [{ name: "bio" }, { name: "interests" }, { name: "education" }],
+	hobbies: [{ name: "music" }, { name: "books" }, { name: "games" }],
+} as const satisfies Record<(typeof activities)[number]["name"], { name: string }[]>;
 
 type Current = {
 	activity: (typeof activities)[number]["name"];
-	side: (typeof sides)[(typeof activities)[number]["name"]][number] | null;
+	side: (typeof sides)[(typeof activities)[number]["name"]][number]["name"] | null;
 };
 
 /** @package */

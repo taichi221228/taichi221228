@@ -16,28 +16,28 @@ export const Sidebar = component$(() => {
 			<Accordion as="nav" shouldOpen={true}>
 				<span q:slot="head">{current.activity}</span>
 				<ul q:slot="body">
-					{sides[current.activity].map((side, i) => {
+					{sides[current.activity].map(({ name }, i) => {
 						return (
-							<li key={side}>
+							<li key={name}>
 								<button
 									onClick$={() => {
-										current.side = side;
+										current.side = name;
 									}}
 									type="button"
-									disabled={side === current.side}
+									disabled={name === current.side}
 								>
 									<FolderIcon variant={i === 0 ? 1 : i % 2 === 0 ? 3 : i % 3 === 0 ? 1 : 2} />
-									{side}
+									{name}
 								</button>
 
 								<ul>
 									<li>
 										<button
 											onClick$={() => {
-												current.side = side;
+												current.side = name;
 											}}
 											type="button"
-											disabled={side === current.side}
+											disabled={name === current.side}
 										>
 											<MarkdownIcon />
 											index.md
