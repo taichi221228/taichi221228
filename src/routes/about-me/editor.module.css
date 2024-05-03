@@ -6,7 +6,6 @@
 	overflow: scroll;
 
 	.pane {
-		container-type: inline-size;
 		flex-basis: 400px;
 		flex-grow: 1;
 		block-size: var(--block-size-main); /* TEMP: */
