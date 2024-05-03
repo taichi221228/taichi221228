@@ -14,6 +14,8 @@ type Props =
 			onClick$?: never;
 	  };
 
+export type TabProps = Props;
+
 export const Tab = component$(({ item, onClick$ }: Props) => {
 	return (
 		<div class={styles.container}>
