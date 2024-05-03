@@ -1,4 +1,4 @@
-import { type Component, component$, createContextId, useContextProvider, useStore } from "@builder.io/qwik";
+import { type Component, component$, createContextId, type FunctionComponent, useContextProvider, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
@@ -6,6 +6,7 @@ import { NAME, SITENAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import { Activitybar } from "./activitybar";
+import Content from "./contents/content.mdx";
 import { Editor } from "./editor";
 import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
@@ -28,10 +29,21 @@ export const activities = [
 
 /** @package */
 export const sides = {
-	"professional-info": [{ name: "experience" }, { name: "skills" }],
-	"personal-info": [{ name: "bio" }, { name: "interests" }, { name: "education" }],
-	hobbies: [{ name: "music" }, { name: "books" }, { name: "games" }],
-} as const satisfies Record<(typeof activities)[number]["name"], { name: string }[]>;
+	"professional-info": [
+		{ name: "experience", Content },
+		{ name: "skills", Content },
+	],
+	"personal-info": [
+		{ name: "bio", Content },
+		{ name: "interests", Content },
+		{ name: "education", Content },
+	],
+	hobbies: [
+		{ name: "music", Content },
+		{ name: "books", Content },
+		{ name: "games", Content },
+	],
+} as const satisfies Record<(typeof activities)[number]["name"], { name: string; Content: FunctionComponent }[]>;
 
 type Current = {
 	activity: (typeof activities)[number]["name"];
