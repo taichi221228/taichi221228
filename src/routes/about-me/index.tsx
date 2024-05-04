@@ -16,16 +16,30 @@ export const activities = [
 	{
 		name: "professional-info",
 		Icon: TerminalIcon,
+		sides: [
+			{ name: "experience", Content },
+			{ name: "skills", Content },
+		],
 	},
 	{
 		name: "personal-info",
 		Icon: UserIcon,
+		sides: [
+			{ name: "bio", Content },
+			{ name: "interests", Content },
+			{ name: "education", Content },
+		],
 	},
 	{
 		name: "hobbies",
 		Icon: GamepadIcon,
+		sides: [
+			{ name: "music", Content },
+			{ name: "books", Content },
+			{ name: "games", Content },
+		],
 	},
-] as const satisfies { name: string; Icon: Component }[];
+] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: FunctionComponent }[] }[];
 
 /** @package */
 export const sides = {
