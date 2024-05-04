@@ -10,7 +10,7 @@ export const Activitybar = component$(() => {
 	useTask$(({ track }) => {
 		track(() => current.activity);
 
-		current.side = getActivity(current).sides[0].name;
+		current.side = getActivity(current.activity).sides[0].name;
 	});
 
 	return (

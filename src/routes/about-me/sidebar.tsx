@@ -16,7 +16,7 @@ export const Sidebar = component$(() => {
 			<Accordion as="nav" shouldOpen={true}>
 				<span q:slot="head">{current.activity}</span>
 				<ul q:slot="body">
-					{getActivity(current).sides.map(({ name }, i) => {
+					{getActivity(current.activity).sides.map(({ name }, i) => {
 						return (
 							<li key={name}>
 								<button

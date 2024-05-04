@@ -42,14 +42,14 @@ export const activities = [
 ] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: FunctionComponent }[] }[];
 
 /** @package */
-export const getActivity = ({ activity }: Current) => {
+export const getActivity = (activity: Current["activity"]) => {
 	// biome-ignore lint/style/noNonNullAssertion:
 	return activities.find(({ name }) => name === activity)!;
 };
 
 /** @package */
 export const getSide = ({ activity, side }: Current) => {
-	return getActivity({ activity, side }).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
+	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
 };
 
 type Current = {
