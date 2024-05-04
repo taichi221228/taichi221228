@@ -12,20 +12,17 @@ import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
 
 /** @package */
-export const activities = [
-	{
-		name: "professional-info",
+export const activities = {
+	"professional-info": {
 		Icon: TerminalIcon,
 	},
-	{
-		name: "personal-info",
+	"personal-info": {
 		Icon: UserIcon,
 	},
-	{
-		name: "hobbies",
+	hobbies: {
 		Icon: GamepadIcon,
 	},
-] as const satisfies { name: string; Icon: Component }[];
+} as const satisfies Record<string, { Icon: Component }>;
 
 /** @package */
 export const sides = {
@@ -43,11 +40,11 @@ export const sides = {
 		{ name: "books", Content },
 		{ name: "games", Content },
 	],
-} as const satisfies Record<(typeof activities)[number]["name"], { name: string; Content: FunctionComponent }[]>;
+} as const satisfies Record<keyof typeof activities, { name: string; Content: FunctionComponent }[]>;
 
 type Current = {
-	activity: (typeof activities)[number]["name"];
-	side: (typeof sides)[(typeof activities)[number]["name"]][number]["name"] | null;
+	activity: keyof typeof activities;
+	side: (typeof sides)[keyof typeof activities][number]["name"] | null;
 };
 
 /** @package */
