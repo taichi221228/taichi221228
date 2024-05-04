@@ -52,10 +52,15 @@ export const getSide = ({ activity, side }: Current) => {
 	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
 };
 
-type Current = {
-	activity: (typeof activities)[number]["name"];
-	side: (typeof activities)[number]["sides"][number]["name"] | null;
+type ActivitySidePairs = {
+	[P in (typeof activities)[number]["name"]]: Extract<(typeof activities)[number], { name: P }>["sides"][number]["name"];
 };
+
+type Current =
+	| {
+			[P in keyof ActivitySidePairs]: { activity: P; side: ActivitySidePairs[P] };
+	  }[keyof ActivitySidePairs]
+	| { activity: keyof ActivitySidePairs; side: null };
 
 /** @package */
 export const CURRENT = createContextId<Current>([SITENAME, "about-me", "current"].join("."));
