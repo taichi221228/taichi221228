@@ -1,7 +1,7 @@
 import { component$, useContext, useTask$ } from "@builder.io/qwik";
 
 import styles from "./activitybar.module.css";
-import { activities, CURRENT, sides } from "./index";
+import { activities, CURRENT, getActivity } from "./index";
 
 /** @package */
 export const Activitybar = component$(() => {
@@ -10,7 +10,7 @@ export const Activitybar = component$(() => {
 	useTask$(({ track }) => {
 		track(() => current.activity);
 
-		current.side = sides[current.activity][0].name;
+		current.side = getActivity(current).sides[0].name;
 	});
 
 	return (

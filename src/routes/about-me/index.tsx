@@ -42,26 +42,19 @@ export const activities = [
 ] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: FunctionComponent }[] }[];
 
 /** @package */
-export const sides = {
-	"professional-info": [
-		{ name: "experience", Content },
-		{ name: "skills", Content },
-	],
-	"personal-info": [
-		{ name: "bio", Content },
-		{ name: "interests", Content },
-		{ name: "education", Content },
-	],
-	hobbies: [
-		{ name: "music", Content },
-		{ name: "books", Content },
-		{ name: "games", Content },
-	],
-} as const satisfies Record<(typeof activities)[number]["name"], { name: string; Content: FunctionComponent }[]>;
+export const getActivity = ({ activity }: Current) => {
+	// biome-ignore lint/style/noNonNullAssertion:
+	return activities.find(({ name }) => name === activity)!;
+};
+
+/** @package */
+export const getSide = ({ activity, side }: Current) => {
+	return getActivity({ activity, side }).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
+};
 
 type Current = {
 	activity: (typeof activities)[number]["name"];
-	side: (typeof sides)[(typeof activities)[number]["name"]][number]["name"] | null;
+	side: (typeof activities)[number]["sides"][number]["name"] | null;
 };
 
 /** @package */

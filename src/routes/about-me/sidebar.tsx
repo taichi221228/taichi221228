@@ -4,7 +4,7 @@ import { Accordion } from "~/components/interface/accordion";
 import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
-import { CURRENT, sides } from "./index";
+import { CURRENT, getActivity } from "./index";
 import styles from "./sidebar.module.css";
 
 /** @package */
@@ -16,7 +16,7 @@ export const Sidebar = component$(() => {
 			<Accordion as="nav" shouldOpen={true}>
 				<span q:slot="head">{current.activity}</span>
 				<ul q:slot="body">
-					{sides[current.activity].map(({ name }, i) => {
+					{getActivity(current).sides.map(({ name }, i) => {
 						return (
 							<li key={name}>
 								<button

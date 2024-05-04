@@ -3,14 +3,13 @@ import { $, component$, useContext } from "@builder.io/qwik";
 import { Pane } from "~/routes/about-me/editor/pane";
 
 import styles from "./editor.module.css";
-import { CURRENT, sides } from "./index";
+import { CURRENT, getSide } from "./index";
 
 /** @package */
 export const Editor = component$(() => {
 	const current = useContext(CURRENT);
 
-	const side = sides[current.activity].find(({ name }) => name === current.side) ?? { Content: () => <></> };
-	const { Content } = side;
+	const { Content } = getSide(current);
 
 	return (
 		<div class={styles.editor}>
