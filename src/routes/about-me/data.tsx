@@ -7,10 +7,6 @@ import Content from "./contents/content.mdx";
 
 type Activities = typeof activities;
 
-type ActivitySidePairs = {
-	[P in Activities[number]["name"]]: Extract<Activities[number], { name: P }>["sides"][number]["name"];
-};
-
 /** @package */
 export const activities = [
 	{
@@ -52,12 +48,16 @@ export const getSide = ({ activity, side }: Current) => {
 	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
 };
 
+type ActivitySidesMap = {
+	[ActivityName in Activities[number]["name"]]: Extract<Activities[number], { name: ActivityName }>["sides"][number]["name"];
+};
+
 /** @package */
 export type Current =
 	| {
-			[P in keyof ActivitySidePairs]: { activity: P; side: ActivitySidePairs[P] };
-	  }[keyof ActivitySidePairs]
-	| { activity: keyof ActivitySidePairs; side: null };
+			[ActivityName in keyof ActivitySidesMap]: { activity: ActivityName; side: ActivitySidesMap[ActivityName] };
+	  }[keyof ActivitySidesMap]
+	| { activity: keyof ActivitySidesMap; side: null };
 
 /** @package */
 export const CURRENT = createContextId<Current>([SITENAME, "about-me", "current"].join("."));
