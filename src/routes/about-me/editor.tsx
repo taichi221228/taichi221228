@@ -2,8 +2,8 @@ import { $, component$, useContext } from "@builder.io/qwik";
 
 import { Pane } from "~/routes/about-me/editor/pane";
 
+import { CURRENT, getSide } from "./data";
 import styles from "./editor.module.css";
-import { CURRENT, getSide } from "./index";
 
 /** @package */
 export const Editor = component$(() => {

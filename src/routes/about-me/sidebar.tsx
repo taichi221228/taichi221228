@@ -4,7 +4,7 @@ import { Accordion } from "~/components/interface/accordion";
 import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
-import { CURRENT, getActivity } from "./index";
+import { CURRENT, getActivity } from "./data";
 import styles from "./sidebar.module.css";
 
 /** @package */
