@@ -96,6 +96,10 @@ Inside your project, you’ll see the following directory structure:
 
 - [Cloudflare](https://www.cloudflare.com/) :construction:
 
+### Workspace
+
+- [Nx](https://nx.dev/) :construction:
+
 ### Design
 
 - [Figma](https://www.figma.com/)
