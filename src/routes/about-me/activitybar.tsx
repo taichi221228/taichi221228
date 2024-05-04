@@ -16,7 +16,7 @@ export const Activitybar = component$(() => {
 	return (
 		<nav class={styles.activitybar}>
 			<ul>
-				{Object.entries(activities).map(([name, { Icon }]) => (
+				{activities.map(({ name, Icon }) => (
 					<li key={name}>
 						<button
 							onClick$={() => {
