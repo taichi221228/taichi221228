@@ -5,6 +5,12 @@ import { SITENAME } from "~/constants/info";
 
 import Content from "./contents/content.mdx";
 
+type Activities = typeof activities;
+
+type ActivitySidePairs = {
+	[P in Activities[number]["name"]]: Extract<Activities[number], { name: P }>["sides"][number]["name"];
+};
+
 /** @package */
 export const activities = [
 	{
@@ -44,10 +50,6 @@ export const getActivity = (activity: Current["activity"]) => {
 /** @package */
 export const getSide = ({ activity, side }: Current) => {
 	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
-};
-
-type ActivitySidePairs = {
-	[P in (typeof activities)[number]["name"]]: Extract<(typeof activities)[number], { name: P }>["sides"][number]["name"];
 };
 
 /** @package */
