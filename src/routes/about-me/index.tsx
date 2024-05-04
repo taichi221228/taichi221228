@@ -12,11 +12,11 @@ import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
 
 /** @package */
-export const activities = new Map([
-	["professional-info", { Icon: TerminalIcon }],
-	["personal-info", { Icon: UserIcon }],
-	["hobbies", { Icon: GamepadIcon }],
-] as const satisfies [string, { Icon: Component }][]);
+export const activities = {
+	"professional-info": { Icon: TerminalIcon },
+	"personal-info": { Icon: UserIcon },
+	hobbies: { Icon: GamepadIcon },
+} as const satisfies Record<string, { Icon: Component }>;
 
 /** @package */
 export const sides = {
@@ -34,11 +34,11 @@ export const sides = {
 		{ name: "books", Content },
 		{ name: "games", Content },
 	],
-} as const satisfies Record<KeyOfMap<typeof activities>, { name: string; Content: FunctionComponent }[]>;
+} as const satisfies Record<keyof typeof activities, { name: string; Content: FunctionComponent }[]>;
 
 type Current = {
-	activity: KeyOfMap<typeof activities>;
-	side: (typeof sides)[KeyOfMap<typeof activities>][number]["name"] | null;
+	activity: keyof typeof activities;
+	side: (typeof sides)[keyof typeof activities][number]["name"] | null;
 };
 
 /** @package */
