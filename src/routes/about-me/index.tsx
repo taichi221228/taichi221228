@@ -1,45 +1,14 @@
-import { type Component, component$, createContextId, useContextProvider, useStore } from "@builder.io/qwik";
+import { component$, useContextProvider, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
-import { NAME, SITENAME } from "~/constants/info";
+import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import { Activitybar } from "./activitybar";
+import { CURRENT, type Current } from "./data";
 import { Editor } from "./editor";
 import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
-
-/** @package */
-export const activities = [
-	{
-		name: "professional-info",
-		Icon: TerminalIcon,
-	},
-	{
-		name: "personal-info",
-		Icon: UserIcon,
-	},
-	{
-		name: "hobbies",
-		Icon: GamepadIcon,
-	},
-] as const satisfies { name: string; Icon: Component }[];
-
-/** @package */
-export const sides = {
-	"professional-info": ["experience", "skills"],
-	"personal-info": ["bio", "interests", "education"],
-	hobbies: ["music", "books", "games"],
-} as const satisfies Record<(typeof activities)[number]["name"], string[]>;
-
-type Current = {
-	activity: (typeof activities)[number]["name"];
-	side: (typeof sides)[(typeof activities)[number]["name"]][number] | null;
-};
-
-/** @package */
-export const CURRENT = createContextId<Current>([SITENAME, "about-me", "current"].join("."));
 
 /** @private */
 export default component$(() => {

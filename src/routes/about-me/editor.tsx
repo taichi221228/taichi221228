@@ -1,32 +1,29 @@
 import { $, component$, useContext } from "@builder.io/qwik";
 
-import { Tab } from "~/components/interface/tab";
+import { Pane } from "~/routes/about-me/editor/pane";
 
+import { CURRENT, getSide } from "./data";
 import styles from "./editor.module.css";
-import { CURRENT } from "./index";
 
 /** @package */
 export const Editor = component$(() => {
 	const current = useContext(CURRENT);
 
+	const { Content } = getSide(current);
+
 	return (
 		<div class={styles.editor}>
-			{/*	Editor */}
-			<section class={styles.pane}>
-				{/* Pane (main) */}
-				<Tab
-					item={current.side}
-					onClick$={$(() => {
+			<Pane
+				tab={{
+					item: current.side,
+					onClick$: $(() => {
 						current.side = null;
-					})}
-				/>
-				<div>{/* Contents */}</div>
-			</section>
-			<div class={styles.pane}>
-				{/* Pane (main) */}
-				<Tab />
-				<div>{/* Contents */}</div>
-			</div>
+					}),
+				}}
+			>
+				<Content />
+			</Pane>
+			<Pane />
 		</div>
 	);
 });

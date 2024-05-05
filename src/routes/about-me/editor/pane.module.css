@@ -1,0 +1,13 @@
+.pane {
+	flex-basis: 400px;
+	flex-grow: 1;
+	block-size: var(--block-size-main); /* TEMP: */
+
+	&:not(:last-child) {
+		border-inline-end: var(--border);
+	}
+
+	.content {
+		padding: 18px 40px;
+	}
+}
