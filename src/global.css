@@ -1,7 +1,9 @@
 :root {
 	--inline-size-sitetitle: 310px;
-	--block-size-main: calc(100svh - (var(--padding-outside) * 2 + var(--block-size-header) + var(--block-size-footer)));
+	--block-size-body: calc(100svh - var(--padding-outside) * 2);
+	--block-size-main: calc(var(--block-size-body) - var(--block-size-header) - var(--block-size-footer));
 	--block-size-header: 56px;
+	--block-size-footer: 56px;
 	--block-size-tab: 40px;
 	--padding-outside: 20px;
 	--font-family-default: monospace, "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
@@ -71,7 +73,8 @@ html {
 	background-color: var(--color-base-1);
 
 	body {
-		block-size: calc(100svh - var(--padding-outside) * 2);
+		box-sizing: content-box;
+		block-size: var(--block-size-body);
 		overflow: hidden;
 		font-family: var(--font-family-primary), var(--font-family-default);
 		background-color: var(--color-base-2);
