@@ -38,10 +38,12 @@
 
 			h1 {
 				font-size: var(--font-size-headline);
+				color: var(--color-secondary-4);
 			}
 
 			h2 {
 				font-size: var(--font-size-body);
+				color: var(--color-secondary-4);
 			}
 
 			h3 {
@@ -106,7 +108,6 @@
 
 			.comment {
 				container-type: inline-size;
-				color: var(--color-secondary-1);
 
 				&:nth-of-type(1) {
 					.line {

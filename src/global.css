@@ -67,7 +67,7 @@
 html {
 	padding: var(--padding-outside);
 	font-size: var(--font-size-body);
-	color: var(--color-secondary-4);
+	color: var(--color-secondary-1);
 	background-color: var(--color-base-1);
 
 	body {
