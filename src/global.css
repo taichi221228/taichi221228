@@ -73,6 +73,7 @@ html {
 	background-color: var(--color-base-1);
 
 	body {
+		box-sizing: content-box;
 		block-size: var(--block-size-body);
 		overflow: hidden;
 		font-family: var(--font-family-primary), var(--font-family-default);
