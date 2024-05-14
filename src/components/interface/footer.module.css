@@ -1,7 +1,3 @@
-:root {
-	--block-size-footer: 56px;
-}
-
 .footer {
 	display: flex;
 	block-size: var(--block-size-footer);
