@@ -2,6 +2,7 @@
 	--inline-size-sitetitle: 310px;
 	--block-size-main: calc(100svh - (var(--padding-outside) * 2 + var(--block-size-header) + var(--block-size-footer)));
 	--block-size-header: 56px;
+	--block-size-footer: 56px;
 	--block-size-tab: 40px;
 	--padding-outside: 20px;
 	--font-family-default: monospace, "Helvetica Neue", arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", meiryo, sans-serif;
