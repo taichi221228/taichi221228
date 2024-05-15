@@ -6,10 +6,11 @@ import { TriangleIcon } from "~/components/interface/icons";
 import styles from "./accordion.module.css";
 
 type Props = {
+	head: string;
 	shouldOpen?: boolean;
 } & PolyProps<"div" | "nav">;
 
-export const Accordion = component$(({ as, shouldOpen = false }: Props) => {
+export const Accordion = component$(({ as, head, shouldOpen = false }: Props) => {
 	const isOpen = useSignal(shouldOpen);
 
 	return (
@@ -22,11 +23,11 @@ export const Accordion = component$(({ as, shouldOpen = false }: Props) => {
 				type="button"
 			>
 				<TriangleIcon class={styles.icon} direction={isOpen.value ? "down" : "up"} />
-				<Slot name="head" />
+				{head}
 			</button>
 			<div class={[isOpen.value && styles.opened, styles.body]}>
 				<div class={styles.container}>
-					<Slot name="body" />
+					<Slot />
 				</div>
 			</div>
 		</Poly>
