@@ -10,7 +10,7 @@ type Props = {
 	shouldOpen?: boolean;
 } & PolyProps<"div" | "nav">;
 
-export const Accordion = component$(({ as, head, shouldOpen = false }: Props) => {
+export const Accordion = component$(({ as, shouldOpen = false, ...props }: Props) => {
 	const isOpen = useSignal(shouldOpen);
 
 	return (
@@ -23,7 +23,11 @@ export const Accordion = component$(({ as, head, shouldOpen = false }: Props) =>
 				type="button"
 			>
 				<TriangleIcon class={styles.icon} direction={isOpen.value ? "down" : "up"} />
-				{head}
+				{
+					props.head
+					/* BUG: There is a bug in a component with multiple intersecting reactivities where destructuring primitive Signals
+					    received in Props does not trigger a re-render for that Node only. */
+				}
 			</button>
 			<div class={[isOpen.value && styles.opened, styles.body]}>
 				<div class={styles.container}>
