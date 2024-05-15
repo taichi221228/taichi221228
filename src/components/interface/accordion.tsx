@@ -10,7 +10,7 @@ type Props = {
 	shouldOpen?: boolean;
 } & PolyProps<"div" | "nav">;
 
-export const Accordion = component$(({ as, shouldOpen = false, ...props }: Props) => {
+export const Accordion = component$(({ shouldOpen = false, as, ...props }: Props) => {
 	const isOpen = useSignal(shouldOpen);
 
 	return (

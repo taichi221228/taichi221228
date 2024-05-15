@@ -13,7 +13,7 @@ export const Sidebar = component$(() => {
 
 	return (
 		<div class={styles.sidebar}>
-			<Accordion as="nav" head={current.activity} shouldOpen={true}>
+			<Accordion head={current.activity} shouldOpen={true} as="nav">
 				<ul>
 					{getActivity(current.activity).sides.map(({ name }, i) => {
 						return (
@@ -48,7 +48,7 @@ export const Sidebar = component$(() => {
 					})}
 				</ul>
 			</Accordion>
-			<Accordion as="nav" head="contacts" shouldOpen={true}>
+			<Accordion head="contacts" shouldOpen={true} as="nav">
 				<ul>
 					<li>
 						<a href={`mailto:${EMAIL}`}>
