@@ -1,13 +1,13 @@
 import { useStyles$ } from "@builder.io/qwik";
 
-import fontStyles from "@fontsource/fira-code?inline";
-import resetStyles from "@unocss/reset/tailwind.css?inline";
-import iconStyles from "remixicon/fonts/remixicon.css?inline";
+import font from "@fontsource/fira-code?inline";
+import reset from "@unocss/reset/tailwind.css?inline";
+import icon from "remixicon/fonts/remixicon.css?inline";
 
 import "~/global.css";
 
 export const useGlobalStyles = () => {
-	useStyles$(resetStyles);
-	useStyles$(fontStyles);
-	useStyles$(iconStyles);
+	useStyles$(reset);
+	useStyles$(font);
+	useStyles$(icon);
 };
