@@ -2,8 +2,8 @@ import { component$ } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet, ServiceWorkerRegister } from "@builder.io/qwik-city";
 
 import { RouterHead } from "~/components/function/router-head";
-
-import "./global.css";
+import { useGlobalStyles } from "~/hooks/global-styles";
+import { useSecretLog } from "~/hooks/secret-log";
 
 /** @package */
 export default component$(() => {
@@ -13,6 +13,9 @@ export default component$(() => {
 	 *
 	 * Don't remove the `<head>` and `<body>` elements.
 	 */
+
+	useGlobalStyles();
+	useSecretLog();
 
 	return (
 		<QwikCityProvider>
