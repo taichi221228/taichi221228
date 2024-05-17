@@ -9,7 +9,6 @@
 		flex-basis: var(--inline-size-sitetitle);
 		flex-shrink: 2;
 		align-items: center;
-		color: var(--color-secondary-1);
 		border-inline-end: var(--border);
 
 		.link {

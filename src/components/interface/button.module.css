@@ -26,7 +26,7 @@
 		border-radius: var(--border-radius-md);
 
 		&:hover {
-			border-color: rgb(var(--color-secondary-4-rgb) / 50%);
+			border-color: color-mix(in srgb, var(--color-secondary-4), transparent 50%);
 		}
 	}
 }

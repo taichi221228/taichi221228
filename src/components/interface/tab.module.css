@@ -9,7 +9,6 @@
 		align-items: center;
 		padding-inline: 14px;
 		font-size: var(--font-size-label);
-		color: var(--color-secondary-1);
 		border-inline-end: var(--border);
 
 		button {
