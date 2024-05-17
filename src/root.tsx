@@ -5,8 +5,6 @@ import { RouterHead } from "~/components/function/router-head";
 import { useGlobalStyles } from "~/hooks/global-styles";
 import { useSecretLog } from "~/hooks/secret-log";
 
-import "./global.css";
-
 /** @package */
 export default component$(() => {
 	/**
