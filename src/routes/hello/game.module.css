@@ -13,9 +13,9 @@
 	.main {
 		position: relative;
 		inline-size: 238px;
-		background: rgb(var(--color-base-2-rgb) / 84%);
+		background: color-mix(in srgb, var(--color-base-2) 84%, transparent);
 		border-radius: var(--border-radius-md);
-		box-shadow: inset 1px 5px 11px rgb(var(--color-base-1-rgb) / 71%);
+		box-shadow: inset 1px 5px 11px color(in srgb, var(--color-base-1) 71%, transparent);
 
 		button {
 			position: absolute;
@@ -39,7 +39,7 @@
 
 		.help {
 			color: var(--color-secondary-4);
-			background: rgb(var(--color-base-2-rgb) / 19%);
+			background: color-mix(in srgb, var(--color-base-2) 19%, transparent);
 			border-radius: var(--border-radius-md);
 
 			ul {
