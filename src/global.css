@@ -53,7 +53,7 @@
 
 * {
 	:is(&:focus-visible) {
-		outline: var(--border-width-lg) solid var(--color-accent-5);
+		outline: var(--border-width-lg) solid var(--color-accent-1);
 		outline-offset: calc(var(--border-width-lg) * -1);
 	}
 }
