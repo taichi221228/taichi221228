@@ -2,9 +2,9 @@
 	--palette-background: #fbf1c7;
 	--palette-background-primary: #ebdbb2;
 	--palette-background-secondary: #f9f5d7;
-	--palette-foreground: #3c3836;
+	--palette-foreground: #504945;
 	--palette-foreground-primary: #282828;
-	--palette-foreground-secondary: #504945;
+	--palette-foreground-secondary: #7c6f64;
 	--palette-gray: #928374;
 	--palette-gray-primary: #7c6f64;
 	--palette-red: #9d0006;
@@ -26,9 +26,9 @@
 		--palette-background: #282828;
 		--palette-background-primary: #1d2021;
 		--palette-background-secondary: #3c3836;
-		--palette-foreground: #ebdbb2;
+		--palette-foreground: #d5c4a1;
 		--palette-foreground-primary: #fbf1c7;
-		--palette-foreground-secondary: #d5c4a1;
+		--palette-foreground-secondary: #a89984;
 		--palette-gray-primary: #a89984;
 		--palette-red: #fb4934;
 		--palette-green: #b8bb26;
