@@ -5,7 +5,7 @@
 	justify-content: center;
 	inline-size: 49px;
 	block-size: 28px;
-	background-color: var(--color-base-1);
+	background-color: var(--color-background-secondary);
 	border: var(--border);
 	border-radius: var(--border-radius-md);
 

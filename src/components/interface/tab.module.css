@@ -9,7 +9,6 @@
 		align-items: center;
 		padding-inline: 14px;
 		font-size: var(--font-size-label);
-		color: var(--color-secondary-1);
 		border-inline-end: var(--border);
 
 		button {
@@ -17,8 +16,8 @@
 			line-height: 1;
 			border-radius: var(--border-radius-round);
 
-			&:hover {
-				background-color: var(--color-secondary-1-lighter);
+			&:is(:focus-visible, :hover) {
+				background-color: var(--color-background-secondary);
 			}
 
 			.icon {

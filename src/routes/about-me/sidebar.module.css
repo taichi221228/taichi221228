@@ -16,15 +16,15 @@
 				border-radius: var(--border-radius-sm);
 
 				&:not(:is([disabled], :focus-visible, :hover)) {
-					color: var(--color-secondary-1);
+					color: var(--color-foreground);
 				}
 
 				&:is([disabled], :focus-visible, :hover) {
-					color: var(--color-secondary-4);
+					color: var(--color-foreground-primary);
 				}
 
 				&:not([disabled]):is(:focus-visible, :hover) {
-					background-color: var(--color-primary-1);
+					background-color: var(--color-background-secondary);
 				}
 			}
 

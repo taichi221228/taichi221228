@@ -11,7 +11,7 @@
 	&::after {
 		inline-size: var(--size);
 		block-size: var(--size);
-		background-color: rgb(var(--color-accent-2-rgb) / var(--alpha));
+		background-color: color-mix(in srgb, var(--color-accent-4) var(--alpha), transparent);
 		border-radius: var(--border-radius-round);
 	}
 

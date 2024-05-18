@@ -12,6 +12,10 @@
 		padding-inline: var(--padding);
 		border-block-end: var(--border);
 
+		&:is(:focus-visible, :hover) {
+			color: var(--color-foreground-primary);
+		}
+
 		.icon {
 			font-size: 9px;
 			transition: var(--transition);

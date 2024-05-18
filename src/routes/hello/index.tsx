@@ -34,7 +34,7 @@ export default component$(() => {
 						<span class={styles.block}>{" */"}</span>
 					</p>
 					<p class={styles.declaration}>
-						<span class={styles.kind}>const</span> <span class={styles.identifier}>githubLink</span> = <br />
+						<span class={styles.kind}>const</span> <span class={styles.identifier}>githubLink</span> <span class={styles.equal}>=</span> <br />
 						<span class={styles.literal}>
 							<span class={styles.double}>{'"'}</span>
 							<span class={styles.back}>{"`"}</span>
@@ -44,7 +44,7 @@ export default component$(() => {
 							<span class={styles.double}>{'"'}</span>
 							<span class={styles.back}>{"`"}</span>
 						</span>
-						;
+						<span class={styles.semi}>;</span>
 					</p>
 				</div>
 			</div>

@@ -23,27 +23,25 @@
 
 	p {
 		padding-inline: 22px 18px;
-		color: var(--color-secondary-1);
 	}
 
 	a {
 		&:is(.x, .facebook) {
 			inline-size: 52px;
-			color: var(--color-secondary-1-lighter);
+			color: var(--color-foreground-secondary);
 
 			&:is(:focus-visible, :hover) {
-				color: var(--color-secondary-1);
+				color: var(--color-foreground);
 			}
 		}
 
 		&.github {
 			gap: 7px;
 			padding-inline: 23px;
-			color: var(--color-secondary-1);
 			border-bottom-right-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
-				color: var(--color-secondary-4);
+				color: var(--color-foreground-primary);
 			}
 		}
 

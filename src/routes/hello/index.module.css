@@ -38,15 +38,17 @@
 
 			h1 {
 				font-size: var(--font-size-headline);
+				color: var(--color-foreground-primary);
 			}
 
 			h2 {
 				font-size: var(--font-size-body);
+				color: var(--color-foreground-primary);
 			}
 
 			h3 {
 				font-size: var(--font-size-subheadline);
-				color: var(--color-secondary-3);
+				color: var(--color-accent-1);
 			}
 		}
 
@@ -106,7 +108,7 @@
 
 			.comment {
 				container-type: inline-size;
-				color: var(--color-secondary-1);
+				color: var(--color-accent-0);
 
 				&:nth-of-type(1) {
 					.line {
@@ -150,18 +152,31 @@
 					@container (inline-size <= 326.59px) {
 						word-break: break-all;
 					}
+
+					&:is(:focus-visible, :hover) {
+						color: var(--color-foreground);
+					}
 				}
 
 				.kind {
-					color: var(--color-secondary-3);
+					color: var(--color-accent-1);
 				}
 
 				.identifier {
-					color: var(--color-accent-2);
+					color: var(--color-foreground);
+				}
+
+				.equal {
+					color: var(--color-accent-7);
 				}
 
 				.literal {
 					color: var(--color-accent-3);
+
+					.double,
+					.back {
+						color: var(--color-accent-0-primary);
+					}
 
 					.double {
 						@container (inline-size <= 326px) {
@@ -174,6 +189,10 @@
 							display: none;
 						}
 					}
+				}
+
+				.semi {
+					color: var(--color-accent-0-primary);
 				}
 			}
 		}
