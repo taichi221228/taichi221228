@@ -153,7 +153,7 @@
 						word-break: break-all;
 					}
 
-					&:hover {
+					&:is(:focus-visible, :hover) {
 						color: var(--color-foreground);
 					}
 				}

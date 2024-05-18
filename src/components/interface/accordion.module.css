@@ -12,7 +12,7 @@
 		padding-inline: var(--padding);
 		border-block-end: var(--border);
 
-		&:hover {
+		&:is(:focus-visible, :hover) {
 			color: var(--color-foreground-primary);
 		}
 
