@@ -24,7 +24,7 @@
 				}
 
 				&:not([disabled]):is(:focus-visible, :hover) {
-					background-color: var(--color-background-primary);
+					background-color: var(--color-background-secondary);
 				}
 			}
 

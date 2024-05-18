@@ -62,7 +62,7 @@ html {
 	padding: var(--padding-outside);
 	font-size: var(--font-size-body);
 	color: var(--color-foreground);
-	background-color: var(--color-background-secondary);
+	background-color: var(--color-background-primary);
 
 	body {
 		box-sizing: content-box;
