@@ -24,15 +24,27 @@
 	--color-foreground: var(--palette-foreground);
 	--color-foreground-primary: var(--palette-foreground-primary);
 	--color-foreground-secondary: var(--palette-foreground-secondary);
+	--color-accent-0: var(--palette-gray);
+	--color-accent-0-primary: var(--palette-gray-primary);
+	--color-accent-1: var(--palette-orange);
+	--color-accent-1-primary: var(--palette-orange-primary);
+	--color-accent-2: var(--palette-red);
+	--color-accent-2-primary: var(--palette-red-primary);
+	--color-accent-3: var(--palette-green);
+	--color-accent-3-primary: var(--palette-green-primary);
+	--color-accent-4: var(--palette-yellow);
+	--color-accent-4-primary: var(--palette-yellow-primary);
+	--color-accent-5: var(--palette-blue);
+	--color-accent-5-primary: var(--palette-blue-primary);
+	--color-accent-6: var(--palette-purple);
+	--color-accent-6-primary: var(--palette-purple-primary);
+	--color-accent-7: var(--palette-aqua);
+	--color-accent-7-primary: var(--palette-aqua-primary);
 	--color-primary-2: #1c2b3a;
 	--color-primary-2-lighter: #263b50;
 	--color-secondary-2: #3c9d93;
 	--color-secondary-3: #4d5bce;
-	--color-accent-1: #fea55f;
 	--color-accent-1-lighter: #ffac6b;
-	--color-accent-2: #43d9ad;
-	--color-accent-3: #e99287;
-	--color-accent-4: #c98bdf;
 	--border: var(--border-width-md) solid var(--color-background-primary);
 	--border-width-md: 1px;
 	--border-width-lg: 3px;
@@ -44,7 +56,7 @@
 
 * {
 	:is(&:focus-visible) {
-		outline: var(--border-width-lg) solid var(--color-accent-4);
+		outline: var(--border-width-lg) solid var(--color-accent-5);
 		outline-offset: calc(var(--border-width-lg) * -1);
 	}
 }
