@@ -152,6 +152,10 @@
 					@container (inline-size <= 326.59px) {
 						word-break: break-all;
 					}
+
+					&:hover {
+						color: var(--color-foreground);
+					}
 				}
 
 				.kind {
