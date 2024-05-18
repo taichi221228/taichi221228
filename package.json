@@ -5,7 +5,6 @@
 		"node": ">=15.0.0"
 	},
 	"private": true,
-	"trustedDependencies": ["sharp"],
 	"type": "module",
 	"scripts": {
 		"build": "qwik build",
@@ -23,6 +22,13 @@
 		"preview": "qwik build preview && vite preview --open",
 		"start": "vite --open --mode ssr",
 		"qwik": "qwik"
+	},
+	"dependencies": {
+		"@builder.io/qwik": "^1.4.5",
+		"@builder.io/qwik-city": "^1.4.5",
+		"@fontsource/fira-code": "^5.0.16",
+		"@unocss/reset": "^0.58.5",
+		"remixicon": "^4.1.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.6.1",
@@ -63,11 +69,5 @@
 		"vite": "^5.0.12",
 		"vite-tsconfig-paths": "^4.2.1"
 	},
-	"dependencies": {
-		"@builder.io/qwik": "^1.4.5",
-		"@builder.io/qwik-city": "^1.4.5",
-		"@fontsource/fira-code": "^5.0.16",
-		"@unocss/reset": "^0.58.5",
-		"remixicon": "^4.1.0"
-	}
+	"trustedDependencies": ["sharp"]
 }
