@@ -4,7 +4,7 @@
 		opacity: 0.5;
 
 		&.polygon1 {
-			fill: var(--color-secondary-3);
+			fill: var(--color-accent-1);
 		}
 
 		&.polygon2 {
