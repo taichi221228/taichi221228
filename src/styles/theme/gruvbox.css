@@ -6,21 +6,21 @@
 	--palette-foreground-primary: #282828;
 	--palette-foreground-secondary: #504945;
 	--palette-gray: #928374;
-	--palette-gray-accent: #7c6f64;
+	--palette-gray-primary: #7c6f64;
 	--palette-red: #9d0006;
-	--palette-red-accent: #cc241d;
+	--palette-red-primary: #cc241d;
 	--palette-green: #79740e;
-	--palette-green-accent: #98971a;
+	--palette-green-primary: #98971a;
 	--palette-yellow: #b57614;
-	--palette-yellow-accent: #d79921;
+	--palette-yellow-primary: #d79921;
 	--palette-blue: #076678;
-	--palette-blue-accent: #458588;
+	--palette-blue-primary: #458588;
 	--palette-purple: #8f3f71;
-	--palette-purple-accent: #616286;
+	--palette-purple-primary: #616286;
 	--palette-aqua: #427b58;
-	--palette-aqua-accent: #689d6a;
+	--palette-aqua-primary: #689d6a;
 	--palette-orange: #af3a03;
-	--palette-orange-accent: #d65d0e;
+	--palette-orange-primary: #d65d0e;
 
 	@media (prefers-color-scheme: dark) {
 		--palette-background: #282828;
@@ -29,7 +29,7 @@
 		--palette-foreground: #ebdbb2;
 		--palette-foreground-primary: #fbf1c7;
 		--palette-foreground-secondary: #d5c4a1;
-		--palette-gray-accent: #a89984;
+		--palette-gray-primary: #a89984;
 		--palette-red: #fb4934;
 		--palette-green: #b8bb26;
 		--palette-yellow: #fabd2f;
