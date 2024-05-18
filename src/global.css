@@ -18,12 +18,12 @@
 	--icon-size-sm: 18px;
 	--icon-size-md: 20px;
 	--icon-size-lg: 24px;
-	--color-background: #011627;
-	--color-background-primary: #011221;
-	--color-background-secondary: #01080e;
-	--color-foreground: #607b96;
-	--color-foreground-primary: #fff;
-	--color-foreground-secondary: #607b9666;
+	--color-background: var(--palette-background);
+	--color-background-primary: var(--palette-background-primary);
+	--color-background-secondary: var(--palette-background-secondary);
+	--color-foreground: var(--palette-foreground);
+	--color-foreground-primary: var(--palette-foreground-primary);
+	--color-foreground-secondary: var(--palette-foreground-secondary);
 	--color-primary-1: #1e2d3d;
 	--color-primary-2: #1c2b3a;
 	--color-primary-2-lighter: #263b50;
