@@ -13,7 +13,6 @@
 	}
 
 	&.accent {
-		color: var(--color-primary-1);
 		background-color: var(--color-accent-1);
 
 		&:hover {

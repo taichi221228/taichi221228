@@ -24,7 +24,6 @@
 	--color-foreground: var(--palette-foreground);
 	--color-foreground-primary: var(--palette-foreground-primary);
 	--color-foreground-secondary: var(--palette-foreground-secondary);
-	--color-primary-1: #1e2d3d;
 	--color-primary-2: #1c2b3a;
 	--color-primary-2-lighter: #263b50;
 	--color-secondary-2: #3c9d93;
@@ -34,7 +33,7 @@
 	--color-accent-2: #43d9ad;
 	--color-accent-3: #e99287;
 	--color-accent-4: #c98bdf;
-	--border: var(--border-width-md) solid var(--color-primary-1);
+	--border: var(--border-width-md) solid var(--color-background-primary);
 	--border-width-md: 1px;
 	--border-width-lg: 3px;
 	--border-radius-sm: 4px;
