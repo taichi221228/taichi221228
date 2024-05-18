@@ -13,10 +13,11 @@
 	}
 
 	&.accent {
-		background-color: var(--color-accent-1);
+		color: var(--color-background);
+		background-color: var(--color-accent-5);
 
 		&:hover {
-			background-color: var(--color-accent-1-lighter);
+			background-color: var(--color-accent-5-primary);
 		}
 	}
 
