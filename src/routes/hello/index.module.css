@@ -108,6 +108,7 @@
 
 			.comment {
 				container-type: inline-size;
+				color: var(--color-accent-0);
 
 				&:nth-of-type(1) {
 					.line {
@@ -154,15 +155,24 @@
 				}
 
 				.kind {
-					color: var(--color-secondary-3);
+					color: var(--color-accent-1);
 				}
 
 				.identifier {
-					color: var(--color-accent-2);
+					color: var(--color-foreground);
+				}
+
+				.equal {
+					color: var(--color-accent-7);
 				}
 
 				.literal {
 					color: var(--color-accent-3);
+
+					.double,
+					.back {
+						color: var(--color-accent-0-primary);
+					}
 
 					.double {
 						@container (inline-size <= 326px) {
@@ -175,6 +185,10 @@
 							display: none;
 						}
 					}
+				}
+
+				.semi {
+					color: var(--color-accent-0-primary);
 				}
 			}
 		}
