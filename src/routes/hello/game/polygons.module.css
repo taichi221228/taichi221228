@@ -8,7 +8,7 @@
 		}
 
 		&.polygon2 {
-			fill: var(--color-accent-2);
+			fill: var(--color-accent-3);
 		}
 	}
 }
