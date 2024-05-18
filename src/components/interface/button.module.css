@@ -22,11 +22,11 @@
 	}
 
 	&.ghost {
-		border: 1px solid var(--color-secondary-4);
+		border: 1px solid var(--color-foreground-primary);
 		border-radius: var(--border-radius-md);
 
 		&:hover {
-			border-color: color-mix(in srgb, var(--color-secondary-4), transparent 50%);
+			border-color: color-mix(in srgb, var(--color-foreground-primary), transparent 50%);
 		}
 	}
 }

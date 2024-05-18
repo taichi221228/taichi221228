@@ -28,10 +28,10 @@
 	a {
 		&:is(.x, .facebook) {
 			inline-size: 52px;
-			color: var(--color-secondary-1-lighter);
+			color: var(--color-foreground-secondary);
 
 			&:is(:focus-visible, :hover) {
-				color: var(--color-secondary-1);
+				color: var(--color-foreground);
 			}
 		}
 
@@ -41,7 +41,7 @@
 			border-bottom-right-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
-				color: var(--color-secondary-4);
+				color: var(--color-foreground-primary);
 			}
 		}
 

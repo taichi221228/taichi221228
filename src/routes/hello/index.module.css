@@ -38,12 +38,12 @@
 
 			h1 {
 				font-size: var(--font-size-headline);
-				color: var(--color-secondary-4);
+				color: var(--color-foreground-primary);
 			}
 
 			h2 {
 				font-size: var(--font-size-body);
-				color: var(--color-secondary-4);
+				color: var(--color-foreground-primary);
 			}
 
 			h3 {

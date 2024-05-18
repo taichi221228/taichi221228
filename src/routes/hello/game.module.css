@@ -38,7 +38,7 @@
 		}
 
 		.help {
-			color: var(--color-secondary-4);
+			color: var(--color-foreground-primary);
 			background-color: color-mix(in srgb, var(--color-background) 19%, transparent);
 			border-radius: var(--border-radius-md);
 

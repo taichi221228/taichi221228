@@ -20,7 +20,7 @@
 			border-top-left-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
-				color: var(--color-secondary-4);
+				color: var(--color-foreground-primary);
 			}
 		}
 	}
