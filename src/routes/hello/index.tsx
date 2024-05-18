@@ -30,7 +30,7 @@ export default component$(() => {
 					<p class={styles.comment}>
 						<span class={styles.line}>{"// "}</span>
 						<span class={styles.block}>{"/* "}</span>
-						you can also see it on my Github page
+						you can also see it on my GitHub page
 						<span class={styles.block}>{" */"}</span>
 					</p>
 					<p class={styles.declaration}>
