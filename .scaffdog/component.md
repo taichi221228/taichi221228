@@ -20,7 +20,7 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./{{ inputs.name | kebab }}.module.css";
 {{ end }}
 export const {{ inputs.name | pascal }} = component$(() => {
-	return <{{ inputs.tag }}{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}></{{ inputs.tag }}>;
+	return <{{ inputs.tag }}{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }} />;
 });
 
 ```
