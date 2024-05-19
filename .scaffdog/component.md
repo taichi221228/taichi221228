@@ -28,7 +28,7 @@ export const {{ inputs.name | pascal }} = component$(() => {
 # `{{ inputs.hasStyle || "!" }}{{ inputs.name | kebab }}.module.css`
 
 ```
-/* stylelint-disable-next-line block-no-empty */
 .{{ inputs.name | camel }} {
+	background-color: gold; /* TODO: This is temporary. */
 }
 ```
