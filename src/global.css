@@ -65,6 +65,7 @@ html {
 	background-color: var(--color-background-primary);
 
 	body {
+		position: relative;
 		box-sizing: content-box;
 		block-size: var(--block-size-body);
 		overflow: hidden;
@@ -74,7 +75,9 @@ html {
 		border-radius: var(--border-radius-md);
 
 		main {
+			box-sizing: content-box;
 			block-size: var(--block-size-main);
+			padding-block: var(--block-size-header) var(--block-size-footer);
 			overflow: scroll;
 		}
 
