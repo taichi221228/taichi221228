@@ -11,7 +11,7 @@
 
 	/* TODO: Not a smart way. Need refactoring */
 	&.root {
-		@media (height < calc(20px /* outline padding */ * 2 + 56px /* header block-size */ + 56px /* footer block-size */ + 555px /* content block-size */)) {
+		@media (height < 707px /* 20px: outline padding * 2 + 56px: header block-size + 56px: footer block-size + 555px: content block-size */) {
 			background-color: var(--color-background);
 		}
 	}
