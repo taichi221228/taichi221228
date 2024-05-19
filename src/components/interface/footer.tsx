@@ -1,6 +1,7 @@
-import { component$ } from "@builder.io/qwik";
+import {component$} from "@builder.io/qwik";
+import {useLocation} from "@builder.io/qwik-city";
 
-import { type Snss, SNSS, type Sns } from "~/constants/info";
+import {type Sns, SNSS, type Snss} from "~/constants/info";
 
 import styles from "./footer.module.css";
 
