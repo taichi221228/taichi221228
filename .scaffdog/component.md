@@ -16,9 +16,9 @@ questions:
 
 ```
 import { component$ } from "@builder.io/qwik";
-
-{{ if inputs.hasStyle }}import styles from "./{{ inputs.name | kebab }}.module.css";{{ end }}
-
+{{ if inputs.hasStyle }}
+import styles from "./{{ inputs.name | kebab }}.module.css";
+{{ end }}
 export const {{ inputs.name | pascal }} = component$(() => {
 	return <{{ inputs.tag }}{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}></{{ inputs.tag }}>;
 });
