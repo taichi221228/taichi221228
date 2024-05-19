@@ -1,8 +1,20 @@
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	display: flex;
+	inline-size: 100%;
 	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
 	border-block-end: var(--border);
+
+	/* TODO: Not a smart way. Need refactoring */
+	&.root {
+		@media (height < 707px /* 20px: outline padding * 2 + 56px: header block-size + 56px: footer block-size + 555px: content block-size */) {
+			background-color: var(--color-background);
+		}
+	}
 
 	.title {
 		display: flex;

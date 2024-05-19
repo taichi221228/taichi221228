@@ -11,7 +11,7 @@ export const Header = component$(() => {
 	const isRoot = "/" === location.url.pathname;
 
 	return (
-		<header class={styles.header}>
+		<header class={[styles.header, /* TODO: Not a smart way. Need refactoring */ isRoot && styles.root]}>
 			<h1 class={styles.title}>
 				<Link class={styles.link} aria-current={isRoot && "page"} href="/">
 					{SITENAME}
