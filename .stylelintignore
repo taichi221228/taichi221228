@@ -27,7 +27,9 @@ lerna-debug.log*
 
 # Editor
 .vscode/*
-.idea
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
 *.suo
 *.ntvs*
 *.njsproj
