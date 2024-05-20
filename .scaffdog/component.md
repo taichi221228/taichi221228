@@ -21,11 +21,11 @@ questions:
 import { component$ } from "@builder.io/qwik";
 {{ if inputs.hasStyle }}
 import styles from "./{{ inputs.name | kebab }}.module.css";
-{{ end }}
-{{ inputs.hasProps && "type Props = {
+{{ end }}{{ if inputs.hasProps }}
+type Props = {
 	message: string;
 };
-" }}
+{{ end }}
 {{ inputs.isPackage && "/** @package */" }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
 	return (
