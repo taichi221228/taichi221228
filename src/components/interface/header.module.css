@@ -8,6 +8,8 @@
 	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
 	border-block-end: var(--border);
+	border-start-start-radius: var(--border-radius-md);
+	border-start-end-radius: var(--border-radius-md);
 
 	/* TODO: Not a smart way. Need refactoring */
 	&.root {

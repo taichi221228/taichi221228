@@ -6,6 +6,8 @@
 	inline-size: 100%;
 	block-size: var(--block-size-footer);
 	border-block-start: var(--border);
+	border-end-start-radius: var(--border-radius-md);
+	border-end-end-radius: var(--border-radius-md);
 
 	/* TODO: Not a smart way. Need refactoring */
 	&.root {
