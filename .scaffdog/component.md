@@ -10,6 +10,9 @@ questions:
   hasStyle:
     confirm: "Does this component have a style?"
     initial: false
+  isPackage:
+    confirm: "Is this component a package?"
+    initial: false
 ---
 
 # `{{ inputs.name | kebab }}.tsx`
@@ -23,6 +26,7 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 	message: string;
 };
 " }}
+{{ inputs.isPackage && "/** @package */" }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
 	return (
 		<div{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}>
