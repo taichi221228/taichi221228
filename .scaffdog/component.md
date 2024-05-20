@@ -20,11 +20,15 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./{{ inputs.name | kebab }}.module.css";
 {{ end }}
 {{ inputs.hasProps && "type Props = {
-	foo: string;
+	message: string;
 };
 " }}
-export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ foo: _foo }: Props" }}) => {
-	return <div{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}>Hello, scaffdog!</div>;
+export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
+	return (
+		<div{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}>
+			<p>{message}</p>
+		</div>
+	);
 });
 
 ```
