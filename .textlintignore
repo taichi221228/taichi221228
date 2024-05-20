@@ -18,6 +18,8 @@ node_modules
 *.json
 *.jsonc
 *.*rc
+.yarn/*
+!.yarn/releases
 
 # Cache
 .cache
@@ -36,14 +38,14 @@ lerna-debug.log*
 
 # Editor
 .vscode/*
-
-.idea
-.DS_Store
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Yarn
-.yarn/*
+# Other
+.DS_Store
