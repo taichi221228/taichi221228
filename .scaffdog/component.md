@@ -29,7 +29,7 @@ type Props = {
 {{ inputs.isPackage && "/** @package */" }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
 	return (
-		<div{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}>
+		<div{{ inputs.hasStyle && " class={styles.container" }}>
 			<p>{message}</p>
 		</div>
 	);
@@ -40,7 +40,7 @@ export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ m
 # `{{ inputs.hasStyle || "!" }}{{ inputs.name | kebab }}.module.css`
 
 ```
-.{{ inputs.name | camel }} {
+.container {
 	color: gold;
 }
 ```
