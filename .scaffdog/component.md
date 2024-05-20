@@ -5,10 +5,10 @@ output: "."
 questions:
   name: "Please enter a component name."
   hasProps:
-    confirm: "Do you need a props?"
+    confirm: "Does this component have props?"
     initial: false
   hasStyle:
-    confirm: "Do you need a style?"
+    confirm: "Does this component have a style?"
     initial: false
 ---
 
