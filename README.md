@@ -70,7 +70,6 @@ Inside your project, you’ll see the following directory structure:
 - [Vite](https://vitejs.dev/)
 - [esbuild](https://esbuild.github.io/)
 - [Rollup](https://rollupjs.org/)
-- [scaffdog](https://scaff.dog/)
 
 ### Quality
 
@@ -84,6 +83,7 @@ Inside your project, you’ll see the following directory structure:
 - [Prettier](https://prettier.io/)
 - [Biome](https://biomejs.dev/)
 - [Husky](https://typicode.github.io/husky/)
+- [scaffdog](https://scaff.dog/)
 
 ### Testing
 
