@@ -4,9 +4,6 @@ root: "src"
 output: "."
 questions:
   name: "Please enter a component name."
-  tag:
-    message: "What is the tag type of the Root Node"
-    initial: "div"
   hasProps:
     confirm: "Do you need a props?"
     initial: false
@@ -25,7 +22,7 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 {{ inputs.hasProps && "type Props = {};
 " }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{}: Props" }}) => {
-	return <{{ inputs.tag }}{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }} />;
+	return <div{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}>Hello, scaffdog!</div>;
 });
 
 ```
