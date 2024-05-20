@@ -65,7 +65,7 @@ Inside your project, you’ll see the following directory structure:
 
 - [Partytown](https://partytown.builder.io/) :construction:
 
-### Tooling
+### Toolchain
 
 - [Vite](https://vitejs.dev/)
 - [esbuild](https://esbuild.github.io/)
