@@ -7,6 +7,8 @@
 # Development
 node_modules
 *.local
+.yarn/*
+!.yarn/releases
 
 # Cache
 .cache
@@ -26,12 +28,11 @@ lerna-debug.log*
 # Editor
 .vscode/*
 .idea
-.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Yarn
-.yarn/*
+# Other
+.DS_Store
