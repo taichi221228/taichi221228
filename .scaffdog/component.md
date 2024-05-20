@@ -19,9 +19,11 @@ import { component$ } from "@builder.io/qwik";
 {{ if inputs.hasStyle }}
 import styles from "./{{ inputs.name | kebab }}.module.css";
 {{ end }}
-{{ inputs.hasProps && "type Props = {};
+{{ inputs.hasProps && "type Props = {
+	foo: string;
+};
 " }}
-export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{}: Props" }}) => {
+export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ foo: _foo }: Props" }}) => {
 	return <div{{ if inputs.hasStyle }} class={styles.{{inputs.name | camel}}}{{ end }}>Hello, scaffdog!</div>;
 });
 
