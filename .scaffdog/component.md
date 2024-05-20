@@ -19,9 +19,11 @@ questions:
 
 ```
 import { component$ } from "@builder.io/qwik";
-{{ if inputs.hasStyle }}
+
+{{ if inputs.hasStyle -}}
 import styles from "./{{ inputs.name | kebab }}.module.css";
-{{ end }}{{ if inputs.hasProps }}
+{{ end }}
+{{ if inputs.hasProps -}}
 type Props = {
 	message: string;
 };
