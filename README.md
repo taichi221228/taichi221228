@@ -70,7 +70,7 @@ Inside your project, you’ll see the following directory structure:
 - [Vite](https://vitejs.dev/)
 - [esbuild](https://esbuild.github.io/)
 - [Rollup](https://rollupjs.org/)
-- [scaffdog](https://scaff.dog/) :construction:
+- [scaffdog](https://scaff.dog/)
 
 ### Quality
 
