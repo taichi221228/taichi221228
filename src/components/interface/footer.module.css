@@ -51,7 +51,7 @@
 		&.github {
 			gap: 7px;
 			padding-inline: 23px;
-			border-bottom-right-radius: var(--border-radius-md);
+			border-end-end-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
 				color: var(--color-foreground-primary);

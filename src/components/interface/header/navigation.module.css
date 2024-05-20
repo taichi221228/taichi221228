@@ -42,7 +42,7 @@
 				border-inline-start: var(--border);
 
 				.link {
-					border-top-right-radius: var(--border-radius-md);
+					border-start-end-radius: var(--border-radius-md);
 				}
 			}
 		}
