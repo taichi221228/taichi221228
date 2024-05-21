@@ -8,6 +8,8 @@
 	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
 	border-block-end: var(--border);
+	border-start-start-radius: var(--border-radius-md);
+	border-start-end-radius: var(--border-radius-md);
 
 	/* TODO: Not a smart way. Need refactoring */
 	&.root {
@@ -29,7 +31,7 @@
 			inline-size: 100%;
 			block-size: 100%;
 			padding-inline: 22px;
-			border-top-left-radius: var(--border-radius-md);
+			border-start-start-radius: var(--border-radius-md);
 
 			&:is(:focus-visible, :hover) {
 				color: var(--color-foreground-primary);
