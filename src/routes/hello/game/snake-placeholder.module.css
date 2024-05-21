@@ -3,4 +3,12 @@
 	align-items: flex-end;
 	justify-content: center;
 	aspect-ratio: 238 / 249;
+
+	circle {
+		fill: var(--color-accent-4);
+	}
+
+	stop {
+		stop-color: var(--color-accent-4);
+	}
 }
