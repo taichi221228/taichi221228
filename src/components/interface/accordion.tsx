@@ -14,8 +14,8 @@ export const Accordion = component$(({ shouldOpen = false, as, ...props }: Props
 	const isOpen = useSignal(shouldOpen);
 
 	const containerRef = useSignal<HTMLDivElement>(undefined as unknown as HTMLDivElement);
-	const offsetHeight = useSignal<number>();
-	const maxBlockSize = useComputed$(() => (isOpen.value ? offsetHeight.value : undefined));
+	const offsetHeight = useSignal(Number.MAX_SAFE_INTEGER);
+	const maxBlockSize = useComputed$(() => (isOpen.value ? offsetHeight.value : 0));
 
 	// eslint-disable-next-line qwik/no-use-visible-task
 	useVisibleTask$(() => {
@@ -46,7 +46,7 @@ export const Accordion = component$(({ shouldOpen = false, as, ...props }: Props
 					    received in Props does not trigger a re-render for that Node only. */
 				}
 			</button>
-			<div class={[isOpen.value && styles.opened, styles.body]} style={{ maxBlockSize: maxBlockSize.value }}>
+			<div class={styles.body} style={{ maxBlockSize: maxBlockSize.value }}>
 				<div class={styles.container} ref={containerRef}>
 					<Slot />
 				</div>

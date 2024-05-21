@@ -23,13 +23,8 @@
 	}
 
 	.body {
-		max-block-size: 0;
 		overflow: hidden;
 		transition: var(--transition);
-
-		&.opened {
-			max-block-size: 500px;
-		}
 
 		.container {
 			padding: var(--padding);
