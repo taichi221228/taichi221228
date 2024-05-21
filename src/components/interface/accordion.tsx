@@ -1,4 +1,4 @@
-import { component$, Slot, useComputed$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { component$, Slot, useComputed$, useSignal, useStore, useVisibleTask$ } from "@builder.io/qwik";
 
 import { Poly, type PolyProps } from "~/components/function/poly";
 import { TriangleIcon } from "~/components/interface/icons";
@@ -13,17 +13,19 @@ type Props = {
 export const Accordion = component$(({ shouldOpen = false, as, ...props }: Props) => {
 	const isOpen = useSignal(shouldOpen);
 
-	const containerRef = useSignal<HTMLDivElement>(undefined as unknown as HTMLDivElement);
-	const offsetHeight = useSignal(Number.MAX_SAFE_INTEGER);
-	const maxBlockSize = useComputed$(() => (isOpen.value ? offsetHeight.value : 0));
+	const container = useStore({
+		ref: useSignal<HTMLDivElement>(undefined as unknown as HTMLDivElement),
+		height: Number.MAX_SAFE_INTEGER,
+	});
+	const maxBlockSize = useComputed$(() => (isOpen.value ? container.height : 0));
 
 	// eslint-disable-next-line qwik/no-use-visible-task
 	useVisibleTask$(() => {
-		const observer = new ResizeObserver(([containerEntry]) => {
-			offsetHeight.value = (containerEntry.target as HTMLDivElement).offsetHeight;
+		const observer = new ResizeObserver(([entry]) => {
+			container.height = (entry.target as HTMLDivElement).offsetHeight;
 		});
 
-		observer.observe(containerRef.value);
+		observer.observe(container.ref.value);
 
 		return () => {
 			observer.disconnect();
@@ -46,8 +48,8 @@ export const Accordion = component$(({ shouldOpen = false, as, ...props }: Props
 					    received in Props does not trigger a re-render for that Node only. */
 				}
 			</button>
-			<div class={styles.body} style={{ maxBlockSize: maxBlockSize.value }}>
-				<div class={styles.container} ref={containerRef}>
+			<div class={[isOpen.value && styles.opened, styles.body]} style={{ maxBlockSize: maxBlockSize.value }}>
+				<div class={styles.container} ref={container.ref}>
 					<Slot />
 				</div>
 			</div>
