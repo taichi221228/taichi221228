@@ -3,7 +3,6 @@ name: "component"
 root: "src"
 output: "."
 questions:
-  name: "What is the name of component?"
   type:
     message: "What type is this component?"
     choices:
@@ -11,6 +10,10 @@ questions:
       - "page"
       - "package"
     initial: "common"
+  name:
+    message: "What is the name of component?"
+    if: inputs.type != "page"
+    initial: "index"
   hasProps:
     confirm: "Does this component have props?"
     initial: false
