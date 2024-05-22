@@ -53,4 +53,5 @@ export {{ inputs.type == "page" ? "default" : "const " + (inputs.name | pascal) 
 .container {
 	color: gold;
 }
+
 ```
