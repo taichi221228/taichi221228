@@ -3,7 +3,7 @@ name: "component"
 root: "src"
 output: "."
 questions:
-  name: "Please enter a component name."
+  name: "What is the name of component?"
   hasProps:
     confirm: "Does this component have props?"
     initial: false
