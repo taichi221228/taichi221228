@@ -22,7 +22,7 @@ questions:
     initial: false
 ---
 
-# `{{ inputs.name | kebab }}.tsx`
+# `{{ inputs.type == "common" ? "components" : "routes" }}/{{ inputs.name | kebab }}.tsx`
 
 ```
 import { component$ } from "@builder.io/qwik";
@@ -47,7 +47,7 @@ export {{ inputs.type == "page" ? "default" : "const " + (inputs.name | pascal) 
 
 ```
 
-# `{{ inputs.hasStyle || "!" }}{{ inputs.name | kebab }}.module.css`
+# `{{ inputs.hasStyle || "!" }}{{ inputs.type == "common" ? "components" : "routes" }}/{{ inputs.name | kebab }}.module.css`
 
 ```
 .container {
