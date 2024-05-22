@@ -29,8 +29,9 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 type Props = {
 	message: string;
 };
-{{ end }}{{ inputs.type == "package" && "
-/** @package */" }}
+{{ end }}{{ if inputs.type == "package" }}
+/** @package */
+{{- end }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
