@@ -35,7 +35,7 @@ type Props = {
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
-			<p>{message}</p>
+			<p>{{ inputs.hasProps ? "{message}" : "Hello, scaffdog!" }}</p>
 		</div>
 	);
 });
