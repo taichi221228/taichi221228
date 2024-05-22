@@ -4,14 +4,18 @@ root: "src"
 output: "."
 questions:
   name: "What is the name of component?"
+  type:
+    message: "What type is this component?"
+    choices:
+      - "common"
+      - "page"
+      - "package"
+    initial: "common"
   hasProps:
     confirm: "Does this component have props?"
     initial: false
   hasStyle:
     confirm: "Does this component have a style?"
-    initial: false
-  isPackage:
-    confirm: "Is this component a package?"
     initial: false
 ---
 
@@ -28,7 +32,7 @@ type Props = {
 	message: string;
 };
 {{ end }}
-{{ inputs.isPackage && "/** @package */" }}
+{{ inputs.type == "package" && "/** @package */" }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
