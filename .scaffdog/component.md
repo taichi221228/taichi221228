@@ -30,17 +30,17 @@ import { component$ } from "@builder.io/qwik";
 import styles from "./{{ inputs.name | kebab }}.module.css";
 {{ end }}{{ if inputs.hasProps }}
 type Props = {
-	message: string;
+	text: "Hello, scaffdog!";
 };
 {{ end }}{{ if inputs.type == "page" }}
 /** @private */
 {{- else if inputs.type == "package" }}
 /** @package */
 {{- end }}
-export {{ inputs.type == "page" ? "default" : "const " + (inputs.name | pascal) + " =" }} component$(({{ inputs.hasProps && "{ message }: Props" }}) => {
+export {{ inputs.type == "page" ? "default" : "const " + (inputs.name | pascal) + " =" }} component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
-			<p>{{ inputs.hasProps ? "{message}" : "Hello, scaffdog!" }}</p>
+			<p>{{ inputs.hasProps ? "{text}" : "Hello, scaffdog!" }}</p>
 		</div>
 	);
 });
