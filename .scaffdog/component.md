@@ -11,7 +11,7 @@ questions:
       - "package"
     initial: "common"
   name:
-    message: "What is the name of component?"
+    message: "What is the name of this component?"
     if: inputs.type != "page"
     initial: "index"
   path:
