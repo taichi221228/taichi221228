@@ -19,6 +19,7 @@ questions:
     initial: ""
   hasProps:
     confirm: "Does this component have props?"
+    if: inputs.type != "page"
     initial: false
   hasStyle:
     confirm: "Does this component have a style?"
