@@ -15,7 +15,7 @@ questions:
     if: inputs.type != "page"
     initial: "index"
   path:
-    message: "What location is this component?"
+    message: "What location is this component in?"
     initial: ""
   hasProps:
     confirm: "Does this component have props?"
