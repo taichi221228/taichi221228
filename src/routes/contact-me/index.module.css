@@ -1,3 +1,13 @@
 .container {
-	color: gold;
+	display: flex;
+	block-size: var(--block-size-main);
+
+	aside {
+		--inline-size-aside: var(--inline-size-sitetitle);
+		--inline-size-activitybar: 67px;
+
+		display: flex;
+		inline-size: var(--inline-size-aside);
+		border-inline-end: var(--border);
+	}
 }
