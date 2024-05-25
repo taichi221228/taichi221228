@@ -13,11 +13,8 @@
 				gap: var(--gap);
 				inline-size: 100%;
 				margin-inline: calc(var(--padding-inline) * -1);
+				color: var(--color-foreground);
 				border-radius: var(--border-radius-sm);
-
-				&:not(:is([disabled], :focus-visible, :hover)) {
-					color: var(--color-foreground);
-				}
 
 				&:is([disabled], :focus-visible, :hover) {
 					color: var(--color-foreground-primary);

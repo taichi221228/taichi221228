@@ -28,13 +28,14 @@
 
 		.container {
 			padding: var(--padding);
+			border-block-end: var(--border);
 		}
 	}
 
-	&:not(:last-child) {
+	&:last-child {
 		.body {
 			.container {
-				border-block-end: var(--border);
+				border-block-end: none;
 			}
 		}
 	}

@@ -16,13 +16,13 @@
 		}
 	}
 
-	> :not(:last-child) {
+	> * {
 		border-inline-end: var(--border);
-	}
 
-	> :last-child {
-		margin-inline-start: auto;
-		border-inline-start: var(--border);
+		&:last-child {
+			margin-inline-start: auto;
+			border-inline-start: var(--border);
+		}
 	}
 
 	p,
