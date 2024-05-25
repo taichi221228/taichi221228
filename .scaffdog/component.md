@@ -7,7 +7,7 @@ questions:
     message: "What type is this component?"
     choices:
       - "common"
-      - "page"
+      - "route"
       - "package"
     initial: "common"
   name:
