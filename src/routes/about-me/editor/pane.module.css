@@ -2,9 +2,10 @@
 	flex-basis: 400px;
 	flex-grow: 1;
 	block-size: var(--block-size-main);
+	border-inline-end: var(--border);
 
-	&:not(:last-child) {
-		border-inline-end: var(--border);
+	&:last-child {
+		border-inline-end: none;
 	}
 
 	.content {
