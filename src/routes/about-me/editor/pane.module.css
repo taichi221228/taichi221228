@@ -1,7 +1,7 @@
 .pane {
 	flex-basis: 400px;
 	flex-grow: 1;
-	block-size: var(--block-size-main); /* TEMP: */
+	block-size: var(--block-size-main);
 
 	&:not(:last-child) {
 		border-inline-end: var(--border);

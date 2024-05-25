@@ -1,6 +1,6 @@
 .container {
 	display: flex;
-	block-size: var(--block-size-main); /* TEMP: */
+	block-size: var(--block-size-main);
 
 	aside {
 		--inline-size-aside: var(--inline-size-sitetitle);
