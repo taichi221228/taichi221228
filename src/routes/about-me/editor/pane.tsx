@@ -6,6 +6,7 @@ import styles from "./pane.module.css";
 
 type Props = { tab?: TabProps };
 
+/** @package */
 export const Pane = component$(({ tab }: Props) => {
 	return (
 		<section class={styles.pane}>
