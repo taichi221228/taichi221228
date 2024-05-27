@@ -39,7 +39,7 @@ type Props = {
 {{ end }}{{ if inputs.isPackage }}
 /** @package */
 {{- end }}
-export const {{ inputs.name | pascal) }} = component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
+export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
 			<p>{{ inputs.hasProps ? "{text}" : "Hello, scaffdog!" }}</p>
