@@ -6,12 +6,17 @@ questions:
   name:
     message: "What is the name of this component?"
     initial: "index"
-  path:
-    message: "What location is this component in?"
-    initial: ""
   inRoutes:
     confirm: "Is this component in `routes`?"
     initial: false
+  routePath:
+    message: "Where is this component located within `routes/`?"
+    if: inputs.inRoutes
+    initial: "."
+  componentPath:
+    message: "Where is this component located within `components/`?"
+    if: (!inputs.inRoutes)
+    initial: "."
   isPackage:
     confirm: "Is this component a package?"
     if: (!inputs.inRoutes)
@@ -24,7 +29,7 @@ questions:
     initial: false
 ---
 
-# `{{ resolve "src" (inputs.inRoutes ? "routes" : "components") inputs.path (inputs.name | kebab) }}.tsx`
+# `{{ resolve "src" (inputs.inRoutes ? inputs.routePath : inputs.componentPath) (inputs.name | kebab) }}.tsx`
 
 ```
 import { component$ } from "@builder.io/qwik";
@@ -47,7 +52,7 @@ export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ t
 
 ```
 
-# `{{ inputs.hasStyle || "!" }}{{ resolve "src" (inputs.inRoutes ? "routes" : "components") inputs.path (inputs.name | kebab) }}.module.css`
+# `{{ inputs.hasStyle || "!" }}{{ resolve "src" (inputs.inRoutes ? inputs.routePath : inputs.componentPath) (inputs.name | kebab) }}.module.css`
 
 ```
 .container {
