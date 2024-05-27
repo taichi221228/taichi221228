@@ -3,20 +3,18 @@ name: "component"
 root: "src"
 output: "."
 questions:
-  type:
-    message: "What type is this component?"
-    choices:
-      - "common"
-      - "route"
-    initial: "common"
   name:
     message: "What is the name of this component?"
     initial: "index"
   path:
     message: "What location is this component in?"
     initial: ""
+  inRoutes:
+    confirm: "Is this component in `routes`?"
+    initial: false
   isPackage:
     confirm: "Is this component a package?"
+    if: (!inputs.inRoutes)
     initial: false
   hasProps:
     confirm: "Does this component have props?"
@@ -26,7 +24,7 @@ questions:
     initial: false
 ---
 
-# `{{ resolve "src" (inputs.type == "common" ? "components" : "routes") inputs.path (inputs.name | kebab) }}.tsx`
+# `{{ resolve "src" (inputs.inRoutes ? "routes" : "components") inputs.path (inputs.name | kebab) }}.tsx`
 
 ```
 import { component$ } from "@builder.io/qwik";
@@ -36,7 +34,7 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 type Props = {
 	text: "Hello, scaffdog!";
 };
-{{ end }}{{ if inputs.isPackage }}
+{{ end }}{{ if inputs.inRoutes || inputs.isPackage }}
 /** @package */
 {{- end }}
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
@@ -49,7 +47,7 @@ export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ t
 
 ```
 
-# `{{ inputs.hasStyle || "!" }}{{ resolve "src" (inputs.type == "common" ? "components" : "routes") inputs.path (inputs.name | kebab) }}.module.css`
+# `{{ inputs.hasStyle || "!" }}{{ resolve "src" (inputs.inRoutes ? "routes" : "components") inputs.path (inputs.name | kebab) }}.module.css`
 
 ```
 .container {
