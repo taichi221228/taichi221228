@@ -7,7 +7,7 @@ questions:
     message: "What is the name of this component?"
     initial: "index"
   inRoutes:
-    confirm: "Is this component in `routes`?"
+    confirm: "Is this component in `routes/`?"
     initial: false
   routePath:
     message: "Where is this component located within `routes/`?"
