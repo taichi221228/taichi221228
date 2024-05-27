@@ -8,7 +8,6 @@ questions:
     choices:
       - "common"
       - "route"
-      - "package"
     initial: "common"
   name:
     message: "What is the name of this component?"
@@ -17,6 +16,9 @@ questions:
   path:
     message: "What location is this component in?"
     initial: ""
+  isPackage:
+    confirm: "Is this component a package?"
+    initial: false
   hasProps:
     confirm: "Does this component have props?"
     if: inputs.type != "page"
@@ -36,7 +38,7 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 type Props = {
 	text: "Hello, scaffdog!";
 };
-{{ end }}{{ if inputs.type == "package" }}
+{{ end }}{{ if inputs.isPackage }}
 /** @package */
 {{- end }}
 export {{ inputs.type == "page" ? "default" : "const " + (inputs.name | pascal) + " =" }} component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
