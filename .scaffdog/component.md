@@ -36,9 +36,7 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 type Props = {
 	text: "Hello, scaffdog!";
 };
-{{ end }}{{ if inputs.type == "page" }}
-/** @private */
-{{- else if inputs.type == "package" }}
+{{ end }}{{ if inputs.type == "package" }}
 /** @package */
 {{- end }}
 export {{ inputs.type == "page" ? "default" : "const " + (inputs.name | pascal) + " =" }} component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
