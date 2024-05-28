@@ -29,7 +29,7 @@ questions:
     initial: false
 ---
 
-# `{{ resolve "src" (inputs.inRoutes ? ("routes/" + inputs.routePath) : ("components/" + inputs.componentPath)) (inputs.name | kebab) }}.tsx`
+# `{{ resolve "src" (inputs.inRoutes ? ("routes/" + inputs.routePath) : ("components/" + inputs.componentPath)) ((inputs.name | kebab) + ".tsx") }}`
 
 ```
 import { component$ } from "@builder.io/qwik";
@@ -52,7 +52,7 @@ export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ t
 
 ```
 
-# `{{ inputs.hasStyle || "!" }}{{ resolve "src" (inputs.inRoutes ? ("routes/" + inputs.routePath) : ("components/" + inputs.componentPath)) (inputs.name | kebab) }}.module.css`
+# `{{ inputs.hasStyle || "!" }}{{ resolve "src" (inputs.inRoutes ? ("routes/" + inputs.routePath) : ("components/" + inputs.componentPath)) ((inputs.name | kebab) + ".module.css") }}`
 
 ```
 .container {
