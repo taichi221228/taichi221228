@@ -5,7 +5,7 @@ output: "."
 questions:
   name:
     message: "What is the name of this component?"
-    initial: "index"
+    initial: "component"
   inRoutes:
     confirm: "Is this component in `routes/`?"
     initial: true
@@ -45,7 +45,7 @@ type Props = {
 export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
-			<p>{{ inputs.hasProps ? "{text}" : "Hello, scaffdog!" }}</p>
+			<h1>{{ inputs.hasProps ? "{text}" : "Hello, scaffdog!" }}</h1>
 		</div>
 	);
 });
