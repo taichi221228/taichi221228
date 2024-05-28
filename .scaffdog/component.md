@@ -44,10 +44,12 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 type Props = {
 	text: "Hello, scaffdog!";
 };
-{{ end }}{{ if inputs.inRoutes || inputs.isPackage }}
+{{ end }}{{ if inputs.isPage }}
+/** @private */
+{{- else if inputs.inRoutes || inputs.isPackage }}
 /** @package */
 {{- end }}
-export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
+export {{ inputs.isPage ? "default" : "const " + (inputs.name | pascal) + " =" }} component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
 			<p>{{ inputs.hasProps ? "{text}" : "Hello, scaffdog!" }}</p>
