@@ -3,6 +3,9 @@ name: "component"
 root: "src"
 output: "."
 questions:
+  isPage:
+    confirm: "Is this component for routing?"
+    initial: false
   name:
     message: "What is the name of this component?"
     initial: "index"
