@@ -49,7 +49,7 @@ export const Sidebar = component$(() => {
 					})}
 				</ul>
 			</Accordion>
-			<Accordion head="contacts" shouldOpen={true} as="nav">
+			<Accordion head="contacts" shouldOpen={true}>
 				<ul>
 					<li>
 						<a href={`mailto:${EMAIL}`}>
