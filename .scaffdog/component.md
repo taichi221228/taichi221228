@@ -3,16 +3,11 @@ name: "component"
 root: "src"
 output: "."
 questions:
-  isPage:
-    confirm: "Is this component for routing?"
-    initial: false
   name:
     message: "What is the name of this component?"
-    if: (!inputs.isPage)
     initial: "index"
   inRoutes:
     confirm: "Is this component in `routes/`?"
-    if: (!inputs.isPage)
     initial: true
   routePath:
     message: "Where is this component located within `routes/`?"
@@ -44,12 +39,10 @@ import styles from "./{{ inputs.name | kebab }}.module.css";
 type Props = {
 	text: "Hello, scaffdog!";
 };
-{{ end }}{{ if inputs.isPage }}
-/** @private */
-{{- else if inputs.inRoutes || inputs.isPackage }}
+{{ end }}{{ if inputs.inRoutes || inputs.isPackage }}
 /** @package */
 {{- end }}
-export {{ inputs.isPage ? "default" : "const " + (inputs.name | pascal) + " =" }} component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
+export const {{ inputs.name | pascal }} = component$(({{ inputs.hasProps && "{ text }: Props" }}) => {
 	return (
 		<div{{ inputs.hasStyle && " class={styles.container}" }}>
 			<p>{{ inputs.hasProps ? "{text}" : "Hello, scaffdog!" }}</p>
