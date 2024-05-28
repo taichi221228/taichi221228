@@ -5,7 +5,7 @@ output: "."
 questions:
   name:
     message: "What is the name of this component?"
-    initial: "component"
+    initial: "scaffdog-component"
   inRoutes:
     confirm: "Is this component in `routes/`?"
     initial: true
