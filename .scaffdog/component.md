@@ -8,10 +8,12 @@ questions:
     initial: false
   name:
     message: "What is the name of this component?"
+    if: (!inputs.isPage)
     initial: "index"
   inRoutes:
     confirm: "Is this component in `routes/`?"
-    initial: false
+    if: (!inputs.isPage)
+    initial: true
   routePath:
     message: "Where is this component located within `routes/`?"
     if: inputs.inRoutes
