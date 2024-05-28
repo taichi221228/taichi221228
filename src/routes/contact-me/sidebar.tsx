@@ -1,8 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Accordion } from "~/components/interface/accordions";
-import { ExternalLinkIcon, MailIcon, PhoneIcon } from "~/components/interface/icons";
-import { EMAIL, PHONE, USERNAME } from "~/constants/info";
+import { Accordion, ContactsAccordion } from "~/components/interface/accordions";
+import { ExternalLinkIcon } from "~/components/interface/icons";
 
 import styles from "./sidebar.module.css";
 
@@ -10,22 +9,7 @@ import styles from "./sidebar.module.css";
 export const Sidebar = component$(() => {
 	return (
 		<div class={styles.sidebar}>
-			<Accordion head="contacts" shouldOpen={true}>
-				<ul>
-					<li>
-						<a href={`mailto:${EMAIL}`}>
-							<MailIcon />
-							{USERNAME}
-						</a>
-					</li>
-					<li>
-						<a href={`tel:${PHONE}`}>
-							<PhoneIcon />
-							{PHONE}
-						</a>
-					</li>
-				</ul>
-			</Accordion>
+			<ContactsAccordion />
 			<Accordion head="find-me-also-in" shouldOpen={true}>
 				<ul>
 					<li>
