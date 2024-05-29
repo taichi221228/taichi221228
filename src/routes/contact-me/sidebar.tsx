@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import { ContactsAccordion, LinkAccordion } from "~/components/interface/accordions";
+import { ContactsAccordion, LinksAccordion } from "~/components/interface/accordions";
 import { ExternalLinkIcon } from "~/components/interface/icons";
 
 import styles from "./sidebar.module.css";
@@ -10,7 +10,7 @@ export const Sidebar = component$(() => {
 	return (
 		<div class={styles.sidebar}>
 			<ContactsAccordion />
-			<LinkAccordion head="find-me-also-in" shouldOpen={true}>
+			<LinksAccordion head="find-me-also-in" shouldOpen={true}>
 				<li>
 					<a rel="noreferrer" href="https://youtube.com" target="_blank">
 						<ExternalLinkIcon />
@@ -35,7 +35,7 @@ export const Sidebar = component$(() => {
 						Twitch profile
 					</a>
 				</li>
-			</LinkAccordion>
+			</LinksAccordion>
 		</div>
 	);
 });
