@@ -3,15 +3,12 @@ import { component$ } from "@builder.io/qwik";
 import { MailIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
-import type { AccordionProps } from "./accordion";
 import { LinkAccordion } from "./link-accordion";
 
-type Props = Pick<AccordionProps, "shouldOpen">;
-
 /** @package */
-export const ContactsAccordion = component$(({ shouldOpen }: Props) => {
+export const ContactsAccordion = component$(() => {
 	return (
-		<LinkAccordion head="contacts" shouldOpen={shouldOpen}>
+		<LinkAccordion head="contacts" shouldOpen={true}>
 			<li>
 				<a href={`mailto:${EMAIL}`}>
 					<MailIcon />
