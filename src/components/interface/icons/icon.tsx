@@ -8,6 +8,6 @@ type Props = {
 export type IconProps = Omit<Props, "type">;
 
 /** @package */
-export const Icon = component$(({ class: className, type, ...props }: Props) => {
+export const Icon = component$(({ type, class: className, ...props }: Props) => {
 	return <i class={[className, type]} {...props} />;
 });
