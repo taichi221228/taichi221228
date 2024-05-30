@@ -34,75 +34,42 @@ Inside your project, you’ll see the following directory structure:
 
 ## Stack
 
-### Core
-
-- [Bun](https://bun.sh/)
-- [Qwik](https://qwik.dev/)
-- [QwikCity](https://qwik.dev/)
-
-### UI
-
-- [React](https://react.dev/) :construction:
-
-### Middleware
-
-- [ElysiaJS](https://elysiajs.com/) :construction:
-
-### Content
-
-- [Markdown](https://www.markdownguide.org/) :construction:
-- Zenn / Qiita / Dev.to :construction:
-
-### Styling
-
-- [CSS Modules](https://github.com/css-modules/css-modules/)
-- [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/) :construction:
-- [Remix Icon](https://remixicon.com/)
-- [Fontsource](https://fontsource.org/)
-- [Shiki](https://shiki.style/)
-
-### Performance
-
-- [Partytown](https://partytown.builder.io/) :construction:
-
-### Toolchain
-
-- [Vite](https://vitejs.dev/)
-- [esbuild](https://esbuild.github.io/)
-- [Rollup](https://rollupjs.org/)
-
-### Quality
-
-- [TypeScript](https://www.typescriptlang.org/)
-- [ESLint](https://eslint.org/)
-- [Stylelint](https://stylelint.io/)
-- [textlint](https://textlint.github.io/)
-- [markdownlint](https://github.com/DavidAnson/markdownlint/) :construction:
-- [commitlint](https://github.com/conventional-changelog/commitlint/)
-- [EditorConfig](https://editorconfig.org/)
-- [Prettier](https://prettier.io/)
-- [Biome](https://biomejs.dev/)
-- [Husky](https://typicode.github.io/husky/)
-- [scaffdog](https://scaff.dog/)
-
-### Testing
-
-- [Vitest](https://vitest.dev/) :construction:
-- [Storybook](https://storybook.js.org/) :construction:
-- [Playwright](https://playwright.dev/) :construction:
-- [BrowserStack](https://www.browserstack.com/) :construction:
-
-### Hosting
-
-- [Cloudflare](https://www.cloudflare.com/) :construction:
-
-### Workspace
-
-- [Nx](https://nx.dev/) :construction:
-
-### Design
-
-- [Figma](https://www.figma.com/)
+| Name                                                                | Type        |                |
+| ------------------------------------------------------------------- | ----------- | -------------- |
+| [Bun](https://bun.sh/)                                              | Core        |                |
+| [Qwik](https://qwik.dev/)                                           | Core        |                |
+| [QwikCity](https://qwik.dev/)                                       | Core        |                |
+| [React](https://react.dev/)                                         | UI          | :construction: |
+| [ElysiaJS](https://elysiajs.com/)                                   | Middleware  | :construction: |
+| [Markdown](https://www.markdownguide.org/)                          | Content     | :construction: |
+| Zenn / Qiita / Dev.to                                               | Content     | :construction: |
+| [CSS Modules](https://github.com/css-modules/css-modules/)          | Styling     |                |
+| [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | Styling     | :construction: |
+| [Remix Icon](https://remixicon.com/)                                | Styling     |                |
+| [Fontsource](https://fontsource.org/)                               | Styling     |                |
+| [Shiki](https://shiki.style/)                                       | Styling     |                |
+| [Partytown](https://partytown.builder.io/)                          | Performance | :construction: |
+| [Vite](https://vitejs.dev/)                                         | Toolchain   |                |
+| [esbuild](https://esbuild.github.io/)                               | Toolchain   |                |
+| [Rollup](https://rollupjs.org/)                                     | Toolchain   |                |
+| [TypeScript](https://www.typescriptlang.org/)                       | Quality     |                |
+| [ESLint](https://eslint.org/)                                       | Quality     |                |
+| [Stylelint](https://stylelint.io/)                                  | Quality     |                |
+| [textlint](https://textlint.github.io/)                             | Quality     |                |
+| [markdownlint](https://github.com/DavidAnson/markdownlint/)         | Quality     | :construction: |
+| [commitlint](https://github.com/conventional-changelog/commitlint/) | Quality     |                |
+| [EditorConfig](https://editorconfig.org/)                           | Quality     |                |
+| [Prettier](https://prettier.io/)                                    | Quality     |                |
+| [Biome](https://biomejs.dev/)                                       | Quality     |                |
+| [Husky](https://typicode.github.io/husky/)                          | Quality     |                |
+| [scaffdog](https://scaff.dog/)                                      | Quality     |                |
+| [Vitest](https://vitest.dev/)                                       | Testing     | :construction: |
+| [Storybook](https://storybook.js.org/)                              | Testing     | :construction: |
+| [Playwright](https://playwright.dev/)                               | Testing     | :construction: |
+| [BrowserStack](https://www.browserstack.com/)                       | Testing     | :construction: |
+| [Cloudflare](https://www.cloudflare.com/)                           | Hosting     | :construction: |
+| [Nx](https://nx.dev/)                                               | Workspace   | :construction: |
+| [Figma](https://www.figma.com/)                                     | Design      |                |
 
 ## Development
 
