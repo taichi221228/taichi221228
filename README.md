@@ -48,7 +48,7 @@ Inside your project, you’ll see the following directory structure:
 | [CSS Modules](https://github.com/css-modules/css-modules/)          | Styling                | :white_check_mark: |
 | [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | Styling                | :clipboard:        |
 | [Remix Icon](https://remixicon.com/)                                | Icon Set               | :white_check_mark: |
-| [Fontsource](https://fontsource.org/)                               | Font Management        | :white_check_mark: |
+| [Fontsource](https://fontsource.org/)                               | Font Set               | :white_check_mark: |
 | [Shiki](https://shiki.style/)                                       | Syntax Highlighting    | :white_check_mark: |
 | [Partytown](https://partytown.builder.io/)                          | Performance            | :clipboard:        |
 | [Speedlify](https://www.speedlify.dev/)                             | Performance Monitoring | :clipboard:        |
