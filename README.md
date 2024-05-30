@@ -1,4 +1,4 @@
-# Taichi221228 :zap:
+# Taichi221228 :boom:
 
 ![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/master/assets/main-visual.jpeg)
 
