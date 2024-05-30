@@ -9,7 +9,7 @@ type Props = Pick<AccordionProps, "head" | "shouldOpen">;
 export const LinksAccordion = component$(({ head, shouldOpen }: Props) => {
 	return (
 		<Accordion head={head} shouldOpen={shouldOpen}>
-			<ul class={styles.body}>
+			<ul class={styles.links}>
 				<Slot />
 			</ul>
 		</Accordion>
