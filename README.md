@@ -62,9 +62,9 @@ Inside your project, you’ll see the following directory structure:
 | [textlint](https://textlint.github.io/)                             | Linter                 | :white_check_mark: |
 | [markdownlint](https://github.com/DavidAnson/markdownlint/)         | Linter                 | :clipboard:        |
 | [commitlint](https://github.com/conventional-changelog/commitlint/) | Linter                 | :white_check_mark: |
+| [Biome](https://biomejs.dev/)                                       | Linter/Formatter       | :white_check_mark: |
+| [Prettier](https://prettier.io/)                                    | Formatter              | :white_check_mark: |
 | [EditorConfig](https://editorconfig.org/)                           | Code Style             | :white_check_mark: |
-| [Prettier](https://prettier.io/)                                    | Code Formatter         | :white_check_mark: |
-| [Biome](https://biomejs.dev/)                                       | Code Quality           | :white_check_mark: |
 | [Husky](https://typicode.github.io/husky/)                          | Git Hooks              | :white_check_mark: |
 | [CR.GPT](https://github.com/anc95/ChatGPT-CodeReview/)              | Code Reviewer          | :construction:     |
 | [scaffdog](https://scaff.dog/)                                      | Scaffolding            | :white_check_mark: |
