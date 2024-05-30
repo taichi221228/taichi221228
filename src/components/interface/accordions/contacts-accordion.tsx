@@ -8,7 +8,7 @@ import { LinksAccordion } from "./links-accordion";
 /** @package */
 export const ContactsAccordion = component$(() => {
 	return (
-		<LinksAccordion head="contacts" shouldOpen={true}>
+		<LinksAccordion head="contacts">
 			<li>
 				<a href={`mailto:${EMAIL}`}>
 					<MailIcon />

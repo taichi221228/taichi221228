@@ -10,7 +10,7 @@ export const Sidebar = component$(() => {
 	return (
 		<div class={styles.sidebar}>
 			<ContactsAccordion />
-			<LinksAccordion head="find-me-also-in" shouldOpen={true}>
+			<LinksAccordion head="find-me-also-in">
 				<li>
 					<a rel="noreferrer" href="https://youtube.com" target="_blank">
 						<ExternalLinkIcon />

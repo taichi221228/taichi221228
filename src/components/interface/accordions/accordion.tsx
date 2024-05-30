@@ -14,7 +14,7 @@ type Props = {
 export type AccordionProps = Props;
 
 /** @package */
-export const Accordion = component$(({ shouldOpen = false, as, ...props }: Props) => {
+export const Accordion = component$(({ shouldOpen = true, as, ...props }: Props) => {
 	const isOpen = useSignal(shouldOpen);
 
 	const container = useStore({
