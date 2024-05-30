@@ -34,7 +34,7 @@ Inside your project, you’ll see the following directory structure:
 
 ## Stack
 
-| Name                                                                | Category                 | Status             |
+| Name                                                                | Category                 |                    |
 | ------------------------------------------------------------------- | ------------------------ | ------------------ |
 | [Bun](https://bun.sh/)                                              | Runtime                  | :white_check_mark: |
 | [Qwik](https://qwik.dev/)                                           | UI Library               | :white_check_mark: |
