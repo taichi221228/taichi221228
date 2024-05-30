@@ -74,7 +74,7 @@ Inside your project, you’ll see the following directory structure:
 | [BrowserStack](https://www.browserstack.com/)                       | Cross-Browser Testing  | :clipboard:        |
 | [Cloudflare](https://www.cloudflare.com/)                           | Hosting                | :clipboard:        |
 | [Nx](https://nx.dev/)                                               | Monorepo Tooling       | :clipboard:        |
-|                                                                     | CI/CD                  | :thinking_face:    |
+|                                                                     | CI/CD                  | :thinking:         |
 | [Figma](https://www.figma.com/)                                     | Design                 | :white_check_mark: |
 
 ## Development
