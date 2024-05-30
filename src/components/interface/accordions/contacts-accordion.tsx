@@ -8,19 +8,28 @@ import { LinksAccordion } from "./links-accordion";
 /** @package */
 export const ContactsAccordion = component$(() => {
 	return (
-		<LinksAccordion head="contacts">
-			<li>
-				<a href={`mailto:${EMAIL}`}>
-					<MailIcon />
-					{USERNAME}
-				</a>
-			</li>
-			<li>
-				<a href={`tel:${PHONE}`}>
-					<PhoneIcon />
-					{PHONE}
-				</a>
-			</li>
-		</LinksAccordion>
+		<LinksAccordion
+			head="contacts"
+			items={[
+				{
+					key: "mail",
+					item: (
+						<a href={`mailto:${EMAIL}`}>
+							<MailIcon />
+							{USERNAME}
+						</a>
+					),
+				},
+				{
+					key: "mail",
+					item: (
+						<a href={`tel:${PHONE}`}>
+							<PhoneIcon />
+							{PHONE}
+						</a>
+					),
+				},
+			]}
+		/>
 	);
 });
