@@ -34,45 +34,46 @@ Inside your project, you’ll see the following directory structure:
 
 ## Stack
 
-| Name                                                                | Category              | Status             |
-| ------------------------------------------------------------------- | --------------------- | ------------------ |
-| [Bun](https://bun.sh/)                                              | Core                  | :white_check_mark: |
-| [Qwik](https://qwik.dev/)                                           | Core                  | :white_check_mark: |
-| [QwikCity](https://qwik.dev/)                                       | Core                  | :white_check_mark: |
-| [React](https://react.dev/)                                         | UI Framework          | :clipboard:        |
-| [ElysiaJS](https://elysiajs.com/)                                   | Middleware            | :clipboard:        |
-| [Modular Forms](https://modularforms.dev/)                          | Form Management       | :construction:     |
-| [Valibot](https://valibot.dev/)                                     | Validation            | :construction:     |
-| [Markdown](https://www.markdownguide.org/)                          | Content Formatting    | :clipboard:        |
-| Zenn/Qiita/Dev.to                                                   | Content Platform      | :clipboard:        |
-| [CSS Modules](https://github.com/css-modules/css-modules/)          | Styling               | :white_check_mark: |
-| [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | Styling               | :clipboard:        |
-| [Remix Icon](https://remixicon.com/)                                | Icon Set              | :white_check_mark: |
-| [Fontsource](https://fontsource.org/)                               | Font Management       | :white_check_mark: |
-| [Shiki](https://shiki.style/)                                       | Syntax Highlighting   | :white_check_mark: |
-| [Partytown](https://partytown.builder.io/)                          | Performance           | :clipboard:        |
-| [Vite](https://vitejs.dev/)                                         | Build Tool            | :white_check_mark: |
-| [esbuild](https://esbuild.github.io/)                               | Build Tool            | :white_check_mark: |
-| [Rollup](https://rollupjs.org/)                                     | Build Tool            | :white_check_mark: |
-| [TypeScript](https://www.typescriptlang.org/)                       | Language              | :white_check_mark: |
-| [ESLint](https://eslint.org/)                                       | Linter                | :white_check_mark: |
-| [Stylelint](https://stylelint.io/)                                  | Linter                | :white_check_mark: |
-| [textlint](https://textlint.github.io/)                             | Linter                | :white_check_mark: |
-| [markdownlint](https://github.com/DavidAnson/markdownlint/)         | Linter                | :clipboard:        |
-| [commitlint](https://github.com/conventional-changelog/commitlint/) | Commit Linting        | :white_check_mark: |
-| [EditorConfig](https://editorconfig.org/)                           | Code Style            | :white_check_mark: |
-| [Prettier](https://prettier.io/)                                    | Code Formatter        | :white_check_mark: |
-| [Biome](https://biomejs.dev/)                                       | Code Quality          | :white_check_mark: |
-| [Husky](https://typicode.github.io/husky/)                          | Git Hooks             | :white_check_mark: |
-| [CR.GPT](https://github.com/anc95/ChatGPT-CodeReview/)              | Code Reviewer         | :construction:     |
-| [scaffdog](https://scaff.dog/)                                      | Scaffolding           | :white_check_mark: |
-| [Vitest](https://vitest.dev/)                                       | Testing Framework     | :clipboard:        |
-| [Storybook](https://storybook.js.org/)                              | UI Testing            | :clipboard:        |
-| [Playwright](https://playwright.dev/)                               | E2E Testing           | :clipboard:        |
-| [BrowserStack](https://www.browserstack.com/)                       | Cross-Browser Testing | :clipboard:        |
-| [Cloudflare](https://www.cloudflare.com/)                           | Hosting               | :clipboard:        |
-| [Nx](https://nx.dev/)                                               | Monorepo Tooling      | :clipboard:        |
-| [Figma](https://www.figma.com/)                                     | Design                | :white_check_mark: |
+| Name                                                                | Category               | Status             |
+| ------------------------------------------------------------------- | ---------------------- | ------------------ |
+| [Bun](https://bun.sh/)                                              | Core                   | :white_check_mark: |
+| [Qwik](https://qwik.dev/)                                           | Core                   | :white_check_mark: |
+| [QwikCity](https://qwik.dev/)                                       | Core                   | :white_check_mark: |
+| [React](https://react.dev/)                                         | UI Framework           | :clipboard:        |
+| [ElysiaJS](https://elysiajs.com/)                                   | Middleware             | :clipboard:        |
+| [Modular Forms](https://modularforms.dev/)                          | Form Management        | :construction:     |
+| [Valibot](https://valibot.dev/)                                     | Validation             | :construction:     |
+| [Markdown](https://www.markdownguide.org/)                          | Content Formatting     | :clipboard:        |
+| Zenn/Qiita/Dev.to                                                   | Content Platform       | :clipboard:        |
+| [CSS Modules](https://github.com/css-modules/css-modules/)          | Styling                | :white_check_mark: |
+| [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | Styling                | :clipboard:        |
+| [Remix Icon](https://remixicon.com/)                                | Icon Set               | :white_check_mark: |
+| [Fontsource](https://fontsource.org/)                               | Font Management        | :white_check_mark: |
+| [Shiki](https://shiki.style/)                                       | Syntax Highlighting    | :white_check_mark: |
+| [Partytown](https://partytown.builder.io/)                          | Performance            | :clipboard:        |
+| [Speedlify](https://www.speedlify.dev/)                             | Performance Monitoring | :clipboard:        |
+| [Vite](https://vitejs.dev/)                                         | Build Tool             | :white_check_mark: |
+| [esbuild](https://esbuild.github.io/)                               | Build Tool             | :white_check_mark: |
+| [Rollup](https://rollupjs.org/)                                     | Build Tool             | :white_check_mark: |
+| [TypeScript](https://www.typescriptlang.org/)                       | Language               | :white_check_mark: |
+| [ESLint](https://eslint.org/)                                       | Linter                 | :white_check_mark: |
+| [Stylelint](https://stylelint.io/)                                  | Linter                 | :white_check_mark: |
+| [textlint](https://textlint.github.io/)                             | Linter                 | :white_check_mark: |
+| [markdownlint](https://github.com/DavidAnson/markdownlint/)         | Linter                 | :clipboard:        |
+| [commitlint](https://github.com/conventional-changelog/commitlint/) | Commit Linting         | :white_check_mark: |
+| [EditorConfig](https://editorconfig.org/)                           | Code Style             | :white_check_mark: |
+| [Prettier](https://prettier.io/)                                    | Code Formatter         | :white_check_mark: |
+| [Biome](https://biomejs.dev/)                                       | Code Quality           | :white_check_mark: |
+| [Husky](https://typicode.github.io/husky/)                          | Git Hooks              | :white_check_mark: |
+| [CR.GPT](https://github.com/anc95/ChatGPT-CodeReview/)              | Code Reviewer          | :construction:     |
+| [scaffdog](https://scaff.dog/)                                      | Scaffolding            | :white_check_mark: |
+| [Vitest](https://vitest.dev/)                                       | Testing Framework      | :clipboard:        |
+| [Storybook](https://storybook.js.org/)                              | UI Testing             | :clipboard:        |
+| [Playwright](https://playwright.dev/)                               | E2E Testing            | :clipboard:        |
+| [BrowserStack](https://www.browserstack.com/)                       | Cross-Browser Testing  | :clipboard:        |
+| [Cloudflare](https://www.cloudflare.com/)                           | Hosting                | :clipboard:        |
+| [Nx](https://nx.dev/)                                               | Monorepo Tooling       | :clipboard:        |
+| [Figma](https://www.figma.com/)                                     | Design                 | :white_check_mark: |
 
 ## Development
 
