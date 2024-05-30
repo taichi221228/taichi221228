@@ -41,6 +41,8 @@ Inside your project, you’ll see the following directory structure:
 | [QwikCity](https://qwik.dev/)                                       | Core        | :white_check_mark: |
 | [React](https://react.dev/)                                         | UI          | :construction:     |
 | [ElysiaJS](https://elysiajs.com/)                                   | Middleware  | :construction:     |
+| [Modular Forms](https://modularforms.dev/)                          | Form        | :construction:     |
+| [Valibot](https://valibot.dev/)                                     | Validation  | :construction:     |
 | [Markdown](https://www.markdownguide.org/)                          | Content     | :construction:     |
 | Zenn/Qiita/Dev.to                                                   | Content     | :construction:     |
 | [CSS Modules](https://github.com/css-modules/css-modules/)          | Styling     | :white_check_mark: |
