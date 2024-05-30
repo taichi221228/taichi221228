@@ -4,10 +4,10 @@ import { Accordion, type AccordionProps } from "./accordion";
 import styles from "./links-accordion.module.css";
 
 type Props = {
-	items: Array<{
+	items: {
 		key: string;
 		item: JSXOutput;
-	}>;
+	}[];
 } & Pick<AccordionProps, "head">;
 
 /** @package */
