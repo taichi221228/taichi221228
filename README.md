@@ -64,6 +64,7 @@ Inside your project, you’ll see the following directory structure:
 | [Prettier](https://prettier.io/)                                    | Code Formatter        | :white_check_mark: |
 | [Biome](https://biomejs.dev/)                                       | Code Quality          | :white_check_mark: |
 | [Husky](https://typicode.github.io/husky/)                          | Git Hooks             | :white_check_mark: |
+| [CR.GPT](https://github.com/anc95/ChatGPT-CodeReview/)              | Code Reviewer         | :construction:     |
 | [scaffdog](https://scaff.dog/)                                      | Scaffolding           | :white_check_mark: |
 | [Vitest](https://vitest.dev/)                                       | Testing Framework     | :clipboard:        |
 | [Storybook](https://storybook.js.org/)                              | UI Testing            | :clipboard:        |
