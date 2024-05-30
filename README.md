@@ -42,7 +42,7 @@ Inside your project, you’ll see the following directory structure:
 | [React](https://react.dev/)                                         | UI          | :construction: |
 | [ElysiaJS](https://elysiajs.com/)                                   | Middleware  | :construction: |
 | [Markdown](https://www.markdownguide.org/)                          | Content     | :construction: |
-| Zenn / Qiita / Dev.to                                               | Content     | :construction: |
+| Zenn/Qiita/Dev.to                                                   | Content     | :construction: |
 | [CSS Modules](https://github.com/css-modules/css-modules/)          | Styling     |                |
 | [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | Styling     | :construction: |
 | [Remix Icon](https://remixicon.com/)                                | Styling     |                |
