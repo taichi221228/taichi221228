@@ -43,7 +43,7 @@ Inside your project, you’ll see the following directory structure:
 | [ElysiaJS](https://elysiajs.com/)                                   | Middleware               | :clipboard:        |
 | [Modular Forms](https://modularforms.dev/)                          | Form Management          | :construction:     |
 | [Valibot](https://valibot.dev/)                                     | Validation               | :construction:     |
-| [Markdown](https://www.markdownguide.org/)                          | Markup Language          | :clipboard:        |
+| [Markdown](https://www.markdownguide.org/)                          | Content Format           | :clipboard:        |
 | Zenn/Qiita/Dev.to                                                   | Content Platform         | :clipboard:        |
 | [CSS Modules](https://github.com/css-modules/css-modules/)          | CSS Methodology          | :white_check_mark: |
 | [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | CSS Methodology          | :clipboard:        |
