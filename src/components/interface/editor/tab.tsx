@@ -7,7 +7,7 @@ import styles from "./tab.module.css";
 type Props =
 	| {
 			item: string | null;
-			onClick$: QRL<() => void>;
+			onClick$?: QRL<() => void>;
 	  }
 	| {
 			item?: never;
