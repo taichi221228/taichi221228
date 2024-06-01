@@ -1,7 +1,7 @@
 import { type Component, component$ } from "@builder.io/qwik";
 
+import { Tab, type TabProps } from "./editor/tab";
 import styles from "./editor.module.css";
-import { Tab, type TabProps } from "./tab";
 
 type Props = {
 	panes: [{ tab?: TabProps; Content?: Component }] | [{ tab?: TabProps; Content?: Component }, { tab?: TabProps; Content?: Component }];

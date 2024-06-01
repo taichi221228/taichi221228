@@ -16,6 +16,7 @@ type Props =
 
 export type TabProps = Props;
 
+/** @package */
 export const Tab = component$(({ item, onClick$ }: Props) => {
 	return (
 		<div class={styles.container}>
