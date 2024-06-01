@@ -10,7 +10,7 @@ type Props = {
 export const Editor = component$(({ panes }: Props) => {
 	return (
 		<div class={styles.editor}>
-			{panes.map(({ tab, Content = () => <></> }) => {
+			{panes.map(({ tab, Content = component$(() => <></>) }) => {
 				return (
 					<section key={tab?.item} class={styles.pane}>
 						<Tab {...tab} />
