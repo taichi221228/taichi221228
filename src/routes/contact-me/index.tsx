@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
+import { Editor } from "~/components/interface/editor";
+
 import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
 
@@ -10,7 +12,14 @@ export default component$(() => {
 			<aside>
 				<Sidebar />
 			</aside>
-			<p>Hello, scaffdog!</p>
+			<Editor
+				panes={[
+					{
+						tab: { item: "contact-me" },
+					},
+					{},
+				]}
+			/>
 		</div>
 	);
 });
