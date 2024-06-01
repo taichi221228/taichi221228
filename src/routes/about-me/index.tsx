@@ -39,6 +39,7 @@ export default component$(() => {
 						},
 						Content,
 					},
+					{},
 				]}
 			/>
 		</div>
