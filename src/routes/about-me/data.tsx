@@ -13,26 +13,26 @@ export const activities = [
 		name: "professional-info",
 		Icon: TerminalIcon,
 		sides: [
-			{ name: "experience", Content },
-			{ name: "skills", Content },
+			{ name: "experience", Content: component$(() => <Content />) },
+			{ name: "skills", Content: component$(() => <Content />) },
 		],
 	},
 	{
 		name: "personal-info",
 		Icon: UserIcon,
 		sides: [
-			{ name: "bio", Content },
-			{ name: "interests", Content },
-			{ name: "education", Content },
+			{ name: "bio", Content: component$(() => <Content />) },
+			{ name: "interests", Content: component$(() => <Content />) },
+			{ name: "education", Content: component$(() => <Content />) },
 		],
 	},
 	{
 		name: "hobbies",
 		Icon: GamepadIcon,
 		sides: [
-			{ name: "music", Content },
-			{ name: "books", Content },
-			{ name: "games", Content },
+			{ name: "music", Content: component$(() => <Content />) },
+			{ name: "books", Content: component$(() => <Content />) },
+			{ name: "games", Content: component$(() => <Content />) },
 		],
 	},
 ] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: Component }[] }[];
@@ -45,7 +45,7 @@ export const getActivity = (activity: Current["activity"]) => {
 
 /** @package */
 export const getSide = ({ activity, side }: Current) => {
-	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
+	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: component$(() => <></>) };
 };
 
 type ActivitySidesMap = {
