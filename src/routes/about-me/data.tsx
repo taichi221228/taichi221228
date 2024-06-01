@@ -1,4 +1,4 @@
-import { type Component, createContextId, type FunctionComponent } from "@builder.io/qwik";
+import { type Component, component$, createContextId } from "@builder.io/qwik";
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
@@ -35,7 +35,7 @@ export const activities = [
 			{ name: "games", Content },
 		],
 	},
-] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: FunctionComponent }[] }[];
+] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: Component }[] }[];
 
 /** @package */
 export const getActivity = (activity: Current["activity"]) => {
