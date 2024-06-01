@@ -1,7 +1,8 @@
 import { $, component$, useContext } from "@builder.io/qwik";
 
+import { Pane } from "~/components/interface/editor/pane";
+
 import { CURRENT, getSide } from "./data";
-import { Pane } from "./editor/pane";
 
 import styles from "./editor.module.css";
 
