@@ -4,6 +4,7 @@ import { Link, useLocation } from "@builder.io/qwik-city";
 import { SITENAME } from "~/constants/info";
 
 import { Navigation } from "./header/navigation";
+
 import styles from "./header.module.css";
 
 export const Header = component$(() => {

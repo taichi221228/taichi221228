@@ -5,6 +5,7 @@ import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/inte
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
 
 import { CURRENT, getActivity } from "./data";
+
 import styles from "./sidebar.module.css";
 
 /** @package */
