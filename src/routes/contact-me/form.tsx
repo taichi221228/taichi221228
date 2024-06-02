@@ -49,7 +49,7 @@ export const Form = component$(() => {
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
-							<textarea id={store.name} {...props} />
+							<textarea id={store.name} rows={5} {...props} />
 						</>
 					)}
 				</Field>

@@ -17,5 +17,9 @@
 			border: var(--border);
 			border-radius: var(--border-radius-md);
 		}
+
+		textarea {
+			max-block-size: 350px;
+		}
 	}
 }
