@@ -18,7 +18,7 @@ export default component$(() => {
 		side: "bio",
 	});
 
-	const { Content } = getSide(current);
+	const { content } = getSide(current);
 
 	useContextProvider(CURRENT, current);
 
@@ -37,7 +37,7 @@ export default component$(() => {
 								current.side = null;
 							}),
 						},
-						Content,
+						content,
 					},
 					{},
 				]}
