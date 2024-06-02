@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 import { Editor } from "~/components/interface/editor";
 
+import { Form } from "./form";
 import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
 
@@ -16,6 +17,7 @@ export default component$(() => {
 				panes={[
 					{
 						tab: { item: "contact-me" },
+						content: <Form />,
 					},
 					{},
 				]}
