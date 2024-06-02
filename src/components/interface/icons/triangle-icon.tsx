@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import { Icon, type IconProps } from "./icon";
+
 import styles from "./triangle-icon.module.css";
 
 type Props = {

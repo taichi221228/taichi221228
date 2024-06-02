@@ -5,6 +5,7 @@ import { NAME, SNSS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import { Game } from "./game";
+
 import styles from "./index.module.css";
 
 /** @private */

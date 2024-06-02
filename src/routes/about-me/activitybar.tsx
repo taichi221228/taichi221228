@@ -1,7 +1,8 @@
 import { component$, useContext, useTask$ } from "@builder.io/qwik";
 
-import styles from "./activitybar.module.css";
 import { activities, CURRENT, getActivity } from "./data";
+
+import styles from "./activitybar.module.css";
 
 /** @package */
 export const Activitybar = component$(() => {

@@ -7,8 +7,9 @@ import { createPageTitle } from "~/utilities/create-page-title";
 import { Activitybar } from "./activitybar";
 import { CURRENT, type Current } from "./data";
 import { Editor } from "./editor";
-import styles from "./index.module.css";
 import { Sidebar } from "./sidebar";
+
+import styles from "./index.module.css";
 
 /** @private */
 export default component$(() => {
