@@ -26,30 +26,30 @@ export const Form = component$(() => {
 		<Form class={styles.form}>
 			<div class={styles.item}>
 				<Field name="name">
-					{(_, props) => (
+					{(store, props) => (
 						<>
-							<label for="name">_name:</label>
-							<input id="name" {...props} />
+							<label for={store.name}>_{store.name}:</label>
+							<input id={store.name} {...props} />
 						</>
 					)}
 				</Field>
 			</div>
 			<div class={styles.item}>
 				<Field name="email">
-					{(_, props) => (
+					{(store, props) => (
 						<>
-							<label for="email">_email:</label>
-							<input id="email" type="email" {...props} />
+							<label for={store.name}>_{store.name}:</label>
+							<input id={store.name} type="email" {...props} />
 						</>
 					)}
 				</Field>
 			</div>
 			<div class={styles.item}>
 				<Field name="message">
-					{(_, props) => (
+					{(store, props) => (
 						<>
-							<label for="message">_message:</label>
-							<textarea id="message" {...props} />
+							<label for={store.name}>_{store.name}:</label>
+							<textarea id={store.name} {...props} />
 						</>
 					)}
 				</Field>
