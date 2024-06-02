@@ -23,36 +23,34 @@ export const Form = component$(() => {
 	});
 
 	return (
-		<div class={styles.container}>
-			<Form>
-				<Field name="name">
-					{(_, props) => (
-						<label>
-							_name:
-							<br />
-							<input {...props} />
-						</label>
-					)}
-				</Field>
-				<Field name="email">
-					{(_, props) => (
-						<label>
-							_email:
-							<br />
-							<input type="email" {...props} />
-						</label>
-					)}
-				</Field>
-				<Field name="message">
-					{(_, props) => (
-						<label>
-							_message:
-							<br />
-							<textarea {...props} />
-						</label>
-					)}
-				</Field>
-			</Form>
-		</div>
+		<Form class={styles.form}>
+			<Field name="name">
+				{(_, props) => (
+					<label>
+						_name:
+						<br />
+						<input {...props} />
+					</label>
+				)}
+			</Field>
+			<Field name="email">
+				{(_, props) => (
+					<label>
+						_email:
+						<br />
+						<input type="email" {...props} />
+					</label>
+				)}
+			</Field>
+			<Field name="message">
+				{(_, props) => (
+					<label>
+						_message:
+						<br />
+						<textarea {...props} />
+					</label>
+				)}
+			</Field>
+		</Form>
 	);
 });
