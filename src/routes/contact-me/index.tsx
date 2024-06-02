@@ -18,7 +18,11 @@ export default component$(() => {
 				panes={[
 					{
 						tab: { item: "contact-me" },
-						content: <Form />,
+						content: (
+							<div class={styles.content}>
+								<Form />
+							</div>
+						),
 					},
 					{},
 				]}
