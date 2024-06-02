@@ -5,13 +5,15 @@
 	font-size: var(--font-size-label);
 
 	.item {
+		--padding-block: 7px;
+
 		inline-size: 372px;
 
 		input,
 		textarea {
 			display: block;
 			inline-size: 100%;
-			padding: 7px 15px;
+			padding: var(--padding-block) 15px;
 			margin-top: 10px;
 			background-color: var(--color-background-secondary);
 			border: var(--border);
@@ -19,7 +21,7 @@
 		}
 
 		textarea {
-			max-block-size: 350px;
+			max-block-size: calc(24px * 14 + var(--padding-block) * 2);
 		}
 	}
 }
