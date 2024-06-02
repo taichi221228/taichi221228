@@ -1,6 +1,7 @@
 import { component$, type JSXOutput } from "@builder.io/qwik";
 
 import { Tab, type TabProps } from "./editor/tab";
+
 import styles from "./editor.module.css";
 
 type Props = {
