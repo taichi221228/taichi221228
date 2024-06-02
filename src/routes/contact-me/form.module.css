@@ -9,6 +9,7 @@
 
 		input,
 		textarea {
+			display: block;
 			inline-size: 100%;
 			padding: 7px 15px;
 			margin-top: 10px;
