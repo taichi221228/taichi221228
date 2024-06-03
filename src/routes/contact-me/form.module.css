@@ -18,6 +18,10 @@
 			background-color: var(--color-background-secondary);
 			border: var(--border);
 			border-radius: var(--border-radius-md);
+
+			&::placeholder {
+				color: var(--color-accent-0);
+			}
 		}
 
 		textarea {

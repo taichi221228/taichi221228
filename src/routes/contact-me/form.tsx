@@ -2,6 +2,8 @@ import { component$ } from "@builder.io/qwik";
 
 import { useForm } from "@modular-forms/qwik";
 
+import { EMAIL, NAME } from "~/constants/info";
+
 import styles from "./form.module.css";
 
 type Scheme = {
@@ -29,7 +31,7 @@ export const Form = component$(() => {
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
-							<input id={store.name} {...props} />
+							<input id={store.name} placeholder={NAME} {...props} />
 						</>
 					)}
 				</Field>
@@ -39,7 +41,7 @@ export const Form = component$(() => {
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
-							<input id={store.name} type="email" {...props} />
+							<input id={store.name} type="email" placeholder={EMAIL} {...props} />
 						</>
 					)}
 				</Field>
@@ -49,7 +51,12 @@ export const Form = component$(() => {
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
-							<textarea id={store.name} rows={6} {...props} />
+							<textarea
+								id={store.name}
+								rows={6}
+								placeholder={"Hey! I just checked your website and it looks awesome! Also, I read your articles and learned a few nice tips. Thanks!"}
+								{...props}
+							/>
 						</>
 					)}
 				</Field>
