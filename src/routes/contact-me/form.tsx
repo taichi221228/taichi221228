@@ -54,6 +54,8 @@ export const Form = component$(() => {
 							<textarea
 								id={store.name}
 								rows={6}
+								cols={10}
+								maxLength={1000}
 								placeholder={"Hey! I just checked your website and it looks awesome! Also, I read your articles and learned a few nice tips. Thanks!"}
 								{...props}
 							/>
