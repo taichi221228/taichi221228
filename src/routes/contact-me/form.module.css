@@ -21,7 +21,11 @@
 		}
 
 		textarea {
-			max-block-size: calc(24px * 14 + var(--padding-block) * 2);
+			--row-size: 24px;
+			--outer-size: calc((var(--padding-block) + var(--border-width-md)) * 2);
+
+			min-block-size: calc(var(--row-size) * 6 + var(--outer-size));
+			max-block-size: calc(var(--row-size) * 14 + var(--outer-size));
 		}
 	}
 }
