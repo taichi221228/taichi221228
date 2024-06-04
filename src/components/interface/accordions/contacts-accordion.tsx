@@ -21,7 +21,7 @@ export const ContactsAccordion = component$(() => {
 					),
 				},
 				{
-					key: "mail",
+					key: "phone",
 					item: (
 						<a href={`tel:${PHONE}`}>
 							<PhoneIcon />
