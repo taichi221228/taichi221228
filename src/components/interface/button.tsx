@@ -4,7 +4,7 @@ import styles from "./button.module.css";
 
 type Props = {
 	onClick$: QRL<() => void>;
-	variant?: "accent" | "ghost";
+	variant?: "primary" | "accent" | "ghost";
 };
 
 export const Button = component$(({ onClick$, variant }: Props) => {
