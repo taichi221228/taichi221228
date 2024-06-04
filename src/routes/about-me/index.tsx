@@ -1,12 +1,12 @@
-import { component$, useContextProvider, useStore } from "@builder.io/qwik";
+import { $, component$, useContextProvider, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
+import { Editor } from "~/components/interface/editor";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import { Activitybar } from "./activitybar";
-import { CURRENT, type Current } from "./data";
-import { Editor } from "./editor";
+import { CURRENT, type Current, getSide } from "./data";
 import { Sidebar } from "./sidebar";
 
 import styles from "./index.module.css";
@@ -18,6 +18,8 @@ export default component$(() => {
 		side: "bio",
 	});
 
+	const { content } = getSide(current);
+
 	useContextProvider(CURRENT, current);
 
 	return (
@@ -26,7 +28,20 @@ export default component$(() => {
 				<Activitybar />
 				<Sidebar />
 			</aside>
-			<Editor />
+			<Editor
+				panes={[
+					{
+						tab: {
+							item: current.side,
+							onClick$: $(() => {
+								current.side = null;
+							}),
+						},
+						content,
+					},
+					{},
+				]}
+			/>
 		</div>
 	);
 });

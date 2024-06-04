@@ -7,7 +7,7 @@ import styles from "./tab.module.css";
 type Props =
 	| {
 			item: string | null;
-			onClick$: QRL<() => void>;
+			onClick$?: QRL<() => void>;
 	  }
 	| {
 			item?: never;
@@ -16,6 +16,7 @@ type Props =
 
 export type TabProps = Props;
 
+/** @package */
 export const Tab = component$(({ item, onClick$ }: Props) => {
 	return (
 		<div class={styles.container}>

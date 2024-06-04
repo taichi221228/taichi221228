@@ -1,9 +1,13 @@
-import { type Component, createContextId, type FunctionComponent } from "@builder.io/qwik";
+import { type Component, component$, createContextId, type JSXOutput } from "@builder.io/qwik";
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
 
-import Content from "./contents/content.mdx";
+import Content_ from "./contents/content.mdx";
+
+/* TODO: MDX is processed as `WrappedMdxContent`, which is compiled directly using `_jsxC`.
+    Since the QRL is not resolved via `componentQrl`, I need to change it is needed to be serializable. */
+const Content = component$(() => <Content_ />);
 
 type Activities = typeof activities;
 
@@ -13,29 +17,53 @@ export const activities = [
 		name: "professional-info",
 		Icon: TerminalIcon,
 		sides: [
-			{ name: "experience", Content },
-			{ name: "skills", Content },
+			{
+				name: "experience",
+				content: <Content />,
+			},
+			{
+				name: "skills",
+				content: <Content />,
+			},
 		],
 	},
 	{
 		name: "personal-info",
 		Icon: UserIcon,
 		sides: [
-			{ name: "bio", Content },
-			{ name: "interests", Content },
-			{ name: "education", Content },
+			{
+				name: "bio",
+				content: <Content />,
+			},
+			{
+				name: "interests",
+				content: <Content />,
+			},
+			{
+				name: "education",
+				content: <Content />,
+			},
 		],
 	},
 	{
 		name: "hobbies",
 		Icon: GamepadIcon,
 		sides: [
-			{ name: "music", Content },
-			{ name: "books", Content },
-			{ name: "games", Content },
+			{
+				name: "music",
+				content: <Content />,
+			},
+			{
+				name: "books",
+				content: <Content />,
+			},
+			{
+				name: "games",
+				content: <Content />,
+			},
 		],
 	},
-] as const satisfies { name: string; Icon: Component; sides: { name: string; Content: FunctionComponent }[] }[];
+] as const satisfies { name: string; Icon: Component; sides: { name: string; content: JSXOutput }[] }[];
 
 /** @package */
 export const getActivity = (activity: Current["activity"]) => {
@@ -45,7 +73,7 @@ export const getActivity = (activity: Current["activity"]) => {
 
 /** @package */
 export const getSide = ({ activity, side }: Current) => {
-	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, Content: () => <></> };
+	return getActivity(activity).sides.find(({ name }) => name === side) ?? { name: null, content: <></> };
 };
 
 type ActivitySidesMap = {

@@ -1,0 +1,15 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	font-size: var(--font-size-label);
+
+	.item {
+		inline-size: 372px;
+
+		input,
+		textarea {
+			margin-top: 10px;
+		}
+	}
+}

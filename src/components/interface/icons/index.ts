@@ -1,4 +1,5 @@
 export { CloseIcon } from "./close-icon";
+export { ExternalLinkIcon } from "./external-link-icon";
 export { FacebookIcon } from "./facebook-icon";
 export { FolderIcon } from "./folder-icon";
 export { GamepadIcon } from "./gamepad-icon";

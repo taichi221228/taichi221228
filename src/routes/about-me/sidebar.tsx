@@ -1,8 +1,7 @@
 import { component$, useContext } from "@builder.io/qwik";
 
-import { Accordion } from "~/components/interface/accordion";
-import { FolderIcon, MailIcon, MarkdownIcon, PhoneIcon } from "~/components/interface/icons";
-import { EMAIL, PHONE, USERNAME } from "~/constants/info";
+import { Accordion, ContactsAccordion } from "~/components/interface/accordions";
+import { FolderIcon, MarkdownIcon } from "~/components/interface/icons";
 
 import { CURRENT, getActivity } from "./data";
 
@@ -49,22 +48,7 @@ export const Sidebar = component$(() => {
 					})}
 				</ul>
 			</Accordion>
-			<Accordion head="contacts" shouldOpen={true} as="nav">
-				<ul>
-					<li>
-						<a href={`mailto:${EMAIL}`}>
-							<MailIcon />
-							{USERNAME}
-						</a>
-					</li>
-					<li>
-						<a href={`tel:${PHONE}`}>
-							<PhoneIcon />
-							{PHONE}
-						</a>
-					</li>
-				</ul>
-			</Accordion>
+			<ContactsAccordion />
 		</div>
 	);
 });
