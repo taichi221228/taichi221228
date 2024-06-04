@@ -21,6 +21,7 @@
 	--color-background: var(--palette-background);
 	--color-background-primary: var(--palette-background-primary);
 	--color-background-secondary: var(--palette-background-secondary);
+	--color-background-tertiary: var(--palette-background-tertiary);
 	--color-foreground: var(--palette-foreground);
 	--color-foreground-primary: var(--palette-foreground-primary);
 	--color-foreground-secondary: var(--palette-foreground-secondary);
@@ -42,7 +43,7 @@
 	--color-accent-7-primary: var(--palette-aqua-primary);
 	--color-primary-2: #1c2b3a;
 	--color-primary-2-lighter: #263b50;
-	--border: var(--border-width-md) solid var(--color-background-primary);
+	--border: var(--border-width-md) solid var(--color-background-tertiary);
 	--border-width-md: 1px;
 	--border-width-lg: 3px;
 	--border-radius-sm: 4px;

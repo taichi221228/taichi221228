@@ -1,7 +1,8 @@
 :root {
 	--palette-background: #fbf1c7;
-	--palette-background-primary: #ebdbb2;
-	--palette-background-secondary: #f9f5d7;
+	--palette-background-primary: #f9f5d7;
+	--palette-background-secondary: #f2e5bc;
+	--palette-background-tertiary: #ebdbb2;
 	--palette-foreground: #504945;
 	--palette-foreground-primary: #282828;
 	--palette-foreground-secondary: #7c6f64;
@@ -25,7 +26,8 @@
 	@media (prefers-color-scheme: dark) {
 		--palette-background: #282828;
 		--palette-background-primary: #1d2021;
-		--palette-background-secondary: #3c3836;
+		--palette-background-secondary: #32302f;
+		--palette-background-tertiary: #3c3836;
 		--palette-foreground: #d5c4a1;
 		--palette-foreground-primary: #fbf1c7;
 		--palette-foreground-secondary: #a89984;
