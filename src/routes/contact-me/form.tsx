@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 import { useForm } from "@modular-forms/qwik";
 
+import { Button } from "~/components/interface/button";
 import { EMAIL, NAME } from "~/constants/info";
 
 import styles from "./form.module.css";
@@ -62,6 +63,9 @@ export const Form = component$(() => {
 						</>
 					)}
 				</Field>
+			</div>
+			<div class={styles.item}>
+				<Button type="submit">submit-message</Button>
 			</div>
 		</Form>
 	);
