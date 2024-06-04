@@ -41,8 +41,6 @@
 	--color-accent-6-primary: var(--palette-purple-primary);
 	--color-accent-7: var(--palette-aqua);
 	--color-accent-7-primary: var(--palette-aqua-primary);
-	--color-primary-2: #1c2b3a;
-	--color-primary-2-lighter: #263b50;
 	--border: var(--border-width-md) solid var(--color-background-tertiary);
 	--border-width-md: 1px;
 	--border-width-lg: 3px;
