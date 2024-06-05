@@ -1,4 +1,4 @@
-import { component$ } from "@builder.io/qwik";
+import { $, component$ } from "@builder.io/qwik";
 
 import { useForm } from "@modular-forms/qwik";
 
@@ -25,8 +25,12 @@ export const Form = component$(() => {
 		},
 	});
 
+	const handleSubmit$ = $(() => {
+		console.log("submit");
+	});
+
 	return (
-		<Form class={styles.form}>
+		<Form class={styles.form} onSubmit$={handleSubmit$}>
 			<div class={styles.item}>
 				<Field name="name">
 					{(store, props) => (
