@@ -33,25 +33,25 @@ export const Form = component$(() => {
 		<Form class={styles.form} onSubmit$={handleSubmit$}>
 			<Field name="name" validate={[required<string>("Please enter you name.")]}>
 				{(store, props) => (
-					<div class={styles.item}>
+					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
 						<input id={store.name} placeholder={NAME} {...props} required />
-						{store.error && <p>{store.error}</p>}
+						<p>{store.error}</p>
 					</div>
 				)}
 			</Field>
 			<Field name="email" validate={[required<string>("Please enter your email.")]}>
 				{(store, props) => (
-					<div class={styles.item}>
+					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
 						<input id={store.name} type="email" placeholder={EMAIL} {...props} required />
-						{store.error && <p>{store.error}</p>}
+						<p>{store.error}</p>
 					</div>
 				)}
 			</Field>
 			<Field name="message" validate={[required<string>("Please enter your message.")]}>
 				{(store, props) => (
-					<div class={styles.item}>
+					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
 						<textarea
 							id={store.name}
@@ -62,7 +62,7 @@ export const Form = component$(() => {
 							required
 							{...props}
 						/>
-						{store.error && <p>{store.error}</p>}
+						<p>{store.error}</p>
 					</div>
 				)}
 			</Field>
