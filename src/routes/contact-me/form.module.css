@@ -22,6 +22,11 @@
 			p {
 				display: block;
 			}
+
+			input,
+			textarea {
+				outline-color: var(--color-accent-2-primary);
+			}
 		}
 	}
 }
