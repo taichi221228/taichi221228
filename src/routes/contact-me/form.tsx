@@ -1,6 +1,6 @@
 import { $, component$ } from "@builder.io/qwik";
 
-import { useForm } from "@modular-forms/qwik";
+import { required, useForm } from "@modular-forms/qwik";
 
 import { Button } from "~/components/interface/button";
 import { EMAIL, NAME } from "~/constants/info";
@@ -32,27 +32,29 @@ export const Form = component$(() => {
 	return (
 		<Form class={styles.form} onSubmit$={handleSubmit$}>
 			<div class={styles.item}>
-				<Field name="name">
+				<Field name="name" validate={[required<string>("Please enter you name.")]}>
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
-							<input id={store.name} placeholder={NAME} {...props} />
+							<input id={store.name} placeholder={NAME} {...props} required />
+							{store.error && <p>{store.error}</p>}
 						</>
 					)}
 				</Field>
 			</div>
 			<div class={styles.item}>
-				<Field name="email">
+				<Field name="email" validate={[required<string>("Please enter your email.")]}>
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
-							<input id={store.name} type="email" placeholder={EMAIL} {...props} />
+							<input id={store.name} type="email" placeholder={EMAIL} {...props} required />
+							{store.error && <p>{store.error}</p>}
 						</>
 					)}
 				</Field>
 			</div>
 			<div class={styles.item}>
-				<Field name="message">
+				<Field name="message" validate={[required<string>("Please enter your message.")]}>
 					{(store, props) => (
 						<>
 							<label for={store.name}>_{store.name}:</label>
@@ -62,8 +64,10 @@ export const Form = component$(() => {
 								cols={10}
 								maxLength={1000}
 								placeholder={"Hey! I just checked your website and it looks awesome! Also, I read your articles and learned a few nice tips. Thanks!"}
+								required
 								{...props}
 							/>
+							{store.error && <p>{store.error}</p>}
 						</>
 					)}
 				</Field>

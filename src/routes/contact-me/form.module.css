@@ -11,5 +11,10 @@
 		textarea {
 			margin-top: 10px;
 		}
+
+		p {
+			margin-block-start: 6px;
+			color: var(--color-accent-2-primary);
+		}
 	}
 }
