@@ -42,16 +42,16 @@ export const Form = component$(() => {
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} minLength={2} maxLength={50} placeholder={NAME} {...props} required />
+						<input id={store.name} required minLength={2} maxLength={50} placeholder={NAME} {...props} />
 						<p>{store.error}</p>
 					</div>
 				)}
 			</Field>
-			<Field name="email" validate={[required<string>("Please enter your email."), email("The email address is badly formatted.")]}>
+			<Field name="email" validate={[email("The email address is badly formatted."), required<string>("Please enter your email.")]}>
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} type="email" placeholder={EMAIL} {...props} required />
+						<input id={store.name} type="email" required placeholder={EMAIL} {...props} />
 						<p>{store.error}</p>
 					</div>
 				)}
@@ -69,11 +69,11 @@ export const Form = component$(() => {
 						<label for={store.name}>_{store.name}:</label>
 						<textarea
 							id={store.name}
+							required
 							rows={6}
 							cols={10}
 							maxLength={1000}
 							placeholder={"Hey! I just checked your website and it looks awesome! Also, I read your articles and learned a few nice tips. Thanks!"}
-							required
 							{...props}
 						/>
 						<p>{store.error}</p>
