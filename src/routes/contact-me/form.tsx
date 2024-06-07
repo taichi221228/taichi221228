@@ -47,11 +47,19 @@ export const Form = component$(() => {
 					</div>
 				)}
 			</Field>
-			<Field name="email" validate={[email("The email address is badly formatted."), required<string>("Please enter your email.")]}>
+			<Field
+				name="email"
+				validate={[
+					email("The email address is badly formatted."),
+					required<string>("Please enter your email."),
+					minLength(6, "Your name must have 6 at least characters."),
+					maxLength(254, "Your name must not exceed 254 characters."),
+				]}
+			>
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} type="email" required placeholder={EMAIL} {...props} />
+						<input id={store.name} type="email" required min={6} maxLength={254} placeholder={EMAIL} {...props} />
 						<p>{store.error}</p>
 					</div>
 				)}
