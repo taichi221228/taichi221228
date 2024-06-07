@@ -1,6 +1,6 @@
 import { $, component$ } from "@builder.io/qwik";
 
-import { email, minLength, required, useForm } from "@modular-forms/qwik";
+import { email, maxLength, minLength, required, useForm } from "@modular-forms/qwik";
 
 import { Button } from "~/components/interface/button";
 import { EMAIL, NAME } from "~/constants/info";
@@ -31,7 +31,14 @@ export const Form = component$(() => {
 
 	return (
 		<Form class={styles.form} onSubmit$={handleSubmit$}>
-			<Field name="name" validate={[required<string>("Please enter you name."), minLength(2, "Your name must have 2 at least characters.")]}>
+			<Field
+				name="name"
+				validate={[
+					required<string>("Please enter you name."),
+					minLength(2, "Your name must have 2 at least characters."),
+					maxLength(50, "Your name must not exceed 50 characters."),
+				]}
+			>
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
@@ -49,7 +56,14 @@ export const Form = component$(() => {
 					</div>
 				)}
 			</Field>
-			<Field name="message" validate={[required<string>("Please enter your message."), minLength(10, "Your message must have 10 at least characters.")]}>
+			<Field
+				name="message"
+				validate={[
+					required<string>("Please enter your message."),
+					minLength(10, "Your message must have 10 at least characters."),
+					maxLength(1000, "Your message must not exceed 1000 characters."),
+				]}
+			>
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
