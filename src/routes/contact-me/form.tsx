@@ -35,7 +35,7 @@ export const Form = component$(() => {
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} placeholder={NAME} {...props} required />
+						<input id={store.name} minLength={2} maxLength={50} placeholder={NAME} {...props} required />
 						<p>{store.error}</p>
 					</div>
 				)}
