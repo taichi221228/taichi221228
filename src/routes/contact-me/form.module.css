@@ -11,5 +11,22 @@
 		textarea {
 			margin-top: 10px;
 		}
+
+		p {
+			display: none;
+			margin-block-start: 6px;
+			color: var(--color-accent-2-primary);
+		}
+
+		&.error {
+			p {
+				display: block;
+			}
+
+			input,
+			textarea {
+				outline-color: var(--color-accent-2-primary);
+			}
+		}
 	}
 }
