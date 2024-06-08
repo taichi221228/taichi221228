@@ -41,7 +41,7 @@ Inside your project, you’ll see the following directory structure:
 | [React](https://react.dev/)                                         | UI Library               | :clipboard:        |
 | [QwikCity](https://qwik.dev/)                                       | Meta Framework           | :white_check_mark: |
 | [ElysiaJS](https://elysiajs.com/)                                   | Middleware               | :clipboard:        |
-| [Modular Forms](https://modularforms.dev/)                          | Form Management          | :construction:     |
+| [Modular Forms](https://modularforms.dev/)                          | Form Management          | :white_check_mark: |
 | [Valibot](https://valibot.dev/)                                     | Validation               | :construction:     |
 | [Markdown](https://www.markdownguide.org/)                          | Content Format           | :clipboard:        |
 | Zenn/Qiita/Dev.to                                                   | Content Platform         | :clipboard:        |
