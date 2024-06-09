@@ -15,8 +15,7 @@ type Scheme = {
 	message: string;
 };
 
-/* @private */
-export const sendEmail$ = server$(async ({ name, email, message }: Scheme) => {
+const sendEmail$ = server$(async ({ name, email, message }: Scheme) => {
 	const resend = new Resend(process.env.RESEND_API_KEY);
 
 	await resend.emails.send({
