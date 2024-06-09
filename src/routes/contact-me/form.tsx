@@ -1,4 +1,4 @@
-import { $, component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { server$ } from "@builder.io/qwik-city";
 
 import { email, maxLength, minLength, required, useForm } from "@modular-forms/qwik";
@@ -39,12 +39,13 @@ export const Form = component$(() => {
 		},
 	});
 
-	const handleSubmit$ = $(async () => {
-		await sendEmail$();
-	});
-
 	return (
-		<Form class={styles.form} onSubmit$={handleSubmit$}>
+		<Form
+			class={styles.form}
+			onSubmit$={async (scheme) => {
+				await sendEmail$(scheme);
+			}}
+		>
 			<Field
 				name="name"
 				validate={[
