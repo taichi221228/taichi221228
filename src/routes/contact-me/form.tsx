@@ -16,14 +16,14 @@ type Scheme = {
 };
 
 /* @private */
-export const sendEmail$ = server$(async () => {
+export const sendEmail$ = server$(async ({ name, email, message }: Scheme) => {
 	const resend = new Resend(process.env.RESEND_API_KEY);
 
 	await resend.emails.send({
 		from: "onboarding@resend.dev",
-		to: "taichi221228@icloud.com",
-		subject: "Hello, Resend!",
-		text: "Congrats on sending your first email",
+		to: email,
+		subject: `Hello, ${name}!`,
+		text: message,
 	});
 });
 
