@@ -43,7 +43,7 @@ Inside your project, you’ll see the following directory structure:
 | [ElysiaJS](https://elysiajs.com/)                                   | Middleware                  | :clipboard:        |
 | [Modular Forms](https://modularforms.dev/)                          | Form Management             | :white_check_mark: |
 | [Valibot](https://valibot.dev/)                                     | Validation                  | :construction:     |
-| [Resend](https://resend.com/)                                       | Transactional Email Service | :construction:     |
+| [Resend](https://resend.com/)                                       | Transactional Email Service | :white_check_mark: |
 | [Markdown](https://www.markdownguide.org/)                          | Content Format              | :clipboard:        |
 | Zenn/Qiita/Dev.to                                                   | Content Platform            | :clipboard:        |
 | [CSS Modules](https://github.com/css-modules/css-modules/)          | CSS Methodology             | :white_check_mark: |
