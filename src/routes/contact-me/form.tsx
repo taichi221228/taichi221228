@@ -1,6 +1,8 @@
-import { $, component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
+import { server$ } from "@builder.io/qwik-city";
 
 import { email, maxLength, minLength, required, useForm } from "@modular-forms/qwik";
+import { Resend } from "resend";
 
 import { Button } from "~/components/interface/button";
 import { EMAIL, NAME } from "~/constants/info";
@@ -12,6 +14,17 @@ type Scheme = {
 	email: string;
 	message: string;
 };
+
+const sendEmail$ = server$(async ({ name, email, message }: Scheme) => {
+	const resend = new Resend(process.env.RESEND_API_KEY);
+
+	await resend.emails.send({
+		from: "onboarding@resend.dev",
+		to: email,
+		subject: `Hello, ${name}!`,
+		text: message,
+	});
+});
 
 /** @package */
 export const Form = component$(() => {
@@ -25,12 +38,13 @@ export const Form = component$(() => {
 		},
 	});
 
-	const handleSubmit$ = $(() => {
-		console.log("submit");
-	});
-
 	return (
-		<Form class={styles.form} onSubmit$={handleSubmit$}>
+		<Form
+			class={styles.form}
+			onSubmit$={async (scheme) => {
+				await sendEmail$(scheme);
+			}}
+		>
 			<Field
 				name="name"
 				validate={[
