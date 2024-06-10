@@ -10,6 +10,8 @@
 *.json
 *.jsonc
 *.*rc
+.vscode/launch.json
+.vscode/*.code-snippets
 
 # dev
 .yarn/
