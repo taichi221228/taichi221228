@@ -1,26 +1,26 @@
-# Development
+# dev
 node_modules
 *.local
 .yarn/*
 !.yarn/releases
 
-# Build
+# build
 /dist
 /lib
 /lib-types
 /server
 
-# Cache
+# cache
 .cache
 .mf
 .rollup.cache
 tsconfig.tsbuildinfo
 
-# Env
+# env
 .env
 .env.production
 
-# Logs
+# logs
 logs
 *.log
 npm-debug.log*
@@ -29,7 +29,7 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# Editor
+# editor
 .vscode/*
 !.vscode/launch.json
 !.vscode/*.code-snippets
@@ -42,5 +42,5 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# Other
+# other
 .DS_Store
