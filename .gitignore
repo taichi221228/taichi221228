@@ -1,24 +1,24 @@
 # dev
-.yarn/*
+.yarn/
 !.yarn/releases
 .vscode/*
 !.vscode/launch.json
 !.vscode/*.code-snippets
 .idea/workspace.xml
 .idea/usage.statistics.xml
-.idea/shelf
+.idea/shelf/
 
 # build
-/dist
-/lib
-/lib-types
-/server
+dist/
+lib/
+lib-types/
+server/
 
 # deps
-node_modules
+node_modules/
 
 # cache
-.cache
+.cache/
 .mf
 .rollup.cache
 tsconfig.tsbuildinfo
@@ -28,7 +28,7 @@ tsconfig.tsbuildinfo
 .env.production
 
 # logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
