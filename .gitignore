@@ -3,6 +3,17 @@ node_modules
 *.local
 .yarn/*
 !.yarn/releases
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # build
 /dist
@@ -28,19 +39,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-# editor
-.vscode/*
-!.vscode/launch.json
-!.vscode/*.code-snippets
-.idea/workspace.xml
-.idea/usage.statistics.xml
-.idea/shelf
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
 
 # other
 .DS_Store
