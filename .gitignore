@@ -1,14 +1,14 @@
-# Build
-/dist
-/lib
-/lib-types
-/server
-
 # Development
 node_modules
 *.local
 .yarn/*
 !.yarn/releases
+
+# Build
+/dist
+/lib
+/lib-types
+/server
 
 # Cache
 .cache
