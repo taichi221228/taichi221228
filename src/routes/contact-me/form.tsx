@@ -9,13 +9,13 @@ import { EMAIL, NAME } from "~/constants/info";
 
 import styles from "./form.module.css";
 
-type Scheme = {
+type Schema = {
 	name: string;
 	email: string;
 	message: string;
 };
 
-const sendEmail$ = server$(async ({ name, email, message }: Scheme) => {
+const sendEmail$ = server$(async ({ name, email, message }: Schema) => {
 	const resend = new Resend(process.env.RESEND_API_KEY);
 
 	await resend.emails.send({
@@ -28,7 +28,7 @@ const sendEmail$ = server$(async ({ name, email, message }: Scheme) => {
 
 /** @package */
 export const Form = component$(() => {
-	const [, { Form, Field }] = useForm<Scheme>({
+	const [, { Form, Field }] = useForm<Schema>({
 		loader: {
 			value: {
 				name: "",
@@ -41,8 +41,8 @@ export const Form = component$(() => {
 	return (
 		<Form
 			class={styles.form}
-			onSubmit$={async (scheme) => {
-				await sendEmail$(scheme);
+			onSubmit$={async (schema) => {
+				await sendEmail$(schema);
 			}}
 		>
 			<Field
