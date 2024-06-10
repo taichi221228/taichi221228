@@ -41,8 +41,8 @@ export const Form = component$(() => {
 	return (
 		<Form
 			class={styles.form}
-			onSubmit$={async (schema) => {
-				await sendEmail$(schema);
+			onSubmit$={async (values) => {
+				await sendEmail$(values);
 			}}
 		>
 			<Field
