@@ -1,5 +1,4 @@
 # dev
-node_modules
 *.local
 .yarn/*
 !.yarn/releases
@@ -20,6 +19,9 @@ node_modules
 /lib
 /lib-types
 /server
+
+# deps
+node_modules
 
 # cache
 .cache
