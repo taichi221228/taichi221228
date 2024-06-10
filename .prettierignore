@@ -9,7 +9,7 @@
 *.tsx
 *.json
 *.jsonc
-*.*rc
+.*rc
 .vscode/launch.json
 .vscode/*.code-snippets
 
