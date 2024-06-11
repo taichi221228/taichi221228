@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-import { CloseIcon } from "~/components/interface/icons";
+import { PinIcon } from "~/components/interface/icons";
 
 import styles from "./tab.module.css";
 
@@ -17,8 +17,8 @@ export const Tab = component$(({ item }: Props) => {
 			{item && (
 				<div class={styles.tab}>
 					{item}
-					<button class={styles.close} type="button">
-						<CloseIcon class={styles.icon} />
+					<button class={styles.close} type="button" disabled>
+						<PinIcon class={styles.icon} />
 					</button>
 				</div>
 			)}
