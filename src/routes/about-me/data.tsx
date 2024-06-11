@@ -81,11 +81,9 @@ type ActivitySidesMap = {
 };
 
 /** @package */
-export type Current =
-	| {
-			[ActivityName in keyof ActivitySidesMap]: { activity: ActivityName; side: ActivitySidesMap[ActivityName] };
-	  }[keyof ActivitySidesMap]
-	| { activity: keyof ActivitySidesMap; side: null };
+export type Current = {
+	[ActivityName in keyof ActivitySidesMap]: { activity: ActivityName; side: ActivitySidesMap[ActivityName] };
+}[keyof ActivitySidesMap];
 
 /** @package */
 export const CURRENT = createContextId<Current>([SITENAME, "about-me", "current"].join("."));
