@@ -1,30 +1,24 @@
-import { component$, type QRL } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 
-import { CloseIcon } from "~/components/interface/icons";
+import { PinIcon } from "~/components/interface/icons";
 
 import styles from "./tab.module.css";
 
-type Props =
-	| {
-			item: string | null;
-			onClick$?: QRL<() => void>;
-	  }
-	| {
-			item?: never;
-			onClick$?: never;
-	  };
+type Props = {
+	item?: string | null;
+};
 
 export type TabProps = Props;
 
 /** @package */
-export const Tab = component$(({ item, onClick$ }: Props) => {
+export const Tab = component$(({ item }: Props) => {
 	return (
 		<div class={styles.container}>
 			{item && (
 				<div class={styles.tab}>
 					{item}
-					<button class={styles.close} onClick$={onClick$} type="button">
-						<CloseIcon class={styles.icon} />
+					<button class={styles.close} type="button" disabled>
+						<PinIcon class={styles.icon} />
 					</button>
 				</div>
 			)}

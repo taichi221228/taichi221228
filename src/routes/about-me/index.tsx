@@ -1,4 +1,4 @@
-import { $, component$, useContextProvider, useStore } from "@builder.io/qwik";
+import { component$, useContextProvider, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import { Editor } from "~/components/interface/editor";
@@ -31,12 +31,7 @@ export default component$(() => {
 			<Editor
 				panes={[
 					{
-						tab: {
-							item: current.side,
-							onClick$: $(() => {
-								current.side = null;
-							}),
-						},
+						tab: { item: current.side },
 						content,
 					},
 					{},

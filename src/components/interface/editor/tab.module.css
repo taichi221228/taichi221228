@@ -16,7 +16,7 @@
 			line-height: 1;
 			border-radius: var(--border-radius-round);
 
-			&:is(:focus-visible, :hover) {
+			&:not([disabled]):is(:focus-visible, :hover) {
 				background-color: var(--color-background-secondary);
 			}
 
