@@ -1,11 +1,11 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, createContextId, type Signal, useContextProvider, useSignal } from "@builder.io/qwik";
 import { server$ } from "@builder.io/qwik-city";
 
 import { email, maxLength, minLength, required, useForm } from "@modular-forms/qwik";
 import { Resend } from "resend";
 
 import { Button } from "~/components/interface/button";
-import { EMAIL, NAME } from "~/constants/info";
+import { EMAIL, NAME, SITENAME } from "~/constants/info";
 
 import styles from "./form.module.css";
 
@@ -27,6 +27,9 @@ const sendEmail$ = server$(async ({ name, email, message }: Schema) => {
 });
 
 /** @package */
+export const STATUS = createContextId<Signal<"initial" | "pending" | "success" | "fail">>([SITENAME, "contact-me", "status"].join("."));
+
+/** @package */
 export const Form = component$(() => {
 	const [, { Form, Field }] = useForm<Schema>({
 		loader: {
@@ -38,7 +41,9 @@ export const Form = component$(() => {
 		},
 	});
 
-	const status = useSignal<"initial" | "pending" | "success" | "fail">("initial");
+	const status = useSignal("initial");
+
+	useContextProvider(STATUS, status);
 
 	return (
 		status.value === "initial" && (
