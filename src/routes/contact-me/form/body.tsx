@@ -44,9 +44,9 @@ export const Body = component$(() => {
 	return (
 		<Form
 			class={styles.form}
-			onSubmit$={async (values) => {
+			onSubmit$={async (value) => {
 				status.value = "pending";
-				const response = await sendEmail$(values);
+				const response = await sendEmail$(value);
 
 				if (response.error) status.value = "fail";
 				else status.value = "success";
