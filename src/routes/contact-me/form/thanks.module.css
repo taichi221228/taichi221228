@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-block-size: 100%;
+
+	.thanks {
+		text-align: center;
+
+		h1 {
+			font-size: var(--font-size-subheadline);
+		}
+
+		p {
+			padding-block: 10px 37px;
+			color: var(--color-foreground-secondary);
+		}
+	}
+}

@@ -1,110 +1,22 @@
-import { component$ } from "@builder.io/qwik";
-import { server$ } from "@builder.io/qwik-city";
+import { component$, createContextId, type Signal, useContextProvider, useSignal } from "@builder.io/qwik";
 
-import { email, maxLength, minLength, required, useForm } from "@modular-forms/qwik";
-import { Resend } from "resend";
+import { SITENAME } from "~/constants/info";
+import { Thanks } from "~/routes/contact-me/form/thanks";
 
-import { Button } from "~/components/interface/button";
-import { EMAIL, NAME } from "~/constants/info";
+import { Body } from "./form/body";
 
 import styles from "./form.module.css";
 
-type Schema = {
-	name: string;
-	email: string;
-	message: string;
-};
+type Status = "initial" | "pending" | "success" | "fail";
 
-const sendEmail$ = server$(async ({ name, email, message }: Schema) => {
-	const resend = new Resend(process.env.RESEND_API_KEY);
-
-	await resend.emails.send({
-		from: "onboarding@resend.dev",
-		to: email,
-		subject: `Hello, ${name}!`,
-		text: message,
-	});
-});
+/** @package */
+export const STATUS = createContextId<Signal<Status>>([SITENAME, "contact-me", "status"].join("."));
 
 /** @package */
 export const Form = component$(() => {
-	const [, { Form, Field }] = useForm<Schema>({
-		loader: {
-			value: {
-				name: "",
-				email: "",
-				message: "",
-			},
-		},
-	});
+	const status = useSignal<Status>("initial");
 
-	return (
-		<Form
-			class={styles.form}
-			onSubmit$={async (values) => {
-				await sendEmail$(values);
-			}}
-		>
-			<Field
-				name="name"
-				validate={[
-					required<string>("Please enter you name."),
-					minLength(2, "Your name must have 2 at least characters."),
-					maxLength(50, "Your name must not exceed 50 characters."),
-				]}
-			>
-				{(store, props) => (
-					<div class={[styles.item, store.error && styles.error]}>
-						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} required minLength={2} maxLength={50} placeholder={NAME} {...props} />
-						<p>{store.error}</p>
-					</div>
-				)}
-			</Field>
-			<Field
-				name="email"
-				validate={[
-					email("The email address is badly formatted."),
-					required<string>("Please enter your email."),
-					minLength(6, "Your name must have 6 at least characters."),
-					maxLength(254, "Your name must not exceed 254 characters."),
-				]}
-			>
-				{(store, props) => (
-					<div class={[styles.item, store.error && styles.error]}>
-						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} type="email" required min={6} maxLength={254} placeholder={EMAIL} {...props} />
-						<p>{store.error}</p>
-					</div>
-				)}
-			</Field>
-			<Field
-				name="message"
-				validate={[
-					required<string>("Please enter your message."),
-					minLength(10, "Your message must have 10 at least characters."),
-					maxLength(1000, "Your message must not exceed 1000 characters."),
-				]}
-			>
-				{(store, props) => (
-					<div class={[styles.item, store.error && styles.error]}>
-						<label for={store.name}>_{store.name}:</label>
-						<textarea
-							id={store.name}
-							required
-							rows={6}
-							cols={10}
-							maxLength={1000}
-							placeholder={"Hey! I just checked your website and it looks awesome! Also, I read your articles and learned a few nice tips. Thanks!"}
-							{...props}
-						/>
-						<p>{store.error}</p>
-					</div>
-				)}
-			</Field>
-			<div class={styles.item}>
-				<Button type="submit">submit-message</Button>
-			</div>
-		</Form>
-	);
+	useContextProvider(STATUS, status);
+
+	return <div class={styles.container}>{status.value === "success" ? <Thanks /> : <Body />}</div>;
 });
