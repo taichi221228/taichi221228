@@ -53,6 +53,7 @@ Inside your project, you’ll see the following directory structure:
 | [Shiki](https://shiki.style/)                                       | Syntax Highlighting         | :white_check_mark: |
 | [Partytown](https://partytown.builder.io/)                          | Performance Optimization    | :clipboard:        |
 | [Speedlify](https://www.speedlify.dev/)                             | Performance Monitoring      | :clipboard:        |
+| [GitGuardian](https://www.gitguardian.com/)                         | Security Monitoring         | :white_check_mark: |
 | [Vite](https://vitejs.dev/)                                         | Build Tool                  | :white_check_mark: |
 | [esbuild](https://esbuild.github.io/)                               | Build Tool                  | :white_check_mark: |
 | [Rollup](https://rollupjs.org/)                                     | Build Tool                  | :white_check_mark: |
