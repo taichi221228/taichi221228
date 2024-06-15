@@ -100,7 +100,7 @@ export const Body = component$(() => {
 							id={store.name}
 							required
 							rows={6}
-							cols={10}
+							cols={9}
 							maxLength={1000}
 							placeholder={"Hey! I just checked your website and it looks awesome! Also, I read your articles and learned a few nice tips. Thanks!"}
 							{...props}
