@@ -1,6 +1,7 @@
 import { component$, createContextId, type Signal, useContextProvider, useSignal } from "@builder.io/qwik";
 
 import { SITENAME } from "~/constants/info";
+import { Thanks } from "~/routes/contact-me/form/thanks";
 
 import { Body } from "./form/body";
 
@@ -15,5 +16,5 @@ export const Form = component$(() => {
 
 	useContextProvider(STATUS, status);
 
-	return status.value === "initial" && <Body />;
+	return status.value === "success" ? <Thanks text="Hello, scaffdog!" /> : <Body />;
 });
