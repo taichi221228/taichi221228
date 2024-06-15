@@ -71,6 +71,7 @@ Inside your project, you’ll see the following directory structure:
 | [Storybook](https://storybook.js.org/)                              | Component Testing           | :clipboard:        |
 | [Playwright](https://playwright.dev/)                               | End-to-End Testing          | :clipboard:        |
 | [BrowserStack](https://www.browserstack.com/)                       | Cross-Browser Testing       | :clipboard:        |
+| [Sentry](https://sentry.io/)                                        | Error Monitoring            | :clipboard:        |
 | [Partytown](https://partytown.builder.io/)                          | Performance Optimization    | :clipboard:        |
 | [Speedlify](https://www.speedlify.dev/)                             | Performance Monitoring      | :clipboard:        |
 | [GitGuardian](https://www.gitguardian.com/)                         | Security Monitoring         | :white_check_mark: |
