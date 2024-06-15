@@ -44,7 +44,7 @@ Inside your project, you’ll see the following directory structure:
 | [Modular Forms](https://modularforms.dev/)                          | Form Management             | :white_check_mark: |
 | [Valibot](https://valibot.dev/)                                     | Validation                  | :construction:     |
 | [Resend](https://resend.com/)                                       | Transactional Email Service | :white_check_mark: |
-| [Markdown](https://www.markdownguide.org/)                          | Content Format              | :clipboard:        |
+| [Markdown](https://markdownguide.org/)                              | Content Format              | :clipboard:        |
 | Zenn/Qiita/Dev.to                                                   | Content Platform            | :clipboard:        |
 | [CSS Modules](https://github.com/css-modules/css-modules/)          | CSS Methodology             | :white_check_mark: |
 | [Happy CSS Modules](https://github.com/mizdra/happy-css-modules/)   | CSS Methodology             | :clipboard:        |
@@ -55,7 +55,7 @@ Inside your project, you’ll see the following directory structure:
 | [esbuild](https://esbuild.github.io/)                               | Build Tool                  | :white_check_mark: |
 | [Rollup](https://rollupjs.org/)                                     | Build Tool                  | :white_check_mark: |
 | [Dependabot](https://github.com/dependabot)                         | Dependency Management       | :clipboard:        |
-| [TypeScript](https://www.typescriptlang.org/)                       | Type Cheking                | :white_check_mark: |
+| [TypeScript](https://typescriptlang.org/)                           | Type Cheking                | :white_check_mark: |
 | [ESLint](https://eslint.org/)                                       | Code Linting                | :white_check_mark: |
 | [Stylelint](https://stylelint.io/)                                  | Style Linting               | :white_check_mark: |
 | [textlint](https://textlint.github.io/)                             | Text Linting                | :white_check_mark: |
@@ -70,15 +70,15 @@ Inside your project, you’ll see the following directory structure:
 | [Vitest](https://vitest.dev/)                                       | Unit Testing                | :clipboard:        |
 | [Storybook](https://storybook.js.org/)                              | Component Testing           | :clipboard:        |
 | [Playwright](https://playwright.dev/)                               | End-to-End Testing          | :clipboard:        |
-| [BrowserStack](https://www.browserstack.com/)                       | Cross-Browser Testing       | :clipboard:        |
+| [BrowserStack](https://browserstack.com/)                           | Cross-Browser Testing       | :clipboard:        |
 | [Sentry](https://sentry.io/)                                        | Error Monitoring            | :clipboard:        |
 | [Partytown](https://partytown.builder.io/)                          | Performance Optimization    | :clipboard:        |
-| [Speedlify](https://www.speedlify.dev/)                             | Performance Monitoring      | :clipboard:        |
-| [GitGuardian](https://www.gitguardian.com/)                         | Security Monitoring         | :white_check_mark: |
-| [Cloudflare](https://www.cloudflare.com/)                           | CDN/Hosting                 | :clipboard:        |
+| [Speedlify](https://speedlify.dev/)                                 | Performance Monitoring      | :clipboard:        |
+| [GitGuardian](https://gitguardian.com/)                             | Security Monitoring         | :white_check_mark: |
+| [Cloudflare](https://cloudflare.com/)                               | CDN/Hosting                 | :clipboard:        |
 | [Nx](https://nx.dev/)                                               | Monorepo Management         | :clipboard:        |
 |                                                                     | CI/CD                       | :thinking:         |
-| [Figma](https://www.figma.com/)                                     | Design Tool                 | :white_check_mark: |
+| [Figma](https://figma.com/)                                         | Design Tool                 | :white_check_mark: |
 
 ## Development
 
@@ -108,4 +108,4 @@ bun build # or `npm run build`
 
 ## Acknowledgements
 
-Extraordinary thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://www.figma.com/community/file/1100794861710979147/portfolio-for-developers-concept-v-2). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
+Extraordinary thanks to the Figma community for the design inspiration. This portfolio site was crafted using the design concept from [Portfolio for Developers Concept V.2](https://figma.com/community/file/1100794861710979147/portfolio-for-developers-concept-v-2). I am grateful for the opportunity to utilize such a creative and well-thought-out design framework, which has greatly enhanced the presentation of my work.
