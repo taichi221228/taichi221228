@@ -5,6 +5,8 @@ import { Thanks } from "~/routes/contact-me/form/thanks";
 
 import { Body } from "./form/body";
 
+import styles from "./form.module.css";
+
 type Status = "initial" | "pending" | "success" | "fail";
 
 /** @package */
@@ -16,5 +18,5 @@ export const Form = component$(() => {
 
 	useContextProvider(STATUS, status);
 
-	return status.value === "success" ? <Thanks text="Hello, scaffdog!" /> : <Body />;
+	return <div class={styles.container}>{status.value === "success" ? <Thanks text="Hello, scaffdog!" /> : <Body />}</div>;
 });

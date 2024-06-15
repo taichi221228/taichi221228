@@ -3,7 +3,6 @@
 	flex-direction: column;
 	gap: 24px;
 	align-items: center;
-	padding-block: 80px 50px;
 	font-size: var(--font-size-label);
 
 	.item {
