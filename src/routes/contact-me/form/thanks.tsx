@@ -4,12 +4,8 @@ import { Button } from "~/components/interface/button";
 
 import styles from "./thanks.module.css";
 
-type Props = {
-	text: "Hello, scaffdog!";
-};
-
 /** @package */
-export const Thanks = component$(({ text }: Props) => {
+export const Thanks = component$(() => {
 	return (
 		<div class={styles.container}>
 			<div class={styles.thanks}>

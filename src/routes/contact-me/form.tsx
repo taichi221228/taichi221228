@@ -18,5 +18,5 @@ export const Form = component$(() => {
 
 	useContextProvider(STATUS, status);
 
-	return <div class={styles.container}>{status.value === "success" ? <Thanks text="Hello, scaffdog!" /> : <Body />}</div>;
+	return <div class={styles.container}>{status.value === "success" ? <Thanks /> : <Body />}</div>;
 });
