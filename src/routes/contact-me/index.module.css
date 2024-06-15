@@ -10,10 +10,4 @@
 		inline-size: var(--inline-size-aside);
 		border-inline-end: var(--border);
 	}
-
-	.content {
-		display: flex;
-		justify-content: center;
-		padding-block: 80px 50px;
-	}
 }
