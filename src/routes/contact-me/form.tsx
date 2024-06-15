@@ -4,12 +4,14 @@ import { SITENAME } from "~/constants/info";
 
 import { Body } from "./form/body";
 
+type Status = "initial" | "pending" | "success" | "fail";
+
 /** @package */
-export const STATUS = createContextId<Signal<"initial" | "pending" | "success" | "fail">>([SITENAME, "contact-me", "status"].join("."));
+export const STATUS = createContextId<Signal<Status>>([SITENAME, "contact-me", "status"].join("."));
 
 /** @package */
 export const Form = component$(() => {
-	const status = useSignal("initial");
+	const status = useSignal<Status>("initial");
 
 	useContextProvider(STATUS, status);
 
