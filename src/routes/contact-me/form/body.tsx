@@ -45,11 +45,11 @@ export const Body = component$(() => {
 		<Form
 			class={styles.form}
 			onSubmit$={async (value) => {
-				status.value = "pending";
+				status.value.name = "pending";
 				const response = await sendEmail$(value);
 
-				if (response.error) status.value = "fail";
-				else status.value = "success";
+				if (response.error) status.value.name = "fail";
+				else status.value.name = "success";
 			}}
 		>
 			<Field

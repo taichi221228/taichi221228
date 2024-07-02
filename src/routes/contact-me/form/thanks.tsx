@@ -17,7 +17,7 @@ export const Thanks = component$(() => {
 				<Button
 					type="button"
 					onClick$={() => {
-						status.value = "initial";
+						status.value.name = "initial";
 					}}
 				>
 					send-new-message
