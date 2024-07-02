@@ -7,7 +7,7 @@ import { Body } from "./form/body";
 
 import styles from "./form.module.css";
 
-type Status = { value: { name: "initial" | "pending" | "success" } } | { value: { name: "fail"; message: string } };
+type Status = { value: { name: "initial" | "pending" | "success"; message?: never } } | { value: { name: "fail"; message: string } };
 
 /** @package */
 export const STATUS = createContextId<Status>([SITENAME, "contact-me", "status"].join("."));
