@@ -48,7 +48,7 @@ export const Body = component$(() => {
 				status.value.name = "pending";
 				const response = await sendEmail$(value);
 
-				if (response.error) status.value.name = "fail";
+				if (response.error) status.value = { name: "fail", message: response.error.message };
 				else status.value.name = "success";
 			}}
 		>
@@ -109,8 +109,9 @@ export const Body = component$(() => {
 					</div>
 				)}
 			</Field>
-			<div class={styles.item}>
+			<div class={[styles.item, status.value.name === "fail" && styles.error]}>
 				<Button type="submit">submit-message</Button>
+				{status.value.name === "fail" && <p>{status.value.message}</p>}
 			</div>
 		</Form>
 	);
