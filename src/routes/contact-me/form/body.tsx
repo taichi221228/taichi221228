@@ -111,7 +111,7 @@ export const Body = component$(() => {
 			</Field>
 			<div class={[styles.item, status.value.name === "fail" && styles.error]}>
 				<Button type="submit">submit-message</Button>
-				{status.value.name === "fail" && <p>{status.value.message}</p>}
+				<p>{status.value.message}</p>
 			</div>
 		</Form>
 	);
