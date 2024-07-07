@@ -1,10 +1,23 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useContext } from "@builder.io/qwik";
+
+import { Button } from "~/components/interface/button";
+import { RefreshIcon } from "~/components/interface/icons";
+
+import { STATUS } from "../form";
 
 /** @package */
 export const SubmitButton = component$(() => {
+	const status = useContext(STATUS);
+
 	return (
-		<div>
-			<h1>Hello, scaffdog!</h1>
-		</div>
+		<Button type="submit">
+			{status.value.name === "pending" ? (
+				<>
+					<RefreshIcon /> submitting...
+				</>
+			) : (
+				"submit-message"
+			)}
+		</Button>
 	);
 });
