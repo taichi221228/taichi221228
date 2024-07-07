@@ -5,6 +5,7 @@ import { email, maxLength, minLength, required, useForm } from "@modular-forms/q
 import { Resend } from "resend";
 
 import { Button } from "~/components/interface/button";
+import { RefreshIcon } from "~/components/interface/icons";
 import { EMAIL, NAME } from "~/constants/info";
 import { STATUS } from "~/routes/contact-me/form";
 
@@ -110,7 +111,15 @@ export const Body = component$(() => {
 				)}
 			</Field>
 			<div class={[styles.item, status.value.name === "fail" && styles.error]}>
-				<Button type="submit">submit-message</Button>
+				<Button type="submit">
+					{status.value.name === "pending" ? (
+						<>
+							<RefreshIcon /> submitting...
+						</>
+					) : (
+						"submit-message"
+					)}
+				</Button>
 				<p>{status.value.message}</p>
 			</div>
 		</Form>
