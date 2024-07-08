@@ -9,6 +9,6 @@ type Props = {
 } & IconProps;
 
 /** @package */
-export const FolderIcon = component$(({ variant, ...props }: Props) => {
-	return <Icon class={styles[`is-${variant}`]} type="ri-folder-3-fill" {...props} />;
+export const FolderIcon = component$(({ variant, class: className, ...props }: Props) => {
+	return <Icon class={[className, styles[`is-${variant}`]]} type="ri-folder-3-fill" {...props} />;
 });
