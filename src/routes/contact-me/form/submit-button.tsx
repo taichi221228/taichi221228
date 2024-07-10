@@ -10,7 +10,7 @@ export const SubmitButton = component$(() => {
 	const status = useContext(STATUS);
 
 	return (
-		<Button type="submit">
+		<Button type="submit" disabled={status.value.name === "pending"}>
 			{status.value.name === "pending" ? (
 				<>
 					<RefreshIcon /> submitting...
