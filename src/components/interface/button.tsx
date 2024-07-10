@@ -6,9 +6,9 @@ type Props = {
 	variant?: "primary" | "accent" | "ghost";
 } & PropsOf<"button">;
 
-export const Button = component$(({ variant, ...props }: Props) => {
+export const Button = component$(({ variant, class: className, ...props }: Props) => {
 	return (
-		<button class={[styles[variant ?? "primary"], styles.button]} {...props}>
+		<button class={[className, styles[variant ?? "primary"], styles.button]} {...props}>
 			<Slot />
 		</button>
 	);
