@@ -64,7 +64,7 @@ export const Body = component$(() => {
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} required minLength={2} maxLength={50} placeholder={NAME} {...props} />
+						<input id={store.name} required disabled={status.value.name === "pending"} minLength={2} maxLength={50} placeholder={NAME} {...props} />
 						<p>{store.error}</p>
 					</div>
 				)}
@@ -81,7 +81,7 @@ export const Body = component$(() => {
 				{(store, props) => (
 					<div class={[styles.item, store.error && styles.error]}>
 						<label for={store.name}>_{store.name}:</label>
-						<input id={store.name} type="email" required min={6} maxLength={254} placeholder={EMAIL} {...props} />
+						<input id={store.name} type="email" required disabled={status.value.name === "pending"} min={6} maxLength={254} placeholder={EMAIL} {...props} />
 						<p>{store.error}</p>
 					</div>
 				)}
@@ -100,6 +100,7 @@ export const Body = component$(() => {
 						<textarea
 							id={store.name}
 							required
+							disabled={status.value.name === "pending"}
 							rows={6}
 							cols={9}
 							maxLength={1000}
