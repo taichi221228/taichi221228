@@ -85,6 +85,14 @@ html {
 			transition: var(--transition);
 		}
 
+		button,
+		input,
+		textarea {
+			&[disabled] {
+				opacity: 0.5;
+			}
+		}
+
 		input,
 		textarea {
 			--padding-block: 7px;
