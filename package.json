@@ -68,7 +68,7 @@
 		"textlint-rule-preset-ja-spacing": "^2.3.0",
 		"textlint-rule-preset-japanese": "^10.0.3",
 		"textlint-rule-preset-jtf-style": "^2.3.14",
-		"typescript": "5.3.3",
+		"typescript": "5.5.3",
 		"undici": "*",
 		"vite": "^5.0.12",
 		"vite-tsconfig-paths": "^4.2.1"
