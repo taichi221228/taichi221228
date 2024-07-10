@@ -96,6 +96,10 @@ html {
 			border: var(--border);
 			border-radius: var(--border-radius-md);
 
+			&[disabled] {
+				opacity: 0.5;
+			}
+
 			&::placeholder {
 				color: var(--color-accent-0);
 			}
