@@ -21,7 +21,7 @@ const sendEmail$ = server$(async ({ name, email, message }: Schema) => {
 	const resend = new Resend(process.env.RESEND_API_KEY);
 
 	return await resend.emails.send({
-		from: "onboarding@resend.dev",
+		from: email,
 		to: email,
 		subject: `Hello, ${name}!`,
 		text: message,
