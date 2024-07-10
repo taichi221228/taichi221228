@@ -1,23 +1,14 @@
-import { component$, type QRL, Slot } from "@builder.io/qwik";
+import { component$, type PropsOf, Slot } from "@builder.io/qwik";
 
 import styles from "./button.module.css";
 
 type Props = {
 	variant?: "primary" | "accent" | "ghost";
-} & (
-	| {
-			type?: "button";
-			onClick$: QRL<() => void>;
-	  }
-	| {
-			type: "submit";
-			onClick$?: QRL<() => void>;
-	  }
-);
+} & PropsOf<"button">;
 
-export const Button = component$(({ variant, type = "button", onClick$ }: Props) => {
+export const Button = component$(({ variant, class: className, ...props }: Props) => {
 	return (
-		<button class={[styles[variant ?? "primary"], styles.button]} onClick$={onClick$} type={type}>
+		<button class={[className, styles[variant ?? "primary"], styles.button]} {...props}>
 			<Slot />
 		</button>
 	);

@@ -5,6 +5,7 @@
 
 			display: flex;
 			gap: 8px;
+			align-items: center;
 			inline-size: 100%;
 			padding-inline: var(--padding-inline);
 			margin-inline: calc(var(--padding-inline) * -1);

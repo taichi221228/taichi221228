@@ -1,0 +1,13 @@
+@keyframes spin {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
+}
+
+.spin {
+	animation: 2s ease 0s infinite spin;
+}
