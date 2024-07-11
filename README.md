@@ -54,7 +54,7 @@ Inside your project, you’ll see the following directory structure:
 | [Vite](https://vitejs.dev/)                                         | Build Tool                  | :white_check_mark: |
 | [esbuild](https://esbuild.github.io/)                               | Build Tool                  | :white_check_mark: |
 | [Rollup](https://rollupjs.org/)                                     | Build Tool                  | :white_check_mark: |
-| [Dependabot](https://github.com/dependabot)                         | Dependency Management       | :clipboard:        |
+| [Renovate](https://docs.renovatebot.com/)                           | Dependency Management       | :clipboard:        |
 | [TypeScript](https://typescriptlang.org/)                           | Type Cheking                | :white_check_mark: |
 | [ESLint](https://eslint.org/)                                       | Code Linting                | :white_check_mark: |
 | [Stylelint](https://stylelint.io/)                                  | Style Linting               | :white_check_mark: |
