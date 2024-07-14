@@ -1,10 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Icon, type IconProps as Props } from "./icon";
+import { Icon, type IconProps } from "./icon";
 
 import styles from "./refresh-icon.module.css";
 
+type Props = {
+	isAnimating?: boolean;
+} & IconProps;
+
 /** @package */
-export const RefreshIcon = component$(({ class: className, ...props }: Props) => {
-	return <Icon class={[className, styles.spin]} type="ri-refresh-line" {...props} />;
+export const RefreshIcon = component$(({ isAnimating = true, class: className, ...props }: Props) => {
+	return <Icon class={[className, isAnimating && styles.spin]} type="ri-refresh-line" {...props} />;
 });
