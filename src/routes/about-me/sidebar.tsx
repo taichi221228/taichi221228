@@ -13,7 +13,7 @@ export const Sidebar = component$(() => {
 
 	return (
 		<div class={styles.sidebar}>
-			<Accordion head={current.activity} shouldOpen={true} as="nav">
+			<Accordion head={current.activity} shouldOpen as="nav">
 				<ul>
 					{getActivity(current.activity).sides.map(({ name }, i) => {
 						return (
