@@ -13,7 +13,7 @@ export const SubmitButton = component$(() => {
 		<Button type="submit" disabled={status.value.name === "pending"}>
 			{status.value.name === "pending" ? (
 				<>
-					<RefreshIcon /> submitting...
+					<RefreshIcon isAnimating /> submitting...
 				</>
 			) : (
 				"submit-message"

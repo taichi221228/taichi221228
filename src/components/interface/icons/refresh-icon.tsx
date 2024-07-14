@@ -9,6 +9,6 @@ type Props = {
 } & IconProps;
 
 /** @package */
-export const RefreshIcon = component$(({ isAnimating = true, class: className, ...props }: Props) => {
+export const RefreshIcon = component$(({ isAnimating = false, class: className, ...props }: Props) => {
 	return <Icon class={[className, isAnimating && styles.spin]} type="ri-refresh-line" {...props} />;
 });
