@@ -4,6 +4,10 @@
 	font-size: var(--font-size-code);
 	border-radius: var(--border-radius-md);
 
+	&[disabled] {
+		opacity: 0.5;
+	}
+
 	&.primary {
 		background-color: var(--color-background-secondary);
 		border: var(--border);
