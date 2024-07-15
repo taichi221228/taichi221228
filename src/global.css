@@ -81,7 +81,10 @@ html {
 		}
 
 		a,
-		button {
+		button,
+		input,
+		textarea,
+		select {
 			transition: var(--transition);
 		}
 	}
