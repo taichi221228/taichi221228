@@ -10,7 +10,31 @@
 
 		input,
 		textarea {
+			--padding-block: 7px;
+
+			display: block;
+			inline-size: 100%;
+			padding: var(--padding-block) 15px;
 			margin-top: 10px;
+			background-color: var(--color-background-secondary);
+			border: var(--border);
+			border-radius: var(--border-radius-md);
+
+			&[disabled] {
+				opacity: 0.5;
+			}
+
+			&::placeholder {
+				color: var(--color-accent-0);
+			}
+		}
+
+		textarea {
+			--row-size: 24px;
+			--outer-size: calc((var(--padding-block) + var(--border-width-md)) * 2);
+
+			min-block-size: calc(var(--row-size) * 6 + var(--outer-size));
+			max-block-size: calc(var(--row-size) * 14 + var(--outer-size));
 		}
 
 		p {
