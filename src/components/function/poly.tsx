@@ -2,9 +2,11 @@ import { component$, type FunctionComponent, type PropsOf, Slot } from "@builder
 
 type COMPONENT = FunctionComponent | string;
 
-export type PolyProps<C extends COMPONENT = COMPONENT> = { as?: C } & PropsOf<string extends C ? "div" : C>;
+type Props<C extends COMPONENT = COMPONENT> = { as?: C } & PropsOf<string extends C ? "div" : C>;
 
-export const Poly = component$(<C extends COMPONENT = COMPONENT>({ as, ...props }: PolyProps<C>) => {
+export type PolyProps<C extends COMPONENT = COMPONENT> = Props<C>;
+
+export const Poly = component$(<C extends COMPONENT = COMPONENT>({ as, ...props }: Props<C>) => {
 	const Component = as ?? "div";
 
 	return (
