@@ -1,15 +1,17 @@
 import { component$, type FunctionComponent, type PropsOf, Slot } from "@builder.io/qwik";
 
-type COMPONENT = FunctionComponent | string;
+type Component = FunctionComponent | string;
 
-export type PolyProps<C extends COMPONENT = COMPONENT> = { as?: C };
+type Props<C extends Component = Component> = { as?: C } & PropsOf<string extends C ? "div" : C>;
 
-export const Poly = component$(
-	<C extends COMPONENT = COMPONENT>({ as: Component = "div" as C, ...props }: PolyProps<C> & PropsOf<string extends C ? "div" : C>) => {
-		return (
-			<Component {...props}>
-				<Slot />
-			</Component>
-		);
-	},
-);
+export type PolyProps<C extends Component = Component> = Props<C>;
+
+export const Poly = component$(<C extends Component = Component>({ as, ...props }: Props<C>) => {
+	const Component = as ?? "div";
+
+	return (
+		<Component {...props}>
+			<Slot />
+		</Component>
+	);
+});
