@@ -4,12 +4,12 @@ type COMPONENT = FunctionComponent | string;
 
 export type PolyProps<C extends COMPONENT = COMPONENT> = { as?: C };
 
-export const Poly = component$(
-	<C extends COMPONENT = COMPONENT>({ as: Component = "div" as C, ...props }: PolyProps<C> & PropsOf<string extends C ? "div" : C>) => {
-		return (
-			<Component {...props}>
-				<Slot />
-			</Component>
-		);
-	},
-);
+export const Poly = component$(<C extends COMPONENT = COMPONENT>({ as, ...props }: PolyProps<C> & PropsOf<string extends C ? "div" : C>) => {
+	const Component = as ?? "div";
+
+	return (
+		<Component {...props}>
+			<Slot />
+		</Component>
+	);
+});
