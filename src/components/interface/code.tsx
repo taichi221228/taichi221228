@@ -1,13 +1,21 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, useSignal, useTask$ } from "@builder.io/qwik";
+
+import { codeToHtml } from "shiki";
 
 type Props = {
-	text: "Hello, scaffdog!";
+	text: string;
 };
 
 export const Code = component$(({ text }: Props) => {
-	return (
-		<div>
-			<h1>{text}</h1>
-		</div>
-	);
+	const html = useSignal<string>();
+
+	useTask$(async () => {
+		html.value = await codeToHtml(text, {
+			lang: "ts",
+			theme: "solarized-light",
+		});
+	});
+
+	// biome-ignore lint/security/noDangerouslySetInnerHtml: Shiki is a trusted source
+	return <div dangerouslySetInnerHTML={html.value} />;
 });
