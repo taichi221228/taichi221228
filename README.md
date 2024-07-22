@@ -52,6 +52,7 @@ Inside your project, you’ll see the following directory structure:
 | [Remix Icon](https://remixicon.com/)                                | Icon Set                 | :white_check_mark: |
 | [Fontsource](https://fontsource.org/)                               | Font Set                 | :white_check_mark: |
 | [Shiki](https://shiki.style/)                                       | Syntax Highlighting      | :white_check_mark: |
+| [Twoslash](https://twoslash.netlify.app/)                           | Code Documentation       | :clipboard:        |
 | [Vite](https://vitejs.dev/)                                         | Build Tool               | :white_check_mark: |
 | [esbuild](https://esbuild.github.io/)                               | Build Tool               | :white_check_mark: |
 | [Rollup](https://rollupjs.org/)                                     | Build Tool               | :white_check_mark: |

@@ -30,7 +30,8 @@
 		"@modular-forms/qwik": "^0.26.0",
 		"@unocss/reset": "^0.61.0",
 		"remixicon": "^4.1.0",
-		"resend": "^3.2.0"
+		"resend": "^3.2.0",
+		"shiki": "^1.10.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^1.6.1",
