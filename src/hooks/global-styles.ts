@@ -6,6 +6,7 @@ import icon from "remixicon/fonts/remixicon.css?inline";
 
 import "~/global.css";
 import "~/styles/theme/gruvbox.css";
+import "~/styles/token/size.css";
 
 export const useGlobalStyles = () => {
 	useStyles$(reset);

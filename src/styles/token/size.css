@@ -1,0 +1,8 @@
+:root {
+	--inline-size-sitetitle: 310px;
+	--block-size-body: calc(100svh - var(--padding-outside) * 2);
+	--block-size-main: calc(var(--block-size-body) - var(--block-size-header) - var(--block-size-footer));
+	--block-size-header: 56px;
+	--block-size-footer: 56px;
+	--block-size-tab: 40px;
+}
