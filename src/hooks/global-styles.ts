@@ -6,6 +6,7 @@ import icon from "remixicon/fonts/remixicon.css?inline";
 
 import "~/global.css";
 import "~/styles/theme/gruvbox.css";
+import "~/styles/token/border.css";
 import "~/styles/token/color.css";
 import "~/styles/token/font.css";
 import "~/styles/token/icon.css";
