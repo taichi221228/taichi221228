@@ -1,7 +1,3 @@
-:root {
-	--transition: all 0.25s ease-in-out;
-}
-
 * {
 	&:focus-visible {
 		outline: var(--border-width-lg) solid var(--color-accent-1);
