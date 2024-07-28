@@ -1,4 +1,27 @@
 :root {
+	--color-background: var(--palette-background);
+	--color-background-primary: var(--palette-background-primary);
+	--color-background-secondary: var(--palette-background-secondary);
+	--color-background-tertiary: var(--palette-background-tertiary);
+	--color-foreground: var(--palette-foreground);
+	--color-foreground-primary: var(--palette-foreground-primary);
+	--color-foreground-secondary: var(--palette-foreground-secondary);
+	--color-accent-0: var(--palette-gray);
+	--color-accent-0-primary: var(--palette-gray-primary);
+	--color-accent-1: var(--palette-orange);
+	--color-accent-1-primary: var(--palette-orange-primary);
+	--color-accent-2: var(--palette-red);
+	--color-accent-2-primary: var(--palette-red-primary);
+	--color-accent-3: var(--palette-green);
+	--color-accent-3-primary: var(--palette-green-primary);
+	--color-accent-4: var(--palette-yellow);
+	--color-accent-4-primary: var(--palette-yellow-primary);
+	--color-accent-5: var(--palette-blue);
+	--color-accent-5-primary: var(--palette-blue-primary);
+	--color-accent-6: var(--palette-purple);
+	--color-accent-6-primary: var(--palette-purple-primary);
+	--color-accent-7: var(--palette-aqua);
+	--color-accent-7-primary: var(--palette-aqua-primary);
 	--palette-background: #fbf1c7;
 	--palette-background-primary: #f9f5d7;
 	--palette-background-secondary: #f2e5bc;
