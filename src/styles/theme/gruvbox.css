@@ -9,7 +9,6 @@
 	--color-accent-0: var(--palette-gray);
 	--color-accent-1: var(--palette-orange);
 	--color-accent-2: var(--palette-red);
-	--color-accent-2-primary: var(--palette-red-primary);
 	--color-accent-3: var(--palette-green);
 	--color-accent-3-primary: var(--palette-green-primary);
 	--color-accent-4: var(--palette-yellow);
@@ -29,7 +28,6 @@
 	--palette-foreground-secondary: #7c6f64;
 	--palette-gray: #928374;
 	--palette-red: #9d0006;
-	--palette-red-primary: #cc241d;
 	--palette-green: #79740e;
 	--palette-green-primary: #98971a;
 	--palette-yellow: #b57614;
