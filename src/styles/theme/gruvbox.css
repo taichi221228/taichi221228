@@ -8,7 +8,6 @@
 	--color-foreground-secondary: var(--palette-foreground-secondary);
 	--color-accent-0: var(--palette-gray);
 	--color-accent-1: var(--palette-orange);
-	--color-accent-1-primary: var(--palette-orange-primary);
 	--color-accent-2: var(--palette-red);
 	--color-accent-2-primary: var(--palette-red-primary);
 	--color-accent-3: var(--palette-green);
@@ -42,7 +41,6 @@
 	--palette-aqua: #427b58;
 	--palette-aqua-primary: #689d6a;
 	--palette-orange: #af3a03;
-	--palette-orange-primary: #d65d0e;
 
 	@media (prefers-color-scheme: dark) {
 		--palette-background: #282828;
