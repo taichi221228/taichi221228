@@ -14,7 +14,6 @@
 	--color-accent-5: var(--palette-blue);
 	--color-accent-5-primary: var(--palette-blue-primary);
 	--color-accent-6: var(--palette-purple);
-	--color-accent-6-primary: var(--palette-purple-primary);
 	--color-accent-7: var(--palette-aqua);
 	--color-accent-7-primary: var(--palette-aqua-primary);
 	--palette-background: #fbf1c7;
@@ -31,7 +30,6 @@
 	--palette-blue: #076678;
 	--palette-blue-primary: #458588;
 	--palette-purple: #8f3f71;
-	--palette-purple-primary: #616286;
 	--palette-aqua: #427b58;
 	--palette-aqua-primary: #689d6a;
 	--palette-orange: #af3a03;
