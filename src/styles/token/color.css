@@ -1,0 +1,9 @@
+:root {
+	--color-background: var(--palette-background);
+	--color-background-primary: var(--palette-background-primary);
+	--color-background-secondary: var(--palette-background-secondary);
+	--color-background-tertiary: var(--palette-background-tertiary);
+	--color-foreground: var(--palette-foreground);
+	--color-foreground-primary: var(--palette-foreground-primary);
+	--color-foreground-secondary: var(--palette-foreground-secondary);
+}
