@@ -40,7 +40,7 @@
 		p {
 			display: none;
 			margin-block-start: 6px;
-			color: var(--color-accent-2);
+			color: var(--color-danger);
 		}
 
 		&.error {
@@ -50,7 +50,7 @@
 
 			input,
 			textarea {
-				outline-color: var(--color-accent-2);
+				outline-color: var(--color-danger);
 			}
 		}
 	}

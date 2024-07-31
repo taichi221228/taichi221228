@@ -6,4 +6,7 @@
 	--color-foreground: var(--palette-foreground);
 	--color-foreground-primary: var(--palette-foreground-primary);
 	--color-foreground-secondary: var(--palette-foreground-secondary);
+	--color-success: var(--palette-green);
+	--color-warning: var(--palette-yellow);
+	--color-danger: var(--palette-red);
 }
