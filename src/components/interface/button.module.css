@@ -22,7 +22,7 @@
 		background-color: var(--color-accent-5);
 
 		&:is(:focus-visible, :hover) {
-			background-color: var(--color-accent-5-primary);
+			opacity: 0.75;
 		}
 	}
 
