@@ -17,7 +17,9 @@
 	}
 
 	> * {
-		border-inline-end: var(--border);
+		&:not(:last-child) {
+			border-inline-end: var(--border);
+		}
 
 		&:last-child {
 			margin-inline-start: auto;
