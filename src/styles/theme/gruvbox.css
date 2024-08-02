@@ -1,12 +1,4 @@
 :root {
-	--color-accent-0: var(--palette-gray);
-	--color-accent-1: var(--palette-orange);
-	--color-accent-2: var(--palette-red);
-	--color-accent-3: var(--palette-green);
-	--color-accent-4: var(--palette-yellow);
-	--color-accent-5: var(--palette-blue);
-	--color-accent-6: var(--palette-purple);
-	--color-accent-7: var(--palette-aqua);
 	--palette-background: #fbf1c7;
 	--palette-background-primary: #f9f5d7;
 	--palette-background-secondary: #f2e5bc;
@@ -22,6 +14,14 @@
 	--palette-purple: #8f3f71;
 	--palette-aqua: #427b58;
 	--palette-orange: #af3a03;
+	--palette-accent-0: var(--palette-gray);
+	--palette-accent-1: var(--palette-orange);
+	--palette-accent-2: var(--palette-red);
+	--palette-accent-3: var(--palette-green);
+	--palette-accent-4: var(--palette-yellow);
+	--palette-accent-5: var(--palette-blue);
+	--palette-accent-6: var(--palette-purple);
+	--palette-accent-7: var(--palette-aqua);
 
 	@media (prefers-color-scheme: dark) {
 		--palette-background: #282828;
