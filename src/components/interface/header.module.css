@@ -32,10 +32,6 @@
 			block-size: 100%;
 			padding-inline: 22px;
 			border-start-start-radius: var(--border-radius-md);
-
-			&:is(:focus-visible, :hover) {
-				color: var(--color-foreground-primary);
-			}
 		}
 	}
 }

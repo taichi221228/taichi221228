@@ -9,11 +9,9 @@
 			inline-size: 100%;
 			padding-inline: var(--padding-inline);
 			margin-inline: calc(var(--padding-inline) * -1);
-			color: var(--color-foreground);
 			border-radius: var(--border-radius-sm);
 
 			&:is(:focus-visible, :hover) {
-				color: var(--color-foreground-primary);
 				background-color: var(--color-background-secondary);
 			}
 		}
