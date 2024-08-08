@@ -1,0 +1,36 @@
+:root {
+	--palette-background: #fdf6e3;
+	--palette-background-primary: #eee8d5;
+	--palette-background-secondary: rgb(221 214 193);
+	--palette-background-tertiary: rgb(240 236 225);
+	--palette-foreground: #657b83;
+	--palette-foreground-primary: #586e75;
+	--palette-foreground-secondary: #93a1a1;
+	--palette-gray: #93a1a1;
+	--palette-red: #dc322f;
+	--palette-green: #859900;
+	--palette-yellow: #b58900;
+	--palette-blue: #268bd2;
+	--palette-purple: #6c71c4;
+	--palette-aqua: #2aa198;
+	--palette-orange: #cb4b16;
+	--palette-accent-0: var(--palette-gray);
+	--palette-accent-1: var(--palette-blue);
+	--palette-accent-2: var(--palette-red);
+	--palette-accent-3: var(--palette-aqua);
+	--palette-accent-4: var(--palette-yellow);
+	--palette-accent-5: var(--palette-orange);
+	--palette-accent-6: var(--palette-purple);
+	--palette-accent-7: var(--palette-green);
+
+	@media (prefers-color-scheme: dark) {
+		--palette-background: #002b36;
+		--palette-background-primary: #073642;
+		--palette-background-secondary: rgb(0 56 71);
+		--palette-background-tertiary: rgb(14 41 49);
+		--palette-foreground: #839496;
+		--palette-foreground-primary: #93a1a1;
+		--palette-foreground-secondary: #586e75;
+		--palette-gray: #586e75;
+	}
+}
