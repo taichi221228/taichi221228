@@ -12,6 +12,7 @@ import "~/styles/token/color.css";
 import "~/styles/token/font.css";
 import "~/styles/token/icon.css";
 import "~/styles/token/interaction.css";
+import "~/styles/token/link.css";
 import "~/styles/token/size.css";
 import "~/styles/token/spacing.css";
 
