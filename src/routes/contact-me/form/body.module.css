@@ -16,7 +16,7 @@
 			inline-size: 100%;
 			padding: var(--padding-block) 15px;
 			margin-top: 10px;
-			background-color: var(--color-background-secondary);
+			background-color: var(--color-background-primary);
 			border: var(--border);
 			border-radius: var(--border-radius-md);
 
@@ -40,7 +40,7 @@
 		p {
 			display: none;
 			margin-block-start: 6px;
-			color: var(--color-accent-2-primary);
+			color: var(--color-danger);
 		}
 
 		&.error {
@@ -50,7 +50,7 @@
 
 			input,
 			textarea {
-				outline-color: var(--color-accent-2-primary);
+				outline-color: var(--color-danger);
 			}
 		}
 	}

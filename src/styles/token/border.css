@@ -1,5 +1,5 @@
 :root {
-	--border: var(--border-width-md) solid var(--color-background-tertiary);
+	--border: var(--border-width-md) solid var(--color-background-secondary);
 	--border-width-md: 1px;
 	--border-width-lg: 3px;
 }

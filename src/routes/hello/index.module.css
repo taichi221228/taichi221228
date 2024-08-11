@@ -173,11 +173,6 @@
 				.literal {
 					color: var(--color-accent-3);
 
-					.double,
-					.back {
-						color: var(--color-accent-0-primary);
-					}
-
 					.double {
 						@container (inline-size <= 326px) {
 							display: none;

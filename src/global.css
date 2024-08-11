@@ -9,7 +9,7 @@ html {
 	padding: var(--padding-outside);
 	font-size: var(--font-size-body);
 	color: var(--color-foreground);
-	background-color: var(--color-background-primary);
+	background-color: var(--color-background-tertiary);
 
 	body {
 		position: relative;
@@ -28,7 +28,6 @@ html {
 			overflow: scroll;
 		}
 
-		a,
 		button,
 		input,
 		textarea,

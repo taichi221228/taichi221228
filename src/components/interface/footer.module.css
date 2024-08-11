@@ -17,7 +17,9 @@
 	}
 
 	> * {
-		border-inline-end: var(--border);
+		&:not(:last-child) {
+			border-inline-end: var(--border);
+		}
 
 		&:last-child {
 			margin-inline-start: auto;
@@ -42,10 +44,6 @@
 		&:is(.x, .facebook) {
 			inline-size: 52px;
 			color: var(--color-foreground-secondary);
-
-			&:is(:focus-visible, :hover) {
-				color: var(--color-foreground);
-			}
 		}
 
 		&.github {
