@@ -9,4 +9,12 @@
 	--color-success: var(--palette-green);
 	--color-warning: var(--palette-yellow);
 	--color-danger: var(--palette-red);
+	--color-accent-0: var(--palette-accent-0);
+	--color-accent-1: var(--palette-accent-1);
+	--color-accent-2: var(--palette-accent-2);
+	--color-accent-3: var(--palette-accent-3);
+	--color-accent-4: var(--palette-accent-4);
+	--color-accent-5: var(--palette-accent-5);
+	--color-accent-6: var(--palette-accent-6);
+	--color-accent-7: var(--palette-accent-7);
 }

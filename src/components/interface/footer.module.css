@@ -44,10 +44,6 @@
 		&:is(.x, .facebook) {
 			inline-size: 52px;
 			color: var(--color-foreground-secondary);
-
-			&:is(:focus-visible, :hover) {
-				color: var(--color-foreground);
-			}
 		}
 
 		&.github {

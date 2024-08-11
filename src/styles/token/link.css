@@ -1,0 +1,7 @@
+a {
+	transition: var(--transition);
+
+	&:is(:focus-visible, :hover) {
+		color: var(--color-foreground-primary);
+	}
+}
