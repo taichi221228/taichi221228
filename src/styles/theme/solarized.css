@@ -8,20 +8,34 @@
 	--palette-foreground-secondary: hsl(180deg 7% 60%);
 	--palette-gray: hsl(180deg 7% 60%);
 	--palette-red: hsl(1deg 71% 52%);
+	--palette-red-secondary: hsl(1deg 61% 42%);
 	--palette-green: hsl(68deg 100% 30%);
+	--palette-green-secondary: hsl(68deg 90% 20%);
 	--palette-yellow: hsl(45deg 100% 35%);
+	--palette-yellow-secondary: hsl(45deg 90% 25%);
 	--palette-blue: hsl(205deg 69% 49%);
+	--palette-blue-secondary: hsl(205deg 59% 39%);
 	--palette-purple: hsl(237deg 43% 60%);
+	--palette-purple-secondary: hsl(237deg 33% 50%);
 	--palette-aqua: hsl(175deg 59% 40%);
+	--palette-aqua-secondary: hsl(175deg 49% 30%);
 	--palette-orange: hsl(18deg 80% 44%);
+	--palette-orange-secondary: hsl(18deg 70% 34%);
 	--palette-accent-0: var(--palette-gray);
 	--palette-accent-1: var(--palette-green);
+	--palette-accent-1-secondary: var(--palette-green-secondary);
 	--palette-accent-2: var(--palette-yellow);
+	--palette-accent-2-secondary: var(--palette-yellow-secondary);
 	--palette-accent-3: var(--palette-aqua);
+	--palette-accent-3-secondary: var(--palette-aqua-secondary);
 	--palette-accent-4: var(--palette-red);
+	--palette-accent-4-secondary: var(--palette-red-secondary);
 	--palette-accent-5: var(--palette-purple);
+	--palette-accent-5-secondary: var(--palette-purple-secondary);
 	--palette-accent-6: var(--palette-orange);
+	--palette-accent-6-secondary: var(--palette-orange-secondary);
 	--palette-accent-7: var(--palette-blue);
+	--palette-accent-7-secondary: var(--palette-blue-secondary);
 
 	@media (prefers-color-scheme: dark) {
 		--palette-background: hsl(192deg 100% 11%);
@@ -33,11 +47,18 @@
 		--palette-foreground-secondary: hsl(194deg 14% 40%);
 		--palette-gray: hsl(194deg 14% 40%);
 		--palette-accent-1: var(--palette-green);
+		--palette-accent-1-secondary: var(--palette-green-secondary);
 		--palette-accent-2: var(--palette-purple);
+		--palette-accent-2-secondary: var(--palette-purple-secondary);
 		--palette-accent-3: var(--palette-aqua);
+		--palette-accent-3-secondary: var(--palette-aqua-secondary);
 		--palette-accent-4: var(--palette-yellow);
+		--palette-accent-4-secondary: var(--palette-yellow-secondary);
 		--palette-accent-5: var(--palette-orange);
+		--palette-accent-5-secondary: var(--palette-orange-secondary);
 		--palette-accent-6: var(--palette-red);
+		--palette-accent-6-secondary: var(--palette-red-secondary);
 		--palette-accent-7: var(--palette-blue);
+		--palette-accent-7-secondary: var(--palette-blue-secondary);
 	}
 }

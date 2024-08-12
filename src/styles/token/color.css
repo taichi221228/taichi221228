@@ -11,10 +11,17 @@
 	--color-danger: var(--palette-red);
 	--color-accent-0: var(--palette-accent-0);
 	--color-accent-1: var(--palette-accent-1);
+	--color-accent-1-secondary: var(--palette-accent-1-secondary);
 	--color-accent-2: var(--palette-accent-2);
+	--color-accent-2-secondary: var(--palette-accent-2-secondary);
 	--color-accent-3: var(--palette-accent-3);
+	--color-accent-3-secondary: var(--palette-accent-3-secondary);
 	--color-accent-4: var(--palette-accent-4);
+	--color-accent-4-secondary: var(--palette-accent-4-secondary);
 	--color-accent-5: var(--palette-accent-5);
+	--color-accent-5-secondary: var(--palette-accent-5-secondary);
 	--color-accent-6: var(--palette-accent-6);
+	--color-accent-6-secondary: var(--palette-accent-6-secondary);
 	--color-accent-7: var(--palette-accent-7);
+	--color-accent-7-secondary: var(--palette-accent-7-secondary);
 }
