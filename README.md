@@ -1,4 +1,4 @@
-# Taichi221228 :boom:
+# Taichi Fukuda
 
 ![Capture of top page](https://raw.githubusercontent.com/taichi221228/taichi221228/master/assets/main-visual.jpeg)
 
