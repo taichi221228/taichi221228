@@ -51,7 +51,13 @@ export const Accordion = component$(({ shouldOpen = true, as, ...props }: Props)
 					    received in Props does not trigger a re-render for that Node only. */
 				}
 			</button>
-			<div class={styles.body} style={{ maxBlockSize: isOpen.value ? container.height : 0 }}>
+			<div
+				class={styles.body}
+				style={{
+					maxBlockSize: isOpen.value ? container.height : 0,
+					visibility: isOpen.value ? "visible" : "hidden",
+				}}
+			>
 				<div class={styles.container} ref={container.ref}>
 					<Slot />
 				</div>
