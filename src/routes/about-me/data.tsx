@@ -4,10 +4,12 @@ import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icon
 import { SITENAME } from "~/constants/info";
 
 import Content_ from "./contents/content.mdx";
+import Music_ from "./contents/music.mdx";
 
 /* TODO: MDX is processed as `WrappedMdxContent`, which is compiled directly using `_jsxC`.
     Since the QRL is not resolved via `componentQrl`, I need to change it is needed to be serializable. */
 const Content = component$(() => <Content_ />);
+const Music = component$(() => <Music_ />);
 
 type Activities = typeof activities;
 
@@ -51,7 +53,7 @@ export const activities = [
 		sides: [
 			{
 				name: "music",
-				content: <Content />,
+				content: <Music />,
 			},
 			{
 				name: "books",
