@@ -2,14 +2,7 @@ import { type Component, component$, createContextId, type JSXOutput } from "@bu
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
-
-import Content_ from "./data/contents/content.mdx";
-import Music_ from "./data/contents/music.mdx";
-
-/* TODO: MDX is processed as `WrappedMdxContent`, which is compiled directly using `_jsxC`.
-    Since the QRL is not resolved via `componentQrl`, I need to change it is needed to be serializable. */
-const Content = component$(() => <Content_ />);
-const Music = component$(() => <Music_ />);
+import { Content, Music } from "~/routes/about-me/data/contents";
 
 type Activities = typeof activities;
 
