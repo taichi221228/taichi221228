@@ -1,13 +1,8 @@
-import { type Component, component$, createContextId, type JSXOutput } from "@builder.io/qwik";
+import { type Component, createContextId, type JSXOutput } from "@builder.io/qwik";
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
-
-import Content_ from "./contents/content.mdx";
-
-/* TODO: MDX is processed as `WrappedMdxContent`, which is compiled directly using `_jsxC`.
-    Since the QRL is not resolved via `componentQrl`, I need to change it is needed to be serializable. */
-const Content = component$(() => <Content_ />);
+import { Placeholder, Music } from "~/routes/about-me/data/contents";
 
 type Activities = typeof activities;
 
@@ -19,11 +14,11 @@ export const activities = [
 		sides: [
 			{
 				name: "experience",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "skills",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 		],
 	},
@@ -33,15 +28,15 @@ export const activities = [
 		sides: [
 			{
 				name: "bio",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "interests",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "education",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 		],
 	},
@@ -51,15 +46,15 @@ export const activities = [
 		sides: [
 			{
 				name: "music",
-				content: <Content />,
+				content: <Music />,
 			},
 			{
 				name: "books",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "games",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 		],
 	},
