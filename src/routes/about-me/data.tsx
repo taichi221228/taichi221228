@@ -1,4 +1,4 @@
-import { type Component, component$, createContextId, type JSXOutput } from "@builder.io/qwik";
+import { type Component, createContextId, type JSXOutput } from "@builder.io/qwik";
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
