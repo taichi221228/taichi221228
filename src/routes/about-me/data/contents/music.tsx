@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
+import { Content } from "./content";
 import Music_ from "./music.mdx";
 
 /**
@@ -7,4 +8,8 @@ import Music_ from "./music.mdx";
  * TODO: MDX is processed as `WrappedMdxContent`, which is compiled directly using `_jsxC`.
  *  Since the QRL is not resolved via `componentQrl`, I need to change it is needed to be serializable.
  */
-export const Music = component$(() => <Music_ />);
+export const Music = component$(() => (
+	<Content>
+		<Music_ />
+	</Content>
+));
