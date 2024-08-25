@@ -1,4 +1,4 @@
 /** @package */
-export { Content } from "./content";
+export { Placeholder } from "./placeholder";
 /** @package */
 export { Music } from "./music";

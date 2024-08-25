@@ -2,7 +2,7 @@ import { type Component, createContextId, type JSXOutput } from "@builder.io/qwi
 
 import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
-import { Content, Music } from "~/routes/about-me/data/contents";
+import { Placeholder, Music } from "~/routes/about-me/data/contents";
 
 type Activities = typeof activities;
 
@@ -14,11 +14,11 @@ export const activities = [
 		sides: [
 			{
 				name: "experience",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "skills",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 		],
 	},
@@ -28,15 +28,15 @@ export const activities = [
 		sides: [
 			{
 				name: "bio",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "interests",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "education",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 		],
 	},
@@ -50,11 +50,11 @@ export const activities = [
 			},
 			{
 				name: "books",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 			{
 				name: "games",
-				content: <Content />,
+				content: <Placeholder />,
 			},
 		],
 	},
