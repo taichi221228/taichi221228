@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import { Content } from "./content";
-import Placeholder_ from "./placeholder.mdx";
+import RawPlaceholder from "./placeholder.mdx";
 
 /**
  * @package
@@ -10,6 +10,6 @@ import Placeholder_ from "./placeholder.mdx";
  */
 export const Placeholder = component$(() => (
 	<Content>
-		<Placeholder_ />
+		<RawPlaceholder />
 	</Content>
 ));

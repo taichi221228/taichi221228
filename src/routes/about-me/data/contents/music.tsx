@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 import { Content } from "./content";
-import Music_ from "./music.mdx";
+import RawMusic from "./music.mdx";
 
 /**
  * @package
@@ -10,6 +10,6 @@ import Music_ from "./music.mdx";
  */
 export const Music = component$(() => (
 	<Content>
-		<Music_ />
+		<RawMusic />
 	</Content>
 ));
