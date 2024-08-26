@@ -7,6 +7,7 @@
 		--inline-size-activitybar: 67px;
 
 		display: flex;
+		flex-shrink: 0;
 		inline-size: var(--inline-size-aside);
 		border-inline-end: var(--border);
 	}

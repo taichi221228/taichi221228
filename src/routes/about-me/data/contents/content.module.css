@@ -1,0 +1,16 @@
+.container {
+	a {
+		color: var(--color-accent-3);
+		text-decoration: underline;
+
+		&:is(:focus-visible, :hover) {
+			color: var(--color-foreground);
+		}
+	}
+
+	p {
+		+ p {
+			margin-top: 1em;
+		}
+	}
+}
