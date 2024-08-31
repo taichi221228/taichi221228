@@ -2,6 +2,7 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	z-index: 2;
 	display: flex;
 	inline-size: 100%;
 	block-size: var(--block-size-footer);
