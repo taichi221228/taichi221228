@@ -7,6 +7,7 @@
 	inline-size: 100%;
 	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
+	background-color: var(--color-background);
 	border-block-end: var(--border);
 	border-start-start-radius: var(--border-radius-md);
 	border-start-end-radius: var(--border-radius-md);
