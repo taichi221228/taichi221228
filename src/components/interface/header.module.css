@@ -2,19 +2,20 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 	display: flex;
 	inline-size: 100%;
 	block-size: var(--block-size-header);
 	font-size: var(--font-size-label);
+	background-color: var(--color-background);
 	border-block-end: var(--border);
 	border-start-start-radius: var(--border-radius-md);
 	border-start-end-radius: var(--border-radius-md);
 
-	/* TODO: Not a smart way. Need refactoring */
+	/* HACK: Not a smart way. Need refactoring */
 	&.root {
-		@media (height < 707px /* 20px: outline padding * 2 + 56px: header block-size + 56px: footer block-size + 555px: content block-size */) {
-			background-color: var(--color-background);
+		@media (height >= 707px /* 20px: outline padding * 2 + 56px: header block-size + 56px: footer block-size + 555px: content block-size */) {
+			background-color: transparent;
 		}
 	}
 
