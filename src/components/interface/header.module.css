@@ -12,13 +12,6 @@
 	border-start-start-radius: var(--border-radius-md);
 	border-start-end-radius: var(--border-radius-md);
 
-	/* HACK: Not a smart way. Need refactoring */
-	&.root {
-		@media (height >= 707px /* 20px: outline padding * 2 + 56px: header block-size + 56px: footer block-size + 555px: content block-size */) {
-			background-color: transparent;
-		}
-	}
-
 	.title {
 		display: flex;
 		flex-basis: var(--inline-size-sitetitle);
