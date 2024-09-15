@@ -30,6 +30,8 @@
 		"eslint.config.import.cjs",
 		"stylelint.config.js",
 		"stylelint.config.order.js",
+		"panda.config.ts",
+		"postcss.config.js",
 		"prettier.config.js",
 		"textlint.config.cjs",
 		"vite.config.ts"
