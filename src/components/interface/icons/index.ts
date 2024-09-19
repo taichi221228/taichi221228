@@ -6,6 +6,7 @@ export { GamepadIcon } from "./gamepad-icon";
 export { GitHubIcon } from "./github-icon";
 export { MailIcon } from "./mail-icon";
 export { MarkdownIcon } from "./markdown-icon";
+export { MenuIcon } from "./menu-icon";
 export { PhoneIcon } from "./phone-icon";
 export { PinIcon } from "./pin-icon";
 export { RefreshIcon } from "./refresh-icon";

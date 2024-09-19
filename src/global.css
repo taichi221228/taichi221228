@@ -1,3 +1,5 @@
+@layer reset, base, tokens, recipes, utilities;
+
 * {
 	&:focus-visible {
 		outline: var(--border-width-lg) solid var(--color-accent-1);
@@ -24,7 +26,7 @@ html {
 		main {
 			box-sizing: content-box;
 			block-size: var(--block-size-main);
-			padding-block: var(--block-size-header) var(--block-size-footer);
+			margin-block: var(--block-size-header) var(--block-size-footer);
 			overflow: scroll;
 		}
 

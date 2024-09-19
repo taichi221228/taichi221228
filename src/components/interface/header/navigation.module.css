@@ -40,6 +40,10 @@
 				border-inline-start: var(--border);
 				border-inline-end: none;
 
+				@container (inline-size < 709px) {
+					border-inline-start: none;
+				}
+
 				.link {
 					border-start-end-radius: var(--border-radius-md);
 				}
