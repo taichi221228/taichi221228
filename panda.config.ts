@@ -18,6 +18,7 @@ export default defineConfig({
 					10: { value: "#073642" },
 					0: { value: "#002b36" },
 				},
+				yellow: { value: "#b58900" },
 			},
 		},
 		extend: {},
