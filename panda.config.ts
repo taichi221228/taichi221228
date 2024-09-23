@@ -19,6 +19,7 @@ export default defineConfig({
 					0: { value: "#002b36" },
 				},
 				yellow: { value: "#b58900" },
+				orange: { value: "#cb4b16" },
 			},
 		},
 		extend: {},
