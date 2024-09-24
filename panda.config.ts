@@ -20,6 +20,7 @@ export default defineConfig({
 				},
 				yellow: { value: "#b58900" },
 				orange: { value: "#cb4b16" },
+				red: { value: "#dc322f" },
 			},
 		},
 		extend: {},
