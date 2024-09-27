@@ -23,6 +23,7 @@ export default defineConfig({
 				red: { value: "#dc322f" },
 				magenta: { value: "#d33682" },
 				violet: { value: "#6c71c4" },
+				blue: { value: "#268bd2" },
 			},
 		},
 		extend: {},
