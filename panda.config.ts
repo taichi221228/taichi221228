@@ -25,6 +25,7 @@ export default defineConfig({
 				violet: { value: "#6c71c4" },
 				blue: { value: "#268bd2" },
 				cyan: { value: "#2aa198" },
+				green: { value: "#859900" },
 			},
 		},
 		extend: {},
