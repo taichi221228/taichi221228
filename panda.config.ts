@@ -9,14 +9,14 @@ export default defineConfig({
 		tokens: {
 			colors: {
 				base: {
-					0: { value: "#fdf6e3" },
-					10: { value: "#eee8d5" },
-					30: { value: "#93a1a1" },
-					40: { value: "#839496" },
-					60: { value: "#657b83" },
-					70: { value: "#586e75" },
-					90: { value: "#073642" },
-					100: { value: "#002b36" },
+					15: { value: "#002b36" },
+					20: { value: "#073642" },
+					45: { value: "#586e75" },
+					50: { value: "#657b83" },
+					60: { value: "#839496" },
+					65: { value: "#93a1a1" },
+					92: { value: "#eee8d5" },
+					97: { value: "#fdf6e3" },
 				},
 				yellow: { value: "#b58900" },
 				orange: { value: "#cb4b16" },
