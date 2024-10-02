@@ -9,6 +9,7 @@ export default defineConfig({
 		tokens: {
 			colors: {
 				base: {
+					12: { value: "#002530" },
 					15: { value: "#002b36" },
 					20: { value: "#073642" },
 					45: { value: "#586e75" },
@@ -17,6 +18,7 @@ export default defineConfig({
 					65: { value: "#93a1a1" },
 					92: { value: "#eee8d5" },
 					97: { value: "#fdf6e3" },
+					100: { value: "#fffeec" },
 				},
 				yellow: { value: "#b58900" },
 				orange: { value: "#cb4b16" },
