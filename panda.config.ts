@@ -20,7 +20,11 @@ export default defineConfig({
 					97: { value: "#fdf6e3" },
 					100: { value: "#fffeec" },
 				},
-				yellow: { value: "#b58900" },
+				yellow: {
+					55: { value: "#a67c00" },
+					60: { value: "#b58900" },
+					65: { value: "#c49619" },
+				},
 				orange: { value: "#cb4b16" },
 				red: { value: "#dc322f" },
 				magenta: { value: "#d33682" },
