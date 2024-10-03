@@ -45,7 +45,11 @@ export default defineConfig({
 					51: { value: "#6c71c4" },
 					56: { value: "#7a7ed2" },
 				},
-				blue: { value: "#268bd2" },
+				blue: {
+					51: { value: "#007ec4" },
+					56: { value: "#268bd2" },
+					61: { value: "#3c98e0" },
+				},
 				cyan: { value: "#2aa198" },
 				green: { value: "#859900" },
 			},
