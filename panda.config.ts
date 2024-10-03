@@ -55,7 +55,11 @@ export default defineConfig({
 					60: { value: "#2aa198" },
 					65: { value: "#3cafa5" },
 				},
-				green: { value: "#859900" },
+				green: {
+					55: { value: "#778c00" },
+					60: { value: "#859900" },
+					65: { value: "#93a61a" },
+				},
 			},
 		},
 		extend: {},
