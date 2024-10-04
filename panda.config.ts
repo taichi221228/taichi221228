@@ -8,14 +8,18 @@ export default defineConfig({
 	theme: {
 		tokens: {
 			colors: {
-				base: {
+				abyss: {
 					12: { value: "#002530" },
 					15: { value: "#002b36" },
 					20: { value: "#073642" },
+				},
+				slate: {
 					45: { value: "#586e75" },
 					50: { value: "#657b83" },
 					60: { value: "#839496" },
 					65: { value: "#93a1a1" },
+				},
+				ivory: {
 					92: { value: "#eee8d5" },
 					97: { value: "#fdf6e3" },
 					100: { value: "#fffeec" },
