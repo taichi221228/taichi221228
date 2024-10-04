@@ -47,7 +47,7 @@ Inside your project, you’ll see the following directory structure:
 | [Resend](https://resend.com/)                                       | Email Service            | :white_check_mark: |
 | [Markdown](https://markdownguide.org/)                              | Content Format           | :clipboard:        |
 | Zenn/Qiita/Dev.to                                                   | Content Platform         | :clipboard:        |
-| [Panda CSS](https://panda-css.com/)                                 | CSS Methodology          | :clipboard:        |
+| [Panda CSS](https://panda-css.com/)                                 | CSS Methodology          | :construction:     |
 | [Remix Icon](https://remixicon.com/)                                | Icon Set                 | :white_check_mark: |
 | [Fontsource](https://fontsource.org/)                               | Font Set                 | :white_check_mark: |
 | [Shiki](https://shiki.style/)                                       | Syntax Highlighting      | :white_check_mark: |
