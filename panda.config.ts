@@ -9,9 +9,6 @@ export default defineConfig({
 		tokens: {
 			colors: {
 				base: {
-					12: { value: "#002530" },
-					15: { value: "#002b36" },
-					20: { value: "#073642" },
 					45: { value: "#586e75" },
 					50: { value: "#657b83" },
 					60: { value: "#839496" },
@@ -19,6 +16,11 @@ export default defineConfig({
 					92: { value: "#eee8d5" },
 					97: { value: "#fdf6e3" },
 					100: { value: "#fffeec" },
+				},
+				abyss: {
+					12: { value: "#002530" },
+					15: { value: "#002b36" },
+					20: { value: "#073642" },
 				},
 				yellow: {
 					55: { value: "#a67c00" },
