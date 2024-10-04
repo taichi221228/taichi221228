@@ -9,10 +9,6 @@ export default defineConfig({
 		tokens: {
 			colors: {
 				base: {
-					45: { value: "#586e75" },
-					50: { value: "#657b83" },
-					60: { value: "#839496" },
-					65: { value: "#93a1a1" },
 					92: { value: "#eee8d5" },
 					97: { value: "#fdf6e3" },
 					100: { value: "#fffeec" },
@@ -21,6 +17,12 @@ export default defineConfig({
 					12: { value: "#002530" },
 					15: { value: "#002b36" },
 					20: { value: "#073642" },
+				},
+				slate: {
+					45: { value: "#586e75" },
+					50: { value: "#657b83" },
+					60: { value: "#839496" },
+					65: { value: "#93a1a1" },
 				},
 				yellow: {
 					55: { value: "#a67c00" },
