@@ -74,5 +74,10 @@ export const semanticTokens = defineSemanticTokens({
 			DEFAULT: { value: "{colors.slate.60}" },
 			primary: { value: "{colors.slate.65}" },
 		},
+		status: {
+			danger: { value: "{colors.red.49}" },
+			warning: { value: "{colors.yellow.60}" },
+			success: { value: "{colors.green.60}" },
+		},
 	},
 });
