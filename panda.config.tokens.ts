@@ -1,4 +1,4 @@
-import { defineTokens } from "@pandacss/dev";
+import { defineSemanticTokens, defineTokens } from "@pandacss/dev";
 
 /** @package */
 export const tokens = defineTokens({
@@ -58,6 +58,21 @@ export const tokens = defineTokens({
 			55: { value: "#778c00" },
 			60: { value: "#859900" },
 			65: { value: "#93a61a" },
+		},
+	},
+});
+
+/** @package */
+export const semanticTokens = defineSemanticTokens({
+	colors: {
+		background: {
+			DEFAULT: { value: "{colors.ivory.97}" },
+			primary: { value: "{colors.ivory.92}" },
+			secondary: { value: "{colors.ivory.100}" },
+		},
+		foreground: {
+			DEFAULT: { value: "{colors.slate.60}" },
+			primary: { value: "{colors.slate.65}" },
 		},
 	},
 });
