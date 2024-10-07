@@ -100,4 +100,13 @@ export const semanticTokens = defineSemanticTokens({
 		md: { value: "8px" },
 		full: { value: "9999px" },
 	},
+	borders: {
+		DEFAULT: {
+			value: {
+				width: "1px",
+				color: "{colors.background.primary}",
+				style: "solid",
+			},
+		},
+	},
 });
