@@ -86,5 +86,13 @@ export const semanticTokens = defineSemanticTokens({
 	fonts: {
 		DEFAULT: { value: ["{fonts.firaCode}", "{fonts.fallback}"] },
 		fallback: { value: ["monospace", "Helvetica Neue", "arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", "sans-serif"] },
+		fontSizes: {
+			annotation: { value: "12px" },
+			code: { value: "14px" },
+			label: { value: "16px" },
+			body: { value: "18px" },
+			subheadline: { value: "32px" },
+			headline: { value: "62px" },
+		},
 	},
 });
