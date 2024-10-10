@@ -94,5 +94,10 @@ export const semanticTokens = defineSemanticTokens({
 			subheadline: { value: "32px" },
 			headline: { value: "62px" },
 		},
+		radii: {
+			sm: { value: "4px" },
+			md: { value: "8px" },
+			full: { value: "9999px" },
+		},
 	},
 });
