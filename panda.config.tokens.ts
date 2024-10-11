@@ -60,6 +60,9 @@ export const tokens = defineTokens({
 			65: { value: "#93a61a" },
 		},
 	},
+	fonts: {
+		firaCode: { value: ["Fira Code Retina", "Fira Code", "Fira Code Medium", "Fira Code Regular", "Fira Code Light"] },
+	},
 });
 
 /** @package */
@@ -79,5 +82,9 @@ export const semanticTokens = defineSemanticTokens({
 			warning: { value: "{colors.yellow.60}" },
 			success: { value: "{colors.green.60}" },
 		},
+	},
+	fonts: {
+		DEFAULT: { value: ["{fonts.firaCode}", "{fonts.fallback}"] },
+		fallback: { value: ["monospace", "Helvetica Neue", "arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", "sans-serif"] },
 	},
 });
