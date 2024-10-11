@@ -60,6 +60,9 @@ export const tokens = defineTokens({
 			65: { value: "#93a61a" },
 		},
 	},
+	fonts: {
+		firaCode: { value: ["Fira Code Retina", "Fira Code", "Fira Code Medium", "Fira Code Regular", "Fira Code Light"] },
+	},
 });
 
 /** @package */
@@ -79,5 +82,22 @@ export const semanticTokens = defineSemanticTokens({
 			warning: { value: "{colors.yellow.60}" },
 			success: { value: "{colors.green.60}" },
 		},
+	},
+	fonts: {
+		DEFAULT: { value: ["{fonts.firaCode}", "{fonts.fallback}"] },
+		fallback: { value: ["monospace", "Helvetica Neue", "arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", "sans-serif"] },
+	},
+	fontSizes: {
+		annotation: { value: "12px" },
+		code: { value: "14px" },
+		label: { value: "16px" },
+		body: { value: "18px" },
+		subheadline: { value: "32px" },
+		headline: { value: "62px" },
+	},
+	radii: {
+		sm: { value: "4px" },
+		md: { value: "8px" },
+		full: { value: "9999px" },
 	},
 });

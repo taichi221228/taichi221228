@@ -7,9 +7,6 @@ export default defineConfig({
 	preflight: true,
 	include: ["./src/**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}"],
 	exclude: [],
-	theme: {
-		tokens,
-		semanticTokens,
-	},
+	theme: { tokens, semanticTokens },
 	outdir: "src/styled-system",
 });
