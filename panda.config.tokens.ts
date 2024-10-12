@@ -108,5 +108,12 @@ export const semanticTokens = defineSemanticTokens({
 				style: "solid",
 			},
 		},
+		danger: {
+			value: {
+				width: "1px",
+				color: "{colors.status.danger}",
+				style: "solid",
+			},
+		},
 	},
 });
