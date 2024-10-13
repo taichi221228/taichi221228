@@ -99,7 +99,7 @@ export const semanticTokens = defineSemanticTokens({
 	radii: {
 		sm: { value: "4px" },
 		md: { value: "8px" },
-		full: { value: "9999px" },
+		full: { value: `${Number.MAX_SAFE_INTEGER}px` },
 	},
 	borders: {
 		DEFAULT: {
