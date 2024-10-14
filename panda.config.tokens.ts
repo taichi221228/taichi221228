@@ -82,6 +82,7 @@ export const semanticTokens = defineSemanticTokens({
 			warning: { value: "{colors.yellow.60}" },
 			success: { value: "{colors.green.60}" },
 		},
+		accent: { value: "{colors.green.60}" },
 	},
 	fonts: {
 		DEFAULT: { value: ["{fonts.primary}", "{fonts.fallback}"] },
@@ -113,6 +114,13 @@ export const semanticTokens = defineSemanticTokens({
 			value: {
 				width: "1px",
 				color: "{colors.status.danger}",
+				style: "solid",
+			},
+		},
+		accent: {
+			value: {
+				width: "3px",
+				color: "{colors.accent}",
 				style: "solid",
 			},
 		},
