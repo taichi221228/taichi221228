@@ -109,21 +109,21 @@ export const semanticTokens = defineSemanticTokens({
 	borders: {
 		DEFAULT: {
 			value: {
-				width: "1px",
+				width: "{borderWidths.medium}",
 				color: "{colors.background.primary}",
 				style: "solid",
 			},
 		},
 		danger: {
 			value: {
-				width: "1px",
+				width: "{borderWidths.medium}",
 				color: "{colors.status.danger}",
 				style: "solid",
 			},
 		},
 		accent: {
 			value: {
-				width: "3px",
+				width: "{borderWidths.thick}",
 				color: "{colors.accent}",
 				style: "solid",
 			},
