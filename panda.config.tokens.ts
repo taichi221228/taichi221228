@@ -63,6 +63,10 @@ export const tokens = defineTokens({
 	fonts: {
 		firaCode: { value: ["Fira Code Retina", "Fira Code", "Fira Code Medium", "Fira Code Regular", "Fira Code Light"] },
 	},
+	borderWidths: {
+		medium: { value: "1px" },
+		thick: { value: "3px" },
+	},
 });
 
 /** @package */
