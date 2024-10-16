@@ -102,8 +102,8 @@ export const semanticTokens = defineSemanticTokens({
 		headline: { value: "62px" },
 	},
 	radii: {
-		sm: { value: "4px" },
-		md: { value: "8px" },
+		small: { value: "4px" },
+		medium: { value: "8px" },
 		full: { value: `${Number.MAX_SAFE_INTEGER}px` },
 	},
 	borders: {
