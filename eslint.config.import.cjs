@@ -15,10 +15,12 @@ module.exports = {
 					{
 						group: "builtin",
 						pattern: "@builder.io/qwik?(-city){,/**}",
+						position: "after",
 					},
 					{
-						group: "external",
+						group: "builtin",
 						pattern: "@qwik?(-city){,/**}",
+						position: "after",
 					},
 					{
 						group: "internal",
