@@ -23,6 +23,11 @@ module.exports = {
 						position: "after",
 					},
 					{
+						group: "external",
+						pattern: "styled-system/**",
+						position: "before",
+					},
+					{
 						group: "internal",
 						pattern: "~/constants/**",
 						position: "before",
