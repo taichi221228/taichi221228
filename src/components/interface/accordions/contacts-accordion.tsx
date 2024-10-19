@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-import { MailIcon, PhoneIcon } from "~/components/interface/icons";
 import { EMAIL, PHONE, USERNAME } from "~/constants/info";
+import { MailIcon, PhoneIcon } from "~/components/interface/icons";
 
 import { LinksAccordion } from "./links-accordion";
 

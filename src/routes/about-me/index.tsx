@@ -1,8 +1,8 @@
 import { component$, useContextProvider, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import { Editor } from "~/components/interface/editor";
 import { NAME } from "~/constants/info";
+import { Editor } from "~/components/interface/editor";
 import { createPageTitle } from "~/utilities/create-page-title";
 
 import styles from "./index.module.css";

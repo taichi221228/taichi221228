@@ -1,8 +1,8 @@
 import { type Component, createContextId, type JSXOutput } from "@builder.io/qwik";
 
-import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 import { SITENAME } from "~/constants/info";
 import { Placeholder, Music } from "~/routes/about-me/data/contents";
+import { GamepadIcon, TerminalIcon, UserIcon } from "~/components/interface/icons";
 
 type Activities = typeof activities;
 
