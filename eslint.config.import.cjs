@@ -25,18 +25,22 @@ module.exports = {
 					{
 						group: "internal",
 						pattern: "~/constants/**",
+						position: "before",
 					},
 					{
 						group: "internal",
 						pattern: "~/routes/**",
+						position: "before",
 					},
 					{
 						group: "internal",
 						pattern: "~/components/**",
+						position: "before",
 					},
 					{
 						group: "internal",
 						pattern: "~/hooks/**",
+						position: "before",
 					},
 					{
 						group: "sibling",
