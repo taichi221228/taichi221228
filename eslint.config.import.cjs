@@ -47,14 +47,8 @@ module.exports = {
 						pattern: "./*.module.css",
 						position: "before",
 					},
-					{
-						group: "parent",
-						pattern: "../**",
-					},
-					{
-						group: "sibling",
-						pattern: "./**",
-					},
+					{ group: "parent", pattern: "../**" },
+					{ group: "sibling", pattern: "./**" },
 				],
 				distinctGroup: false,
 				pathGroupsExcludedImportTypes: [],
