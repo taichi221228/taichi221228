@@ -71,8 +71,6 @@ module.exports = {
 		],
 	},
 	settings: {
-		"import/resolver": {
-			typescript: true,
-		},
+		"import/resolver": { typescript: true },
 	},
 };
