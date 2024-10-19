@@ -1,8 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Icon, type IconProps } from "./icon";
-
 import styles from "./refresh-icon.module.css";
+import { Icon, type IconProps } from "./icon";
 
 type Props = {
 	isAnimating?: boolean;

@@ -1,8 +1,7 @@
 import { component$, type JSXOutput } from "@builder.io/qwik";
 
-import { Tab, type TabProps } from "./editor/tab";
-
 import styles from "./editor.module.css";
+import { Tab, type TabProps } from "./editor/tab";
 
 type Props = {
 	panes: [{ tab?: TabProps; content?: JSXOutput }] | [{ tab?: TabProps; content?: JSXOutput }, { tab?: TabProps; content?: JSXOutput }];

@@ -7,9 +7,8 @@ import { Resend } from "resend";
 import { EMAIL, NAME } from "~/constants/info";
 import { STATUS } from "~/routes/contact-me/form";
 
-import { SubmitButton } from "./submit-button";
-
 import styles from "./body.module.css";
+import { SubmitButton } from "./submit-button";
 
 type Schema = {
 	name: string;

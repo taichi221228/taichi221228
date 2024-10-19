@@ -5,11 +5,10 @@ import { Editor } from "~/components/interface/editor";
 import { NAME } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
+import styles from "./index.module.css";
 import { Activitybar } from "./activitybar";
 import { CURRENT, type Current, getSide } from "./data";
 import { Sidebar } from "./sidebar";
-
-import styles from "./index.module.css";
 
 /** @private */
 export default component$(() => {
