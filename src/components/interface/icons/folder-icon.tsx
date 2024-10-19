@@ -1,8 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
-import { Icon, type IconProps } from "./icon";
-
 import styles from "./folder-icon.module.css";
+import { Icon, type IconProps } from "./icon";
 
 type Props = {
 	variant?: 1 | 2 | 3;

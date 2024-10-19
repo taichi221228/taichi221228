@@ -1,8 +1,7 @@
 import { component$, type JSXOutput, QwikJSX } from "@builder.io/qwik";
 
-import { Accordion, type AccordionProps } from "./accordion";
-
 import styles from "./links-accordion.module.css";
+import { Accordion, type AccordionProps } from "./accordion";
 
 import IntrinsicAttributes = QwikJSX.IntrinsicAttributes;
 

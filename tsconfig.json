@@ -20,7 +20,8 @@
 		"types": ["node", "vite/client"],
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["src/*"]
+			"~/*": ["src/*"],
+			"styled-system/*": ["src/styled-system/*"]
 		},
 		"plugins": [{ "name": "eslint-plugin-import-access" }]
 	},

@@ -9,46 +9,54 @@ module.exports = {
 				alphabetize: {
 					order: "asc",
 				},
-				groups: ["builtin", "external", "internal", ["sibling", "parent"], "index", "object", "type"],
+				groups: ["builtin", "external", "internal", "parent", "sibling"],
 				"newlines-between": "always",
 				pathGroups: [
 					{
 						group: "builtin",
-						pattern: "@builder.io/qwik?(-city)**",
+						pattern: "@builder.io/qwik?(-city){,/**}",
+						position: "after",
+					},
+					{
+						group: "builtin",
+						pattern: "@qwik-*",
+						position: "after",
 					},
 					{
 						group: "external",
-						pattern: "@qwik?(-city)**",
+						pattern: "styled-system/**",
+						position: "before",
 					},
 					{
 						group: "internal",
-						pattern: "~/constants",
+						pattern: "~/constants/**",
+						position: "before",
 					},
 					{
 						group: "internal",
-						pattern: "~/routes",
+						pattern: "~/routes/**",
+						position: "before",
 					},
 					{
 						group: "internal",
-						pattern: "~/components",
+						pattern: "~/components/**",
+						position: "before",
 					},
 					{
 						group: "internal",
-						pattern: "~/hooks",
+						pattern: "~/hooks/**",
+						position: "before",
 					},
-					{
-						group: "index",
-						pattern: "./*.module.css",
-					},
+					{ group: "internal", pattern: "~/**" },
 					{
 						group: "sibling",
-						pattern: "./**",
+						pattern: "./*.module.css",
+						position: "before",
 					},
-					{
-						group: "parent",
-						pattern: "../**",
-					},
+					{ group: "parent", pattern: "../**" },
+					{ group: "sibling", pattern: "./**" },
 				],
+				distinctGroup: false,
 				pathGroupsExcludedImportTypes: [],
 			},
 		],
@@ -63,8 +71,6 @@ module.exports = {
 		],
 	},
 	settings: {
-		"import/resolver": {
-			typescript: true,
-		},
+		"import/resolver": { typescript: true },
 	},
 };

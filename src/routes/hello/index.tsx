@@ -4,9 +4,8 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 import { NAME, SNSS } from "~/constants/info";
 import { createPageTitle } from "~/utilities/create-page-title";
 
-import { Game } from "./game";
-
 import styles from "./index.module.css";
+import { Game } from "./game";
 
 /** @private */
 export default component$(() => {

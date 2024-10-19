@@ -1,7 +1,7 @@
 import { component$, useContext } from "@builder.io/qwik";
 
-import { Button } from "~/components/interface/button";
 import { STATUS } from "~/routes/contact-me/form";
+import { Button } from "~/components/interface/button";
 
 import styles from "./thanks.module.css";
 
