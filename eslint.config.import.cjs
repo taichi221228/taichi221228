@@ -42,6 +42,7 @@ module.exports = {
 						pattern: "~/hooks/**",
 						position: "before",
 					},
+					{ group: "internal", pattern: "~/**" },
 					{
 						group: "sibling",
 						pattern: "./*.module.css",
