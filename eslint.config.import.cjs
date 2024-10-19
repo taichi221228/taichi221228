@@ -48,12 +48,12 @@ module.exports = {
 						position: "before",
 					},
 					{
-						group: "sibling",
-						pattern: "./**",
-					},
-					{
 						group: "parent",
 						pattern: "../**",
+					},
+					{
+						group: "sibling",
+						pattern: "./**",
 					},
 				],
 				distinctGroup: false,
