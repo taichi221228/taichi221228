@@ -9,7 +9,7 @@ module.exports = {
 				alphabetize: {
 					order: "asc",
 				},
-				groups: ["builtin", "external", "internal", ["sibling", "parent"], "index", "object", "type"],
+				groups: ["builtin", "external", "internal", "index", "parent", "sibling"],
 				"newlines-between": "always",
 				pathGroups: [
 					{
@@ -39,8 +39,9 @@ module.exports = {
 						pattern: "~/hooks",
 					},
 					{
-						group: "index",
+						group: "sibling",
 						pattern: "./*.module.css",
+						position: "before",
 					},
 					{
 						group: "sibling",
