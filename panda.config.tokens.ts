@@ -63,6 +63,10 @@ export const tokens = defineTokens({
 	fonts: {
 		firaCode: { value: ["Fira Code Retina", "Fira Code", "Fira Code Medium", "Fira Code Regular", "Fira Code Light"] },
 	},
+	borderWidths: {
+		medium: { value: "1px" },
+		thick: { value: "3px" },
+	},
 });
 
 /** @package */
@@ -82,9 +86,11 @@ export const semanticTokens = defineSemanticTokens({
 			warning: { value: "{colors.yellow.60}" },
 			success: { value: "{colors.green.60}" },
 		},
+		accent: { value: "{colors.green.60}" },
 	},
 	fonts: {
-		DEFAULT: { value: ["{fonts.firaCode}", "{fonts.fallback}"] },
+		DEFAULT: { value: ["{fonts.primary}", "{fonts.fallback}"] },
+		primary: { value: "{fonts.firaCode}" },
 		fallback: { value: ["monospace", "Helvetica Neue", "arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", "sans-serif"] },
 	},
 	fontSizes: {
@@ -96,8 +102,31 @@ export const semanticTokens = defineSemanticTokens({
 		headline: { value: "62px" },
 	},
 	radii: {
-		sm: { value: "4px" },
-		md: { value: "8px" },
-		full: { value: "9999px" },
+		small: { value: "4px" },
+		medium: { value: "8px" },
+		full: { value: `${Number.MAX_SAFE_INTEGER}px` },
+	},
+	borders: {
+		DEFAULT: {
+			value: {
+				width: "{borderWidths.medium}",
+				color: "{colors.background.primary}",
+				style: "solid",
+			},
+		},
+		danger: {
+			value: {
+				width: "{borderWidths.medium}",
+				color: "{colors.status.danger}",
+				style: "solid",
+			},
+		},
+		accent: {
+			value: {
+				width: "{borderWidths.thick}",
+				color: "{colors.accent}",
+				style: "solid",
+			},
+		},
 	},
 });
