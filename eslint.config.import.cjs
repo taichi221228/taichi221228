@@ -14,11 +14,11 @@ module.exports = {
 				pathGroups: [
 					{
 						group: "builtin",
-						pattern: "@builder.io/qwik?(-city)**",
+						pattern: "@builder.io/qwik?(-city){,/**}",
 					},
 					{
 						group: "external",
-						pattern: "@qwik?(-city)**",
+						pattern: "@qwik?(-city){,/**}",
 					},
 					{
 						group: "internal",
@@ -49,6 +49,7 @@ module.exports = {
 						pattern: "../**",
 					},
 				],
+				distinctGroup: false,
 				pathGroupsExcludedImportTypes: [],
 			},
 		],
