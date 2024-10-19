@@ -19,7 +19,7 @@ module.exports = {
 					},
 					{
 						group: "builtin",
-						pattern: "@qwik?(-city){,/**}",
+						pattern: "@qwik-*",
 						position: "after",
 					},
 					{
