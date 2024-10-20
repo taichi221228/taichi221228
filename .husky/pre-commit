@@ -1,6 +1,5 @@
 #!/usr/bin/env zsh
 
-# TODO: Temporarily disabled due to Compiler/Linter update
-# bun run build.types
-# bun lint
-# bun run format.check
+bun run build.types
+bun lint
+bun run format.check
