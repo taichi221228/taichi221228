@@ -26,6 +26,7 @@
 		"plugins": [{ "name": "eslint-plugin-import-access" }]
 	},
 	"include": [
+		"node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts",
 		"**/*.js",
 		"**/*.cjs",
 		"**/*.mjs",
@@ -33,8 +34,7 @@
 		"**/*.jts",
 		"**/*.mts",
 		"**/*.jsx",
-		"**/*.tsx",
-		"node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts"
+		"**/*.tsx"
 	],
 	"exclude": ["src/styled-system/", "dist"]
 }
