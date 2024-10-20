@@ -3,6 +3,7 @@ import globals from "globals";
 import { config as defineConfig, configs } from "typescript-eslint";
 
 import { importConfigs } from "./eslint.config.import.js";
+import { nodeConfigs } from "./eslint.config.node.js";
 import { qwikConfigs } from "./eslint.config.qwik.js";
 
 /** @type {import("eslint").Linter.FlatConfig} */
@@ -43,4 +44,4 @@ const basicConfig = {
 /** @private */
 // HACK: Suppress TypeScript errors due to incompatibility between `eslint-plugin-import-access` and `tsc` when using `checkJS`.
 // @ts-expect-error eslint-disable-line @typescript-eslint/ban-ts-comment
-export default defineConfig(ignoreConfig, jsConfig, ...tsConfigs, basicConfig, ...importConfigs, ...qwikConfigs);
+export default defineConfig(ignoreConfig, jsConfig, ...tsConfigs, basicConfig, ...importConfigs, ...nodeConfigs, ...qwikConfigs);
