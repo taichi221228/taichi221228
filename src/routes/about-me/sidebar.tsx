@@ -3,9 +3,8 @@ import { component$, useContext } from "@builder.io/qwik";
 import { Accordion, ContactsAccordion } from "~/components/interface/accordions";
 import { FolderIcon, MarkdownIcon } from "~/components/interface/icons";
 
-import { CURRENT, getActivity } from "./data";
-
 import styles from "./sidebar.module.css";
+import { CURRENT, getActivity } from "./data";
 
 /** @package */
 export const Sidebar = component$(() => {

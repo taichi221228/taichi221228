@@ -1,11 +1,10 @@
-import { component$, createContextId, type Signal, useContextProvider, useSignal, useStore } from "@builder.io/qwik";
+import { component$, createContextId, useContextProvider, useStore } from "@builder.io/qwik";
 
 import { SITENAME } from "~/constants/info";
 import { Thanks } from "~/routes/contact-me/form/thanks";
 
-import { Body } from "./form/body";
-
 import styles from "./form.module.css";
+import { Body } from "./form/body";
 
 type Status = { value: { name: "initial" | "pending" | "success"; message?: never } } | { value: { name: "fail"; message: string } };
 

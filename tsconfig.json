@@ -10,7 +10,7 @@
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"resolveJsonModule": true,
-		"moduleResolution": "node",
+		"moduleResolution": "Bundler",
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"incremental": true,
@@ -20,22 +20,32 @@
 		"types": ["node", "vite/client"],
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["src/*"]
+			"~/*": ["src/*"],
+			"styled-system/*": ["src/styled-system/*"]
 		},
 		"plugins": [{ "name": "eslint-plugin-import-access" }]
 	},
-	"files": [
-		"commitlint.config.js",
-		"eslint.config.cjs",
-		"eslint.config.import.cjs",
-		"stylelint.config.js",
-		"stylelint.config.order.js",
+	"include": [
+		".scaffdog/config.js",
+		"eslint.config.js",
+		"eslint.config.*.js",
 		"panda.config.ts",
+		"panda.config.*.ts",
 		"postcss.config.js",
 		"prettier.config.js",
-		"textlint.config.cjs",
-		"vite.config.ts"
+		"stylelint.config.js",
+		"stylelint.config.*.js",
+		"textlint.config.js",
+		"vite.config.ts",
+		"node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts",
+		"**/*.js",
+		"**/*.cjs",
+		"**/*.mjs",
+		"**/*.ts",
+		"**/*.jts",
+		"**/*.mts",
+		"**/*.jsx",
+		"**/*.tsx"
 	],
-	"include": ["src", "*.d.ts", "node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts"],
-	"exclude": ["src/styled-system/"]
+	"exclude": ["src/styled-system/", "dist"]
 }
