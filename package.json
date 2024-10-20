@@ -19,7 +19,7 @@
 		"lint": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#FFF,#259EAC\" \"eslint --cache --cache-location ./node_modules/.cache/eslint .\" \"bunx @biomejs/biome lint .\" \"stylelint \\\"**/*.css\\\"\" \"textlint -c \\\"./textlint.config.cjs\\\" \\\"**/*.md\\\"\"",
 		"lint.fix": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#FFF,#259EAC\" \"eslint --cache --cache-location ./node_modules/.cache/eslint . --fix\" \"bunx @biomejs/biome lint --write .\" \"stylelint --fix \\\"**/*.css\\\"\" \"textlint -c \\\"./textlint.config.cjs\\\" --fix \\\"**/*.md\\\"\"",
 		"prebuild.pandacss": "panda codegen --silent",
-		"prepare": "husky",
+		"prepare": "husky & panda codegen",
 		"preview": "qwik build preview && vite preview --open",
 		"start": "vite --open --mode ssr",
 		"qwik": "qwik"
