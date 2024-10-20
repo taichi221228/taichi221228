@@ -1,4 +1,4 @@
-import { component$, createContextId, type Signal, useContextProvider, useSignal, useStore } from "@builder.io/qwik";
+import { component$, createContextId, useContextProvider, useStore } from "@builder.io/qwik";
 
 import { SITENAME } from "~/constants/info";
 import { Thanks } from "~/routes/contact-me/form/thanks";
