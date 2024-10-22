@@ -5,6 +5,7 @@ import { macroPlugin } from "@builder.io/vite-plugin-macro";
 import { defineConfig, type UserConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+/** @private */
 export default defineConfig((): UserConfig => {
 	return {
 		plugins: [

@@ -2,6 +2,7 @@ import { defineConfig } from "@pandacss/dev";
 
 import { tokens, semanticTokens } from "./panda.config.tokens";
 
+/** @private */
 export default defineConfig({
 	jsxFramework: "qwik",
 	preflight: true,
