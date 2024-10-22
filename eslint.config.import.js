@@ -29,6 +29,16 @@ export const importConfigs = [
 					pathGroups: [
 						{
 							group: "builtin",
+							pattern: "@builder.io/vite?(-*){,/**}",
+							position: "after",
+						},
+						{
+							group: "builtin",
+							pattern: "vite?(-*){,/**}",
+							position: "after",
+						},
+						{
+							group: "builtin",
 							pattern: "@builder.io/qwik?(-city){,/**}",
 							position: "after",
 						},
