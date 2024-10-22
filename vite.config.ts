@@ -1,9 +1,8 @@
-import { qwikVite } from "@builder.io/qwik/optimizer";
-import { qwikCity } from "@builder.io/qwik-city/vite";
-
 import { macroPlugin } from "@builder.io/vite-plugin-macro";
 import { defineConfig, type UserConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { qwikVite } from "@builder.io/qwik/optimizer";
+import { qwikCity } from "@builder.io/qwik-city/vite";
 
 /** @private */
 export default defineConfig((): UserConfig => {
