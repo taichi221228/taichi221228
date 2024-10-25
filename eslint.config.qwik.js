@@ -1,4 +1,4 @@
-// HACK: `@types/eslint-plugin-qwik` is not found
+// TODO: Type definition is not found
 // @ts-expect-error eslint-disable-line @typescript-eslint/ban-ts-comment
 import qwikPlugin from "eslint-plugin-qwik";
 
