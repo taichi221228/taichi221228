@@ -42,6 +42,6 @@ const basicConfig = {
 };
 
 /** @private */
-// HACK: Suppress TypeScript errors due to incompatibility between `eslint-plugin-import-access` and `tsc` when using `checkJS`.
+// FIXME: Suppress TypeScript errors due to incompatibility between `eslint-plugin-import-access` and `tsc` when using `checkJS`.
 // @ts-expect-error eslint-disable-line @typescript-eslint/ban-ts-comment
 export default defineConfig(ignoreConfig, jsConfig, ...tsConfigs, basicConfig, ...importConfigs, ...nodeConfigs, ...qwikConfigs);
