@@ -8,10 +8,10 @@ import importAccessPlugin from "eslint-plugin-import-access/flat-config";
  * @type {import("eslint").Linter.FlatConfig[]}
  */
 export const importConfigs = [
-	// HACK: This is not type-compatible with `FlatConfig`.
+	// XXX: This is not type-compatible with `FlatConfig`.
 	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 	importPlugin.flatConfigs.recommended,
-	// HACK: This is not type-compatible with `FlatConfig`.
+	// XXX: This is not type-compatible with `FlatConfig`.
 	// eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
 	importPlugin.flatConfigs.typescript,
 	{
