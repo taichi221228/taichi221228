@@ -1,4 +1,4 @@
-# prevent linter conflicts
+# prevent formatter conflicts
 *.js
 *.cjs
 *.mjs
