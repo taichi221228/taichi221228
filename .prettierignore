@@ -1,4 +1,4 @@
-# prevent linter conflicts
+# prevent formatter conflicts
 *.js
 *.cjs
 *.mjs
@@ -12,43 +12,3 @@
 .*rc
 .vscode/launch.json
 .vscode/*.code-snippets
-
-# dev
-.yarn/
-!.yarn/releases
-.vscode/*
-.idea/workspace.xml
-.idea/usage.statistics.xml
-.idea/shelf/
-src/styled-system/
-
-# build
-dist/
-lib/
-lib-types/
-server/
-
-# deps
-node_modules/
-
-# cache
-.cache/
-.mf
-.rollup.cache
-tsconfig.tsbuildinfo
-
-# env
-.env
-.env.production
-
-# logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
-
-# misc
-.DS_Store
