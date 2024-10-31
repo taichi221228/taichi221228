@@ -89,8 +89,7 @@ export const semanticTokens = defineSemanticTokens({
 		accent: { value: "{colors.green.60}" },
 	},
 	fonts: {
-		DEFAULT: { value: ["{fonts.primary}", "{fonts.fallback}"] },
-		primary: { value: "{fonts.firaCode}" },
+		primary: { value: ["{fonts.firaCode}", "{fonts.fallback}"] },
 		fallback: { value: ["monospace", "Helvetica Neue", "arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", "sans-serif"] },
 	},
 	fontSizes: {
