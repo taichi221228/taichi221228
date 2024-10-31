@@ -90,7 +90,7 @@ export const semanticTokens = defineSemanticTokens({
 	},
 	fonts: {
 		primary: { value: ["{fonts.firaCode}", "{fonts.fallback}"] },
-		fallback: { value: ["monospace", "Helvetica Neue", "arial", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", "sans-serif"] },
+		fallback: { value: ["monospace", '"Helvetica Neue"', "arial", '"Hiragino Kaku Gothic ProN"', '"Hiragino Sans"', "meiryo", "sans-serif"] },
 	},
 	fontSizes: {
 		annotation: { value: "12px" },
