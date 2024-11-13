@@ -1,19 +1,19 @@
-import { macroPlugin } from "@builder.io/vite-plugin-macro";
+import { macroPlugin as resolveMacroPlugin } from "@builder.io/vite-plugin-macro";
 import { defineConfig, type UserConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
-import { qwikVite } from "@builder.io/qwik/optimizer";
-import { qwikCity } from "@builder.io/qwik-city/vite";
+import resolveTsconfigPlugin from "vite-tsconfig-paths";
+import { qwikVite as resolveQwikPlugin } from "@builder.io/qwik/optimizer";
+import { qwikCity as resolveQwikCityPlugin } from "@builder.io/qwik-city/vite";
 
 /** @private */
 export default defineConfig((): UserConfig => {
 	return {
 		plugins: [
-			macroPlugin({ preset: "pandacss" }),
-			qwikCity({
+			resolveMacroPlugin({ preset: "pandacss" }),
+			resolveQwikCityPlugin({
 				rewriteRoutes: [{ paths: { hello: "" } }],
 			}),
-			qwikVite(),
-			tsconfigPaths(),
+			resolveQwikPlugin(),
+			resolveTsconfigPlugin(),
 		],
 		server: {
 			headers: {
