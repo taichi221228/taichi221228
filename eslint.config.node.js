@@ -8,6 +8,7 @@ export const nodeConfigs = [
 	{
 		files: [
 			".scaffdog/config.js",
+			"commitlint.config.js",
 			"eslint.config.js",
 			"eslint.config.*.js",
 			"panda.config.ts",
