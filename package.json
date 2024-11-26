@@ -5,20 +5,20 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"dev": "vite --mode ssr",
+		"dev.debug": "node --inspect-brk node_modules/vite/bin/vite.js --mode ssr --force",
 		"build": "qwik build",
 		"build.client": "vite build",
 		"build.preview": "vite build --ssr src/entry.preview.tsx",
-		"compile": "tsc --incremental --noEmit",
+		"start": "vite --open --mode ssr",
+		"preview": "qwik build preview && vite preview --open",
 		"deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
-		"dev": "vite --mode ssr",
-		"dev.debug": "node --inspect-brk node_modules/vite/bin/vite.js --mode ssr --force",
-		"format": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier . --write\" \"bunx @biomejs/biome format . --write\"",
-		"format.check": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier . --check\" \"bunx @biomejs/biome format .\"",
+		"compile": "tsc --incremental --noEmit",
 		"lint": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#7A8387,#259EAC\" \"eslint --cache --cache-location node_modules/.cache/eslint .\" \"bunx @biomejs/biome lint .\" \"stylelint --ignore-path \\\".gitignore\\\" \\\"**/*.css\\\"\" \"textlint -c \\\"textlint.config.cjs\\\" --ignore-path \\\".gitignore\\\" \\\"**/*.md\\\"\"",
 		"lint.fix": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#7A8387,#259EAC\" \"eslint --cache --cache-location node_modules/.cache/eslint . --fix\" \"bunx @biomejs/biome lint . --write\" \"stylelint --ignore-path \\\".gitignore\\\" \\\"**/*.css\\\" --fix\" \"textlint -c \\\"textlint.config.cjs\\\" --ignore-path \\\".gitignore\\\" \\\"**/*.md\\\" --fix\"",
-		"prepare": "husky & panda codegen",
-		"preview": "qwik build preview && vite preview --open",
-		"start": "vite --open --mode ssr"
+		"format": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier . --write\" \"bunx @biomejs/biome format . --write\"",
+		"format.check": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier . --check\" \"bunx @biomejs/biome format .\"",
+		"prepare": "husky & panda codegen"
 	},
 	"dependencies": {
 		"@builder.io/qwik": "^1.4.5",
