@@ -19,6 +19,7 @@
 		"lint.strict": "concurrently -n \"eslint,biome,stylelint,textlint\" -c \"#4831BD,#61A5FA,#7A8387,#259EAC\" \"eslint .\" \"bunx @biomejs/biome lint . --write\" \"stylelint --ignore-path \\\".gitignore\\\" \\\"**/*.css\\\" --fix\" \"textlint -c \\\"textlint.config.cjs\\\" --ignore-path \\\".gitignore\\\" \\\"**/*.md\\\" --fix\"",
 		"format": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier --cache . --write\" \"bunx @biomejs/biome format . --write\"",
 		"format.check": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier --cache . --check\" \"bunx @biomejs/biome format .\"",
+		"format.strict": "concurrently -n \"prettier,biome\" -c \"#F8BC45,#61A5FA\"  \"prettier . --write\" \"bunx @biomejs/biome format .\"",
 		"prepare": "husky && panda codegen"
 	},
 	"dependencies": {
