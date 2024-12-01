@@ -1,7 +1,9 @@
 {
 	"name": "taichi-fukuda",
 	"description": "This is a personal website of Taichi Fukuda.",
-	"engines": { "bun": ">=1.1.34" },
+	"engines": {
+		"bun": ">=1.1.34"
+	},
 	"private": true,
 	"type": "module",
 	"scripts": {
