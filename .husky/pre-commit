@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
 
-bun run build.types
-bun lint
-bun run format.check
+mise x -- bun run build.types
+mise x -- bun lint
+mise x -- bun run format.check
