@@ -27,6 +27,7 @@
 	},
 	"include": [
 		".scaffdog/config.js",
+		"commitlint.config.js",
 		"eslint.config.js",
 		"eslint.config.*.js",
 		"panda.config.ts",
@@ -38,14 +39,8 @@
 		"textlint.config.js",
 		"vite.config.ts",
 		"node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts",
-		"**/*.js",
-		"**/*.cjs",
-		"**/*.mjs",
-		"**/*.ts",
-		"**/*.jts",
-		"**/*.mts",
-		"**/*.jsx",
-		"**/*.tsx"
+		"**/*",
+		"**/.*/**/*"
 	],
 	"exclude": ["src/styled-system/", "dist"]
 }
