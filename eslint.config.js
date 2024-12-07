@@ -1,5 +1,4 @@
 import eslint from "@eslint/js";
-// TODO: The latest `eslint-config-flat-gitignore` is not compatible with ESLint < v9. https://github.com/antfu/eslint-config-flat-gitignore/issues/11
 import createIgnoreConfig from "eslint-config-flat-gitignore";
 import globals from "globals";
 import { config as defineConfig, configs } from "typescript-eslint";
