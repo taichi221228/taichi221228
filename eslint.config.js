@@ -8,7 +8,10 @@ import { importConfigs } from "./eslint.config.import.js";
 import { nodeConfigs } from "./eslint.config.node.js";
 import { qwikConfigs } from "./eslint.config.qwik.js";
 
-const ignoreConfig = createIgnoreConfig();
+// TODO: The latest `eslint-config-flat-gitignore` is not compatible with ESLint < v9. https://github.com/antfu/eslint-config-flat-gitignore/issues/11
+const { ignores } = createIgnoreConfig();
+/** @type import("eslint").Linter.FlatConfig */
+const ignoreConfig = { ignores };
 
 /** @type import("eslint").Linter.FlatConfig */
 const jsConfig = {
