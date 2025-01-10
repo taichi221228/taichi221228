@@ -29,7 +29,7 @@
 		"@builder.io/qwik-city": "^1.4.5",
 		"@fontsource/fira-code": "^5.0.16",
 		"@modular-forms/qwik": "^0.29.0",
-		"@unocss/reset": "^0.65.0",
+		"@unocss/reset": "^65.0.0",
 		"remixicon": "^4.1.0",
 		"resend": "^4.0.0",
 		"shiki": "^1.10.3"
