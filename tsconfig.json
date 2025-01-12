@@ -1,21 +1,22 @@
 {
-	"include": [
+	"files": [
 		".scaffdog/config.js",
 		"commitlint.config.js",
 		"eslint.config.js",
-		"eslint.config.*.js",
+		"eslint.config.import.js",
+		"eslint.config.node.js",
+		"eslint.config.panda.js",
+		"eslint.config.qwik.js",
 		"panda.config.ts",
-		"panda.config.*.ts",
+		"panda.config.tokens.ts",
 		"postcss.config.js",
 		"prettier.config.js",
 		"stylelint.config.js",
-		"stylelint.config.*.js",
+		"stylelint.config.order.js",
 		"textlint.config.cjs",
-		"vite.config.ts",
-		"node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts",
-		"**/*",
-		"**/.*/**/*"
+		"vite.config.ts"
 	],
+	"include": ["node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts", "**/*", "**/.*/**/*"],
 	"exclude": ["registry/styled-system/", "dist/", "server/"],
 	"compilerOptions": {
 		"checkJs": true,
