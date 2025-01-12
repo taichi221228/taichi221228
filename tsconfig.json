@@ -19,29 +19,40 @@
 	"include": ["node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts", "**/*", "**/.*/**/*"],
 	"exclude": ["registry/styled-system/", "dist/", "server/"],
 	"compilerOptions": {
-		"checkJs": true,
-		"allowJs": true,
-		"target": "ES2017",
-		"module": "ES2022",
-		"lib": ["es2022", "DOM", "WebWorker", "DOM.Iterable"],
-		"jsx": "react-jsx",
-		"jsxImportSource": "@builder.io/qwik",
+		// NOTE: Items under `Top Level` classified as `Type Checking`
 		"strict": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"moduleResolution": "Bundler",
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"incremental": true,
-		"isolatedModules": true,
-		"outDir": "tmp",
-		"noEmit": true,
-		"types": ["node", "vite/client"],
+		// NOTE: Items under `Top Level` classified as `Modules`
 		"baseUrl": ".",
+		"module": "ES2022",
+		"moduleResolution": "bundler",
 		"paths": {
 			"~/*": ["src/*"],
 			"styled-system/*": ["registry/styled-system/*"]
 		},
-		"plugins": [{ "name": "eslint-plugin-import-access" }]
+		"resolveJsonModule": true,
+		"rootDirs": [".", "./.react-router/types"],
+		"types": ["node", "vite/client"],
+		// NOTE: Items under `Top Level` classified as `Emit`
+		"noEmit": true,
+		"outDir": "tmp",
+		// NOTE: Items under `Top Level` classified as `JavaScript Support`
+		"allowJs": true,
+		"checkJs": true,
+		// NOTE: Items under `Top Level` classified as `Editor Support`
+		"plugins": [{ "name": "eslint-plugin-import-access" }],
+		// NOTE: Items under `Top Level` classified as `Interop Constraints`
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+		// NOTE: Items under `Top Level` classified as `Language and Environment`
+		"jsx": "react-jsx",
+		"jsxImportSource": "@builder.io/qwik",
+		"lib": ["es2022", "DOM", "WebWorker", "DOM.Iterable"],
+		"target": "ES2017",
+		// NOTE: Items under `Top Level` classified as `Projects`
+		"incremental": true,
+		// NOTE: Items under `Top Level` classified as `Completeness`
+		"skipLibCheck": true
 	}
 }
