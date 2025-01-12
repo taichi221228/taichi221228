@@ -42,5 +42,5 @@
 		"**/*",
 		"**/.*/**/*"
 	],
-	"exclude": ["registry/styled-system/", "dist", "server/"]
+	"exclude": ["registry/styled-system/", "dist/", "server/"]
 }
