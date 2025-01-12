@@ -1,14 +1,12 @@
-import { component$, type JSXOutput, QwikJSX } from "@builder.io/qwik";
+import { component$, type JSXOutput, type QwikJSX } from "@builder.io/qwik";
 
 import styles from "./links-accordion.module.css";
 import { Accordion, type AccordionProps } from "./accordion";
 
-import IntrinsicAttributes = QwikJSX.IntrinsicAttributes;
-
 type Props = {
 	items: ({
 		item: JSXOutput;
-	} & Pick<IntrinsicAttributes, "key">)[];
+	} & Pick<QwikJSX.IntrinsicAttributes, "key">)[];
 } & Pick<AccordionProps, "head">;
 
 /** @package */
