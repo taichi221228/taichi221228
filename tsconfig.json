@@ -10,7 +10,7 @@
 		"prettier.config.js",
 		"stylelint.config.js",
 		"stylelint.config.*.js",
-		"textlint.config.js",
+		"textlint.config.cjs",
 		"vite.config.ts",
 		"node_modules/better-typescript-lib/node_modules/@typescript/**/*.d.ts",
 		"**/*",
